@@ -1,7 +1,8 @@
-@import "./tokens.css";
-@import "./spaces/index.css";
+@import "../_generated/clampSpaces/index.css";
+@import "../_generated/properties/index.css";
 
-@layer reset, tokens, base, atoms, molecules, organisms, templates, pages, overrides;
+@layer reset, tokens, base, atoms, molecules,
+  organisms, templates, pages, overrides;
 
 /* Some reset styles */
 @layer reset {

@@ -4,7 +4,11 @@
  * Responsibilities
  * 1. Serve as a container for layout purposes.
  * 2. Provide padding, border and background options.
- * 3. ? Support flexbox properties for alignment and distribution of child elements.
+ * 3. align-self, justify-self, place-self support via className prop.
+ *
+ * Not responsible for:
+ * 1. Any alignment or distribution of child elements (use `Shelf`, `Stack`, or any other layout component for that).
+ * 2. Managing state or behavior beyond layout concerns (Atoms never do).
  */
 
 import clsx from "clsx";
@@ -21,7 +25,8 @@ type BoxProps<T extends ElementType = "div"> = {
   as?: T;
 } & ComponentPropsWithoutRef<T>;
 
-export const Box = <T extends ElementType = "div">(
+// Components are always named exported with `Mox` and `level (Atom, Molecule, etc)` prefix
+export const MoxAtomBox = <T extends ElementType = "div">(
   props: BoxProps<T> & { ref?: React.Ref<unknown> }
 ) => {
   const { children, as, className, ref, ...restProps } = props;
@@ -46,20 +51,5 @@ export const Box = <T extends ElementType = "div">(
   );
 };
 
-export const Test = () => {
-  const linkRef = React.useRef<HTMLAnchorElement>(null);
-  useEffect(() => {
-    linkRef.current?.focus();
-  }, []);
-
-  return (
-    <>
-      <Box as="section" href="#">
-        Section
-      </Box>
-      <Box as="a" href="#" ref={linkRef}>
-        Link
-      </Box>
-    </>
-  );
-};
+// Easier imports for heavily used Atom components
+export const MoxBox = MoxAtomBox;

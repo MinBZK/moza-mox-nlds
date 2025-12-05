@@ -37,7 +37,53 @@
 ## Current issues
 
 - Inconsistent APIs with components from different sources
-  - Sometimes a `component` prop is available, sometimes not.
+  - Sometimes a `component` prop is available, sometimes not. Sometimes component has white-space around it, sometimes not
+
+## Solution
+
+- One space-system to rule them all: typography, paddings, gaps, etc all use the same clamped space-values (`3xl`, `md`, etc). `md` is the base-size, used for a regular capital letter.
+- Start with CSS:
+  - React, Vue, etc components can be build on the shared css-classes
+- Decrease the token-list:
+  - `tokens` will only be used for Atoms (see below), only for lower levels as exception
+- Atomic design system:
+  - **Atoms**:
+    - Globally adjustable by `tokens` from Figma Tokens Studio
+    - Locally adjustable by consistent React API:
+      - Always `ref`, `classNames`, `as` prop (to change `tag`/`component` to render as), additional props, like `styles` (`{...props}`)
+      - Same way of adding styling-props accross all components (e.g. `<Box inlineSize="xl">`) with option to allow for responsive styles
+    - Almost never changes in API
+      - if it does, API usually gets more options, not less (e.g. `inlineSize` prop has [`3xs`, `2xs`, ... , ]. It gets updated to also allow `4xs`)
+    - CSS: Always styled in a @layer `atoms`, to allow for easy specificity overrides
+    - Tiny components, usually single `tag` (e.g. `<div>`)
+    - Examples: `box`, `text`, `link`, `shelf` / `stack` (horizontal / vertical flexbox), `checkbox` (just the `<input>`). The checkbox would be build like this:
+
+```tsx
+<input
+  type="checkbox"
+  classNames={`mox-checkbox ${className}`}
+  ref={ref}
+  as={as}
+  {...props}
+/>
+```
+
+- **Molecules**:
+  - Consists of Atom(s)
+  - Globally adjustable to build your own variation based on `Atoms`
+  - Locally adjustable by component API:
+    - Usually `ref` for any focusable Atoms inside the Molecule, like a `link`
+    - Always `classNames`, additional props (like `styles`) for top component
+    - Usually `as` prop for any interactive component
+  - Could change in API: not as robust as Atoms
+  - CSS: Always styled in a @layer `molecules`, to allow for easy specificity overrides
+  - Examples: `checkboxWithLabel` which is built with atoms:
+  ```tsx
+    <Shelf gap="sm">
+      <Input {...props}>
+      <Label>{children}</Label>
+    </Shelf>
+  ```
 
 ## Relevant links
 

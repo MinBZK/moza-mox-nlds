@@ -1,0 +1,7 @@
+/**
+    * This file imports all generated CSS property files (`inline-size`, etc)
+    */
+
+@import "./inline-size.css";
+@import "./block-size.css";
+@import "./border-width.css";
