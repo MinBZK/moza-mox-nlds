@@ -310,4 +310,45 @@
 			border-radius: 50%;
 		}
 	}
+	/* Container breakpoint: cq800 (800px) */
+	@container (min-width: 800px) {
+		.mox-borderRadius-0\@cq800Min {
+			border-radius: 0;
+		}
+		.mox-borderRadius-1px\@cq800Min {
+			border-radius: 1px;
+		}
+		.mox-borderRadius-2px\@cq800Min {
+			border-radius: 2px;
+		}
+		.mox-borderRadius-4px\@cq800Min {
+			border-radius: 4px;
+		}
+		.mox-borderRadius-8px\@cq800Min {
+			border-radius: 8px;
+		}
+		.mox-borderRadius-circle\@cq800Min {
+			border-radius: 50%;
+		}
+	}
+	@container (max-width: 800px) {
+		.mox-borderRadius-0\@cq800Max {
+			border-radius: 0;
+		}
+		.mox-borderRadius-1px\@cq800Max {
+			border-radius: 1px;
+		}
+		.mox-borderRadius-2px\@cq800Max {
+			border-radius: 2px;
+		}
+		.mox-borderRadius-4px\@cq800Max {
+			border-radius: 4px;
+		}
+		.mox-borderRadius-8px\@cq800Max {
+			border-radius: 8px;
+		}
+		.mox-borderRadius-circle\@cq800Max {
+			border-radius: 50%;
+		}
+	}
 }

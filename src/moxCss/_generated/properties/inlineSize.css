@@ -805,4 +805,111 @@
 			inline-size: min-content;
 		}
 	}
+	/* Container breakpoint: cq800 (800px) */
+	@container (min-width: 800px) {
+		.mox-inlineSize-0\@cq800Min {
+			inline-size: 0;
+		}
+		.mox-inlineSize-4xs\@cq800Min {
+			inline-size: var(--mox-space-4xs);
+		}
+		.mox-inlineSize-3xs\@cq800Min {
+			inline-size: var(--mox-space-3xs);
+		}
+		.mox-inlineSize-2xs\@cq800Min {
+			inline-size: var(--mox-space-2xs);
+		}
+		.mox-inlineSize-xs\@cq800Min {
+			inline-size: var(--mox-space-xs);
+		}
+		.mox-inlineSize-sm\@cq800Min {
+			inline-size: var(--mox-space-sm);
+		}
+		.mox-inlineSize-md\@cq800Min {
+			inline-size: var(--mox-space-md);
+		}
+		.mox-inlineSize-lg\@cq800Min {
+			inline-size: var(--mox-space-lg);
+		}
+		.mox-inlineSize-xl\@cq800Min {
+			inline-size: var(--mox-space-xl);
+		}
+		.mox-inlineSize-2xl\@cq800Min {
+			inline-size: var(--mox-space-2xl);
+		}
+		.mox-inlineSize-3xl\@cq800Min {
+			inline-size: var(--mox-space-3xl);
+		}
+		.mox-inlineSize-4xl\@cq800Min {
+			inline-size: var(--mox-space-4xl);
+		}
+		.mox-inlineSize-auto\@cq800Min {
+			inline-size: auto;
+		}
+		.mox-inlineSize-inherit\@cq800Min {
+			inline-size: inherit;
+		}
+		.mox-inlineSize-fit-content\@cq800Min {
+			inline-size: fit-content;
+		}
+		.mox-inlineSize-max-content\@cq800Min {
+			inline-size: max-content;
+		}
+		.mox-inlineSize-min-content\@cq800Min {
+			inline-size: min-content;
+		}
+	}
+	@container (max-width: 800px) {
+		.mox-inlineSize-0\@cq800Max {
+			inline-size: 0;
+		}
+		.mox-inlineSize-4xs\@cq800Max {
+			inline-size: var(--mox-space-4xs);
+		}
+		.mox-inlineSize-3xs\@cq800Max {
+			inline-size: var(--mox-space-3xs);
+		}
+		.mox-inlineSize-2xs\@cq800Max {
+			inline-size: var(--mox-space-2xs);
+		}
+		.mox-inlineSize-xs\@cq800Max {
+			inline-size: var(--mox-space-xs);
+		}
+		.mox-inlineSize-sm\@cq800Max {
+			inline-size: var(--mox-space-sm);
+		}
+		.mox-inlineSize-md\@cq800Max {
+			inline-size: var(--mox-space-md);
+		}
+		.mox-inlineSize-lg\@cq800Max {
+			inline-size: var(--mox-space-lg);
+		}
+		.mox-inlineSize-xl\@cq800Max {
+			inline-size: var(--mox-space-xl);
+		}
+		.mox-inlineSize-2xl\@cq800Max {
+			inline-size: var(--mox-space-2xl);
+		}
+		.mox-inlineSize-3xl\@cq800Max {
+			inline-size: var(--mox-space-3xl);
+		}
+		.mox-inlineSize-4xl\@cq800Max {
+			inline-size: var(--mox-space-4xl);
+		}
+		.mox-inlineSize-auto\@cq800Max {
+			inline-size: auto;
+		}
+		.mox-inlineSize-inherit\@cq800Max {
+			inline-size: inherit;
+		}
+		.mox-inlineSize-fit-content\@cq800Max {
+			inline-size: fit-content;
+		}
+		.mox-inlineSize-max-content\@cq800Max {
+			inline-size: max-content;
+		}
+		.mox-inlineSize-min-content\@cq800Max {
+			inline-size: min-content;
+		}
+	}
 }

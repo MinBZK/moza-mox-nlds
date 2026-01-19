@@ -1,9 +1,15 @@
+import "../src/moxCss/tokens.css";
 import "../src/moxCss/index.css";
 
 import type { Preview } from "@storybook/react-vite";
+import { INITIAL_VIEWPORTS } from "storybook/viewport";
 
 const preview: Preview = {
   parameters: {
+    viewport: {
+      viewports: INITIAL_VIEWPORTS,
+      defaultViewport: "responsive",
+    },
     options: {
       storySort: {
         order: [
@@ -13,10 +19,9 @@ const preview: Preview = {
           "Icons",
           "*",
           "MoxCSS",
-          "CSS Atoms",
-          ["Text-box trim", "Atoms", "Molecules", "Organisms", "*"],
+          ["CSS Layers", "Hugo gebruik", "Text-box trim", ["Atoms", "*"]],
           "React",
-          ["Gebruik", "Atoms", "Molecules", "Organisms", "*"],
+          ["Gebruik", ["Atoms", "Molecules", "Organisms", "*"]],
         ],
         method: "alphabetical",
       },
@@ -45,7 +50,11 @@ const preview: Preview = {
       source: {
         excludeDecorators: true,
       },
+      controls: {},
     },
+  },
+  initialGlobals: {
+    viewport: { value: "ipad", isRotated: false },
   },
   decorators: [
     (Story) => {
@@ -53,6 +62,15 @@ const preview: Preview = {
       // Optionally, remove the class when the story unmounts:
       return (
         <div>
+          <style>
+            {`
+            @layer overwrites {
+             details, summary, ol, ul, li, strong, em { 
+              all: revert; 
+              }
+            }
+            `}
+          </style>
           <Story />
         </div>
       );

@@ -1,4 +1,12 @@
-import type { MoxConfigProps } from "../mox.config";
+import {
+  colorOptions,
+  globalGapOptions,
+  globalSizeOptions,
+  spaces,
+} from "../configOptions";
+import { mapOptionsToCSSVars } from "../helpers/mapOptionsToCSSVars";
+import { mapOptionsToValues } from "../helpers/mapOptionsToValues";
+import { type MoxConfigProps } from "../mox.config";
 
 const borderRadiusOptions = {
   "0": { "border-radius": "0" },
@@ -66,23 +74,7 @@ export const boxProps = {
     },
   },
   borderColor: {
-    options: {
-      transparent: { "border-color": "transparent" },
-      primary: {
-        "border-color": "var(--mox-color-primary)",
-      },
-      secondary: {
-        "border-color": "var(--mox-color-secondary)",
-      },
-      subtle: {
-        "border-color": "var(--mox-color-subtle)",
-      },
-      muted: {
-        "border-color": "var(--mox-color-muted)",
-      },
-      black: { "border-color": "black" },
-      white: { "border-color": "white" },
-    },
+    options: mapOptionsToCSSVars(colorOptions, ["border-color"], "color"),
   },
   borderStyle: {
     options: {
@@ -93,56 +85,84 @@ export const boxProps = {
     },
   },
   backgroundColor: {
-    options: {
-      transparent: { "background-color": "transparent" },
-      primary: {
-        "background-color": "var(--mox-color-primary)",
-        "--mox-text-color": "var(--mox-color-primary-contrast)",
-      },
-      secondary: {
-        "background-color": "var(--mox-color-secondary)",
-        "--mox-text-color": "var(--mox-color-secondary-contrast)",
-      },
-      subtle: {
-        "background-color": "var(--mox-color-subtle)",
-        "--mox-text-color": "var(--mox-color-subtle-contrast)",
-      },
-      muted: {
-        "background-color": "var(--mox-color-muted)",
-        "--mox-text-color": "var(--mox-color-muted-contrast)",
-      },
-      black: {
-        "background-color": "black",
-        "--mox-text-color": "var(--mox-color-black-contrast)",
-      },
-      white: {
-        "background-color": "white",
-        "--mox-text-color": "var(--mox-color-white-contrast)",
-      },
-    },
+    options: colorOptions.reduce(
+      (acc, propName) => ({
+        ...acc,
+        [propName as keyof typeof colorOptions]: {
+          "background-color": `var(--mox-color-${propName})`,
+          "--mox-text-color": `var(--mox-color-${propName}-contrast)`,
+        },
+      }),
+      {}
+    ) as Record<(typeof colorOptions)[number], Record<string, string>>,
   },
-  gridColumn: {
+  size: {
     options: {
-      window: { "grid-column": "window" },
-      page: { "grid-column": "page" },
+      ...mapOptionsToCSSVars(spaces, ["inline-size", "block-size"], "space"),
+      ...mapOptionsToValues(globalSizeOptions, ["inline-size", "block-size"]),
     },
     responsive: true,
   },
-  gridColumnStart: {
+  inlineSize: {
     options: {
-      windowStart: { "grid-column-start": "window-start" },
-      pageStart: { "grid-column-start": "page-start" },
-      pageEnd: { "grid-column-start": "page-end" },
-      windowEnd: { "grid-column-start": "window-end" },
+      ...mapOptionsToCSSVars(spaces, ["inline-size"], "space"),
+      ...mapOptionsToValues(globalSizeOptions, ["inline-size"]),
     },
     responsive: true,
   },
-  gridColumnEnd: {
+  blockSize: {
     options: {
-      windowStart: { "grid-column-end": "window-start" },
-      pageStart: { "grid-column-end": "page-start" },
-      windowEnd: { "grid-column-end": "window-end" },
-      pageEnd: { "grid-column-end": "page-end" },
+      ...mapOptionsToCSSVars(spaces, ["block-size"], "space"),
+      ...mapOptionsToValues(globalSizeOptions, ["block-size"]),
+    },
+    responsive: true,
+  },
+  padding: {
+    options: {
+      ...mapOptionsToCSSVars(spaces, ["padding"], "space"),
+      ...mapOptionsToValues(globalGapOptions, ["padding"]),
+    },
+    responsive: true,
+  },
+  paddingBlock: {
+    options: {
+      ...mapOptionsToCSSVars(spaces, ["padding-block"], "space"),
+      ...mapOptionsToValues(globalGapOptions, ["padding-block"]),
+    },
+    responsive: true,
+  },
+  paddingInline: {
+    options: {
+      ...mapOptionsToCSSVars(spaces, ["padding-inline"], "space"),
+      ...mapOptionsToValues(globalGapOptions, ["padding-inline"]),
+    },
+    responsive: true,
+  },
+  paddingBlockStart: {
+    options: {
+      ...mapOptionsToCSSVars(spaces, ["padding-block-start"], "space"),
+      ...mapOptionsToValues(globalGapOptions, ["padding-block-start"]),
+    },
+    responsive: true,
+  },
+  paddingBlockEnd: {
+    options: {
+      ...mapOptionsToCSSVars(spaces, ["padding-block-end"], "space"),
+      ...mapOptionsToValues(globalGapOptions, ["padding-block-end"]),
+    },
+    responsive: true,
+  },
+  paddingInlineStart: {
+    options: {
+      ...mapOptionsToCSSVars(spaces, ["padding-inline-start"], "space"),
+      ...mapOptionsToValues(globalGapOptions, ["padding-inline-start"]),
+    },
+    responsive: true,
+  },
+  paddingInlineEnd: {
+    options: {
+      ...mapOptionsToCSSVars(spaces, ["padding-inline-end"], "space"),
+      ...mapOptionsToValues(globalGapOptions, ["padding-inline-end"]),
     },
     responsive: true,
   },

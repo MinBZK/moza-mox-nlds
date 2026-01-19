@@ -670,4 +670,93 @@
 			column-gap: inherit;
 		}
 	}
+	/* Container breakpoint: cq800 (800px) */
+	@container (min-width: 800px) {
+		.mox-columnGap-0\@cq800Min {
+			column-gap: 0;
+		}
+		.mox-columnGap-4xs\@cq800Min {
+			column-gap: var(--mox-space-4xs);
+		}
+		.mox-columnGap-3xs\@cq800Min {
+			column-gap: var(--mox-space-3xs);
+		}
+		.mox-columnGap-2xs\@cq800Min {
+			column-gap: var(--mox-space-2xs);
+		}
+		.mox-columnGap-xs\@cq800Min {
+			column-gap: var(--mox-space-xs);
+		}
+		.mox-columnGap-sm\@cq800Min {
+			column-gap: var(--mox-space-sm);
+		}
+		.mox-columnGap-md\@cq800Min {
+			column-gap: var(--mox-space-md);
+		}
+		.mox-columnGap-lg\@cq800Min {
+			column-gap: var(--mox-space-lg);
+		}
+		.mox-columnGap-xl\@cq800Min {
+			column-gap: var(--mox-space-xl);
+		}
+		.mox-columnGap-2xl\@cq800Min {
+			column-gap: var(--mox-space-2xl);
+		}
+		.mox-columnGap-3xl\@cq800Min {
+			column-gap: var(--mox-space-3xl);
+		}
+		.mox-columnGap-4xl\@cq800Min {
+			column-gap: var(--mox-space-4xl);
+		}
+		.mox-columnGap-auto\@cq800Min {
+			column-gap: auto;
+		}
+		.mox-columnGap-inherit\@cq800Min {
+			column-gap: inherit;
+		}
+	}
+	@container (max-width: 800px) {
+		.mox-columnGap-0\@cq800Max {
+			column-gap: 0;
+		}
+		.mox-columnGap-4xs\@cq800Max {
+			column-gap: var(--mox-space-4xs);
+		}
+		.mox-columnGap-3xs\@cq800Max {
+			column-gap: var(--mox-space-3xs);
+		}
+		.mox-columnGap-2xs\@cq800Max {
+			column-gap: var(--mox-space-2xs);
+		}
+		.mox-columnGap-xs\@cq800Max {
+			column-gap: var(--mox-space-xs);
+		}
+		.mox-columnGap-sm\@cq800Max {
+			column-gap: var(--mox-space-sm);
+		}
+		.mox-columnGap-md\@cq800Max {
+			column-gap: var(--mox-space-md);
+		}
+		.mox-columnGap-lg\@cq800Max {
+			column-gap: var(--mox-space-lg);
+		}
+		.mox-columnGap-xl\@cq800Max {
+			column-gap: var(--mox-space-xl);
+		}
+		.mox-columnGap-2xl\@cq800Max {
+			column-gap: var(--mox-space-2xl);
+		}
+		.mox-columnGap-3xl\@cq800Max {
+			column-gap: var(--mox-space-3xl);
+		}
+		.mox-columnGap-4xl\@cq800Max {
+			column-gap: var(--mox-space-4xl);
+		}
+		.mox-columnGap-auto\@cq800Max {
+			column-gap: auto;
+		}
+		.mox-columnGap-inherit\@cq800Max {
+			column-gap: inherit;
+		}
+	}
 }

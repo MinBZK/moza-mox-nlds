@@ -310,4 +310,45 @@
 			justify-content: space-evenly;
 		}
 	}
+	/* Container breakpoint: cq800 (800px) */
+	@container (min-width: 800px) {
+		.mox-justifyContent-flexStart\@cq800Min {
+			justify-content: flex-start;
+		}
+		.mox-justifyContent-flexEnd\@cq800Min {
+			justify-content: flex-end;
+		}
+		.mox-justifyContent-center\@cq800Min {
+			justify-content: center;
+		}
+		.mox-justifyContent-spaceBetween\@cq800Min {
+			justify-content: space-between;
+		}
+		.mox-justifyContent-spaceAround\@cq800Min {
+			justify-content: space-around;
+		}
+		.mox-justifyContent-spaceEvenly\@cq800Min {
+			justify-content: space-evenly;
+		}
+	}
+	@container (max-width: 800px) {
+		.mox-justifyContent-flexStart\@cq800Max {
+			justify-content: flex-start;
+		}
+		.mox-justifyContent-flexEnd\@cq800Max {
+			justify-content: flex-end;
+		}
+		.mox-justifyContent-center\@cq800Max {
+			justify-content: center;
+		}
+		.mox-justifyContent-spaceBetween\@cq800Max {
+			justify-content: space-between;
+		}
+		.mox-justifyContent-spaceAround\@cq800Max {
+			justify-content: space-around;
+		}
+		.mox-justifyContent-spaceEvenly\@cq800Max {
+			justify-content: space-evenly;
+		}
+	}
 }

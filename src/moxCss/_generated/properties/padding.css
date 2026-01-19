@@ -670,4 +670,93 @@
 			padding: inherit;
 		}
 	}
+	/* Container breakpoint: cq800 (800px) */
+	@container (min-width: 800px) {
+		.mox-padding-0\@cq800Min {
+			padding: 0;
+		}
+		.mox-padding-4xs\@cq800Min {
+			padding: var(--mox-space-4xs);
+		}
+		.mox-padding-3xs\@cq800Min {
+			padding: var(--mox-space-3xs);
+		}
+		.mox-padding-2xs\@cq800Min {
+			padding: var(--mox-space-2xs);
+		}
+		.mox-padding-xs\@cq800Min {
+			padding: var(--mox-space-xs);
+		}
+		.mox-padding-sm\@cq800Min {
+			padding: var(--mox-space-sm);
+		}
+		.mox-padding-md\@cq800Min {
+			padding: var(--mox-space-md);
+		}
+		.mox-padding-lg\@cq800Min {
+			padding: var(--mox-space-lg);
+		}
+		.mox-padding-xl\@cq800Min {
+			padding: var(--mox-space-xl);
+		}
+		.mox-padding-2xl\@cq800Min {
+			padding: var(--mox-space-2xl);
+		}
+		.mox-padding-3xl\@cq800Min {
+			padding: var(--mox-space-3xl);
+		}
+		.mox-padding-4xl\@cq800Min {
+			padding: var(--mox-space-4xl);
+		}
+		.mox-padding-auto\@cq800Min {
+			padding: auto;
+		}
+		.mox-padding-inherit\@cq800Min {
+			padding: inherit;
+		}
+	}
+	@container (max-width: 800px) {
+		.mox-padding-0\@cq800Max {
+			padding: 0;
+		}
+		.mox-padding-4xs\@cq800Max {
+			padding: var(--mox-space-4xs);
+		}
+		.mox-padding-3xs\@cq800Max {
+			padding: var(--mox-space-3xs);
+		}
+		.mox-padding-2xs\@cq800Max {
+			padding: var(--mox-space-2xs);
+		}
+		.mox-padding-xs\@cq800Max {
+			padding: var(--mox-space-xs);
+		}
+		.mox-padding-sm\@cq800Max {
+			padding: var(--mox-space-sm);
+		}
+		.mox-padding-md\@cq800Max {
+			padding: var(--mox-space-md);
+		}
+		.mox-padding-lg\@cq800Max {
+			padding: var(--mox-space-lg);
+		}
+		.mox-padding-xl\@cq800Max {
+			padding: var(--mox-space-xl);
+		}
+		.mox-padding-2xl\@cq800Max {
+			padding: var(--mox-space-2xl);
+		}
+		.mox-padding-3xl\@cq800Max {
+			padding: var(--mox-space-3xl);
+		}
+		.mox-padding-4xl\@cq800Max {
+			padding: var(--mox-space-4xl);
+		}
+		.mox-padding-auto\@cq800Max {
+			padding: auto;
+		}
+		.mox-padding-inherit\@cq800Max {
+			padding: inherit;
+		}
+	}
 }

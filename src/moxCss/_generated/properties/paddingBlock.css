@@ -670,4 +670,93 @@
 			padding-block: inherit;
 		}
 	}
+	/* Container breakpoint: cq800 (800px) */
+	@container (min-width: 800px) {
+		.mox-paddingBlock-0\@cq800Min {
+			padding-block: 0;
+		}
+		.mox-paddingBlock-4xs\@cq800Min {
+			padding-block: var(--mox-space-4xs);
+		}
+		.mox-paddingBlock-3xs\@cq800Min {
+			padding-block: var(--mox-space-3xs);
+		}
+		.mox-paddingBlock-2xs\@cq800Min {
+			padding-block: var(--mox-space-2xs);
+		}
+		.mox-paddingBlock-xs\@cq800Min {
+			padding-block: var(--mox-space-xs);
+		}
+		.mox-paddingBlock-sm\@cq800Min {
+			padding-block: var(--mox-space-sm);
+		}
+		.mox-paddingBlock-md\@cq800Min {
+			padding-block: var(--mox-space-md);
+		}
+		.mox-paddingBlock-lg\@cq800Min {
+			padding-block: var(--mox-space-lg);
+		}
+		.mox-paddingBlock-xl\@cq800Min {
+			padding-block: var(--mox-space-xl);
+		}
+		.mox-paddingBlock-2xl\@cq800Min {
+			padding-block: var(--mox-space-2xl);
+		}
+		.mox-paddingBlock-3xl\@cq800Min {
+			padding-block: var(--mox-space-3xl);
+		}
+		.mox-paddingBlock-4xl\@cq800Min {
+			padding-block: var(--mox-space-4xl);
+		}
+		.mox-paddingBlock-auto\@cq800Min {
+			padding-block: auto;
+		}
+		.mox-paddingBlock-inherit\@cq800Min {
+			padding-block: inherit;
+		}
+	}
+	@container (max-width: 800px) {
+		.mox-paddingBlock-0\@cq800Max {
+			padding-block: 0;
+		}
+		.mox-paddingBlock-4xs\@cq800Max {
+			padding-block: var(--mox-space-4xs);
+		}
+		.mox-paddingBlock-3xs\@cq800Max {
+			padding-block: var(--mox-space-3xs);
+		}
+		.mox-paddingBlock-2xs\@cq800Max {
+			padding-block: var(--mox-space-2xs);
+		}
+		.mox-paddingBlock-xs\@cq800Max {
+			padding-block: var(--mox-space-xs);
+		}
+		.mox-paddingBlock-sm\@cq800Max {
+			padding-block: var(--mox-space-sm);
+		}
+		.mox-paddingBlock-md\@cq800Max {
+			padding-block: var(--mox-space-md);
+		}
+		.mox-paddingBlock-lg\@cq800Max {
+			padding-block: var(--mox-space-lg);
+		}
+		.mox-paddingBlock-xl\@cq800Max {
+			padding-block: var(--mox-space-xl);
+		}
+		.mox-paddingBlock-2xl\@cq800Max {
+			padding-block: var(--mox-space-2xl);
+		}
+		.mox-paddingBlock-3xl\@cq800Max {
+			padding-block: var(--mox-space-3xl);
+		}
+		.mox-paddingBlock-4xl\@cq800Max {
+			padding-block: var(--mox-space-4xl);
+		}
+		.mox-paddingBlock-auto\@cq800Max {
+			padding-block: auto;
+		}
+		.mox-paddingBlock-inherit\@cq800Max {
+			padding-block: inherit;
+		}
+	}
 }

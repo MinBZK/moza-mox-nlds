@@ -355,4 +355,51 @@
 			align-items: inherit;
 		}
 	}
+	/* Container breakpoint: cq800 (800px) */
+	@container (min-width: 800px) {
+		.mox-alignItems-stretch\@cq800Min {
+			align-items: stretch;
+		}
+		.mox-alignItems-center\@cq800Min {
+			align-items: center;
+		}
+		.mox-alignItems-start\@cq800Min {
+			align-items: flex-start;
+		}
+		.mox-alignItems-end\@cq800Min {
+			align-items: flex-end;
+		}
+		.mox-alignItems-baseline\@cq800Min {
+			align-items: baseline;
+		}
+		.mox-alignItems-initial\@cq800Min {
+			align-items: initial;
+		}
+		.mox-alignItems-inherit\@cq800Min {
+			align-items: inherit;
+		}
+	}
+	@container (max-width: 800px) {
+		.mox-alignItems-stretch\@cq800Max {
+			align-items: stretch;
+		}
+		.mox-alignItems-center\@cq800Max {
+			align-items: center;
+		}
+		.mox-alignItems-start\@cq800Max {
+			align-items: flex-start;
+		}
+		.mox-alignItems-end\@cq800Max {
+			align-items: flex-end;
+		}
+		.mox-alignItems-baseline\@cq800Max {
+			align-items: baseline;
+		}
+		.mox-alignItems-initial\@cq800Max {
+			align-items: initial;
+		}
+		.mox-alignItems-inherit\@cq800Max {
+			align-items: inherit;
+		}
+	}
 }

@@ -82,8 +82,8 @@ all: revert;
                 <td>{propName}</td>
                 <td>
                   {"responsive" in propConfig && propConfig.responsive
-                    ? "✅"
-                    : "❌"}
+                    ? "✔"
+                    : ""}
                 </td>
                 <td>
                   {"state" in propConfig && propConfig.state ? (

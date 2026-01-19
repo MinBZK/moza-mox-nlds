@@ -1,4 +1,4 @@
-@layer reset, tokens, base, atoms, molecules,
+@layer reset, legacy, tokens, base, atoms, molecules,
   organisms, props, templates, pages, overrides;
 
 @import "./reset.css";

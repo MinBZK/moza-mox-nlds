@@ -670,4 +670,93 @@
 			padding-inline: inherit;
 		}
 	}
+	/* Container breakpoint: cq800 (800px) */
+	@container (min-width: 800px) {
+		.mox-paddingInline-0\@cq800Min {
+			padding-inline: 0;
+		}
+		.mox-paddingInline-4xs\@cq800Min {
+			padding-inline: var(--mox-space-4xs);
+		}
+		.mox-paddingInline-3xs\@cq800Min {
+			padding-inline: var(--mox-space-3xs);
+		}
+		.mox-paddingInline-2xs\@cq800Min {
+			padding-inline: var(--mox-space-2xs);
+		}
+		.mox-paddingInline-xs\@cq800Min {
+			padding-inline: var(--mox-space-xs);
+		}
+		.mox-paddingInline-sm\@cq800Min {
+			padding-inline: var(--mox-space-sm);
+		}
+		.mox-paddingInline-md\@cq800Min {
+			padding-inline: var(--mox-space-md);
+		}
+		.mox-paddingInline-lg\@cq800Min {
+			padding-inline: var(--mox-space-lg);
+		}
+		.mox-paddingInline-xl\@cq800Min {
+			padding-inline: var(--mox-space-xl);
+		}
+		.mox-paddingInline-2xl\@cq800Min {
+			padding-inline: var(--mox-space-2xl);
+		}
+		.mox-paddingInline-3xl\@cq800Min {
+			padding-inline: var(--mox-space-3xl);
+		}
+		.mox-paddingInline-4xl\@cq800Min {
+			padding-inline: var(--mox-space-4xl);
+		}
+		.mox-paddingInline-auto\@cq800Min {
+			padding-inline: auto;
+		}
+		.mox-paddingInline-inherit\@cq800Min {
+			padding-inline: inherit;
+		}
+	}
+	@container (max-width: 800px) {
+		.mox-paddingInline-0\@cq800Max {
+			padding-inline: 0;
+		}
+		.mox-paddingInline-4xs\@cq800Max {
+			padding-inline: var(--mox-space-4xs);
+		}
+		.mox-paddingInline-3xs\@cq800Max {
+			padding-inline: var(--mox-space-3xs);
+		}
+		.mox-paddingInline-2xs\@cq800Max {
+			padding-inline: var(--mox-space-2xs);
+		}
+		.mox-paddingInline-xs\@cq800Max {
+			padding-inline: var(--mox-space-xs);
+		}
+		.mox-paddingInline-sm\@cq800Max {
+			padding-inline: var(--mox-space-sm);
+		}
+		.mox-paddingInline-md\@cq800Max {
+			padding-inline: var(--mox-space-md);
+		}
+		.mox-paddingInline-lg\@cq800Max {
+			padding-inline: var(--mox-space-lg);
+		}
+		.mox-paddingInline-xl\@cq800Max {
+			padding-inline: var(--mox-space-xl);
+		}
+		.mox-paddingInline-2xl\@cq800Max {
+			padding-inline: var(--mox-space-2xl);
+		}
+		.mox-paddingInline-3xl\@cq800Max {
+			padding-inline: var(--mox-space-3xl);
+		}
+		.mox-paddingInline-4xl\@cq800Max {
+			padding-inline: var(--mox-space-4xl);
+		}
+		.mox-paddingInline-auto\@cq800Max {
+			padding-inline: auto;
+		}
+		.mox-paddingInline-inherit\@cq800Max {
+			padding-inline: inherit;
+		}
+	}
 }

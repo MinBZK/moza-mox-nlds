@@ -805,4 +805,111 @@
 			block-size: min-content;
 		}
 	}
+	/* Container breakpoint: cq800 (800px) */
+	@container (min-width: 800px) {
+		.mox-blockSize-0\@cq800Min {
+			block-size: 0;
+		}
+		.mox-blockSize-4xs\@cq800Min {
+			block-size: var(--mox-space-4xs);
+		}
+		.mox-blockSize-3xs\@cq800Min {
+			block-size: var(--mox-space-3xs);
+		}
+		.mox-blockSize-2xs\@cq800Min {
+			block-size: var(--mox-space-2xs);
+		}
+		.mox-blockSize-xs\@cq800Min {
+			block-size: var(--mox-space-xs);
+		}
+		.mox-blockSize-sm\@cq800Min {
+			block-size: var(--mox-space-sm);
+		}
+		.mox-blockSize-md\@cq800Min {
+			block-size: var(--mox-space-md);
+		}
+		.mox-blockSize-lg\@cq800Min {
+			block-size: var(--mox-space-lg);
+		}
+		.mox-blockSize-xl\@cq800Min {
+			block-size: var(--mox-space-xl);
+		}
+		.mox-blockSize-2xl\@cq800Min {
+			block-size: var(--mox-space-2xl);
+		}
+		.mox-blockSize-3xl\@cq800Min {
+			block-size: var(--mox-space-3xl);
+		}
+		.mox-blockSize-4xl\@cq800Min {
+			block-size: var(--mox-space-4xl);
+		}
+		.mox-blockSize-auto\@cq800Min {
+			block-size: auto;
+		}
+		.mox-blockSize-inherit\@cq800Min {
+			block-size: inherit;
+		}
+		.mox-blockSize-fit-content\@cq800Min {
+			block-size: fit-content;
+		}
+		.mox-blockSize-max-content\@cq800Min {
+			block-size: max-content;
+		}
+		.mox-blockSize-min-content\@cq800Min {
+			block-size: min-content;
+		}
+	}
+	@container (max-width: 800px) {
+		.mox-blockSize-0\@cq800Max {
+			block-size: 0;
+		}
+		.mox-blockSize-4xs\@cq800Max {
+			block-size: var(--mox-space-4xs);
+		}
+		.mox-blockSize-3xs\@cq800Max {
+			block-size: var(--mox-space-3xs);
+		}
+		.mox-blockSize-2xs\@cq800Max {
+			block-size: var(--mox-space-2xs);
+		}
+		.mox-blockSize-xs\@cq800Max {
+			block-size: var(--mox-space-xs);
+		}
+		.mox-blockSize-sm\@cq800Max {
+			block-size: var(--mox-space-sm);
+		}
+		.mox-blockSize-md\@cq800Max {
+			block-size: var(--mox-space-md);
+		}
+		.mox-blockSize-lg\@cq800Max {
+			block-size: var(--mox-space-lg);
+		}
+		.mox-blockSize-xl\@cq800Max {
+			block-size: var(--mox-space-xl);
+		}
+		.mox-blockSize-2xl\@cq800Max {
+			block-size: var(--mox-space-2xl);
+		}
+		.mox-blockSize-3xl\@cq800Max {
+			block-size: var(--mox-space-3xl);
+		}
+		.mox-blockSize-4xl\@cq800Max {
+			block-size: var(--mox-space-4xl);
+		}
+		.mox-blockSize-auto\@cq800Max {
+			block-size: auto;
+		}
+		.mox-blockSize-inherit\@cq800Max {
+			block-size: inherit;
+		}
+		.mox-blockSize-fit-content\@cq800Max {
+			block-size: fit-content;
+		}
+		.mox-blockSize-max-content\@cq800Max {
+			block-size: max-content;
+		}
+		.mox-blockSize-min-content\@cq800Max {
+			block-size: min-content;
+		}
+	}
 }

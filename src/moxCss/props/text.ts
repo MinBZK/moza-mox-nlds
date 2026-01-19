@@ -1,6 +1,12 @@
-import type { MoxConfigProps } from "../mox.config";
+import { spaces } from "../configOptions";
+import { mapOptionsToCSSVars } from "../helpers/mapOptionsToCSSVars";
+import { type MoxConfigProps } from "../mox.config";
 
 export const textProps = {
+  fontSize: {
+    options: mapOptionsToCSSVars(spaces, ["--current-font-size"], "space"),
+    responsive: true,
+  },
   color: {
     options: {
       primary: { "--text-color": "var(--color-primary)" },

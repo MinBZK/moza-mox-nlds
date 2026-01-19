@@ -1,0 +1,50 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="MoxCSS/Hugo gebruik" />
+
+<style>{`
+details, summary, ol, ul, li, strong, em {
+    all: revert;
+}
+`}</style>
+
+<div className="sb-container">
+  <div className='sb-section-title'>
+    # Hugo gebruik
+
+Hugo is een _static site generation_ tool, die een website kan bouwen door middel van `.md` (markdown) bestanden. Hiervan worden `HTML` bestanden gemaakt die leunen op css-classes voor styling.
+
+Met MOX-nlds hoeven we deze styling (deels) niet langer in een Hugo-project te definieren, maar kunnen we leunen op de MOX classnames.
+
+Om hieraan te werken is er een speciale branch gemaakt (`https://github.com/MinBZK/moza-site/tree/ms-15-mox-hugo`).
+
+Voor het gebruiken van MOX-nlds is er momenteel nog geen gepubliceerde package (dat zou snel onhandig worden met zoveel changes). Het eenvoudigst is:
+
+- De MOX-nlds repo clonen (`https://github.com/rnacken/mox-nlds-poc`)
+- Een symlink maken van de `moxCss` folder in MOX-nlds naar de `static` folder in de `moza-site` repo:
+  > `ln -s /mijn/dev/path/mox-nlds-poc/src/moxCss /mijn/dev/path/moza-site/static/moxCss`
+- In de `head` van de Hugo-site wordt al verwezen naar de styling & tokens die je nodig hebt (zie: `layouts/_partials/head.html`):
+
+```
+// Speciale Hugo-syntax:
+<link rel="stylesheet" href="{{ "moxCss/tokens.css" | relURL }}" />
+<link rel="stylesheet" href="{{ "moxCss/index.css" | relURL }}" />
+```
+
+Zoals bij elk project dat je migreert naar MOX-nlds is het aan te raden de bestaande styles te _wrappen_ in een `@layer legacy` class, zodat het eenvoudig is om de nieuwe styling te laten overwriten.
+
+```css
+/* bv: `/assets/css/components/blockquote.css` */
+
+@layer legacy {
+  blockquote {
+    /* ... oude styling */
+  }
+}
+```
+
+Ik heb een mini-start gemaakt voor het `blockquote` element. Zie `assets/css/components/blockquote.css` en `layouts/_markup/render-blockquote.html` (resp de styling en het hugo-template)
+
+   </div>
+
+</div>

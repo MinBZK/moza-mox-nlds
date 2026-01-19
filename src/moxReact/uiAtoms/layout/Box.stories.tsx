@@ -14,7 +14,7 @@ const meta = {
     children: "📦",
     size: "4xl",
     padding: "md",
-    borderColor: "black",
+    borderColor: "zwart",
     borderWidth: "2px",
     borderStyle: "dashed",
   },

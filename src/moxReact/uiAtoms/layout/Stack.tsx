@@ -4,12 +4,12 @@ import { propsToClassNames } from "../../helpers/propsToClassNames";
 import clsx from "clsx";
 
 export const stackStyleProps = [
+  "direction",
   "gap",
   "columnGap",
   "rowGap",
   "alignItems",
   "justifyContent",
-  "direction",
   "wrap",
 ] as const satisfies StyleProps;
 

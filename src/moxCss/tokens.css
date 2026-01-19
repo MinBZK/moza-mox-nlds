@@ -208,9 +208,14 @@ Example:
     --mox-color-lintblauw-300: #738eab;
     --mox-color-lintblauw-400: #4f7196;
     --mox-color-lintblauw-500: #154273;
+
     --mox-color-wit: #ffffff;
+    --mox-color-wit-contrast: #000000;
     --mox-color-zwart: #000000;
+    --mox-color-zwart-contrast: #ffffff;
     --mox-color-transparent: rgba(0, 0, 0, 0);
+    --mox-color-transparant: #000000;
+
     --mox-border-radius-round: 999px;
     --mox-border-radius-none: 0px;
     --mox-border-radius-sm: 2.5px;
@@ -239,40 +244,118 @@ Example:
     --mox-color-primary-subtle-contrast: var(--mox-color-black);
     --mox-color-primary-subtle-2: var(--mox-color-hemelblauw-100);
     --mox-color-primary-subtle-2-contrast: var(--mox-color-black);
+    --mox-color-primary-hover: var(--mox-color-hemelblauw-400);
+    --mox-color-primary-hover-contrast: var(--mox-color-wit);
+    --mox-color-primary-subtle-hover: var(--mox-color-hemelblauw-100);
+    --mox-color-primary-subtle-hover-contrast: var(--mox-color-black);
+    --mox-color-primary-subtle-2-hover: var(--mox-color-hemelblauw-50);
+    --mox-color-primary-subtle-2-hover-contrast: var(--mox-color-black);
+
     --mox-color-secondary: var(--mox-color-paars-500);
     --mox-color-secondary-contrast: var(--mox-color-wit);
     --mox-color-secondary-subtle: var(--mox-color-paars-200);
     --mox-color-secondary-subtle-contrast: var(--mox-color-black);
     --mox-color-secondary-subtle-2: var(--mox-color-paars-100);
     --mox-color-secondary-subtle-2-contrast: var(--mox-color-black);
+    --mox-color-secondary-hover: var(--mox-color-paars-400);
+    --mox-color-secondary-hover-contrast: var(--mox-color-wit);
+    --mox-color-secondary-subtle-hover: var(--mox-color-paars-100);
+    --mox-color-secondary-subtle-hover-contrast: var(--mox-color-black);
+    --mox-color-secondary-subtle-2-hover: var(--mox-color-paars-50);
+    --mox-color-secondary-subtle-2-hover-contrast: var(--mox-color-black);
+
     --mox-color-neutral: var(--mox-color-cool-grey-300);
     --mox-color-neutral-contrast: var(--mox-color-wit);
     --mox-color-neutral-subtle: var(--mox-color-cool-grey-200);
     --mox-color-neutral-subtle-contrast: var(--mox-color-black);
     --mox-color-neutral-subtle-2: var(--mox-color-cool-grey-100);
     --mox-color-neutral-subtle-2-contrast: var(--mox-color-black);
+    --mox-color-neutral-hover: var(--mox-color-cool-grey-400);
+    --mox-color-neutral-hover-contrast: var(--mox-color-wit);
+    --mox-color-neutral-subtle-hover: var(--mox-color-cool-grey-100);
+    --mox-color-neutral-subtle-hover-contrast: var(--mox-color-black);
+    --mox-color-neutral-subtle-2-hover: var(--mox-color-cool-grey-50);
+    --mox-color-neutral-subtle-2-hover-contrast: var(--mox-color-black);
+
     --mox-color-accent: var(--mox-color-mintgroen-500);
     --mox-color-accent-contrast: var(--mox-color-wit);
     --mox-color-accent-subtle: var(--mox-color-mintgroen-200);
     --mox-color-accent-subtle-contrast: var(--mox-color-black);
     --mox-color-accent-subtle-2: var(--mox-color-mintgroen-100);
     --mox-color-accent-subtle-2-contrast: var(--mox-color-black);
+    --mox-color-accent-hover: var(--mox-color-mintgroen-400);
+    --mox-color-accent-hover-contrast: var(--mox-color-wit);
+    --mox-color-accent-subtle-hover: var(--mox-color-mintgroen-100);
+    --mox-color-accent-subtle-hover-contrast: var(--mox-color-black);
+    --mox-color-accent-subtle-2-hover: var(--mox-color-mintgroen-50);
+    --mox-color-accent-subtle-2-hover-contrast: var(--mox-color-black);
 
     --mox-color-info: var(--mox-color-lichtblauw-500);
     --mox-color-info-contrast: var(--mox-color-zwart);
+    --mox-color-info-subtle: var(--mox-color-lichtblauw-200);
+    --mox-color-info-subtle-contrast: var(--mox-color-zwart);
+    --mox-color-info-subtle-2: var(--mox-color-lichtblauw-100);
+    --mox-color-info-subtle-2-contrast: var(--mox-color-zwart);
+    --mox-color-info-hover: var(--mox-color-lichtblauw-400);
+    --mox-color-info-hover-contrast: var(--mox-color-zwart);
+    --mox-color-info-subtle-hover: var(--mox-color-lichtblauw-100);
+    --mox-color-info-subtle-hover-contrast: var(--mox-color-zwart);
+    --mox-color-info-subtle-2-hover: var(--mox-color-lichtblauw-50);
+    --mox-color-info-subtle-2-hover-contrast: var(--mox-color-zwart);
+
     --mox-color-success: var(--mox-color-groen-500);
     --mox-color-success-contrast: var(--mox-color-wit);
+    --mox-color-success-subtle: var(--mox-color-groen-200);
+    --mox-color-success-subtle-contrast: var(--mox-color-zwart);
+    --mox-color-success-subtle-2: var(--mox-color-groen-100);
+    --mox-color-success-subtle-2-contrast: var(--mox-color-zwart);
+    --mox-color-success-hover: var(--mox-color-groen-400);
+    --mox-color-success-hover-contrast: var(--mox-color-wit);
+    --mox-color-success-subtle-hover: var(--mox-color-groen-100);
+    --mox-color-success-subtle-hover-contrast: var(--mox-color-zwart);
+    --mox-color-success-subtle-2-hover: var(--mox-color-groen-50);
+    --mox-color-success-subtle-2-hover-contrast: var(--mox-color-zwart);
+
     --mox-color-warning: var(--mox-color-geel-500);
     --mox-color-warning-contrast: var(--mox-color-zwart);
+    --mox-color-warning-subtle: var(--mox-color-geel-200);
+    --mox-color-warning-subtle-contrast: var(--mox-color-zwart);
+    --mox-color-warning-subtle-2: var(--mox-color-geel-100);
+    --mox-color-warning-subtle-2-contrast: var(--mox-color-zwart);
+    --mox-color-warning-hover: var(--mox-color-geel-400);
+    --mox-color-warning-hover-contrast: var(--mox-color-zwart);
+    --mox-color-warning-subtle-hover: var(--mox-color-geel-100);
+    --mox-color-warning-subtle-hover-contrast: var(--mox-color-zwart);
+    --mox-color-warning-subtle-2-hover: var(--mox-color-geel-50);
+    --mox-color-warning-subtle-2-hover-contrast: var(--mox-color-zwart);
+
     --mox-color-danger: var(--mox-color-rood-500);
     --mox-color-danger-contrast: var(--mox-color-wit);
+    --mox-color-danger-subtle: var(--mox-color-rood-200);
+    --mox-color-danger-subtle-contrast: var(--mox-color-zwart);
+    --mox-color-danger-subtle-2: var(--mox-color-rood-100);
+    --mox-color-danger-subtle-2-contrast: var(--mox-color-zwart);
+    --mox-color-danger-hover: var(--mox-color-rood-400);
+    --mox-color-danger-hover-contrast: var(--mox-color-wit);
+    --mox-color-danger-subtle-hover: var(--mox-color-rood-100);
+    --mox-color-danger-subtle-hover-contrast: var(--mox-color-zwart);
+    --mox-color-danger-subtle-2-hover: var(--mox-color-rood-50);
+    --mox-color-danger-subtle-2-hover-contrast: var(--mox-color-zwart);
 
     /* Foxus */
     --mox-focus-color: var(--mox-color-orange-500);
 
     /* Page grid */
-    --mox-layout-page-grid-gap: var(--mox-space-lg);
+    --mox-layout-page-grid-gap: var(--mox-space-3xs);
+    --mox-layout-page-grid-gap-tablet: var(--mox-space-xs);
+    --mox-layout-page-grid-gap-desktop: var(--mox-space-md);
     --mox-layout-page-grid-max-width: 1200px;
+
+    /* Container grid */
+    --mox-layout-container-grid-gap: var(--mox-space-3xs);
+    --mox-layout-container-grid-gap-400px: var(--mox-space-xs);
+    --mox-layout-container-grid-gap-600px: var(--mox-space-md);
+    --mox-layout-container-grid-gap-800px: var(--mox-space-xl);
 
     /* === COMPONENT TOKENS (lv 3) === */
 

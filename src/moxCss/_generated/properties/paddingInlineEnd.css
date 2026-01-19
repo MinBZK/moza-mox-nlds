@@ -670,4 +670,93 @@
 			padding-inline-end: inherit;
 		}
 	}
+	/* Container breakpoint: cq800 (800px) */
+	@container (min-width: 800px) {
+		.mox-paddingInlineEnd-0\@cq800Min {
+			padding-inline-end: 0;
+		}
+		.mox-paddingInlineEnd-4xs\@cq800Min {
+			padding-inline-end: var(--mox-space-4xs);
+		}
+		.mox-paddingInlineEnd-3xs\@cq800Min {
+			padding-inline-end: var(--mox-space-3xs);
+		}
+		.mox-paddingInlineEnd-2xs\@cq800Min {
+			padding-inline-end: var(--mox-space-2xs);
+		}
+		.mox-paddingInlineEnd-xs\@cq800Min {
+			padding-inline-end: var(--mox-space-xs);
+		}
+		.mox-paddingInlineEnd-sm\@cq800Min {
+			padding-inline-end: var(--mox-space-sm);
+		}
+		.mox-paddingInlineEnd-md\@cq800Min {
+			padding-inline-end: var(--mox-space-md);
+		}
+		.mox-paddingInlineEnd-lg\@cq800Min {
+			padding-inline-end: var(--mox-space-lg);
+		}
+		.mox-paddingInlineEnd-xl\@cq800Min {
+			padding-inline-end: var(--mox-space-xl);
+		}
+		.mox-paddingInlineEnd-2xl\@cq800Min {
+			padding-inline-end: var(--mox-space-2xl);
+		}
+		.mox-paddingInlineEnd-3xl\@cq800Min {
+			padding-inline-end: var(--mox-space-3xl);
+		}
+		.mox-paddingInlineEnd-4xl\@cq800Min {
+			padding-inline-end: var(--mox-space-4xl);
+		}
+		.mox-paddingInlineEnd-auto\@cq800Min {
+			padding-inline-end: auto;
+		}
+		.mox-paddingInlineEnd-inherit\@cq800Min {
+			padding-inline-end: inherit;
+		}
+	}
+	@container (max-width: 800px) {
+		.mox-paddingInlineEnd-0\@cq800Max {
+			padding-inline-end: 0;
+		}
+		.mox-paddingInlineEnd-4xs\@cq800Max {
+			padding-inline-end: var(--mox-space-4xs);
+		}
+		.mox-paddingInlineEnd-3xs\@cq800Max {
+			padding-inline-end: var(--mox-space-3xs);
+		}
+		.mox-paddingInlineEnd-2xs\@cq800Max {
+			padding-inline-end: var(--mox-space-2xs);
+		}
+		.mox-paddingInlineEnd-xs\@cq800Max {
+			padding-inline-end: var(--mox-space-xs);
+		}
+		.mox-paddingInlineEnd-sm\@cq800Max {
+			padding-inline-end: var(--mox-space-sm);
+		}
+		.mox-paddingInlineEnd-md\@cq800Max {
+			padding-inline-end: var(--mox-space-md);
+		}
+		.mox-paddingInlineEnd-lg\@cq800Max {
+			padding-inline-end: var(--mox-space-lg);
+		}
+		.mox-paddingInlineEnd-xl\@cq800Max {
+			padding-inline-end: var(--mox-space-xl);
+		}
+		.mox-paddingInlineEnd-2xl\@cq800Max {
+			padding-inline-end: var(--mox-space-2xl);
+		}
+		.mox-paddingInlineEnd-3xl\@cq800Max {
+			padding-inline-end: var(--mox-space-3xl);
+		}
+		.mox-paddingInlineEnd-4xl\@cq800Max {
+			padding-inline-end: var(--mox-space-4xl);
+		}
+		.mox-paddingInlineEnd-auto\@cq800Max {
+			padding-inline-end: auto;
+		}
+		.mox-paddingInlineEnd-inherit\@cq800Max {
+			padding-inline-end: inherit;
+		}
+	}
 }

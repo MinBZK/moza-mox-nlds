@@ -670,4 +670,93 @@
 			padding-block-end: inherit;
 		}
 	}
+	/* Container breakpoint: cq800 (800px) */
+	@container (min-width: 800px) {
+		.mox-paddingBlockEnd-0\@cq800Min {
+			padding-block-end: 0;
+		}
+		.mox-paddingBlockEnd-4xs\@cq800Min {
+			padding-block-end: var(--mox-space-4xs);
+		}
+		.mox-paddingBlockEnd-3xs\@cq800Min {
+			padding-block-end: var(--mox-space-3xs);
+		}
+		.mox-paddingBlockEnd-2xs\@cq800Min {
+			padding-block-end: var(--mox-space-2xs);
+		}
+		.mox-paddingBlockEnd-xs\@cq800Min {
+			padding-block-end: var(--mox-space-xs);
+		}
+		.mox-paddingBlockEnd-sm\@cq800Min {
+			padding-block-end: var(--mox-space-sm);
+		}
+		.mox-paddingBlockEnd-md\@cq800Min {
+			padding-block-end: var(--mox-space-md);
+		}
+		.mox-paddingBlockEnd-lg\@cq800Min {
+			padding-block-end: var(--mox-space-lg);
+		}
+		.mox-paddingBlockEnd-xl\@cq800Min {
+			padding-block-end: var(--mox-space-xl);
+		}
+		.mox-paddingBlockEnd-2xl\@cq800Min {
+			padding-block-end: var(--mox-space-2xl);
+		}
+		.mox-paddingBlockEnd-3xl\@cq800Min {
+			padding-block-end: var(--mox-space-3xl);
+		}
+		.mox-paddingBlockEnd-4xl\@cq800Min {
+			padding-block-end: var(--mox-space-4xl);
+		}
+		.mox-paddingBlockEnd-auto\@cq800Min {
+			padding-block-end: auto;
+		}
+		.mox-paddingBlockEnd-inherit\@cq800Min {
+			padding-block-end: inherit;
+		}
+	}
+	@container (max-width: 800px) {
+		.mox-paddingBlockEnd-0\@cq800Max {
+			padding-block-end: 0;
+		}
+		.mox-paddingBlockEnd-4xs\@cq800Max {
+			padding-block-end: var(--mox-space-4xs);
+		}
+		.mox-paddingBlockEnd-3xs\@cq800Max {
+			padding-block-end: var(--mox-space-3xs);
+		}
+		.mox-paddingBlockEnd-2xs\@cq800Max {
+			padding-block-end: var(--mox-space-2xs);
+		}
+		.mox-paddingBlockEnd-xs\@cq800Max {
+			padding-block-end: var(--mox-space-xs);
+		}
+		.mox-paddingBlockEnd-sm\@cq800Max {
+			padding-block-end: var(--mox-space-sm);
+		}
+		.mox-paddingBlockEnd-md\@cq800Max {
+			padding-block-end: var(--mox-space-md);
+		}
+		.mox-paddingBlockEnd-lg\@cq800Max {
+			padding-block-end: var(--mox-space-lg);
+		}
+		.mox-paddingBlockEnd-xl\@cq800Max {
+			padding-block-end: var(--mox-space-xl);
+		}
+		.mox-paddingBlockEnd-2xl\@cq800Max {
+			padding-block-end: var(--mox-space-2xl);
+		}
+		.mox-paddingBlockEnd-3xl\@cq800Max {
+			padding-block-end: var(--mox-space-3xl);
+		}
+		.mox-paddingBlockEnd-4xl\@cq800Max {
+			padding-block-end: var(--mox-space-4xl);
+		}
+		.mox-paddingBlockEnd-auto\@cq800Max {
+			padding-block-end: auto;
+		}
+		.mox-paddingBlockEnd-inherit\@cq800Max {
+			padding-block-end: inherit;
+		}
+	}
 }

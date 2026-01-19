@@ -175,4 +175,27 @@
 			flex-wrap: wrap-reverse;
 		}
 	}
+	/* Container breakpoint: cq800 (800px) */
+	@container (min-width: 800px) {
+		.mox-wrap-nowrap\@cq800Min {
+			flex-wrap: nowrap;
+		}
+		.mox-wrap-wrap\@cq800Min {
+			flex-wrap: wrap;
+		}
+		.mox-wrap-wrapReverse\@cq800Min {
+			flex-wrap: wrap-reverse;
+		}
+	}
+	@container (max-width: 800px) {
+		.mox-wrap-nowrap\@cq800Max {
+			flex-wrap: nowrap;
+		}
+		.mox-wrap-wrap\@cq800Max {
+			flex-wrap: wrap;
+		}
+		.mox-wrap-wrapReverse\@cq800Max {
+			flex-wrap: wrap-reverse;
+		}
+	}
 }

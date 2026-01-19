@@ -670,4 +670,93 @@
 			padding-block-start: inherit;
 		}
 	}
+	/* Container breakpoint: cq800 (800px) */
+	@container (min-width: 800px) {
+		.mox-paddingBlockStart-0\@cq800Min {
+			padding-block-start: 0;
+		}
+		.mox-paddingBlockStart-4xs\@cq800Min {
+			padding-block-start: var(--mox-space-4xs);
+		}
+		.mox-paddingBlockStart-3xs\@cq800Min {
+			padding-block-start: var(--mox-space-3xs);
+		}
+		.mox-paddingBlockStart-2xs\@cq800Min {
+			padding-block-start: var(--mox-space-2xs);
+		}
+		.mox-paddingBlockStart-xs\@cq800Min {
+			padding-block-start: var(--mox-space-xs);
+		}
+		.mox-paddingBlockStart-sm\@cq800Min {
+			padding-block-start: var(--mox-space-sm);
+		}
+		.mox-paddingBlockStart-md\@cq800Min {
+			padding-block-start: var(--mox-space-md);
+		}
+		.mox-paddingBlockStart-lg\@cq800Min {
+			padding-block-start: var(--mox-space-lg);
+		}
+		.mox-paddingBlockStart-xl\@cq800Min {
+			padding-block-start: var(--mox-space-xl);
+		}
+		.mox-paddingBlockStart-2xl\@cq800Min {
+			padding-block-start: var(--mox-space-2xl);
+		}
+		.mox-paddingBlockStart-3xl\@cq800Min {
+			padding-block-start: var(--mox-space-3xl);
+		}
+		.mox-paddingBlockStart-4xl\@cq800Min {
+			padding-block-start: var(--mox-space-4xl);
+		}
+		.mox-paddingBlockStart-auto\@cq800Min {
+			padding-block-start: auto;
+		}
+		.mox-paddingBlockStart-inherit\@cq800Min {
+			padding-block-start: inherit;
+		}
+	}
+	@container (max-width: 800px) {
+		.mox-paddingBlockStart-0\@cq800Max {
+			padding-block-start: 0;
+		}
+		.mox-paddingBlockStart-4xs\@cq800Max {
+			padding-block-start: var(--mox-space-4xs);
+		}
+		.mox-paddingBlockStart-3xs\@cq800Max {
+			padding-block-start: var(--mox-space-3xs);
+		}
+		.mox-paddingBlockStart-2xs\@cq800Max {
+			padding-block-start: var(--mox-space-2xs);
+		}
+		.mox-paddingBlockStart-xs\@cq800Max {
+			padding-block-start: var(--mox-space-xs);
+		}
+		.mox-paddingBlockStart-sm\@cq800Max {
+			padding-block-start: var(--mox-space-sm);
+		}
+		.mox-paddingBlockStart-md\@cq800Max {
+			padding-block-start: var(--mox-space-md);
+		}
+		.mox-paddingBlockStart-lg\@cq800Max {
+			padding-block-start: var(--mox-space-lg);
+		}
+		.mox-paddingBlockStart-xl\@cq800Max {
+			padding-block-start: var(--mox-space-xl);
+		}
+		.mox-paddingBlockStart-2xl\@cq800Max {
+			padding-block-start: var(--mox-space-2xl);
+		}
+		.mox-paddingBlockStart-3xl\@cq800Max {
+			padding-block-start: var(--mox-space-3xl);
+		}
+		.mox-paddingBlockStart-4xl\@cq800Max {
+			padding-block-start: var(--mox-space-4xl);
+		}
+		.mox-paddingBlockStart-auto\@cq800Max {
+			padding-block-start: auto;
+		}
+		.mox-paddingBlockStart-inherit\@cq800Max {
+			padding-block-start: inherit;
+		}
+	}
 }

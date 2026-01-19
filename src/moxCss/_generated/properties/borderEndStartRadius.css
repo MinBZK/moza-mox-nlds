@@ -580,4 +580,81 @@
 			border-end-start-radius: calc(8 * var(--mox-lint-inline-size));
 		}
 	}
+	/* Container breakpoint: cq800 (800px) */
+	@container (min-width: 800px) {
+		.mox-borderEndStartRadius-0\@cq800Min {
+			border-radius: 0;
+		}
+		.mox-borderEndStartRadius-1px\@cq800Min {
+			border-radius: 1px;
+		}
+		.mox-borderEndStartRadius-2px\@cq800Min {
+			border-radius: 2px;
+		}
+		.mox-borderEndStartRadius-4px\@cq800Min {
+			border-radius: 4px;
+		}
+		.mox-borderEndStartRadius-8px\@cq800Min {
+			border-radius: 8px;
+		}
+		.mox-borderEndStartRadius-circle\@cq800Min {
+			border-radius: 50%;
+		}
+		.mox-borderEndStartRadius-lint-0-25\@cq800Min {
+			border-end-start-radius: calc(0.25 * var(--mox-lint-inline-size));
+		}
+		.mox-borderEndStartRadius-lint-0-5\@cq800Min {
+			border-end-start-radius: calc(0.5 * var(--mox-lint-inline-size));
+		}
+		.mox-borderEndStartRadius-lint-1\@cq800Min {
+			border-end-start-radius: calc(1 * var(--mox-lint-inline-size));
+		}
+		.mox-borderEndStartRadius-lint-2\@cq800Min {
+			border-end-start-radius: calc(2 * var(--mox-lint-inline-size));
+		}
+		.mox-borderEndStartRadius-lint-4\@cq800Min {
+			border-end-start-radius: calc(4 * var(--mox-lint-inline-size));
+		}
+		.mox-borderEndStartRadius-lint-8\@cq800Min {
+			border-end-start-radius: calc(8 * var(--mox-lint-inline-size));
+		}
+	}
+	@container (max-width: 800px) {
+		.mox-borderEndStartRadius-0\@cq800Max {
+			border-radius: 0;
+		}
+		.mox-borderEndStartRadius-1px\@cq800Max {
+			border-radius: 1px;
+		}
+		.mox-borderEndStartRadius-2px\@cq800Max {
+			border-radius: 2px;
+		}
+		.mox-borderEndStartRadius-4px\@cq800Max {
+			border-radius: 4px;
+		}
+		.mox-borderEndStartRadius-8px\@cq800Max {
+			border-radius: 8px;
+		}
+		.mox-borderEndStartRadius-circle\@cq800Max {
+			border-radius: 50%;
+		}
+		.mox-borderEndStartRadius-lint-0-25\@cq800Max {
+			border-end-start-radius: calc(0.25 * var(--mox-lint-inline-size));
+		}
+		.mox-borderEndStartRadius-lint-0-5\@cq800Max {
+			border-end-start-radius: calc(0.5 * var(--mox-lint-inline-size));
+		}
+		.mox-borderEndStartRadius-lint-1\@cq800Max {
+			border-end-start-radius: calc(1 * var(--mox-lint-inline-size));
+		}
+		.mox-borderEndStartRadius-lint-2\@cq800Max {
+			border-end-start-radius: calc(2 * var(--mox-lint-inline-size));
+		}
+		.mox-borderEndStartRadius-lint-4\@cq800Max {
+			border-end-start-radius: calc(4 * var(--mox-lint-inline-size));
+		}
+		.mox-borderEndStartRadius-lint-8\@cq800Max {
+			border-end-start-radius: calc(8 * var(--mox-lint-inline-size));
+		}
+	}
 }

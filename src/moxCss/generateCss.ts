@@ -1,6 +1,7 @@
 import { posix as posixPath } from "path";
-import { moxConfig, spaces } from "./mox.config";
+import { moxConfig } from "./mox.config";
 import * as fs from "fs";
+import { spaces } from "./configOptions";
 
 const getClassName = ({
   propKey,
