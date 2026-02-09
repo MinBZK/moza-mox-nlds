@@ -42,7 +42,7 @@ export const MoxAtomTextBlock = <T extends ElementType = "span">({
     <Component
       ref={ref}
       {...restProps}
-      className={clsx("mox-atom-text-block", stylePropClassNames, className)}
+      className={clsx("mox-text-block", stylePropClassNames, className)}
     >
       {children}
     </Component>

@@ -45,7 +45,7 @@ export const Default: StoryObj<StylePropTypes<typeof stackStyleProps>> = {
     const { stylePropClassNames } = propsToClassNames(stackStyleProps, props);
 
     return (
-      <section className={`mox-atom-stack ${stylePropClassNames.join(" ")}`}>
+      <section className={`mox-stack ${stylePropClassNames.join(" ")}`}>
         <div>{"box 1"}</div>
         <div>{"box 2"}</div>
         <div>{"box 3"}</div>

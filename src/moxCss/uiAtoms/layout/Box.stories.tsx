@@ -35,7 +35,7 @@ export const Default: StoryObj<StylePropTypes<typeof boxStyleProps>> = {
     const { stylePropClassNames } = propsToClassNames(boxStyleProps, props);
 
     return (
-      <section className={`mox-atom-box ${stylePropClassNames.join(" ")}`}>
+      <section className={`mox-box ${stylePropClassNames.join(" ")}`}>
         <span className="mox-text-block">{"box content"}</span>
       </section>
     );

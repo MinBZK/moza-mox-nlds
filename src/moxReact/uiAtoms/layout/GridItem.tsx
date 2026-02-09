@@ -43,7 +43,7 @@ export const MoxAtomGridItem = <T extends ElementType = "div">({
   return (
     <Component
       ref={ref}
-      className={clsx("mox-atom-grid-item", ...stylePropClassNames, className)}
+      className={clsx("mox-grid-item", ...stylePropClassNames, className)}
       {...restProps}
     >
       {children}

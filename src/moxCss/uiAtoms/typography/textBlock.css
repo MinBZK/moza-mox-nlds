@@ -64,7 +64,7 @@
   } */
   /* } */
 
-  .mox-atom-text-block {
+  .mox-text-block {
     display: block flow-root;
     margin: 0;
     color: var(--mox-text-color, inherit);
@@ -74,7 +74,7 @@
     text-decoration: var(--text-decoration, "none");
   }
 
-  .mox-atom-text-block:hover {
+  .mox-text-block:hover {
     text-decoration: var(--text-decoration-hover, "none");
   }
 

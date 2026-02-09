@@ -5,12 +5,14 @@
   padding: var(--mox-input-padding-block) var(--mox-input-padding-inline);
   font-size: var(--mox-input-font-size);
   line-height: var(--mox-input-line-height);
-  color: var(--mox-input-text-color);
+  color: black;
   background-color: var(--mox-input-background-color);
   border: 1px solid var(--mox-input-border-color);
   border-radius: var(--mox-input-border-radius);
   outline: none;
   box-sizing: border-box;
+  caret-color: blue;
+  accent-color: blue;
 
   &:focus {
     border-color: var(--mox-focus-color);

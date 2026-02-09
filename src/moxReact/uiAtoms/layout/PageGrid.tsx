@@ -40,7 +40,7 @@ export const MoxAtomPageGrid = <T extends ElementType = "div">({
   return (
     <Component
       ref={ref}
-      className={clsx("mox-atom-page-grid", ...stylePropClassNames, className)}
+      className={clsx("mox-page-grid", ...stylePropClassNames, className)}
       {...restProps}
     >
       {children}

@@ -30,7 +30,7 @@ export const MoxAtomLink = <T extends ElementType = "a">({
   return (
     <Component
       ref={ref}
-      className={clsx("mox-atom-link", stylePropClassNames, className)}
+      className={clsx("mox-link", stylePropClassNames, className)}
       {...restProps}
     >
       {children}

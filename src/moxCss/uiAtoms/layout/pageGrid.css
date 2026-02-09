@@ -1,5 +1,5 @@
 @layer atoms {
-  .mox-atom-page-grid {
+  .mox-page-grid {
     --mox-page-grid-column: page;
 
     container-type: inline-size; /* enable container queries for children */
@@ -30,7 +30,7 @@
 
   /* See mobile/tablet/desktop definitions in mox.config.ts */
   @media screen and (min-width: 900px) {
-    .mox-atom-page-grid {
+    .mox-page-grid {
       column-gap: var(--mox-layout-page-grid-gap-tablet);
 
       grid-template-columns:
@@ -59,7 +59,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    .mox-atom-page-grid {
+    .mox-page-grid {
       column-gap: var(--mox-layout-page-grid-gap-desktop);
 
       grid-template-columns:
@@ -93,7 +93,7 @@
 
   /* TODO: indien page-grid binnen een page-grid: niet meer de 'window' zijkanten, maar terugvallen op default 12-col grid? */
 
-  .mox-atom-page-grid > * {
+  .mox-page-grid > * {
     grid-column: var(--mox-page-grid-column);
   }
 }

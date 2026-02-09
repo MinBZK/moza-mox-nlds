@@ -1,5 +1,5 @@
 @layer atoms {
-  .mox-atom-container-grid {
+  .mox-container-grid {
     --mox-container-grid-total-columns: 4;
     --mox-container-grid-columns-half: 4;
     --mox-container-grid-columns-third: 4;
@@ -13,7 +13,7 @@
   }
 
   @container (min-width: 400px) {
-    .mox-atom-container-grid {
+    .mox-container-grid {
       --mox-container-grid-total-columns: 6;
       --mox-container-grid-columns-half: 6;
       --mox-container-grid-columns-third: 3;
@@ -25,7 +25,7 @@
   }
 
   @container (min-width: 600px) {
-    .mox-atom-container-grid {
+    .mox-container-grid {
       --mox-container-grid-total-columns: 8;
       --mox-container-grid-columns-half: 4;
       --mox-container-grid-columns-third: 4;
@@ -37,7 +37,7 @@
   }
 
   @container (min-width: 800px) {
-    .mox-atom-container-grid {
+    .mox-container-grid {
       --mox-container-grid-total-columns: 12;
       --mox-container-grid-columns-half: 6;
       --mox-container-grid-columns-third: 4;

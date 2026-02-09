@@ -26,7 +26,7 @@ export const MoxAtomCheckbox = (props: AtomProps<"input">) => {
 
   return (
     <Component
-      className={clsx("mox-atom-input-checkbox", className)}
+      className={clsx("mox-input-checkbox", className)}
       type="checkbox"
       {...restProps}
     />

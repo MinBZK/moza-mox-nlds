@@ -7,6 +7,7 @@
  *
  */
 
+import type { StylePropTypes } from "../moxReact/uiAtoms/AtomTypes";
 import { prefix } from "./configOptions";
 import { boxProps } from "./props/box";
 import { flexProps } from "./props/flex";
@@ -29,6 +30,14 @@ const containerBreakpoints = {
   cq800: 800,
 } as const;
 
+const props = {
+  // Keys of these objects are used to map React props to classnames (see: `propsToClassNames` helper)
+  ...linkProps,
+  ...textProps,
+  ...flexProps,
+  ...boxProps,
+};
+
 export const moxConfig = {
   prefix,
   // The clamp values will be calculated so that on these min/max sizes of the viewport, the size will lock to resp. min/max value of the space (e.g. `md`).
@@ -39,13 +48,7 @@ export const moxConfig = {
   // The values either be just what is defined in `options` (required), or these `options` will be mapped to a variable (use the helper-function `mapOptionsToCSSVars`) or different value via an `optionsMap` (e.g. `{ md: var(--mox-space-sm), ... }`)
   // Together this will generate the css line: `.mox-inline-size-sm { width: var(--mox-space-sm); }`
   // If `responsive` is true, the classes will be generated for each min/max breakpoint as well (e.g., `.mox-inline-size-sm@tabletMin`, `.mox-inline-size-sm@cq400Max`, etc.)
-  props: {
-    // Keys of these objects are used to map React props to classnames (see: `propsToClassNames` helper)
-    ...linkProps,
-    ...textProps,
-    ...flexProps,
-    ...boxProps,
-  },
+  props,
 } as const satisfies MoxConfig;
 
 export type MoxConfigProps = {
@@ -67,3 +70,26 @@ type MoxConfig = {
   containerBreakpoints: typeof containerBreakpoints;
   props: MoxConfigProps;
 };
+
+//todo: make function to create styles based on these values inside .mox-content class
+const markupContent = {
+  p: {
+    alignItems: "start",
+    inlineSize: { mobileMin: "md", mobileMax: "xs" },
+  },
+} as const satisfies Record<
+  string,
+  StylePropTypes<readonly (keyof typeof props)[]>
+>;
+
+// // css:
+
+// .markup-content {
+//   p {
+//     align-items: start;
+
+//     @media and screen (600px) {
+//       inlineSize: 'xs'
+//     }
+//   }
+// }

@@ -1,5 +1,5 @@
 @layer atoms {
-  .mox-atom-stack {
+  .mox-stack {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
