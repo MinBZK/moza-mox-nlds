@@ -10,7 +10,7 @@ const config: StorybookConfig = {
   ],
   framework: "@storybook/react-vite",
   viteFinal: (config) => {
-    config.base = "/mox-nlds-poc/";
+    config.base = "/moza-mox-nlds/";
     return config;
   },
 };

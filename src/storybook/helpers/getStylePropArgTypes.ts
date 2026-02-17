@@ -7,9 +7,9 @@ import { moxConfig } from "../../moxCss/mox.config";
  * @returns An object mapping style prop names to their argTypes.
  */
 export const getStylePropArgTypes = (
-  styleProps: ReadonlyArray<keyof typeof moxConfig.props>
+  styleProps: ReadonlyArray<keyof typeof moxConfig.props>,
 ) => {
-  return styleProps.reduce((acc, prop) => {
+  return [...styleProps].sort().reduce((acc, prop) => {
     const isResponsive =
       "responsive" in moxConfig.props[prop] && moxConfig.props[prop].responsive;
     const options = isResponsive
@@ -22,29 +22,29 @@ export const getStylePropArgTypes = (
               `${" ".repeat(i)}`,
               `==== ${key} (${value}px) ====`,
               ...Object.keys(moxConfig.props[prop].options).map(
-                (option) => `${option}@${key}Min`
+                (option) => `${option}@${key}Min`,
               ),
               ...Object.keys(moxConfig.props[prop].options).map(
-                (option) => `${option}@${key}Max`
+                (option) => `${option}@${key}Max`,
               ),
-            ]
+            ],
           ),
           `${" ".repeat(Object.keys(moxConfig.viewportBreakpoints).length)}`,
           "  CONTAINER QUERIES:",
           ...Object.entries(moxConfig.containerBreakpoints).flatMap(
             ([key, value], i) => [
               `${" ".repeat(
-                i + Object.keys(moxConfig.viewportBreakpoints).length
+                i + Object.keys(moxConfig.viewportBreakpoints).length,
               )}`,
               ,
               `==== ${key} (${value}px) ====`,
               ...Object.keys(moxConfig.props[prop].options).map(
-                (option) => `${option}@${key}Min`
+                (option) => `${option}@${key}Min`,
               ),
               ...Object.keys(moxConfig.props[prop].options).map(
-                (option) => `${option}@${key}Max`
+                (option) => `${option}@${key}Max`,
               ),
-            ]
+            ],
           ),
         ]
       : Object.keys(moxConfig.props[prop].options);

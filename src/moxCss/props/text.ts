@@ -1,85 +1,45 @@
-import { spaces } from "../configOptions";
-import { mapOptionsToCSSVars } from "../helpers/mapOptionsToCSSVars";
+import { colorOptions, spaces } from "../configOptions";
 import { type MoxConfigProps } from "../mox.config";
 
 const css = String.raw;
 
 export const textProps = {
   fontSize: {
-    options: mapOptionsToCSSVars(spaces, ["--current-font-size"], "space"),
+    options: spaces.reduce(
+      (acc, space) => {
+        acc[space] = css`
+          --current-font-size: var(--mox-space-${space});
+          font-size: var(--current-font-size);
+        `;
+        return acc;
+      },
+      {} as Record<string, string>,
+    ),
     responsive: true,
   },
   color: {
-    options: {
-      primary: css`
-        --text-color: var(--mox-color-primary);
-        color: var(--text-color);
-      `,
-      secondary: css`
-        --text-color: var(--mox-color-secondary);
-        color: var(--text-color);
-      `,
-      tertiary: css`
-        --text-color: var(-mox-color-tertiary);
-        color: var(--text-color);
-      `,
-      error: css`
-        --text-color: var(--mox-color-error);
-        color: var(--text-color);
-      `,
-      warning: css`
-        --text-color: var(--mox-color-warning);
-        color: var(--text-color);
-      `,
-      success: css`
-        --text-color: var(--mox-color-success);
-        color: var(--text-color);
-      `,
-      info: css`
-        --text-color: var(--mox-color-info);
-        color: var(--text-color);
-      `,
-      inherit: css`
-        --text-color: inherit;
-        color: var(--text-color);
-      `,
-    },
+    options: colorOptions.reduce(
+      (acc, propName) => ({
+        ...acc,
+        [propName as keyof typeof colorOptions]: css`
+          --text-color: var(--mox-color-${propName});
+          color: var(--text-color);
+        `,
+      }),
+      {},
+    ) as Record<(typeof colorOptions)[number], string>,
   },
   colorHover: {
-    options: {
-      primary: css`
-        --text-color-hover: var(--mox-color-primary);
-        color: var(--text-color-hover);
-      `,
-      secondary: css`
-        --text-color-hover: var(--mox-color-secondary);
-        color: var(--text-color-hover);
-      `,
-      tertiary: css`
-        --text-color-hover: var(--mox-color-tertiary);
-        color: var(--text-color-hover);
-      `,
-      error: css`
-        --text-color-hover: var(--mox-color-error);
-        color: var(--text-color-hover);
-      `,
-      warning: css`
-        --text-color-hover: var(--mox-color-warning);
-        color: var(--text-color-hover);
-      `,
-      success: css`
-        --text-color-hover: var(--mox-color-success);
-        color: var(--text-color-hover);
-      `,
-      info: css`
-        --text-color-hover: var(--mox-color-info);
-        color: var(--text-color-hover);
-      `,
-      inherit: css`
-        --text-color-hover: inherit;
-        color: var(--text-color-hover);
-      `,
-    },
+    options: colorOptions.reduce(
+      (acc, propName) => ({
+        ...acc,
+        [propName as keyof typeof colorOptions]: css`
+          --text-color-hover: var(--mox-color-${propName});
+          color: var(--text-color-hover);
+        `,
+      }),
+      {},
+    ) as Record<(typeof colorOptions)[number], string>,
     state: "hover",
   },
   fontWeight: {
