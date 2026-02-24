@@ -7,6 +7,9 @@ const gridStyleProps = [
   "gridColumn",
   "gridColumnStart",
   "gridColumnEnd",
+  "alignSelf",
+  "justifySelf",
+  "order",
 ] as const satisfies StyleProps;
 
 /**
@@ -37,7 +40,7 @@ export const MoxAtomGridItem = <T extends ElementType = "div">({
   // convert props into correct classnames
   const { stylePropClassNames, restProps } = propsToClassNames(
     gridStyleProps,
-    props
+    props,
   );
 
   return (

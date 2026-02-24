@@ -223,4 +223,45 @@ export const boxProps = {
     },
     responsive: true,
   },
+  order: {
+    options: {
+      auto: css`
+        order: auto;
+      `,
+      "-5": css`
+        order: -5;
+      `,
+      "-4": css`
+        order: -4;
+      `,
+      "-3": css`
+        order: -3;
+      `,
+      "-2": css`
+        order: -2;
+      `,
+      "-1": css`
+        order: -1;
+      `,
+      "0": css`
+        order: 0;
+      `,
+      "1": css`
+        order: 1;
+      `,
+      "2": css`
+        order: 2;
+      `,
+      "3": css`
+        order: 3;
+      `,
+      "4": css`
+        order: 4;
+      `,
+      "5": css`
+        order: 5;
+      `,
+    },
+    responsive: true,
+  },
 } as const satisfies MoxConfigProps;

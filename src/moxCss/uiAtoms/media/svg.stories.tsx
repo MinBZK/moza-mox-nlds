@@ -9,6 +9,7 @@ const meta = {
   tags: ["autodocs"],
   argTypes: getStylePropArgTypes(svgStyleProps),
   parameters: {
+    layout: "fullscreen",
     docs: {
       description: {
         component:
@@ -42,9 +43,6 @@ const meta = {
 export default meta;
 
 export const Default: StoryObj<StylePropTypes<typeof svgStyleProps>> = {
-  parameters: {
-    layout: "fullscreen",
-  },
   render: (props) => {
     const { stylePropClassNames } = propsToClassNames(svgStyleProps, props);
 

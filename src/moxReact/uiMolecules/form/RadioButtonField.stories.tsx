@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { MoxMoleculeRadioButtonField } from "./RadioButtonField";
+import { getConstructionSummary } from "../../../storybook/helpers/getConstructionSummary";
 
 const meta = {
   title: "React/Molecules/Form/RadioButtonField",
@@ -8,21 +9,12 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        story: `
----
-
-<details>
-<summary>**How this component is built**</summary>
-
-\`\`\`tsx
-<MoxAtomShelf gap="md" alignItems="start">
-  <MoxAtomRadioButton id={id} />
-  <MoxTextBlock as="label" htmlFor={id}>{children}</MoxTextBlock>
-</MoxAtomShelf>
-\`\`\`
-
-</details>
-        `,
+        story: getConstructionSummary(`
+                  <MoxAtomShelf>
+                    <MoxAtomRadioButton id={id} />
+                    <MoxTextBlock as="label" htmlFor={id}>{children}</MoxTextBlock>
+                  </MoxAtomShelf>
+                `),
       },
     },
   },

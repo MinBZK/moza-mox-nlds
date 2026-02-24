@@ -7,6 +7,7 @@ export const boxStyleProps = [
   "size",
   "inlineSize",
   "blockSize",
+  "display",
   "padding",
   "paddingBlock",
   "paddingInline",
@@ -26,6 +27,9 @@ export const boxStyleProps = [
   "gridColumn",
   "gridColumnStart",
   "gridColumnEnd",
+  "justifySelf",
+  "alignSelf",
+  "order",
 ] as const satisfies StyleProps;
 
 /**
@@ -54,7 +58,7 @@ export const MoxAtomBox = <T extends ElementType = "div">({
   // convert props into correct classnames
   const { stylePropClassNames, restProps } = propsToClassNames(
     boxStyleProps,
-    props
+    props,
   );
 
   return (

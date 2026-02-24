@@ -1,0 +1,12 @@
+{
+  "brand/color": {
+    "mox": {
+      "color": {
+        "primary": {
+          "$type": "color",
+          "$value": "{mox.color.primary}"
+        }
+      }
+    }
+  }
+}

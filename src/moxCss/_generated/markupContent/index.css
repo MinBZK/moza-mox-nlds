@@ -10,7 +10,7 @@
     margin-block: 1rem;
   }
   :where(.markup-content) p {
-    align-items: flex-start;
+    align-items: start;
   }
   @media only screen and (min-width: 600px) {
     :where(.markup-content) p {

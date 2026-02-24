@@ -24,6 +24,9 @@ export const utilsProps = {
       none: css`
         display: none;
       `,
+      contents: css`
+        display: contents;
+      `,
     },
     responsive: true,
   },

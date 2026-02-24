@@ -38,6 +38,40 @@ export const flexProps = {
     },
     responsive: true,
   },
+  alignSelf: {
+    options: {
+      start: css`
+        align-self: start;
+      `,
+      end: css`
+        align-self: end;
+      `,
+      center: css`
+        align-self: center;
+      `,
+      stretch: css`
+        align-self: stretch;
+      `,
+    },
+    responsive: true,
+  },
+  justifySelf: {
+    options: {
+      start: css`
+        justify-self: start;
+      `,
+      end: css`
+        justify-self: end;
+      `,
+      center: css`
+        justify-self: center;
+      `,
+      stretch: css`
+        justify-self: stretch;
+      `,
+    },
+    responsive: true,
+  },
   alignItems: {
     options: {
       stretch: css`
@@ -47,10 +81,10 @@ export const flexProps = {
         align-items: center;
       `,
       start: css`
-        align-items: flex-start;
+        align-items: start;
       `,
       end: css`
-        align-items: flex-end;
+        align-items: end;
       `,
       baseline: css`
         align-items: baseline;
@@ -66,11 +100,11 @@ export const flexProps = {
   },
   justifyContent: {
     options: {
-      flexStart: css`
-        justify-content: flex-start;
+      start: css`
+        justify-content: start;
       `,
-      flexEnd: css`
-        justify-content: flex-end;
+      end: css`
+        justify-content: end;
       `,
       center: css`
         justify-content: center;
@@ -311,6 +345,60 @@ export const flexProps = {
     options: {
       ...mapOptionsToCSSVars(spaces, ["column-gap"], "space"),
       ...mapOptionsToValues(globalGapOptions, ["column-gap"]),
+    },
+    responsive: true,
+  },
+  gridTemplateColumns: {
+    options: {
+      // These are just a set of commonly used grid-template-columns. Any more fine-grained control should be handled in custom CSS.
+      "1fr": css`
+        grid-template-columns: 1fr;
+      `,
+      "1fr 1fr": css`
+        grid-template-columns: 1fr 1fr;
+      `,
+      "auto 1fr": css`
+        grid-template-columns: minmax(0, auto) 1fr;
+      `,
+      "1fr auto": css`
+        grid-template-columns: 1fr minmax(0, auto);
+      `,
+      "auto 1fr 1fr": css`
+        grid-template-columns: minmax(0, auto) 1fr 1fr;
+      `,
+      "1fr auto 1fr": css`
+        grid-template-columns: 1fr minmax(0, auto) 1fr;
+      `,
+      "1fr 1fr auto": css`
+        grid-template-columns: 1fr 1fr minmax(0, auto);
+      `,
+    },
+    responsive: true,
+  },
+  gridTemplateRows: {
+    options: {
+      // These are just a set of commonly used grid-template-rows. Any more fine-grained control should be handled in custom CSS.
+      "1fr": css`
+        grid-template-rows: 1fr;
+      `,
+      "1fr 1fr": css`
+        grid-template-rows: 1fr 1fr;
+      `,
+      "auto 1fr": css`
+        grid-template-rows: minmax(0, auto) 1fr;
+      `,
+      "1fr auto": css`
+        grid-template-rows: 1fr minmax(0, auto);
+      `,
+      "auto 1fr 1fr": css`
+        grid-template-rows: minmax(0, auto) 1fr 1fr;
+      `,
+      "1fr auto 1fr": css`
+        grid-template-rows: 1fr minmax(0, auto) 1fr;
+      `,
+      "1fr 1fr auto": css`
+        grid-template-rows: 1fr 1fr minmax(0, auto);
+      `,
     },
     responsive: true,
   },

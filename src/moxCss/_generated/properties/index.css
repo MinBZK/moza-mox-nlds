@@ -1,5 +1,7 @@
 @import './direction.css';
 @import './wrap.css';
+@import './alignSelf.css';
+@import './justifySelf.css';
 @import './alignItems.css';
 @import './justifyContent.css';
 @import './itemSize.css';
@@ -9,9 +11,12 @@
 @import './gap.css';
 @import './rowGap.css';
 @import './columnGap.css';
+@import './gridTemplateColumns.css';
+@import './gridTemplateRows.css';
 @import './underline.css';
 @import './underlineHover.css';
 @import './fontSize.css';
+@import './fontStyle.css';
 @import './color.css';
 @import './colorHover.css';
 @import './fontWeight.css';
@@ -39,5 +44,6 @@
 @import './paddingBlockEnd.css';
 @import './paddingInlineStart.css';
 @import './paddingInlineEnd.css';
+@import './order.css';
 @import './display.css';
 @import './markup.css';

@@ -11,10 +11,10 @@
     align-items: center;
   }
   .mox-alignItems-start {
-    align-items: flex-start;
+    align-items: start;
   }
   .mox-alignItems-end {
-    align-items: flex-end;
+    align-items: end;
   }
   .mox-alignItems-baseline {
     align-items: baseline;
@@ -34,10 +34,10 @@
       align-items: center;
     }
     .mox-alignItems-start\@mobileMin {
-      align-items: flex-start;
+      align-items: start;
     }
     .mox-alignItems-end\@mobileMin {
-      align-items: flex-end;
+      align-items: end;
     }
     .mox-alignItems-baseline\@mobileMin {
       align-items: baseline;
@@ -57,10 +57,10 @@
       align-items: center;
     }
     .mox-alignItems-start\@mobileMax {
-      align-items: flex-start;
+      align-items: start;
     }
     .mox-alignItems-end\@mobileMax {
-      align-items: flex-end;
+      align-items: end;
     }
     .mox-alignItems-baseline\@mobileMax {
       align-items: baseline;
@@ -81,10 +81,10 @@
       align-items: center;
     }
     .mox-alignItems-start\@tabletMin {
-      align-items: flex-start;
+      align-items: start;
     }
     .mox-alignItems-end\@tabletMin {
-      align-items: flex-end;
+      align-items: end;
     }
     .mox-alignItems-baseline\@tabletMin {
       align-items: baseline;
@@ -104,10 +104,10 @@
       align-items: center;
     }
     .mox-alignItems-start\@tabletMax {
-      align-items: flex-start;
+      align-items: start;
     }
     .mox-alignItems-end\@tabletMax {
-      align-items: flex-end;
+      align-items: end;
     }
     .mox-alignItems-baseline\@tabletMax {
       align-items: baseline;
@@ -128,10 +128,10 @@
       align-items: center;
     }
     .mox-alignItems-start\@desktopMin {
-      align-items: flex-start;
+      align-items: start;
     }
     .mox-alignItems-end\@desktopMin {
-      align-items: flex-end;
+      align-items: end;
     }
     .mox-alignItems-baseline\@desktopMin {
       align-items: baseline;
@@ -151,10 +151,10 @@
       align-items: center;
     }
     .mox-alignItems-start\@desktopMax {
-      align-items: flex-start;
+      align-items: start;
     }
     .mox-alignItems-end\@desktopMax {
-      align-items: flex-end;
+      align-items: end;
     }
     .mox-alignItems-baseline\@desktopMax {
       align-items: baseline;
@@ -175,10 +175,10 @@
       align-items: center;
     }
     .mox-alignItems-start\@mq1440Min {
-      align-items: flex-start;
+      align-items: start;
     }
     .mox-alignItems-end\@mq1440Min {
-      align-items: flex-end;
+      align-items: end;
     }
     .mox-alignItems-baseline\@mq1440Min {
       align-items: baseline;
@@ -198,10 +198,10 @@
       align-items: center;
     }
     .mox-alignItems-start\@mq1440Max {
-      align-items: flex-start;
+      align-items: start;
     }
     .mox-alignItems-end\@mq1440Max {
-      align-items: flex-end;
+      align-items: end;
     }
     .mox-alignItems-baseline\@mq1440Max {
       align-items: baseline;
@@ -222,10 +222,10 @@
       align-items: center;
     }
     .mox-alignItems-start\@cq200Min {
-      align-items: flex-start;
+      align-items: start;
     }
     .mox-alignItems-end\@cq200Min {
-      align-items: flex-end;
+      align-items: end;
     }
     .mox-alignItems-baseline\@cq200Min {
       align-items: baseline;
@@ -245,10 +245,10 @@
       align-items: center;
     }
     .mox-alignItems-start\@cq200Max {
-      align-items: flex-start;
+      align-items: start;
     }
     .mox-alignItems-end\@cq200Max {
-      align-items: flex-end;
+      align-items: end;
     }
     .mox-alignItems-baseline\@cq200Max {
       align-items: baseline;
@@ -269,10 +269,10 @@
       align-items: center;
     }
     .mox-alignItems-start\@cq400Min {
-      align-items: flex-start;
+      align-items: start;
     }
     .mox-alignItems-end\@cq400Min {
-      align-items: flex-end;
+      align-items: end;
     }
     .mox-alignItems-baseline\@cq400Min {
       align-items: baseline;
@@ -292,10 +292,10 @@
       align-items: center;
     }
     .mox-alignItems-start\@cq400Max {
-      align-items: flex-start;
+      align-items: start;
     }
     .mox-alignItems-end\@cq400Max {
-      align-items: flex-end;
+      align-items: end;
     }
     .mox-alignItems-baseline\@cq400Max {
       align-items: baseline;
@@ -316,10 +316,10 @@
       align-items: center;
     }
     .mox-alignItems-start\@cq600Min {
-      align-items: flex-start;
+      align-items: start;
     }
     .mox-alignItems-end\@cq600Min {
-      align-items: flex-end;
+      align-items: end;
     }
     .mox-alignItems-baseline\@cq600Min {
       align-items: baseline;
@@ -339,10 +339,10 @@
       align-items: center;
     }
     .mox-alignItems-start\@cq600Max {
-      align-items: flex-start;
+      align-items: start;
     }
     .mox-alignItems-end\@cq600Max {
-      align-items: flex-end;
+      align-items: end;
     }
     .mox-alignItems-baseline\@cq600Max {
       align-items: baseline;
@@ -363,10 +363,10 @@
       align-items: center;
     }
     .mox-alignItems-start\@cq800Min {
-      align-items: flex-start;
+      align-items: start;
     }
     .mox-alignItems-end\@cq800Min {
-      align-items: flex-end;
+      align-items: end;
     }
     .mox-alignItems-baseline\@cq800Min {
       align-items: baseline;
@@ -386,10 +386,10 @@
       align-items: center;
     }
     .mox-alignItems-start\@cq800Max {
-      align-items: flex-start;
+      align-items: start;
     }
     .mox-alignItems-end\@cq800Max {
-      align-items: flex-end;
+      align-items: end;
     }
     .mox-alignItems-baseline\@cq800Max {
       align-items: baseline;

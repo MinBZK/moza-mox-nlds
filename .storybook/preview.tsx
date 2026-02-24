@@ -1,5 +1,6 @@
 import "../src/moxCss/tokens.css";
 import "../src/moxCss/index.css";
+import "./docs.css";
 
 import type { Preview } from "@storybook/react-vite";
 import { INITIAL_VIEWPORTS } from "storybook/viewport";
@@ -64,9 +65,9 @@ const preview: Preview = {
         <div>
           <style>
             {`
-            @layer overwrites {
+            @layer overrides {
              details, summary, ol, ul, li, strong, em { 
-              all: revert; 
+                all: revert; 
               }
             }
             `}

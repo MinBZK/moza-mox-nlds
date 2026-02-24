@@ -24,7 +24,7 @@ export const globalSizeOptions = [
   "min-content",
 ] as const;
 
-export const globalGapOptions = ["0", "auto", "inherit"];
+export const globalGapOptions = ["0", "auto", "inherit"] as const;
 
 export const colorOptions = [
   "primary",

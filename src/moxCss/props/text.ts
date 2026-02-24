@@ -17,6 +17,16 @@ export const textProps = {
     ),
     responsive: true,
   },
+  fontStyle: {
+    options: {
+      normal: css`
+        font-style: normal;
+      `,
+      italic: css`
+        font-style: italic;
+      `,
+    },
+  },
   color: {
     options: colorOptions.reduce(
       (acc, propName) => ({

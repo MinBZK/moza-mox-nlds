@@ -1,0 +1,38 @@
+/* Custom styling for Storybook Docs */
+
+/* Style details/summary elements in story descriptions */
+.sbdocs-content details {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #f9f9f9;
+}
+
+.sbdocs-content summary {
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+  list-style: none;
+}
+
+.sbdocs-content summary::-webkit-details-marker {
+  display: none;
+}
+
+.sbdocs-content summary::before {
+  content: "▶";
+  display: inline-block;
+  padding-inline-end: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.sbdocs-content details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.sbdocs-content details[open] summary {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}

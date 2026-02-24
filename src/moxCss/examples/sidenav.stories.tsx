@@ -44,9 +44,12 @@ export const Default: StoryObj = {
     return (
       <a
         href="#"
-        className="mox-box mox-padding-sm mox-backgroundColor-neutral mox-backgroundColorHover-neutral-hover-hover"
+        className="mox-box mox-padding-sm mox-backgroundColor-transparent mox-backgroundColorHover-neutral-hover-hover mox-borderRadius-4px"
       >
-        <span className="mox-text-block">Sidenav Button</span>
+        <span className="mox-stack mox-gap-2xs mox-alignItems-center mox-direction-row">
+          <i className="bi bi-house-door-fill mox-fontSize-lg"></i>
+          <span className="mox-text-block">Sidenav Button</span>
+        </span>
       </a>
     );
   },

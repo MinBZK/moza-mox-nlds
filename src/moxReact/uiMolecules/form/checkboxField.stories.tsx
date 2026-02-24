@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { MoxMoleculeCheckboxField } from "./CheckboxField";
+import { getConstructionSummary } from "../../../storybook/helpers/getConstructionSummary";
 
 const meta = {
   title: "React/Molecules/Form/CheckboxField",
@@ -9,21 +10,12 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        story: `
----
-
-<details>
-<summary>**How this component is built**</summary>
-
-\`\`\`tsx
-<MoxAtomShelf>
-  <MoxAtomCheckbox id={id} />
-  <MoxTextBlock as="label" htmlFor={id}>{children}</MoxTextBlock>
-</MoxAtomShelf>
-\`\`\`
-
-</details>
-        `,
+        story: getConstructionSummary(`
+          <MoxAtomShelf>
+            <MoxAtomCheckbox id={id} />
+            <MoxTextBlock as="label" htmlFor={id}>{children}</MoxTextBlock>
+          </MoxAtomShelf>
+        `),
       },
     },
   },

@@ -23,6 +23,9 @@
   .mox-display-none {
     display: none;
   }
+  .mox-display-contents {
+    display: contents;
+  }
   /* Viewport breakpoint: mobile (600px) */
   @media only screen and (min-device-width: 600px) {
     .mox-display-block\@mobileMin {
@@ -44,6 +47,9 @@
     .mox-display-none\@mobileMin {
       display: none;
     }
+    .mox-display-contents\@mobileMin {
+      display: contents;
+    }
   }
   @media only screen and (max-device-width: 600px) {
     .mox-display-block\@mobileMax {
@@ -64,6 +70,9 @@
     }
     .mox-display-none\@mobileMax {
       display: none;
+    }
+    .mox-display-contents\@mobileMax {
+      display: contents;
     }
   }
   /* Viewport breakpoint: tablet (900px) */
@@ -87,6 +96,9 @@
     .mox-display-none\@tabletMin {
       display: none;
     }
+    .mox-display-contents\@tabletMin {
+      display: contents;
+    }
   }
   @media only screen and (max-device-width: 900px) {
     .mox-display-block\@tabletMax {
@@ -107,6 +119,9 @@
     }
     .mox-display-none\@tabletMax {
       display: none;
+    }
+    .mox-display-contents\@tabletMax {
+      display: contents;
     }
   }
   /* Viewport breakpoint: desktop (1200px) */
@@ -130,6 +145,9 @@
     .mox-display-none\@desktopMin {
       display: none;
     }
+    .mox-display-contents\@desktopMin {
+      display: contents;
+    }
   }
   @media only screen and (max-device-width: 1200px) {
     .mox-display-block\@desktopMax {
@@ -150,6 +168,9 @@
     }
     .mox-display-none\@desktopMax {
       display: none;
+    }
+    .mox-display-contents\@desktopMax {
+      display: contents;
     }
   }
   /* Viewport breakpoint: mq1440 (1440px) */
@@ -173,6 +194,9 @@
     .mox-display-none\@mq1440Min {
       display: none;
     }
+    .mox-display-contents\@mq1440Min {
+      display: contents;
+    }
   }
   @media only screen and (max-device-width: 1440px) {
     .mox-display-block\@mq1440Max {
@@ -193,6 +217,9 @@
     }
     .mox-display-none\@mq1440Max {
       display: none;
+    }
+    .mox-display-contents\@mq1440Max {
+      display: contents;
     }
   }
   /* Container breakpoint: cq200 (200px) */
@@ -216,6 +243,9 @@
     .mox-display-none\@cq200Min {
       display: none;
     }
+    .mox-display-contents\@cq200Min {
+      display: contents;
+    }
   }
   @container (max-width: 200px) {
     .mox-display-block\@cq200Max {
@@ -236,6 +266,9 @@
     }
     .mox-display-none\@cq200Max {
       display: none;
+    }
+    .mox-display-contents\@cq200Max {
+      display: contents;
     }
   }
   /* Container breakpoint: cq400 (400px) */
@@ -259,6 +292,9 @@
     .mox-display-none\@cq400Min {
       display: none;
     }
+    .mox-display-contents\@cq400Min {
+      display: contents;
+    }
   }
   @container (max-width: 400px) {
     .mox-display-block\@cq400Max {
@@ -279,6 +315,9 @@
     }
     .mox-display-none\@cq400Max {
       display: none;
+    }
+    .mox-display-contents\@cq400Max {
+      display: contents;
     }
   }
   /* Container breakpoint: cq600 (600px) */
@@ -302,6 +341,9 @@
     .mox-display-none\@cq600Min {
       display: none;
     }
+    .mox-display-contents\@cq600Min {
+      display: contents;
+    }
   }
   @container (max-width: 600px) {
     .mox-display-block\@cq600Max {
@@ -322,6 +364,9 @@
     }
     .mox-display-none\@cq600Max {
       display: none;
+    }
+    .mox-display-contents\@cq600Max {
+      display: contents;
     }
   }
   /* Container breakpoint: cq800 (800px) */
@@ -345,6 +390,9 @@
     .mox-display-none\@cq800Min {
       display: none;
     }
+    .mox-display-contents\@cq800Min {
+      display: contents;
+    }
   }
   @container (max-width: 800px) {
     .mox-display-block\@cq800Max {
@@ -365,6 +413,9 @@
     }
     .mox-display-none\@cq800Max {
       display: none;
+    }
+    .mox-display-contents\@cq800Max {
+      display: contents;
     }
   }
 }

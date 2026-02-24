@@ -10,6 +10,7 @@
     "test:watch": "vitest",
     "test:unit": "vitest run --project=unit",
     "generate:css": "ts-node src/moxCss/generateCss.ts",
+    "generate:tokens": "style-dictionary build",
     "preview": "vite preview",
     "dev:storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build",

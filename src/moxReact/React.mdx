@@ -1,0 +1,21 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="React/Properties" />
+
+<div className="sb-container">
+  <div className='sb-section-title'>
+    # React properties
+
+    We gebruiken consistente terminologie voor bepaalde props:
+
+    ## Atoms:
+
+    - `as`: render deze atom als een ander type element
+    - ...
+
+    ## Molecules, Organisms, Templates
+
+    - `<descriptor>Slot` (bv: `pageStartSlot`): een React element/node dat wordt gerenderd op een specifieke plek. Bijvoorbeeld: `<div>hoi</div>` of `<MoxStack>...</MoxStack>`.
+    - `<descriptor>Wrapper` (bv: `LogoImageWrapper`): een component dat een `children` prop accepteert en deze wrapped (de descriptor wordt daarom met hoofdletter geschreven). Bijvoorbeeld: `({children}) => (<a href="#">{children}</a>)`.
+    </div>
+    </div>

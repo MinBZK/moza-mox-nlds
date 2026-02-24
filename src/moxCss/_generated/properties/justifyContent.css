@@ -4,11 +4,11 @@
 */
 
 @layer props {
-  .mox-justifyContent-flexStart {
-    justify-content: flex-start;
+  .mox-justifyContent-start {
+    justify-content: start;
   }
-  .mox-justifyContent-flexEnd {
-    justify-content: flex-end;
+  .mox-justifyContent-end {
+    justify-content: end;
   }
   .mox-justifyContent-center {
     justify-content: center;
@@ -24,11 +24,11 @@
   }
   /* Viewport breakpoint: mobile (600px) */
   @media only screen and (min-device-width: 600px) {
-    .mox-justifyContent-flexStart\@mobileMin {
-      justify-content: flex-start;
+    .mox-justifyContent-start\@mobileMin {
+      justify-content: start;
     }
-    .mox-justifyContent-flexEnd\@mobileMin {
-      justify-content: flex-end;
+    .mox-justifyContent-end\@mobileMin {
+      justify-content: end;
     }
     .mox-justifyContent-center\@mobileMin {
       justify-content: center;
@@ -44,11 +44,11 @@
     }
   }
   @media only screen and (max-device-width: 600px) {
-    .mox-justifyContent-flexStart\@mobileMax {
-      justify-content: flex-start;
+    .mox-justifyContent-start\@mobileMax {
+      justify-content: start;
     }
-    .mox-justifyContent-flexEnd\@mobileMax {
-      justify-content: flex-end;
+    .mox-justifyContent-end\@mobileMax {
+      justify-content: end;
     }
     .mox-justifyContent-center\@mobileMax {
       justify-content: center;
@@ -65,11 +65,11 @@
   }
   /* Viewport breakpoint: tablet (900px) */
   @media only screen and (min-device-width: 900px) {
-    .mox-justifyContent-flexStart\@tabletMin {
-      justify-content: flex-start;
+    .mox-justifyContent-start\@tabletMin {
+      justify-content: start;
     }
-    .mox-justifyContent-flexEnd\@tabletMin {
-      justify-content: flex-end;
+    .mox-justifyContent-end\@tabletMin {
+      justify-content: end;
     }
     .mox-justifyContent-center\@tabletMin {
       justify-content: center;
@@ -85,11 +85,11 @@
     }
   }
   @media only screen and (max-device-width: 900px) {
-    .mox-justifyContent-flexStart\@tabletMax {
-      justify-content: flex-start;
+    .mox-justifyContent-start\@tabletMax {
+      justify-content: start;
     }
-    .mox-justifyContent-flexEnd\@tabletMax {
-      justify-content: flex-end;
+    .mox-justifyContent-end\@tabletMax {
+      justify-content: end;
     }
     .mox-justifyContent-center\@tabletMax {
       justify-content: center;
@@ -106,11 +106,11 @@
   }
   /* Viewport breakpoint: desktop (1200px) */
   @media only screen and (min-device-width: 1200px) {
-    .mox-justifyContent-flexStart\@desktopMin {
-      justify-content: flex-start;
+    .mox-justifyContent-start\@desktopMin {
+      justify-content: start;
     }
-    .mox-justifyContent-flexEnd\@desktopMin {
-      justify-content: flex-end;
+    .mox-justifyContent-end\@desktopMin {
+      justify-content: end;
     }
     .mox-justifyContent-center\@desktopMin {
       justify-content: center;
@@ -126,11 +126,11 @@
     }
   }
   @media only screen and (max-device-width: 1200px) {
-    .mox-justifyContent-flexStart\@desktopMax {
-      justify-content: flex-start;
+    .mox-justifyContent-start\@desktopMax {
+      justify-content: start;
     }
-    .mox-justifyContent-flexEnd\@desktopMax {
-      justify-content: flex-end;
+    .mox-justifyContent-end\@desktopMax {
+      justify-content: end;
     }
     .mox-justifyContent-center\@desktopMax {
       justify-content: center;
@@ -147,11 +147,11 @@
   }
   /* Viewport breakpoint: mq1440 (1440px) */
   @media only screen and (min-device-width: 1440px) {
-    .mox-justifyContent-flexStart\@mq1440Min {
-      justify-content: flex-start;
+    .mox-justifyContent-start\@mq1440Min {
+      justify-content: start;
     }
-    .mox-justifyContent-flexEnd\@mq1440Min {
-      justify-content: flex-end;
+    .mox-justifyContent-end\@mq1440Min {
+      justify-content: end;
     }
     .mox-justifyContent-center\@mq1440Min {
       justify-content: center;
@@ -167,11 +167,11 @@
     }
   }
   @media only screen and (max-device-width: 1440px) {
-    .mox-justifyContent-flexStart\@mq1440Max {
-      justify-content: flex-start;
+    .mox-justifyContent-start\@mq1440Max {
+      justify-content: start;
     }
-    .mox-justifyContent-flexEnd\@mq1440Max {
-      justify-content: flex-end;
+    .mox-justifyContent-end\@mq1440Max {
+      justify-content: end;
     }
     .mox-justifyContent-center\@mq1440Max {
       justify-content: center;
@@ -188,11 +188,11 @@
   }
   /* Container breakpoint: cq200 (200px) */
   @container (min-width: 200px) {
-    .mox-justifyContent-flexStart\@cq200Min {
-      justify-content: flex-start;
+    .mox-justifyContent-start\@cq200Min {
+      justify-content: start;
     }
-    .mox-justifyContent-flexEnd\@cq200Min {
-      justify-content: flex-end;
+    .mox-justifyContent-end\@cq200Min {
+      justify-content: end;
     }
     .mox-justifyContent-center\@cq200Min {
       justify-content: center;
@@ -208,11 +208,11 @@
     }
   }
   @container (max-width: 200px) {
-    .mox-justifyContent-flexStart\@cq200Max {
-      justify-content: flex-start;
+    .mox-justifyContent-start\@cq200Max {
+      justify-content: start;
     }
-    .mox-justifyContent-flexEnd\@cq200Max {
-      justify-content: flex-end;
+    .mox-justifyContent-end\@cq200Max {
+      justify-content: end;
     }
     .mox-justifyContent-center\@cq200Max {
       justify-content: center;
@@ -229,11 +229,11 @@
   }
   /* Container breakpoint: cq400 (400px) */
   @container (min-width: 400px) {
-    .mox-justifyContent-flexStart\@cq400Min {
-      justify-content: flex-start;
+    .mox-justifyContent-start\@cq400Min {
+      justify-content: start;
     }
-    .mox-justifyContent-flexEnd\@cq400Min {
-      justify-content: flex-end;
+    .mox-justifyContent-end\@cq400Min {
+      justify-content: end;
     }
     .mox-justifyContent-center\@cq400Min {
       justify-content: center;
@@ -249,11 +249,11 @@
     }
   }
   @container (max-width: 400px) {
-    .mox-justifyContent-flexStart\@cq400Max {
-      justify-content: flex-start;
+    .mox-justifyContent-start\@cq400Max {
+      justify-content: start;
     }
-    .mox-justifyContent-flexEnd\@cq400Max {
-      justify-content: flex-end;
+    .mox-justifyContent-end\@cq400Max {
+      justify-content: end;
     }
     .mox-justifyContent-center\@cq400Max {
       justify-content: center;
@@ -270,11 +270,11 @@
   }
   /* Container breakpoint: cq600 (600px) */
   @container (min-width: 600px) {
-    .mox-justifyContent-flexStart\@cq600Min {
-      justify-content: flex-start;
+    .mox-justifyContent-start\@cq600Min {
+      justify-content: start;
     }
-    .mox-justifyContent-flexEnd\@cq600Min {
-      justify-content: flex-end;
+    .mox-justifyContent-end\@cq600Min {
+      justify-content: end;
     }
     .mox-justifyContent-center\@cq600Min {
       justify-content: center;
@@ -290,11 +290,11 @@
     }
   }
   @container (max-width: 600px) {
-    .mox-justifyContent-flexStart\@cq600Max {
-      justify-content: flex-start;
+    .mox-justifyContent-start\@cq600Max {
+      justify-content: start;
     }
-    .mox-justifyContent-flexEnd\@cq600Max {
-      justify-content: flex-end;
+    .mox-justifyContent-end\@cq600Max {
+      justify-content: end;
     }
     .mox-justifyContent-center\@cq600Max {
       justify-content: center;
@@ -311,11 +311,11 @@
   }
   /* Container breakpoint: cq800 (800px) */
   @container (min-width: 800px) {
-    .mox-justifyContent-flexStart\@cq800Min {
-      justify-content: flex-start;
+    .mox-justifyContent-start\@cq800Min {
+      justify-content: start;
     }
-    .mox-justifyContent-flexEnd\@cq800Min {
-      justify-content: flex-end;
+    .mox-justifyContent-end\@cq800Min {
+      justify-content: end;
     }
     .mox-justifyContent-center\@cq800Min {
       justify-content: center;
@@ -331,11 +331,11 @@
     }
   }
   @container (max-width: 800px) {
-    .mox-justifyContent-flexStart\@cq800Max {
-      justify-content: flex-start;
+    .mox-justifyContent-start\@cq800Max {
+      justify-content: start;
     }
-    .mox-justifyContent-flexEnd\@cq800Max {
-      justify-content: flex-end;
+    .mox-justifyContent-end\@cq800Max {
+      justify-content: end;
     }
     .mox-justifyContent-center\@cq800Max {
       justify-content: center;
