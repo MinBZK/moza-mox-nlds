@@ -3,3 +3,5 @@
 @import "./typography/index.css";
 @import "./layout/index.css";
 @import "./media/index.css";
+
+@import "./richText/richText.css";

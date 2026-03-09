@@ -4,16 +4,14 @@
  * Contains the settings to be used for calculating & generating the css files in `_generated`:
  * - spaces: all clamp-values for spacing for each space-key (e.g., xs, sm, md, lg, xl)
  * - properties: all css-classes that should be generated for (possibly) responsive css properties
- * - markup: all css-classes that should be generated for markup elements (e.g., p, a, etc.)
+ * - rich-text: all css-classes that should be generated for markup elements (e.g., p, a, etc.)
  *
  */
 
-import type { StylePropTypes } from "../moxReact/uiAtoms/AtomTypes";
 import { prefix } from "./configOptions";
 import { boxProps } from "./props/box";
 import { flexProps } from "./props/flex";
 import { linkProps } from "./props/link";
-import { markupStyles } from "./props/markup";
 import { textProps } from "./props/text";
 import { utilsProps } from "./props/utils";
 
@@ -33,14 +31,13 @@ const containerBreakpoints = {
   cq800: 800,
 } as const;
 
-const props = {
+export const props = {
   // Keys of these objects are used to map React props to classnames (see: `propsToClassNames` helper)
   ...flexProps,
   ...linkProps,
   ...textProps,
   ...boxProps,
   ...utilsProps,
-  ...markupStyles,
 };
 
 export const moxConfig = {
@@ -73,87 +70,3 @@ type MoxConfig = {
   containerBreakpoints: typeof containerBreakpoints;
   props: MoxConfigProps;
 };
-
-export const markupContent = {
-  p: {
-    markup: "p",
-    alignItems: "start",
-    inlineSize: { mobileMin: "md", mobileMax: "xs" },
-  },
-  a: {
-    // markup: "a",
-    color: "primary",
-    underline: "underline",
-    underlineHover: "none",
-  },
-  blockquote: {
-    // markup: "blockquote",
-    backgroundColor: "primary-subtle-2",
-    padding: "md",
-    borderStartStartRadius: "lint-0.5",
-  },
-  "a.btn-primary": {
-    backgroundColor: "primary",
-    backgroundColorHover: "primary-hover",
-    paddingBlock:
-      "sm" /* small adjustment to compensate for missing textblock inside button */,
-    paddingInline: "md",
-    underline: "none",
-    underlineHover: "none",
-    display: "inline-block",
-    fontWeight: "bold",
-  },
-  "a.btn-secondary": {
-    backgroundColor: "secondary",
-    backgroundColorHover: "secondary-hover",
-    paddingBlock:
-      "sm" /* small adjustment to compensate for missing textblock inside button */,
-    paddingInline: "md",
-    underline: "none",
-    underlineHover: "none",
-    display: "inline-block",
-    fontWeight: "bold",
-  },
-  "a.btn-outline-primary": {
-    backgroundColor: "wit",
-    paddingBlock:
-      "sm" /* small adjustment to compensate for missing textblock inside button */,
-    paddingInline: "md",
-    underline: "none",
-    underlineHover: "none",
-    display: "inline-block",
-    borderColor: "primary",
-    borderColorHover: "primary-hover",
-    color: "primary",
-    borderWidth: "2px",
-    borderStyle: "solid",
-    fontWeight: "bold",
-  },
-  "a.btn-outline-secondary": {
-    backgroundColor: "wit",
-    paddingBlock:
-      "sm" /* small adjustment to compensate for missing textblock inside button */,
-    paddingInline: "md",
-    underline: "none",
-    underlineHover: "none",
-    display: "inline-block",
-    borderColor: "secondary",
-    borderColorHover: "secondary-hover",
-    color: "secondary",
-    borderWidth: "2px",
-    borderStyle: "solid",
-    fontWeight: "bold",
-  },
-  button: {
-    backgroundColor: "primary",
-    backgroundColorHover: "primary-hover",
-    paddingBlock:
-      "sm" /* small adjustment to compensate for missing textblock inside button */,
-    paddingInline: "md",
-    display: "inline-block",
-    fontWeight: "bold",
-  },
-} as const satisfies Record<
-  string,
-  StylePropTypes<readonly (keyof typeof props)[]>
->;

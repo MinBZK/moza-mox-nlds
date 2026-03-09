@@ -1,0 +1,3 @@
+:where(.mox-rich-text) p {
+  margin-block-end: var(--mox-space-xl);
+}

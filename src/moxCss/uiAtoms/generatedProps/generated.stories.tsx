@@ -8,6 +8,10 @@ export default {
   title: "MoxCSS/Atoms/Properties",
 };
 
+const slugifyOption = (option: string) => {
+  return option.replace(/[^a-zA-Z0-9-]/g, "-");
+};
+
 export const AllGeneratedCss = () => {
   const [propStates, setPropStates] = useState<Record<string, string>>({});
 
@@ -100,24 +104,27 @@ code {
                 <td>
                   <div className="limited-height">
                     <ul style={{ margin: 0, padding: 0, listStyle: "none" }}>
-                      {Object.keys(propConfig.options).map((option) => (
-                        <li key={option}>
-                          <button
-                            type="button"
-                            onClick={setProp(propName, option)}
-                            style={{
-                              ...(propStates[propName] === option
-                                ? {
-                                    fontWeight: "bold",
-                                    textDecoration: "underline",
-                                  }
-                                : {}),
-                            }}
-                          >
-                            {option}
-                          </button>
-                        </li>
-                      ))}
+                      {Object.keys(propConfig.options).map((_option) => {
+                        const option = slugifyOption(_option);
+                        return (
+                          <li key={option}>
+                            <button
+                              type="button"
+                              onClick={setProp(propName, option)}
+                              style={{
+                                ...(propStates[propName] === option
+                                  ? {
+                                      fontWeight: "bold",
+                                      textDecoration: "underline",
+                                    }
+                                  : {}),
+                              }}
+                            >
+                              {option}
+                            </button>
+                          </li>
+                        );
+                      })}
                       {"responsive" in propConfig && propConfig.responsive && (
                         <>
                           {Object.entries(moxConfig.viewportBreakpoints).map(
@@ -125,48 +132,51 @@ code {
                               <>
                                 <li className="breakpoint">{`Media: ${breakpoint} (${bpSize}px)`}</li>
                                 {Object.keys(propConfig.options).map(
-                                  (option) => (
-                                    <>
-                                      <li key={`${breakpoint}-Min-${option}`}>
-                                        <button
-                                          type="button"
-                                          onClick={setProp(
-                                            propName,
-                                            `${option}@${breakpoint}Min`,
-                                          )}
-                                          style={{
-                                            ...(propStates[propName] ===
-                                            `${option}@${breakpoint}Min`
-                                              ? {
-                                                  fontWeight: "bold",
-                                                  textDecoration: "underline",
-                                                }
-                                              : {}),
-                                          }}
-                                        >{`${option}@${breakpoint}Min`}</button>
-                                      </li>
-                                      <li key={`${breakpoint}-Max-${option}`}>
-                                        <button
-                                          type="button"
-                                          onClick={setProp(
-                                            propName,
-                                            `${option}@${breakpoint}Max`,
-                                          )}
-                                          style={{
-                                            ...(propStates[propName] ===
-                                            `${option}@${breakpoint}Max`
-                                              ? {
-                                                  fontWeight: "bold",
-                                                  textDecoration: "underline",
-                                                }
-                                              : {}),
-                                          }}
-                                        >
-                                          {`${option}@${breakpoint}Max`}
-                                        </button>
-                                      </li>
-                                    </>
-                                  ),
+                                  (_option) => {
+                                    const option = slugifyOption(_option);
+                                    return (
+                                      <>
+                                        <li key={`${breakpoint}-Min-${option}`}>
+                                          <button
+                                            type="button"
+                                            onClick={setProp(
+                                              propName,
+                                              `${option}@${breakpoint}Min`,
+                                            )}
+                                            style={{
+                                              ...(propStates[propName] ===
+                                              `${option}@${breakpoint}Min`
+                                                ? {
+                                                    fontWeight: "bold",
+                                                    textDecoration: "underline",
+                                                  }
+                                                : {}),
+                                            }}
+                                          >{`${option}@${breakpoint}Min`}</button>
+                                        </li>
+                                        <li key={`${breakpoint}-Max-${option}`}>
+                                          <button
+                                            type="button"
+                                            onClick={setProp(
+                                              propName,
+                                              `${option}@${breakpoint}Max`,
+                                            )}
+                                            style={{
+                                              ...(propStates[propName] ===
+                                              `${option}@${breakpoint}Max`
+                                                ? {
+                                                    fontWeight: "bold",
+                                                    textDecoration: "underline",
+                                                  }
+                                                : {}),
+                                            }}
+                                          >
+                                            {`${option}@${breakpoint}Max`}
+                                          </button>
+                                        </li>
+                                      </>
+                                    );
+                                  },
                                 )}
                               </>
                             ),
@@ -176,46 +186,49 @@ code {
                               <>
                                 <li className="breakpoint">{`Container: ${breakpoint} (${bpSize}px)`}</li>
                                 {Object.keys(propConfig.options).map(
-                                  (option) => (
-                                    <>
-                                      <li key={`${breakpoint}-Min-${option}`}>
-                                        <button
-                                          type="button"
-                                          onClick={setProp(
-                                            propName,
-                                            `${option}@${breakpoint}Min`,
-                                          )}
-                                          style={{
-                                            ...(propStates[propName] ===
-                                            `${option}@${breakpoint}Min`
-                                              ? {
-                                                  fontWeight: "bold",
-                                                  textDecoration: "underline",
-                                                }
-                                              : {}),
-                                          }}
-                                        >{`${option}@${breakpoint}Min`}</button>
-                                      </li>
-                                      <li key={`${breakpoint}-Max-${option}`}>
-                                        <button
-                                          type="button"
-                                          onClick={setProp(
-                                            propName,
-                                            `${option}@${breakpoint}Max`,
-                                          )}
-                                          style={{
-                                            ...(propStates[propName] ===
-                                            `${option}@${breakpoint}Max`
-                                              ? {
-                                                  fontWeight: "bold",
-                                                  textDecoration: "underline",
-                                                }
-                                              : {}),
-                                          }}
-                                        >{`${option}@${breakpoint}Max`}</button>
-                                      </li>
-                                    </>
-                                  ),
+                                  (_option) => {
+                                    const option = slugifyOption(_option);
+                                    return (
+                                      <>
+                                        <li key={`${breakpoint}-Min-${option}`}>
+                                          <button
+                                            type="button"
+                                            onClick={setProp(
+                                              propName,
+                                              `${option}@${breakpoint}Min`,
+                                            )}
+                                            style={{
+                                              ...(propStates[propName] ===
+                                              `${option}@${breakpoint}Min`
+                                                ? {
+                                                    fontWeight: "bold",
+                                                    textDecoration: "underline",
+                                                  }
+                                                : {}),
+                                            }}
+                                          >{`${option}@${breakpoint}Min`}</button>
+                                        </li>
+                                        <li key={`${breakpoint}-Max-${option}`}>
+                                          <button
+                                            type="button"
+                                            onClick={setProp(
+                                              propName,
+                                              `${option}@${breakpoint}Max`,
+                                            )}
+                                            style={{
+                                              ...(propStates[propName] ===
+                                              `${option}@${breakpoint}Max`
+                                                ? {
+                                                    fontWeight: "bold",
+                                                    textDecoration: "underline",
+                                                  }
+                                                : {}),
+                                            }}
+                                          >{`${option}@${breakpoint}Max`}</button>
+                                        </li>
+                                      </>
+                                    );
+                                  },
                                 )}
                               </>
                             ),

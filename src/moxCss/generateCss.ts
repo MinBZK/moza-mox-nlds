@@ -1,8 +1,14 @@
 import { posix as posixPath } from "path";
-import { markupContent, moxConfig } from "./mox.config";
+import { moxConfig } from "./mox.config";
 import * as fs from "fs";
 import { spaces } from "./configOptions";
 import { format } from "prettier";
+import { richText } from "./uiAtoms/richText/richText.config";
+
+// Get rid of any special characters in the option key to create a valid CSS class name
+const slugifyOption = (option: string) => {
+  return option.replace(/[^a-zA-Z0-9-]/g, "-");
+};
 
 const getClassName = ({
   propKey,
@@ -15,9 +21,7 @@ const getClassName = ({
   responsiveKey?: string;
   state?: "hover" | "active" | "focus" | "disabled";
 }) => {
-  return `.${
-    moxConfig.prefix
-  }-${propKey}-${optionKey.replace(/[^a-zA-Z0-9-]/g, "-")}${
+  return `.${moxConfig.prefix}-${propKey}-${slugifyOption(optionKey)}${
     responsiveKey != null ? `\\@${responsiveKey}` : ""
   }${state != null ? `-${state}:${state}` : ""}`;
 };
@@ -230,8 +234,8 @@ export function getCssForPropOption(
   return propConfig.options[option as keyof typeof propConfig.options];
 }
 
-const generateMarkupContentStyles = async () => {
-  const markupWrapperClass = ":where(.markup-content)"; // using :where to avoid specificity issues with other styles applied to the same tags
+export const generateRichTextStyles = async () => {
+  const richTextWrapperClass = ":where(.mox-rich-text)"; // using :where to avoid specificity issues with other styles applied to the same tags
   const result = [
     `
 /**
@@ -242,7 +246,7 @@ const generateMarkupContentStyles = async () => {
 @layer atoms {`,
   ];
 
-  for (const [tag, styles] of Object.entries(markupContent)) {
+  for (const [tag, styles] of Object.entries(richText)) {
     result.push(`/* Styles for <${tag}> */`);
     const simpleStyles = Object.entries(styles)
       .filter(([_, value]) => typeof value === "string")
@@ -250,7 +254,7 @@ const generateMarkupContentStyles = async () => {
         const propConfig =
           moxConfig.props[prop as keyof typeof moxConfig.props];
         const stateSuffix = "state" in propConfig ? `:${propConfig.state}` : "";
-        return `${markupWrapperClass} ${tag}${stateSuffix} { ${getCssForPropOption(prop, value)?.trim()} }`;
+        return `${richTextWrapperClass} ${tag}${stateSuffix} { ${getCssForPropOption(prop, value)?.trim()} }`;
       })
       .join("");
 
@@ -281,7 +285,7 @@ const generateMarkupContentStyles = async () => {
               breakpointDirection != null
             ) {
               return `@media only screen and (${breakpointDirection}-width: ${moxConfig.viewportBreakpoints[breakpointType as keyof typeof moxConfig.viewportBreakpoints]}px) {
-                ${markupWrapperClass} ${tag}${stateSuffix} {
+                ${richTextWrapperClass} ${tag}${stateSuffix} {
                   ${css}
                 }
               }`;
@@ -290,7 +294,7 @@ const generateMarkupContentStyles = async () => {
               breakpointDirection != null
             ) {
               return `@container only screen and (${breakpointDirection}-width: ${moxConfig.containerBreakpoints[breakpointType as keyof typeof moxConfig.containerBreakpoints]}px) {
-                ${markupWrapperClass} ${tag}${stateSuffix} {
+                ${richTextWrapperClass} ${tag}${stateSuffix} {
                   ${css}
                 }
               }`;
@@ -308,18 +312,18 @@ const generateMarkupContentStyles = async () => {
   result.push(`}`); // end of @layer
 
   const formattedCss = await format(result.join("\n"), { parser: "css" });
-  const dirPath = posixPath.join(__dirname, "_generated", "markupContent");
+  const dirPath = posixPath.join(__dirname, "_generated", "richText");
   if (!fs.existsSync(dirPath)) {
     fs.mkdirSync(dirPath, { recursive: true });
   }
   fs.writeFileSync(posixPath.join(dirPath, `index.css`), formattedCss);
 
   console.info(
-    `✅ Generated markup styles for tags:\n${Object.keys(markupContent).join(", ")}\n`,
+    `✅ Generated rich text styles for tags:\n${Object.keys(richText).join(", ")}\n`,
   );
 };
 
 // Todo: clean generated folder first?
 generateProps();
 generateClampSpaces();
-generateMarkupContentStyles();
+generateRichTextStyles();
