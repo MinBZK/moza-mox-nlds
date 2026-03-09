@@ -7,13 +7,23 @@
     "declarationMap": true,
     "emitDeclarationOnly": false,
     "jsx": "react-jsx",
-    "module": "ESNext",
+    "module": "CommonJS",
     "target": "ES2019",
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src/index.ts"],
-  "exclude": ["**/*.stories.tsx", "**/*.test.tsx", "node_modules", "dist"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": [
+    "**/*.stories.tsx",
+    "**/*.test.tsx",
+    "**/*.test.ts",
+    "node_modules",
+    "dist",
+    "src/main.tsx",
+    "src/App.tsx",
+    "src/moxCss/generateCss.ts",
+    "src/storybook/**/*"
+  ]
 }

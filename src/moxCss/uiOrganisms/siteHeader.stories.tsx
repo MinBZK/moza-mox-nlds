@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
-  title: "MoxCSS/Templates/SiteHeader",
+  title: "MoxCSS/Organisms/SiteHeader",
   tags: ["autodocs"],
   parameters: {
     layout: "fullscreen",
@@ -41,10 +41,12 @@ export const Default: StoryObj = {
                 <img
                   className="mox-image mox-site-header-logo-rijksoverheid mox-alignSelf-start"
                   alt="Rijkslint"
-                  src="/moza-mox-nlds/public/logo-rijksoverheid.svg"
+                  src="/logo-rijksoverheid.svg"
                 />
               </div>
-              <div className="mox-box mox-order-auto@mobileMin mox-order-2@mobileMax mox-justifySelf-start@mobileMin mox-justifySelf-center@mobileMax mox-display-contents@mobileMax"></div>
+              <div className="mox-box mox-order-auto@mobileMin mox-order-2@mobileMax mox-justifySelf-start@mobileMin mox-justifySelf-center@mobileMax mox-display-contents@mobileMax">
+                <div className="mox-text-block">Rijksoverheid partij</div>
+              </div>
             </div>
           </div>
         </div>

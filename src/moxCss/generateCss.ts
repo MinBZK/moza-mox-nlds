@@ -1,9 +1,15 @@
 import { posix as posixPath } from "path";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
 import { moxConfig } from "./mox.config";
 import * as fs from "fs";
 import { spaces } from "./configOptions";
 import { format } from "prettier";
 import { richText } from "./uiAtoms/richText/richText.config";
+
+// ES module equivalent of __dirname
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // Get rid of any special characters in the option key to create a valid CSS class name
 const slugifyOption = (option: string) => {

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
-  title: "MoxCSS/Examples/Sidenav button",
+  title: "MoxCSS/Molecules/Sidenav button",
   tags: ["autodocs"],
   parameters: {
     docs: {
