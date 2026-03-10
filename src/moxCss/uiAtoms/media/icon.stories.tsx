@@ -3,6 +3,7 @@ import type { StylePropTypes } from "../../../moxReact/uiAtoms/AtomTypes";
 import { getStylePropArgTypes } from "../../../storybook/helpers/getStylePropArgTypes";
 import { propsToClassNames } from "../../../moxReact/helpers/propsToClassNames";
 import { iconStyleProps } from "../../../moxReact/uiAtoms/media/Icon";
+import { iconNames } from "../../../moxIcons/iconNames";
 
 const meta = {
   title: "MoxCSS/Atoms/Media/Icon",
@@ -29,61 +30,6 @@ const meta = {
 
 export default meta;
 
-const mostUsedIcons = [
-  "house-door",
-  "search",
-  "box-arrow-up-right",
-  "caret-up",
-  "caret-down",
-  "caret-left",
-  "caret-right",
-  "arrow-up",
-  "arrow-down",
-  "arrow-left",
-  "arrow-right",
-  "check",
-  "x",
-  "plus",
-  "dash",
-  "info",
-  "question",
-  "exclamation",
-  "heart",
-  "heart-fill",
-  "eye",
-  "eye-slash",
-  "lock",
-  "unlock",
-  "trash",
-  "pencil",
-  "gear",
-  "calendar",
-  "clock",
-  "download",
-  "upload",
-  "link",
-  "clipboard",
-  "filter",
-  "list",
-  "grid",
-  "menu-button-wide",
-  "person",
-  "person-fill",
-  "envelope",
-  "envelope-open",
-  "phone",
-  "phone-fill",
-  "chat",
-  "chat-dots",
-  "bell",
-  "bell-fill",
-  "house-door-fill",
-  "star",
-  "star-fill",
-  "star-half",
-  "stars",
-];
-
 export const Default: StoryObj<StylePropTypes<typeof iconStyleProps>> = {
   parameters: {
     layout: "fullscreen",
@@ -106,7 +52,7 @@ export const Default: StoryObj<StylePropTypes<typeof iconStyleProps>> = {
           alignItems: "center",
         }}
       >
-        {mostUsedIcons.map((icon) => (
+        {iconNames.map((icon) => (
           <div key={icon} style={{ textAlign: "center" }}>
             <i
               className={`bi-${icon} mox-icon ${stylePropClassNames.join(" ")}`}

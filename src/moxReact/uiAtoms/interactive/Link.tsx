@@ -6,7 +6,7 @@ import clsx from "clsx";
 const styleProps = [
   "underline",
   "underlineHover",
-  // "color",
+  "color",
 ] as const satisfies StyleProps;
 
 /**
@@ -24,7 +24,7 @@ export const MoxAtomLink = <T extends ElementType = "a">({
   // convert style props into correct classnames
   const { stylePropClassNames, restProps } = propsToClassNames(
     styleProps,
-    props
+    props,
   );
 
   return (

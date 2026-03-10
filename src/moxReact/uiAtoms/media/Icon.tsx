@@ -2,9 +2,10 @@ import clsx from "clsx";
 import { type ElementType } from "react";
 import type { AtomProps, StyleProps } from "../AtomTypes";
 import { propsToClassNames } from "../../helpers/propsToClassNames";
+import * as icons from "react-bootstrap-icons";
 
 export const iconStyleProps = [
-  "fontSize",
+  "fontSize", // todo: check if this is easier to use 'size' - but to use it like a iconFont for css, the fontSize is needed and it works for React components as well
   "color",
   "colorHover",
 ] as const satisfies StyleProps;
@@ -20,9 +21,12 @@ export const MoxAtomIcon = <T extends ElementType = "div">({
   as,
   className,
   ref,
+  icon,
   ...props
-}: AtomProps<T, typeof iconStyleProps>) => {
-  const Component = as || ("div" as ElementType);
+}: AtomProps<T, typeof iconStyleProps> & {
+  icon: keyof typeof icons;
+}) => {
+  const BootstrapIcon = icons[icon];
 
   // convert props into correct classnames
   const { stylePropClassNames, restProps } = propsToClassNames(
@@ -31,13 +35,13 @@ export const MoxAtomIcon = <T extends ElementType = "div">({
   );
 
   return (
-    <Component
+    <BootstrapIcon
       ref={ref}
       className={clsx("mox-icon", ...stylePropClassNames, className)}
       {...restProps}
     >
       {children}
-    </Component>
+    </BootstrapIcon>
   );
 };
 
