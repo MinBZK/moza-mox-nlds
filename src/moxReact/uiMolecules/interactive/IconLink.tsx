@@ -7,17 +7,15 @@ import { MoxAtomLink, MoxShelf } from "../../uiAtoms";
  */
 export const MoxMoleculeIconLink = ({
   children,
-  linkProps,
   startIconSlot,
   endIconSlot,
+  ...props
 }: {
-  children: ReactNode;
-  linkProps?: ComponentPropsWithoutRef<typeof MoxAtomLink>;
   startIconSlot?: ReactNode;
   endIconSlot?: ReactNode;
-}) => {
+} & ComponentPropsWithoutRef<typeof MoxAtomLink>) => {
   return (
-    <MoxAtomLink {...linkProps} underlineHover="underline">
+    <MoxAtomLink {...props} underlineHover="underline">
       <MoxShelf columnGap="4xs" alignItems={"start"}>
         {startIconSlot}
         {children}

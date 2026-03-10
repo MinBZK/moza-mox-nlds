@@ -1,4 +1,4 @@
-import type { ComponentPropsWithoutRef, ReactNode } from "react";
+import type { ComponentPropsWithoutRef } from "react";
 import { MoxAtomLink, MoxIcon, MoxShelf } from "../../uiAtoms";
 
 /**
@@ -7,23 +7,25 @@ import { MoxAtomLink, MoxIcon, MoxShelf } from "../../uiAtoms";
  */
 export const MoxMoleculeChevronLink = ({
   children,
-  linkProps,
   position = "start",
   direction = "forward",
+  ...props
 }: {
-  children: ReactNode;
-  linkProps?: ComponentPropsWithoutRef<typeof MoxAtomLink>;
   position?: "start" | "end";
   direction?: "forward" | "backward";
-}) => {
+} & ComponentPropsWithoutRef<typeof MoxAtomLink>) => {
   const iconName = direction === "forward" ? "ChevronRight" : "ChevronLeft";
 
   return (
-    <MoxAtomLink {...linkProps} underlineHover="underline">
+    <MoxAtomLink {...props} underlineHover="underline">
       <MoxShelf columnGap="4xs" alignItems={"start"}>
-        {position === "start" && <MoxIcon fontSize="xs" icon={iconName} />}
+        {position === "start" && (
+          <MoxIcon flex="1 0 auto" fontSize="xs" icon={iconName} />
+        )}
         {children}
-        {position === "end" && <MoxIcon fontSize="xs" icon={iconName} />}
+        {position === "end" && (
+          <MoxIcon flex="1 0 auto" fontSize="xs" icon={iconName} />
+        )}
       </MoxShelf>
     </MoxAtomLink>
   );

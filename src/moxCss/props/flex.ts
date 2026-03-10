@@ -7,6 +7,29 @@ const css = String.raw;
 
 /* Flex or grid properties */
 export const flexProps = {
+  flex: {
+    options: {
+      "0 1 auto": css`
+        flex: 0 1 auto;
+      `,
+      "1 1 auto": css`
+        flex: 1 1 auto;
+      `,
+      "1 0 auto": css`
+        flex: 1 0 auto;
+      `,
+      "0 0 auto": css`
+        flex: 0 0 auto;
+      `,
+      initial: css`
+        flex: initial;
+      `,
+      auto: css`
+        flex: auto;
+      `,
+    },
+    responsive: true,
+  },
   direction: {
     options: {
       row: css`

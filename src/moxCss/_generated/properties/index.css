@@ -1,3 +1,4 @@
+@import './flex.css';
 @import './direction.css';
 @import './wrap.css';
 @import './alignSelf.css';
@@ -31,6 +32,12 @@
 @import './borderColorHover.css';
 @import './borderColorActive.css';
 @import './borderStyle.css';
+@import './borderBlockStyle.css';
+@import './borderBlockStartStyle.css';
+@import './borderBlockEndStyle.css';
+@import './borderInlineStyle.css';
+@import './borderInlineStartStyle.css';
+@import './borderInlineEndStyle.css';
 @import './backgroundColor.css';
 @import './backgroundColorHover.css';
 @import './backgroundColorActive.css';

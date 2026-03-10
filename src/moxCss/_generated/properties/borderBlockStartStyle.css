@@ -1,0 +1,19 @@
+/**
+  * This file is auto-generated. Do not edit directly.
+  * Generated from src/moxCss/mox.config.ts and script: `generateCss.ts`
+*/
+
+@layer props {
+  .mox-borderBlockStartStyle-solid {
+    border-block-start-style: solid;
+  }
+  .mox-borderBlockStartStyle-dashed {
+    border-block-start-style: dashed;
+  }
+  .mox-borderBlockStartStyle-dotted {
+    border-block-start-style: dotted;
+  }
+  .mox-borderBlockStartStyle-none {
+    border-block-start-style: none;
+  }
+}

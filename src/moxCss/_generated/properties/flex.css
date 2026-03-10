@@ -1,0 +1,353 @@
+/**
+  * This file is auto-generated. Do not edit directly.
+  * Generated from src/moxCss/mox.config.ts and script: `generateCss.ts`
+*/
+
+@layer props {
+  .mox-flex-0-1-auto {
+    flex: 0 1 auto;
+  }
+  .mox-flex-1-1-auto {
+    flex: 1 1 auto;
+  }
+  .mox-flex-1-0-auto {
+    flex: 1 0 auto;
+  }
+  .mox-flex-0-0-auto {
+    flex: 0 0 auto;
+  }
+  .mox-flex-initial {
+    flex: initial;
+  }
+  .mox-flex-auto {
+    flex: auto;
+  }
+  /* Viewport breakpoint: mobile (600px) */
+  @media only screen and (min-device-width: 600px) {
+    .mox-flex-0-1-auto\@mobileMin {
+      flex: 0 1 auto;
+    }
+    .mox-flex-1-1-auto\@mobileMin {
+      flex: 1 1 auto;
+    }
+    .mox-flex-1-0-auto\@mobileMin {
+      flex: 1 0 auto;
+    }
+    .mox-flex-0-0-auto\@mobileMin {
+      flex: 0 0 auto;
+    }
+    .mox-flex-initial\@mobileMin {
+      flex: initial;
+    }
+    .mox-flex-auto\@mobileMin {
+      flex: auto;
+    }
+  }
+  @media only screen and (max-device-width: 600px) {
+    .mox-flex-0-1-auto\@mobileMax {
+      flex: 0 1 auto;
+    }
+    .mox-flex-1-1-auto\@mobileMax {
+      flex: 1 1 auto;
+    }
+    .mox-flex-1-0-auto\@mobileMax {
+      flex: 1 0 auto;
+    }
+    .mox-flex-0-0-auto\@mobileMax {
+      flex: 0 0 auto;
+    }
+    .mox-flex-initial\@mobileMax {
+      flex: initial;
+    }
+    .mox-flex-auto\@mobileMax {
+      flex: auto;
+    }
+  }
+  /* Viewport breakpoint: tablet (900px) */
+  @media only screen and (min-device-width: 900px) {
+    .mox-flex-0-1-auto\@tabletMin {
+      flex: 0 1 auto;
+    }
+    .mox-flex-1-1-auto\@tabletMin {
+      flex: 1 1 auto;
+    }
+    .mox-flex-1-0-auto\@tabletMin {
+      flex: 1 0 auto;
+    }
+    .mox-flex-0-0-auto\@tabletMin {
+      flex: 0 0 auto;
+    }
+    .mox-flex-initial\@tabletMin {
+      flex: initial;
+    }
+    .mox-flex-auto\@tabletMin {
+      flex: auto;
+    }
+  }
+  @media only screen and (max-device-width: 900px) {
+    .mox-flex-0-1-auto\@tabletMax {
+      flex: 0 1 auto;
+    }
+    .mox-flex-1-1-auto\@tabletMax {
+      flex: 1 1 auto;
+    }
+    .mox-flex-1-0-auto\@tabletMax {
+      flex: 1 0 auto;
+    }
+    .mox-flex-0-0-auto\@tabletMax {
+      flex: 0 0 auto;
+    }
+    .mox-flex-initial\@tabletMax {
+      flex: initial;
+    }
+    .mox-flex-auto\@tabletMax {
+      flex: auto;
+    }
+  }
+  /* Viewport breakpoint: desktop (1200px) */
+  @media only screen and (min-device-width: 1200px) {
+    .mox-flex-0-1-auto\@desktopMin {
+      flex: 0 1 auto;
+    }
+    .mox-flex-1-1-auto\@desktopMin {
+      flex: 1 1 auto;
+    }
+    .mox-flex-1-0-auto\@desktopMin {
+      flex: 1 0 auto;
+    }
+    .mox-flex-0-0-auto\@desktopMin {
+      flex: 0 0 auto;
+    }
+    .mox-flex-initial\@desktopMin {
+      flex: initial;
+    }
+    .mox-flex-auto\@desktopMin {
+      flex: auto;
+    }
+  }
+  @media only screen and (max-device-width: 1200px) {
+    .mox-flex-0-1-auto\@desktopMax {
+      flex: 0 1 auto;
+    }
+    .mox-flex-1-1-auto\@desktopMax {
+      flex: 1 1 auto;
+    }
+    .mox-flex-1-0-auto\@desktopMax {
+      flex: 1 0 auto;
+    }
+    .mox-flex-0-0-auto\@desktopMax {
+      flex: 0 0 auto;
+    }
+    .mox-flex-initial\@desktopMax {
+      flex: initial;
+    }
+    .mox-flex-auto\@desktopMax {
+      flex: auto;
+    }
+  }
+  /* Viewport breakpoint: mq1440 (1440px) */
+  @media only screen and (min-device-width: 1440px) {
+    .mox-flex-0-1-auto\@mq1440Min {
+      flex: 0 1 auto;
+    }
+    .mox-flex-1-1-auto\@mq1440Min {
+      flex: 1 1 auto;
+    }
+    .mox-flex-1-0-auto\@mq1440Min {
+      flex: 1 0 auto;
+    }
+    .mox-flex-0-0-auto\@mq1440Min {
+      flex: 0 0 auto;
+    }
+    .mox-flex-initial\@mq1440Min {
+      flex: initial;
+    }
+    .mox-flex-auto\@mq1440Min {
+      flex: auto;
+    }
+  }
+  @media only screen and (max-device-width: 1440px) {
+    .mox-flex-0-1-auto\@mq1440Max {
+      flex: 0 1 auto;
+    }
+    .mox-flex-1-1-auto\@mq1440Max {
+      flex: 1 1 auto;
+    }
+    .mox-flex-1-0-auto\@mq1440Max {
+      flex: 1 0 auto;
+    }
+    .mox-flex-0-0-auto\@mq1440Max {
+      flex: 0 0 auto;
+    }
+    .mox-flex-initial\@mq1440Max {
+      flex: initial;
+    }
+    .mox-flex-auto\@mq1440Max {
+      flex: auto;
+    }
+  }
+  /* Container breakpoint: cq200 (200px) */
+  @container (min-width: 200px) {
+    .mox-flex-0-1-auto\@cq200Min {
+      flex: 0 1 auto;
+    }
+    .mox-flex-1-1-auto\@cq200Min {
+      flex: 1 1 auto;
+    }
+    .mox-flex-1-0-auto\@cq200Min {
+      flex: 1 0 auto;
+    }
+    .mox-flex-0-0-auto\@cq200Min {
+      flex: 0 0 auto;
+    }
+    .mox-flex-initial\@cq200Min {
+      flex: initial;
+    }
+    .mox-flex-auto\@cq200Min {
+      flex: auto;
+    }
+  }
+  @container (max-width: 200px) {
+    .mox-flex-0-1-auto\@cq200Max {
+      flex: 0 1 auto;
+    }
+    .mox-flex-1-1-auto\@cq200Max {
+      flex: 1 1 auto;
+    }
+    .mox-flex-1-0-auto\@cq200Max {
+      flex: 1 0 auto;
+    }
+    .mox-flex-0-0-auto\@cq200Max {
+      flex: 0 0 auto;
+    }
+    .mox-flex-initial\@cq200Max {
+      flex: initial;
+    }
+    .mox-flex-auto\@cq200Max {
+      flex: auto;
+    }
+  }
+  /* Container breakpoint: cq400 (400px) */
+  @container (min-width: 400px) {
+    .mox-flex-0-1-auto\@cq400Min {
+      flex: 0 1 auto;
+    }
+    .mox-flex-1-1-auto\@cq400Min {
+      flex: 1 1 auto;
+    }
+    .mox-flex-1-0-auto\@cq400Min {
+      flex: 1 0 auto;
+    }
+    .mox-flex-0-0-auto\@cq400Min {
+      flex: 0 0 auto;
+    }
+    .mox-flex-initial\@cq400Min {
+      flex: initial;
+    }
+    .mox-flex-auto\@cq400Min {
+      flex: auto;
+    }
+  }
+  @container (max-width: 400px) {
+    .mox-flex-0-1-auto\@cq400Max {
+      flex: 0 1 auto;
+    }
+    .mox-flex-1-1-auto\@cq400Max {
+      flex: 1 1 auto;
+    }
+    .mox-flex-1-0-auto\@cq400Max {
+      flex: 1 0 auto;
+    }
+    .mox-flex-0-0-auto\@cq400Max {
+      flex: 0 0 auto;
+    }
+    .mox-flex-initial\@cq400Max {
+      flex: initial;
+    }
+    .mox-flex-auto\@cq400Max {
+      flex: auto;
+    }
+  }
+  /* Container breakpoint: cq600 (600px) */
+  @container (min-width: 600px) {
+    .mox-flex-0-1-auto\@cq600Min {
+      flex: 0 1 auto;
+    }
+    .mox-flex-1-1-auto\@cq600Min {
+      flex: 1 1 auto;
+    }
+    .mox-flex-1-0-auto\@cq600Min {
+      flex: 1 0 auto;
+    }
+    .mox-flex-0-0-auto\@cq600Min {
+      flex: 0 0 auto;
+    }
+    .mox-flex-initial\@cq600Min {
+      flex: initial;
+    }
+    .mox-flex-auto\@cq600Min {
+      flex: auto;
+    }
+  }
+  @container (max-width: 600px) {
+    .mox-flex-0-1-auto\@cq600Max {
+      flex: 0 1 auto;
+    }
+    .mox-flex-1-1-auto\@cq600Max {
+      flex: 1 1 auto;
+    }
+    .mox-flex-1-0-auto\@cq600Max {
+      flex: 1 0 auto;
+    }
+    .mox-flex-0-0-auto\@cq600Max {
+      flex: 0 0 auto;
+    }
+    .mox-flex-initial\@cq600Max {
+      flex: initial;
+    }
+    .mox-flex-auto\@cq600Max {
+      flex: auto;
+    }
+  }
+  /* Container breakpoint: cq800 (800px) */
+  @container (min-width: 800px) {
+    .mox-flex-0-1-auto\@cq800Min {
+      flex: 0 1 auto;
+    }
+    .mox-flex-1-1-auto\@cq800Min {
+      flex: 1 1 auto;
+    }
+    .mox-flex-1-0-auto\@cq800Min {
+      flex: 1 0 auto;
+    }
+    .mox-flex-0-0-auto\@cq800Min {
+      flex: 0 0 auto;
+    }
+    .mox-flex-initial\@cq800Min {
+      flex: initial;
+    }
+    .mox-flex-auto\@cq800Min {
+      flex: auto;
+    }
+  }
+  @container (max-width: 800px) {
+    .mox-flex-0-1-auto\@cq800Max {
+      flex: 0 1 auto;
+    }
+    .mox-flex-1-1-auto\@cq800Max {
+      flex: 1 1 auto;
+    }
+    .mox-flex-1-0-auto\@cq800Max {
+      flex: 1 0 auto;
+    }
+    .mox-flex-0-0-auto\@cq800Max {
+      flex: 0 0 auto;
+    }
+    .mox-flex-initial\@cq800Max {
+      flex: initial;
+    }
+    .mox-flex-auto\@cq800Max {
+      flex: auto;
+    }
+  }
+}

@@ -5,6 +5,7 @@ import { propsToClassNames } from "../../helpers/propsToClassNames";
 
 export const containerGridStyleProps = [
   "itemSize",
+  "flex",
 ] as const satisfies StyleProps;
 
 /**
@@ -33,7 +34,7 @@ export const MoxAtomContainerGrid = <T extends ElementType = "div">({
   // convert props into correct classnames
   const { stylePropClassNames, restProps } = propsToClassNames(
     containerGridStyleProps,
-    props
+    props,
   );
 
   return (

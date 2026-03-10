@@ -112,6 +112,102 @@ export const boxProps = {
       `,
     },
   },
+  borderBlockStyle: {
+    options: {
+      solid: css`
+        border-block-style: solid;
+      `,
+      dashed: css`
+        border-block-style: dashed;
+      `,
+      dotted: css`
+        border-block-style: dotted;
+      `,
+      none: css`
+        border-block-style: none;
+      `,
+    },
+  },
+  borderBlockStartStyle: {
+    options: {
+      solid: css`
+        border-block-start-style: solid;
+      `,
+      dashed: css`
+        border-block-start-style: dashed;
+      `,
+      dotted: css`
+        border-block-start-style: dotted;
+      `,
+      none: css`
+        border-block-start-style: none;
+      `,
+    },
+  },
+  borderBlockEndStyle: {
+    options: {
+      solid: css`
+        border-block-end-style: solid;
+      `,
+      dashed: css`
+        border-block-end-style: dashed;
+      `,
+      dotted: css`
+        border-block-end-style: dotted;
+      `,
+      none: css`
+        border-block-end-style: none;
+      `,
+    },
+  },
+  borderInlineStyle: {
+    options: {
+      solid: css`
+        border-inline-style: solid;
+      `,
+      dashed: css`
+        border-inline-style: dashed;
+      `,
+      dotted: css`
+        border-inline-style: dotted;
+      `,
+      none: css`
+        border-inline-style: none;
+      `,
+    },
+  },
+  borderInlineStartStyle: {
+    options: {
+      solid: css`
+        border-inline-start-style: solid;
+      `,
+      dashed: css`
+        border-inline-start-style: dashed;
+      `,
+      dotted: css`
+        border-inline-start-style: dotted;
+      `,
+      none: css`
+        border-inline-start-style: none;
+      `,
+    },
+  },
+  borderInlineEndStyle: {
+    options: {
+      solid: css`
+        border-inline-end-style: solid;
+      `,
+      dashed: css`
+        border-inline-end-style: dashed;
+      `,
+      dotted: css`
+        border-inline-end-style: dotted;
+      `,
+      none: css`
+        border-inline-end-style: none;
+      `,
+    },
+  },
   backgroundColor: {
     options: colorOptions.reduce(
       (acc, propName) => ({

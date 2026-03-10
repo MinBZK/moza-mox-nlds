@@ -7,6 +7,7 @@ export const imageStyleProps = [
   "size",
   "blockSize",
   "inlineSize",
+  "flex",
 ] as const satisfies StyleProps;
 
 /**

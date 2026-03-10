@@ -11,6 +11,7 @@ export const textBlockStyleProps = [
   "lineHeight",
   "underline",
   "underlineHover",
+  "flex",
 ] as const satisfies StyleProps;
 
 /**

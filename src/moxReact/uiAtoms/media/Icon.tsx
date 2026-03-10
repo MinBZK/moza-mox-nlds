@@ -8,6 +8,7 @@ export const iconStyleProps = [
   "fontSize", // todo: check if this is easier to use 'size' - but to use it like a iconFont for css, the fontSize is needed and it works for React components as well
   "color",
   "colorHover",
+  "flex",
 ] as const satisfies StyleProps;
 
 /**

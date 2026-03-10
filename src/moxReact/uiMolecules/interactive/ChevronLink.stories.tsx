@@ -23,6 +23,7 @@ const meta = {
     },
   },
   args: {
+    href: "#",
     children: <MoxTextBlock>Click me!</MoxTextBlock>,
   },
 } satisfies Meta<typeof MoxMoleculeChevronLink>;

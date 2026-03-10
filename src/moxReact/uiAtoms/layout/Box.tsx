@@ -23,6 +23,12 @@ export const boxStyleProps = [
   "borderWidth",
   "borderColor",
   "borderStyle",
+  "borderBlockStyle",
+  "borderBlockStartStyle",
+  "borderBlockEndStyle",
+  "borderInlineStyle",
+  "borderInlineStartStyle",
+  "borderInlineEndStyle",
   "backgroundColor",
   "gridColumn",
   "gridColumnStart",
@@ -30,6 +36,7 @@ export const boxStyleProps = [
   "justifySelf",
   "alignSelf",
   "order",
+  "flex",
 ] as const satisfies StyleProps;
 
 /**

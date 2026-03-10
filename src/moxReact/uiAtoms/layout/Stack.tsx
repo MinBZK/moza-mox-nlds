@@ -11,6 +11,7 @@ export const stackStyleProps = [
   "alignItems",
   "justifyContent",
   "wrap",
+  "flex",
 ] as const satisfies StyleProps;
 
 /**
@@ -42,7 +43,7 @@ export const MoxAtomStack = <T extends ElementType = "div">({
   // convert style props into correct classnames
   const { stylePropClassNames, restProps } = propsToClassNames(
     stackStyleProps,
-    props
+    props,
   );
 
   return (

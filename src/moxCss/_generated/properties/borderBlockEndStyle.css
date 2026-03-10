@@ -1,0 +1,19 @@
+/**
+  * This file is auto-generated. Do not edit directly.
+  * Generated from src/moxCss/mox.config.ts and script: `generateCss.ts`
+*/
+
+@layer props {
+  .mox-borderBlockEndStyle-solid {
+    border-block-end-style: solid;
+  }
+  .mox-borderBlockEndStyle-dashed {
+    border-block-end-style: dashed;
+  }
+  .mox-borderBlockEndStyle-dotted {
+    border-block-end-style: dotted;
+  }
+  .mox-borderBlockEndStyle-none {
+    border-block-end-style: none;
+  }
+}

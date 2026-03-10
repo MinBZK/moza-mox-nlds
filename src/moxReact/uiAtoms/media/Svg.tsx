@@ -7,6 +7,7 @@ export const svgStyleProps = [
   "size",
   "color",
   "colorHover",
+  "flex",
 ] as const satisfies StyleProps;
 
 /**

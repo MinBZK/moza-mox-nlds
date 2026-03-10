@@ -11,6 +11,7 @@ export const gridStyleProps = [
   "columnGap",
   "gridTemplateColumns",
   "gridTemplateRows",
+  "flex",
 ] as const satisfies StyleProps;
 
 /**

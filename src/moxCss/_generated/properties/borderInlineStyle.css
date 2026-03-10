@@ -1,0 +1,19 @@
+/**
+  * This file is auto-generated. Do not edit directly.
+  * Generated from src/moxCss/mox.config.ts and script: `generateCss.ts`
+*/
+
+@layer props {
+  .mox-borderInlineStyle-solid {
+    border-inline-style: solid;
+  }
+  .mox-borderInlineStyle-dashed {
+    border-inline-style: dashed;
+  }
+  .mox-borderInlineStyle-dotted {
+    border-inline-style: dotted;
+  }
+  .mox-borderInlineStyle-none {
+    border-inline-style: none;
+  }
+}

@@ -3,7 +3,7 @@ import { type ElementType } from "react";
 import type { AtomProps, StyleProps } from "../AtomTypes";
 import { propsToClassNames } from "../../helpers/propsToClassNames";
 
-export const pageGridStyleProps = [] as const satisfies StyleProps;
+export const pageGridStyleProps = ["flex"] as const satisfies StyleProps;
 
 /**
  * Page grid component.
@@ -34,7 +34,7 @@ export const MoxAtomPageGrid = <T extends ElementType = "div">({
   // convert props into correct classnames
   const { stylePropClassNames, restProps } = propsToClassNames(
     pageGridStyleProps,
-    props
+    props,
   );
 
   return (
