@@ -5,6 +5,9 @@ import { propsToClassNames } from "../../helpers/propsToClassNames";
 
 export const containerGridStyleProps = [
   "itemSize",
+  "gap",
+  "rowGap",
+  "columnGap",
   "flex",
 ] as const satisfies StyleProps;
 

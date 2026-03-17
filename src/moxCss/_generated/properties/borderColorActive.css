@@ -4,6 +4,12 @@
 */
 
 @layer props {
+  .mox-borderColorActive-plain-active:active {
+    border-color: var(--mox-color-plain);
+  }
+  .mox-borderColorActive-plain-contrast-active:active {
+    border-color: var(--mox-color-plain-contrast);
+  }
   .mox-borderColorActive-primary-active:active {
     border-color: var(--mox-color-primary);
   }
@@ -130,31 +136,25 @@
   .mox-borderColorActive-warning-subtle-2-hover-active:active {
     border-color: var(--mox-color-warning-subtle-2-hover);
   }
-  .mox-borderColorActive-error-active:active {
-    border-color: var(--mox-color-error);
+  .mox-borderColorActive-danger-active:active {
+    border-color: var(--mox-color-danger);
   }
-  .mox-borderColorActive-error-hover-active:active {
-    border-color: var(--mox-color-error-hover);
+  .mox-borderColorActive-danger-hover-active:active {
+    border-color: var(--mox-color-danger-hover);
   }
-  .mox-borderColorActive-error-subtle-active:active {
-    border-color: var(--mox-color-error-subtle);
+  .mox-borderColorActive-danger-subtle-active:active {
+    border-color: var(--mox-color-danger-subtle);
   }
-  .mox-borderColorActive-error-subtle-hover-active:active {
-    border-color: var(--mox-color-error-subtle-hover);
+  .mox-borderColorActive-danger-subtle-hover-active:active {
+    border-color: var(--mox-color-danger-subtle-hover);
   }
-  .mox-borderColorActive-error-subtle-2-active:active {
-    border-color: var(--mox-color-error-subtle-2);
+  .mox-borderColorActive-danger-subtle-2-active:active {
+    border-color: var(--mox-color-danger-subtle-2);
   }
-  .mox-borderColorActive-error-subtle-2-hover-active:active {
-    border-color: var(--mox-color-error-subtle-2-hover);
+  .mox-borderColorActive-danger-subtle-2-hover-active:active {
+    border-color: var(--mox-color-danger-subtle-2-hover);
   }
-  .mox-borderColorActive-zwart-active:active {
-    border-color: var(--mox-color-zwart);
-  }
-  .mox-borderColorActive-wit-active:active {
-    border-color: var(--mox-color-wit);
-  }
-  .mox-borderColorActive-transparant-active:active {
-    border-color: var(--mox-color-transparant);
+  .mox-borderColorActive-transparent-active:active {
+    border-color: var(--mox-color-transparent);
   }
 }

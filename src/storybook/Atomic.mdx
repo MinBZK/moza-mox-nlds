@@ -69,9 +69,11 @@ Er zijn zowel Atoms voor CSS als voor React. De React componenten gebruiken de C
 
 In principe praten vanaf dit niveau alleen over React componenten (maar enkele elementen met classNames samen kan je op zich beschouwen als **molecule**).
 
+Een molecule is (meestal) herbruikbaar over in meerdere, verschillende contexts (bv een `badge`, `icon-link`, een form field met label en error message). Ze hebben altijd één enkele focus.
+
 #### Beloftes
 
-- In principe geen `design tokens`
+- In principe **geen** `design tokens`
 - Aanpasbaarheid door de API van het component
 - Docs over hoe het opgebouwd is, zodat je zelf makkelijk het kan nabouwen met **atoms** voor volledige aanpasbaarheid
 - Anders dan **atoms** kunnen hier sneller breaking changes in voorkomen
@@ -79,7 +81,7 @@ In principe praten vanaf dit niveau alleen over React componenten (maar enkele e
 
 ### lv. 3 - Organisms
 
-**Organisms** zijn weer opgebouwd uit **molecules** en/of **atoms**. Deze componenten zijn complexer dan **molecules** en kunnen custom interactiviteit hebben.
+**Organisms** zijn weer opgebouwd uit **molecules** en/of **atoms**. Deze componenten zijn complexer dan **molecules** en kunnen custom interactiviteit hebben. Meestal worden deze gebruikt voor specifieke page-specifieke blokken van de interface, zoals een `site-header`, `footer`, `card-as-link`.
 
 #### Beloftes
 

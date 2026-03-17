@@ -7,6 +7,12 @@
   .mox-paddingInlineStart-0 {
     padding-inline-start: 0;
   }
+  .mox-paddingInlineStart-6xs {
+    padding-inline-start: var(--mox-space-6xs);
+  }
+  .mox-paddingInlineStart-5xs {
+    padding-inline-start: var(--mox-space-5xs);
+  }
   .mox-paddingInlineStart-4xs {
     padding-inline-start: var(--mox-space-4xs);
   }
@@ -40,6 +46,12 @@
   .mox-paddingInlineStart-4xl {
     padding-inline-start: var(--mox-space-4xl);
   }
+  .mox-paddingInlineStart-5xl {
+    padding-inline-start: var(--mox-space-5xl);
+  }
+  .mox-paddingInlineStart-6xl {
+    padding-inline-start: var(--mox-space-6xl);
+  }
   .mox-paddingInlineStart-auto {
     padding-inline-start: auto;
   }
@@ -50,6 +62,12 @@
   @media only screen and (min-device-width: 600px) {
     .mox-paddingInlineStart-0\@mobileMin {
       padding-inline-start: 0;
+    }
+    .mox-paddingInlineStart-6xs\@mobileMin {
+      padding-inline-start: var(--mox-space-6xs);
+    }
+    .mox-paddingInlineStart-5xs\@mobileMin {
+      padding-inline-start: var(--mox-space-5xs);
     }
     .mox-paddingInlineStart-4xs\@mobileMin {
       padding-inline-start: var(--mox-space-4xs);
@@ -84,6 +102,12 @@
     .mox-paddingInlineStart-4xl\@mobileMin {
       padding-inline-start: var(--mox-space-4xl);
     }
+    .mox-paddingInlineStart-5xl\@mobileMin {
+      padding-inline-start: var(--mox-space-5xl);
+    }
+    .mox-paddingInlineStart-6xl\@mobileMin {
+      padding-inline-start: var(--mox-space-6xl);
+    }
     .mox-paddingInlineStart-auto\@mobileMin {
       padding-inline-start: auto;
     }
@@ -94,6 +118,12 @@
   @media only screen and (max-device-width: 600px) {
     .mox-paddingInlineStart-0\@mobileMax {
       padding-inline-start: 0;
+    }
+    .mox-paddingInlineStart-6xs\@mobileMax {
+      padding-inline-start: var(--mox-space-6xs);
+    }
+    .mox-paddingInlineStart-5xs\@mobileMax {
+      padding-inline-start: var(--mox-space-5xs);
     }
     .mox-paddingInlineStart-4xs\@mobileMax {
       padding-inline-start: var(--mox-space-4xs);
@@ -128,6 +158,12 @@
     .mox-paddingInlineStart-4xl\@mobileMax {
       padding-inline-start: var(--mox-space-4xl);
     }
+    .mox-paddingInlineStart-5xl\@mobileMax {
+      padding-inline-start: var(--mox-space-5xl);
+    }
+    .mox-paddingInlineStart-6xl\@mobileMax {
+      padding-inline-start: var(--mox-space-6xl);
+    }
     .mox-paddingInlineStart-auto\@mobileMax {
       padding-inline-start: auto;
     }
@@ -139,6 +175,12 @@
   @media only screen and (min-device-width: 900px) {
     .mox-paddingInlineStart-0\@tabletMin {
       padding-inline-start: 0;
+    }
+    .mox-paddingInlineStart-6xs\@tabletMin {
+      padding-inline-start: var(--mox-space-6xs);
+    }
+    .mox-paddingInlineStart-5xs\@tabletMin {
+      padding-inline-start: var(--mox-space-5xs);
     }
     .mox-paddingInlineStart-4xs\@tabletMin {
       padding-inline-start: var(--mox-space-4xs);
@@ -173,6 +215,12 @@
     .mox-paddingInlineStart-4xl\@tabletMin {
       padding-inline-start: var(--mox-space-4xl);
     }
+    .mox-paddingInlineStart-5xl\@tabletMin {
+      padding-inline-start: var(--mox-space-5xl);
+    }
+    .mox-paddingInlineStart-6xl\@tabletMin {
+      padding-inline-start: var(--mox-space-6xl);
+    }
     .mox-paddingInlineStart-auto\@tabletMin {
       padding-inline-start: auto;
     }
@@ -183,6 +231,12 @@
   @media only screen and (max-device-width: 900px) {
     .mox-paddingInlineStart-0\@tabletMax {
       padding-inline-start: 0;
+    }
+    .mox-paddingInlineStart-6xs\@tabletMax {
+      padding-inline-start: var(--mox-space-6xs);
+    }
+    .mox-paddingInlineStart-5xs\@tabletMax {
+      padding-inline-start: var(--mox-space-5xs);
     }
     .mox-paddingInlineStart-4xs\@tabletMax {
       padding-inline-start: var(--mox-space-4xs);
@@ -217,6 +271,12 @@
     .mox-paddingInlineStart-4xl\@tabletMax {
       padding-inline-start: var(--mox-space-4xl);
     }
+    .mox-paddingInlineStart-5xl\@tabletMax {
+      padding-inline-start: var(--mox-space-5xl);
+    }
+    .mox-paddingInlineStart-6xl\@tabletMax {
+      padding-inline-start: var(--mox-space-6xl);
+    }
     .mox-paddingInlineStart-auto\@tabletMax {
       padding-inline-start: auto;
     }
@@ -228,6 +288,12 @@
   @media only screen and (min-device-width: 1200px) {
     .mox-paddingInlineStart-0\@desktopMin {
       padding-inline-start: 0;
+    }
+    .mox-paddingInlineStart-6xs\@desktopMin {
+      padding-inline-start: var(--mox-space-6xs);
+    }
+    .mox-paddingInlineStart-5xs\@desktopMin {
+      padding-inline-start: var(--mox-space-5xs);
     }
     .mox-paddingInlineStart-4xs\@desktopMin {
       padding-inline-start: var(--mox-space-4xs);
@@ -262,6 +328,12 @@
     .mox-paddingInlineStart-4xl\@desktopMin {
       padding-inline-start: var(--mox-space-4xl);
     }
+    .mox-paddingInlineStart-5xl\@desktopMin {
+      padding-inline-start: var(--mox-space-5xl);
+    }
+    .mox-paddingInlineStart-6xl\@desktopMin {
+      padding-inline-start: var(--mox-space-6xl);
+    }
     .mox-paddingInlineStart-auto\@desktopMin {
       padding-inline-start: auto;
     }
@@ -272,6 +344,12 @@
   @media only screen and (max-device-width: 1200px) {
     .mox-paddingInlineStart-0\@desktopMax {
       padding-inline-start: 0;
+    }
+    .mox-paddingInlineStart-6xs\@desktopMax {
+      padding-inline-start: var(--mox-space-6xs);
+    }
+    .mox-paddingInlineStart-5xs\@desktopMax {
+      padding-inline-start: var(--mox-space-5xs);
     }
     .mox-paddingInlineStart-4xs\@desktopMax {
       padding-inline-start: var(--mox-space-4xs);
@@ -306,6 +384,12 @@
     .mox-paddingInlineStart-4xl\@desktopMax {
       padding-inline-start: var(--mox-space-4xl);
     }
+    .mox-paddingInlineStart-5xl\@desktopMax {
+      padding-inline-start: var(--mox-space-5xl);
+    }
+    .mox-paddingInlineStart-6xl\@desktopMax {
+      padding-inline-start: var(--mox-space-6xl);
+    }
     .mox-paddingInlineStart-auto\@desktopMax {
       padding-inline-start: auto;
     }
@@ -317,6 +401,12 @@
   @media only screen and (min-device-width: 1440px) {
     .mox-paddingInlineStart-0\@mq1440Min {
       padding-inline-start: 0;
+    }
+    .mox-paddingInlineStart-6xs\@mq1440Min {
+      padding-inline-start: var(--mox-space-6xs);
+    }
+    .mox-paddingInlineStart-5xs\@mq1440Min {
+      padding-inline-start: var(--mox-space-5xs);
     }
     .mox-paddingInlineStart-4xs\@mq1440Min {
       padding-inline-start: var(--mox-space-4xs);
@@ -351,6 +441,12 @@
     .mox-paddingInlineStart-4xl\@mq1440Min {
       padding-inline-start: var(--mox-space-4xl);
     }
+    .mox-paddingInlineStart-5xl\@mq1440Min {
+      padding-inline-start: var(--mox-space-5xl);
+    }
+    .mox-paddingInlineStart-6xl\@mq1440Min {
+      padding-inline-start: var(--mox-space-6xl);
+    }
     .mox-paddingInlineStart-auto\@mq1440Min {
       padding-inline-start: auto;
     }
@@ -361,6 +457,12 @@
   @media only screen and (max-device-width: 1440px) {
     .mox-paddingInlineStart-0\@mq1440Max {
       padding-inline-start: 0;
+    }
+    .mox-paddingInlineStart-6xs\@mq1440Max {
+      padding-inline-start: var(--mox-space-6xs);
+    }
+    .mox-paddingInlineStart-5xs\@mq1440Max {
+      padding-inline-start: var(--mox-space-5xs);
     }
     .mox-paddingInlineStart-4xs\@mq1440Max {
       padding-inline-start: var(--mox-space-4xs);
@@ -395,6 +497,12 @@
     .mox-paddingInlineStart-4xl\@mq1440Max {
       padding-inline-start: var(--mox-space-4xl);
     }
+    .mox-paddingInlineStart-5xl\@mq1440Max {
+      padding-inline-start: var(--mox-space-5xl);
+    }
+    .mox-paddingInlineStart-6xl\@mq1440Max {
+      padding-inline-start: var(--mox-space-6xl);
+    }
     .mox-paddingInlineStart-auto\@mq1440Max {
       padding-inline-start: auto;
     }
@@ -406,6 +514,12 @@
   @container (min-width: 200px) {
     .mox-paddingInlineStart-0\@cq200Min {
       padding-inline-start: 0;
+    }
+    .mox-paddingInlineStart-6xs\@cq200Min {
+      padding-inline-start: var(--mox-space-6xs);
+    }
+    .mox-paddingInlineStart-5xs\@cq200Min {
+      padding-inline-start: var(--mox-space-5xs);
     }
     .mox-paddingInlineStart-4xs\@cq200Min {
       padding-inline-start: var(--mox-space-4xs);
@@ -440,6 +554,12 @@
     .mox-paddingInlineStart-4xl\@cq200Min {
       padding-inline-start: var(--mox-space-4xl);
     }
+    .mox-paddingInlineStart-5xl\@cq200Min {
+      padding-inline-start: var(--mox-space-5xl);
+    }
+    .mox-paddingInlineStart-6xl\@cq200Min {
+      padding-inline-start: var(--mox-space-6xl);
+    }
     .mox-paddingInlineStart-auto\@cq200Min {
       padding-inline-start: auto;
     }
@@ -450,6 +570,12 @@
   @container (max-width: 200px) {
     .mox-paddingInlineStart-0\@cq200Max {
       padding-inline-start: 0;
+    }
+    .mox-paddingInlineStart-6xs\@cq200Max {
+      padding-inline-start: var(--mox-space-6xs);
+    }
+    .mox-paddingInlineStart-5xs\@cq200Max {
+      padding-inline-start: var(--mox-space-5xs);
     }
     .mox-paddingInlineStart-4xs\@cq200Max {
       padding-inline-start: var(--mox-space-4xs);
@@ -484,6 +610,12 @@
     .mox-paddingInlineStart-4xl\@cq200Max {
       padding-inline-start: var(--mox-space-4xl);
     }
+    .mox-paddingInlineStart-5xl\@cq200Max {
+      padding-inline-start: var(--mox-space-5xl);
+    }
+    .mox-paddingInlineStart-6xl\@cq200Max {
+      padding-inline-start: var(--mox-space-6xl);
+    }
     .mox-paddingInlineStart-auto\@cq200Max {
       padding-inline-start: auto;
     }
@@ -495,6 +627,12 @@
   @container (min-width: 400px) {
     .mox-paddingInlineStart-0\@cq400Min {
       padding-inline-start: 0;
+    }
+    .mox-paddingInlineStart-6xs\@cq400Min {
+      padding-inline-start: var(--mox-space-6xs);
+    }
+    .mox-paddingInlineStart-5xs\@cq400Min {
+      padding-inline-start: var(--mox-space-5xs);
     }
     .mox-paddingInlineStart-4xs\@cq400Min {
       padding-inline-start: var(--mox-space-4xs);
@@ -529,6 +667,12 @@
     .mox-paddingInlineStart-4xl\@cq400Min {
       padding-inline-start: var(--mox-space-4xl);
     }
+    .mox-paddingInlineStart-5xl\@cq400Min {
+      padding-inline-start: var(--mox-space-5xl);
+    }
+    .mox-paddingInlineStart-6xl\@cq400Min {
+      padding-inline-start: var(--mox-space-6xl);
+    }
     .mox-paddingInlineStart-auto\@cq400Min {
       padding-inline-start: auto;
     }
@@ -539,6 +683,12 @@
   @container (max-width: 400px) {
     .mox-paddingInlineStart-0\@cq400Max {
       padding-inline-start: 0;
+    }
+    .mox-paddingInlineStart-6xs\@cq400Max {
+      padding-inline-start: var(--mox-space-6xs);
+    }
+    .mox-paddingInlineStart-5xs\@cq400Max {
+      padding-inline-start: var(--mox-space-5xs);
     }
     .mox-paddingInlineStart-4xs\@cq400Max {
       padding-inline-start: var(--mox-space-4xs);
@@ -573,6 +723,12 @@
     .mox-paddingInlineStart-4xl\@cq400Max {
       padding-inline-start: var(--mox-space-4xl);
     }
+    .mox-paddingInlineStart-5xl\@cq400Max {
+      padding-inline-start: var(--mox-space-5xl);
+    }
+    .mox-paddingInlineStart-6xl\@cq400Max {
+      padding-inline-start: var(--mox-space-6xl);
+    }
     .mox-paddingInlineStart-auto\@cq400Max {
       padding-inline-start: auto;
     }
@@ -584,6 +740,12 @@
   @container (min-width: 600px) {
     .mox-paddingInlineStart-0\@cq600Min {
       padding-inline-start: 0;
+    }
+    .mox-paddingInlineStart-6xs\@cq600Min {
+      padding-inline-start: var(--mox-space-6xs);
+    }
+    .mox-paddingInlineStart-5xs\@cq600Min {
+      padding-inline-start: var(--mox-space-5xs);
     }
     .mox-paddingInlineStart-4xs\@cq600Min {
       padding-inline-start: var(--mox-space-4xs);
@@ -618,6 +780,12 @@
     .mox-paddingInlineStart-4xl\@cq600Min {
       padding-inline-start: var(--mox-space-4xl);
     }
+    .mox-paddingInlineStart-5xl\@cq600Min {
+      padding-inline-start: var(--mox-space-5xl);
+    }
+    .mox-paddingInlineStart-6xl\@cq600Min {
+      padding-inline-start: var(--mox-space-6xl);
+    }
     .mox-paddingInlineStart-auto\@cq600Min {
       padding-inline-start: auto;
     }
@@ -628,6 +796,12 @@
   @container (max-width: 600px) {
     .mox-paddingInlineStart-0\@cq600Max {
       padding-inline-start: 0;
+    }
+    .mox-paddingInlineStart-6xs\@cq600Max {
+      padding-inline-start: var(--mox-space-6xs);
+    }
+    .mox-paddingInlineStart-5xs\@cq600Max {
+      padding-inline-start: var(--mox-space-5xs);
     }
     .mox-paddingInlineStart-4xs\@cq600Max {
       padding-inline-start: var(--mox-space-4xs);
@@ -662,6 +836,12 @@
     .mox-paddingInlineStart-4xl\@cq600Max {
       padding-inline-start: var(--mox-space-4xl);
     }
+    .mox-paddingInlineStart-5xl\@cq600Max {
+      padding-inline-start: var(--mox-space-5xl);
+    }
+    .mox-paddingInlineStart-6xl\@cq600Max {
+      padding-inline-start: var(--mox-space-6xl);
+    }
     .mox-paddingInlineStart-auto\@cq600Max {
       padding-inline-start: auto;
     }
@@ -673,6 +853,12 @@
   @container (min-width: 800px) {
     .mox-paddingInlineStart-0\@cq800Min {
       padding-inline-start: 0;
+    }
+    .mox-paddingInlineStart-6xs\@cq800Min {
+      padding-inline-start: var(--mox-space-6xs);
+    }
+    .mox-paddingInlineStart-5xs\@cq800Min {
+      padding-inline-start: var(--mox-space-5xs);
     }
     .mox-paddingInlineStart-4xs\@cq800Min {
       padding-inline-start: var(--mox-space-4xs);
@@ -707,6 +893,12 @@
     .mox-paddingInlineStart-4xl\@cq800Min {
       padding-inline-start: var(--mox-space-4xl);
     }
+    .mox-paddingInlineStart-5xl\@cq800Min {
+      padding-inline-start: var(--mox-space-5xl);
+    }
+    .mox-paddingInlineStart-6xl\@cq800Min {
+      padding-inline-start: var(--mox-space-6xl);
+    }
     .mox-paddingInlineStart-auto\@cq800Min {
       padding-inline-start: auto;
     }
@@ -717,6 +909,12 @@
   @container (max-width: 800px) {
     .mox-paddingInlineStart-0\@cq800Max {
       padding-inline-start: 0;
+    }
+    .mox-paddingInlineStart-6xs\@cq800Max {
+      padding-inline-start: var(--mox-space-6xs);
+    }
+    .mox-paddingInlineStart-5xs\@cq800Max {
+      padding-inline-start: var(--mox-space-5xs);
     }
     .mox-paddingInlineStart-4xs\@cq800Max {
       padding-inline-start: var(--mox-space-4xs);
@@ -750,6 +948,12 @@
     }
     .mox-paddingInlineStart-4xl\@cq800Max {
       padding-inline-start: var(--mox-space-4xl);
+    }
+    .mox-paddingInlineStart-5xl\@cq800Max {
+      padding-inline-start: var(--mox-space-5xl);
+    }
+    .mox-paddingInlineStart-6xl\@cq800Max {
+      padding-inline-start: var(--mox-space-6xl);
     }
     .mox-paddingInlineStart-auto\@cq800Max {
       padding-inline-start: auto;

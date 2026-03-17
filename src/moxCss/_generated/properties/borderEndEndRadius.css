@@ -20,7 +20,7 @@
     border-radius: 8px;
   }
   .mox-borderEndEndRadius-circle {
-    border-radius: 50%;
+    border-radius: calc(1px * infinity);
   }
   .mox-borderEndEndRadius-lint-0-25 {
     border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));
@@ -58,7 +58,7 @@
       border-radius: 8px;
     }
     .mox-borderEndEndRadius-circle\@mobileMin {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
     .mox-borderEndEndRadius-lint-0-25\@mobileMin {
       border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));
@@ -96,7 +96,7 @@
       border-radius: 8px;
     }
     .mox-borderEndEndRadius-circle\@mobileMax {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
     .mox-borderEndEndRadius-lint-0-25\@mobileMax {
       border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));
@@ -135,7 +135,7 @@
       border-radius: 8px;
     }
     .mox-borderEndEndRadius-circle\@tabletMin {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
     .mox-borderEndEndRadius-lint-0-25\@tabletMin {
       border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));
@@ -173,7 +173,7 @@
       border-radius: 8px;
     }
     .mox-borderEndEndRadius-circle\@tabletMax {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
     .mox-borderEndEndRadius-lint-0-25\@tabletMax {
       border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));
@@ -212,7 +212,7 @@
       border-radius: 8px;
     }
     .mox-borderEndEndRadius-circle\@desktopMin {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
     .mox-borderEndEndRadius-lint-0-25\@desktopMin {
       border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));
@@ -250,7 +250,7 @@
       border-radius: 8px;
     }
     .mox-borderEndEndRadius-circle\@desktopMax {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
     .mox-borderEndEndRadius-lint-0-25\@desktopMax {
       border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));
@@ -289,7 +289,7 @@
       border-radius: 8px;
     }
     .mox-borderEndEndRadius-circle\@mq1440Min {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
     .mox-borderEndEndRadius-lint-0-25\@mq1440Min {
       border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));
@@ -327,7 +327,7 @@
       border-radius: 8px;
     }
     .mox-borderEndEndRadius-circle\@mq1440Max {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
     .mox-borderEndEndRadius-lint-0-25\@mq1440Max {
       border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));
@@ -366,7 +366,7 @@
       border-radius: 8px;
     }
     .mox-borderEndEndRadius-circle\@cq200Min {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
     .mox-borderEndEndRadius-lint-0-25\@cq200Min {
       border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));
@@ -404,7 +404,7 @@
       border-radius: 8px;
     }
     .mox-borderEndEndRadius-circle\@cq200Max {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
     .mox-borderEndEndRadius-lint-0-25\@cq200Max {
       border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));
@@ -443,7 +443,7 @@
       border-radius: 8px;
     }
     .mox-borderEndEndRadius-circle\@cq400Min {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
     .mox-borderEndEndRadius-lint-0-25\@cq400Min {
       border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));
@@ -481,7 +481,7 @@
       border-radius: 8px;
     }
     .mox-borderEndEndRadius-circle\@cq400Max {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
     .mox-borderEndEndRadius-lint-0-25\@cq400Max {
       border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));
@@ -520,7 +520,7 @@
       border-radius: 8px;
     }
     .mox-borderEndEndRadius-circle\@cq600Min {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
     .mox-borderEndEndRadius-lint-0-25\@cq600Min {
       border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));
@@ -558,7 +558,7 @@
       border-radius: 8px;
     }
     .mox-borderEndEndRadius-circle\@cq600Max {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
     .mox-borderEndEndRadius-lint-0-25\@cq600Max {
       border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));
@@ -597,7 +597,7 @@
       border-radius: 8px;
     }
     .mox-borderEndEndRadius-circle\@cq800Min {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
     .mox-borderEndEndRadius-lint-0-25\@cq800Min {
       border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));
@@ -635,7 +635,7 @@
       border-radius: 8px;
     }
     .mox-borderEndEndRadius-circle\@cq800Max {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
     .mox-borderEndEndRadius-lint-0-25\@cq800Max {
       border-end-end-radius: calc(0.25 * var(--mox-lint-inline-size));

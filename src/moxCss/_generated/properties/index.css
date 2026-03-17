@@ -4,6 +4,7 @@
 @import './alignSelf.css';
 @import './justifySelf.css';
 @import './alignItems.css';
+@import './alignContent.css';
 @import './justifyContent.css';
 @import './itemSize.css';
 @import './gridColumn.css';
@@ -22,6 +23,7 @@
 @import './colorHover.css';
 @import './fontWeight.css';
 @import './lineHeight.css';
+@import './textAlign.css';
 @import './borderRadius.css';
 @import './borderStartStartRadius.css';
 @import './borderStartEndRadius.css';
@@ -41,9 +43,14 @@
 @import './backgroundColor.css';
 @import './backgroundColorHover.css';
 @import './backgroundColorActive.css';
+@import './opacity.css';
 @import './size.css';
 @import './inlineSize.css';
 @import './blockSize.css';
+@import './minInlineSize.css';
+@import './minBlockSize.css';
+@import './maxInlineSize.css';
+@import './maxBlockSize.css';
 @import './padding.css';
 @import './paddingBlock.css';
 @import './paddingInline.css';

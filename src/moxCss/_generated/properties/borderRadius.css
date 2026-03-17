@@ -20,7 +20,7 @@
     border-radius: 8px;
   }
   .mox-borderRadius-circle {
-    border-radius: 50%;
+    border-radius: calc(1px * infinity);
   }
   /* Viewport breakpoint: mobile (600px) */
   @media only screen and (min-device-width: 600px) {
@@ -40,7 +40,7 @@
       border-radius: 8px;
     }
     .mox-borderRadius-circle\@mobileMin {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
   }
   @media only screen and (max-device-width: 600px) {
@@ -60,7 +60,7 @@
       border-radius: 8px;
     }
     .mox-borderRadius-circle\@mobileMax {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
   }
   /* Viewport breakpoint: tablet (900px) */
@@ -81,7 +81,7 @@
       border-radius: 8px;
     }
     .mox-borderRadius-circle\@tabletMin {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
   }
   @media only screen and (max-device-width: 900px) {
@@ -101,7 +101,7 @@
       border-radius: 8px;
     }
     .mox-borderRadius-circle\@tabletMax {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
   }
   /* Viewport breakpoint: desktop (1200px) */
@@ -122,7 +122,7 @@
       border-radius: 8px;
     }
     .mox-borderRadius-circle\@desktopMin {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
   }
   @media only screen and (max-device-width: 1200px) {
@@ -142,7 +142,7 @@
       border-radius: 8px;
     }
     .mox-borderRadius-circle\@desktopMax {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
   }
   /* Viewport breakpoint: mq1440 (1440px) */
@@ -163,7 +163,7 @@
       border-radius: 8px;
     }
     .mox-borderRadius-circle\@mq1440Min {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
   }
   @media only screen and (max-device-width: 1440px) {
@@ -183,7 +183,7 @@
       border-radius: 8px;
     }
     .mox-borderRadius-circle\@mq1440Max {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
   }
   /* Container breakpoint: cq200 (200px) */
@@ -204,7 +204,7 @@
       border-radius: 8px;
     }
     .mox-borderRadius-circle\@cq200Min {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
   }
   @container (max-width: 200px) {
@@ -224,7 +224,7 @@
       border-radius: 8px;
     }
     .mox-borderRadius-circle\@cq200Max {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
   }
   /* Container breakpoint: cq400 (400px) */
@@ -245,7 +245,7 @@
       border-radius: 8px;
     }
     .mox-borderRadius-circle\@cq400Min {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
   }
   @container (max-width: 400px) {
@@ -265,7 +265,7 @@
       border-radius: 8px;
     }
     .mox-borderRadius-circle\@cq400Max {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
   }
   /* Container breakpoint: cq600 (600px) */
@@ -286,7 +286,7 @@
       border-radius: 8px;
     }
     .mox-borderRadius-circle\@cq600Min {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
   }
   @container (max-width: 600px) {
@@ -306,7 +306,7 @@
       border-radius: 8px;
     }
     .mox-borderRadius-circle\@cq600Max {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
   }
   /* Container breakpoint: cq800 (800px) */
@@ -327,7 +327,7 @@
       border-radius: 8px;
     }
     .mox-borderRadius-circle\@cq800Min {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
   }
   @container (max-width: 800px) {
@@ -347,7 +347,7 @@
       border-radius: 8px;
     }
     .mox-borderRadius-circle\@cq800Max {
-      border-radius: 50%;
+      border-radius: calc(1px * infinity);
     }
   }
 }

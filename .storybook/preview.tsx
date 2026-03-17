@@ -5,6 +5,8 @@ import "./docs.css";
 import type { Preview } from "@storybook/react-vite";
 import { INITIAL_VIEWPORTS } from "storybook/viewport";
 
+const css = String.raw;
+
 const preview: Preview = {
   parameters: {
     viewport: {
@@ -64,12 +66,15 @@ const preview: Preview = {
       return (
         <div>
           <style>
-            {`
-            @layer overrides {
-             details, summary, ol, ul, li, strong, em { 
-                all: revert; 
+            {css`
+            @layer reset {
+              :is(details, summary, ol, ul, li, strong, em) {
+                all: revert;
               }
-            }
+
+              .docs-story :is(details, summary, ol, ul, li, strong, em) {
+                all: unset;
+              }
             `}
           </style>
           <Story />

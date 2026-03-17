@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { getConstructionSummary } from "../../../storybook/helpers/getConstructionSummary";
-import { MoxIcon, MoxTextBlock } from "../../uiAtoms";
+import { MoxBox, MoxIcon, MoxTextBlock } from "../../uiAtoms";
 import { MoxMoleculeIconLink } from "./IconLink";
 
 const meta = {
@@ -22,6 +22,19 @@ const meta = {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <MoxBox
+        borderColor="primary-subtle"
+        borderWidth="1px"
+        borderStyle="dashed"
+        padding="md"
+        style={{ inlineSize: "300px" }}
+      >
+        <Story />
+      </MoxBox>
+    ),
+  ],
   args: {
     children: <MoxTextBlock>Click me!</MoxTextBlock>,
     startIconSlot: <MoxIcon icon="Search" fontSize="xs" />,

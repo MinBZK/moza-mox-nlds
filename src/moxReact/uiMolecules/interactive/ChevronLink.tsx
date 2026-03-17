@@ -1,5 +1,5 @@
 import type { ComponentPropsWithoutRef } from "react";
-import { MoxAtomLink, MoxIcon, MoxShelf } from "../../uiAtoms";
+import { MoxAtomLink, MoxIcon, MoxOccupy, MoxShelf } from "../../uiAtoms";
 
 /**
  *
@@ -20,7 +20,9 @@ export const MoxMoleculeChevronLink = ({
     <MoxAtomLink {...props} underlineHover="underline">
       <MoxShelf columnGap="4xs" alignItems={"start"}>
         {position === "start" && (
-          <MoxIcon flex="1 0 auto" fontSize="xs" icon={iconName} />
+          <MoxOccupy size="xs">
+            <MoxIcon fontSize="xs" icon={iconName} />
+          </MoxOccupy>
         )}
         {children}
         {position === "end" && (

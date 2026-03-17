@@ -7,6 +7,8 @@ const styleProps = [
   "underline",
   "underlineHover",
   "color",
+  "colorHover",
+  "flex",
 ] as const satisfies StyleProps;
 
 /**

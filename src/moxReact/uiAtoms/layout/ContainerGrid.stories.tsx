@@ -12,7 +12,7 @@ const meta = {
   parameters: {
     layout: "fullscreen",
   },
-  args: {},
+  args: { gap: "md" },
   argTypes: {
     children: { table: { disable: true } },
     ...getStylePropArgTypes(containerGridStyleProps),
@@ -28,6 +28,19 @@ const meta = {
 
 export default meta;
 type Story = StoryObj<typeof meta>;
+
+export const Full: Story = {
+  args: {
+    itemSize: "full",
+    children: (
+      <>
+        <MoxBox backgroundColor="secondary-subtle" padding="md">
+          {"full"}
+        </MoxBox>
+      </>
+    ),
+  },
+};
 
 export const Half: Story = {
   args: {

@@ -38,7 +38,7 @@ export const richText = {
     fontWeight: "bold",
   },
   "a.btn-outline-primary": {
-    backgroundColor: "wit",
+    backgroundColor: "plain-contrast",
     paddingBlock:
       "sm" /* small adjustment to compensate for missing textblock inside button */,
     paddingInline: "md",
@@ -53,7 +53,7 @@ export const richText = {
     fontWeight: "bold",
   },
   "a.btn-outline-secondary": {
-    backgroundColor: "wit",
+    backgroundColor: "plain-contrast",
     paddingBlock:
       "sm" /* small adjustment to compensate for missing textblock inside button */,
     paddingInline: "md",

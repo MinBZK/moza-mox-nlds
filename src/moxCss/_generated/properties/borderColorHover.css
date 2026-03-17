@@ -4,6 +4,12 @@
 */
 
 @layer props {
+  .mox-borderColorHover-plain-hover:hover {
+    border-color: var(--mox-color-plain);
+  }
+  .mox-borderColorHover-plain-contrast-hover:hover {
+    border-color: var(--mox-color-plain-contrast);
+  }
   .mox-borderColorHover-primary-hover:hover {
     border-color: var(--mox-color-primary);
   }
@@ -130,31 +136,25 @@
   .mox-borderColorHover-warning-subtle-2-hover-hover:hover {
     border-color: var(--mox-color-warning-subtle-2-hover);
   }
-  .mox-borderColorHover-error-hover:hover {
-    border-color: var(--mox-color-error);
+  .mox-borderColorHover-danger-hover:hover {
+    border-color: var(--mox-color-danger);
   }
-  .mox-borderColorHover-error-hover-hover:hover {
-    border-color: var(--mox-color-error-hover);
+  .mox-borderColorHover-danger-hover-hover:hover {
+    border-color: var(--mox-color-danger-hover);
   }
-  .mox-borderColorHover-error-subtle-hover:hover {
-    border-color: var(--mox-color-error-subtle);
+  .mox-borderColorHover-danger-subtle-hover:hover {
+    border-color: var(--mox-color-danger-subtle);
   }
-  .mox-borderColorHover-error-subtle-hover-hover:hover {
-    border-color: var(--mox-color-error-subtle-hover);
+  .mox-borderColorHover-danger-subtle-hover-hover:hover {
+    border-color: var(--mox-color-danger-subtle-hover);
   }
-  .mox-borderColorHover-error-subtle-2-hover:hover {
-    border-color: var(--mox-color-error-subtle-2);
+  .mox-borderColorHover-danger-subtle-2-hover:hover {
+    border-color: var(--mox-color-danger-subtle-2);
   }
-  .mox-borderColorHover-error-subtle-2-hover-hover:hover {
-    border-color: var(--mox-color-error-subtle-2-hover);
+  .mox-borderColorHover-danger-subtle-2-hover-hover:hover {
+    border-color: var(--mox-color-danger-subtle-2-hover);
   }
-  .mox-borderColorHover-zwart-hover:hover {
-    border-color: var(--mox-color-zwart);
-  }
-  .mox-borderColorHover-wit-hover:hover {
-    border-color: var(--mox-color-wit);
-  }
-  .mox-borderColorHover-transparant-hover:hover {
-    border-color: var(--mox-color-transparant);
+  .mox-borderColorHover-transparent-hover:hover {
+    border-color: var(--mox-color-transparent);
   }
 }

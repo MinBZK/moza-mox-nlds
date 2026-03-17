@@ -4,6 +4,9 @@
 */
 
 @layer props {
+  .mox-itemSize-full {
+    grid-template-columns: minmax(0, 1fr);
+  }
   .mox-itemSize-half {
     grid-template-columns: repeat(
       calc(
@@ -42,6 +45,9 @@
   }
   /* Viewport breakpoint: mobile (600px) */
   @media only screen and (min-device-width: 600px) {
+    .mox-itemSize-full\@mobileMin {
+      grid-template-columns: minmax(0, 1fr);
+    }
     .mox-itemSize-half\@mobileMin {
       grid-template-columns: repeat(
         calc(
@@ -80,6 +86,9 @@
     }
   }
   @media only screen and (max-device-width: 600px) {
+    .mox-itemSize-full\@mobileMax {
+      grid-template-columns: minmax(0, 1fr);
+    }
     .mox-itemSize-half\@mobileMax {
       grid-template-columns: repeat(
         calc(
@@ -119,6 +128,9 @@
   }
   /* Viewport breakpoint: tablet (900px) */
   @media only screen and (min-device-width: 900px) {
+    .mox-itemSize-full\@tabletMin {
+      grid-template-columns: minmax(0, 1fr);
+    }
     .mox-itemSize-half\@tabletMin {
       grid-template-columns: repeat(
         calc(
@@ -157,6 +169,9 @@
     }
   }
   @media only screen and (max-device-width: 900px) {
+    .mox-itemSize-full\@tabletMax {
+      grid-template-columns: minmax(0, 1fr);
+    }
     .mox-itemSize-half\@tabletMax {
       grid-template-columns: repeat(
         calc(
@@ -196,6 +211,9 @@
   }
   /* Viewport breakpoint: desktop (1200px) */
   @media only screen and (min-device-width: 1200px) {
+    .mox-itemSize-full\@desktopMin {
+      grid-template-columns: minmax(0, 1fr);
+    }
     .mox-itemSize-half\@desktopMin {
       grid-template-columns: repeat(
         calc(
@@ -234,6 +252,9 @@
     }
   }
   @media only screen and (max-device-width: 1200px) {
+    .mox-itemSize-full\@desktopMax {
+      grid-template-columns: minmax(0, 1fr);
+    }
     .mox-itemSize-half\@desktopMax {
       grid-template-columns: repeat(
         calc(
@@ -273,6 +294,9 @@
   }
   /* Viewport breakpoint: mq1440 (1440px) */
   @media only screen and (min-device-width: 1440px) {
+    .mox-itemSize-full\@mq1440Min {
+      grid-template-columns: minmax(0, 1fr);
+    }
     .mox-itemSize-half\@mq1440Min {
       grid-template-columns: repeat(
         calc(
@@ -311,6 +335,9 @@
     }
   }
   @media only screen and (max-device-width: 1440px) {
+    .mox-itemSize-full\@mq1440Max {
+      grid-template-columns: minmax(0, 1fr);
+    }
     .mox-itemSize-half\@mq1440Max {
       grid-template-columns: repeat(
         calc(
@@ -350,6 +377,9 @@
   }
   /* Container breakpoint: cq200 (200px) */
   @container (min-width: 200px) {
+    .mox-itemSize-full\@cq200Min {
+      grid-template-columns: minmax(0, 1fr);
+    }
     .mox-itemSize-half\@cq200Min {
       grid-template-columns: repeat(
         calc(
@@ -388,6 +418,9 @@
     }
   }
   @container (max-width: 200px) {
+    .mox-itemSize-full\@cq200Max {
+      grid-template-columns: minmax(0, 1fr);
+    }
     .mox-itemSize-half\@cq200Max {
       grid-template-columns: repeat(
         calc(
@@ -427,6 +460,9 @@
   }
   /* Container breakpoint: cq400 (400px) */
   @container (min-width: 400px) {
+    .mox-itemSize-full\@cq400Min {
+      grid-template-columns: minmax(0, 1fr);
+    }
     .mox-itemSize-half\@cq400Min {
       grid-template-columns: repeat(
         calc(
@@ -465,6 +501,9 @@
     }
   }
   @container (max-width: 400px) {
+    .mox-itemSize-full\@cq400Max {
+      grid-template-columns: minmax(0, 1fr);
+    }
     .mox-itemSize-half\@cq400Max {
       grid-template-columns: repeat(
         calc(
@@ -504,6 +543,9 @@
   }
   /* Container breakpoint: cq600 (600px) */
   @container (min-width: 600px) {
+    .mox-itemSize-full\@cq600Min {
+      grid-template-columns: minmax(0, 1fr);
+    }
     .mox-itemSize-half\@cq600Min {
       grid-template-columns: repeat(
         calc(
@@ -542,6 +584,9 @@
     }
   }
   @container (max-width: 600px) {
+    .mox-itemSize-full\@cq600Max {
+      grid-template-columns: minmax(0, 1fr);
+    }
     .mox-itemSize-half\@cq600Max {
       grid-template-columns: repeat(
         calc(
@@ -581,6 +626,9 @@
   }
   /* Container breakpoint: cq800 (800px) */
   @container (min-width: 800px) {
+    .mox-itemSize-full\@cq800Min {
+      grid-template-columns: minmax(0, 1fr);
+    }
     .mox-itemSize-half\@cq800Min {
       grid-template-columns: repeat(
         calc(
@@ -619,6 +667,9 @@
     }
   }
   @container (max-width: 800px) {
+    .mox-itemSize-full\@cq800Max {
+      grid-template-columns: minmax(0, 1fr);
+    }
     .mox-itemSize-half\@cq800Max {
       grid-template-columns: repeat(
         calc(

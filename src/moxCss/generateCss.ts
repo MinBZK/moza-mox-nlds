@@ -139,10 +139,11 @@ ${css}
     const cssString = result.join("\n");
     const formattedCss = await format(cssString, { parser: "css" });
 
-    fs.writeFileSync(
-      posixPath.join(__dirname, "_generated", "properties", `${propKey}.css`),
-      formattedCss,
-    );
+    const dirPath = posixPath.join(__dirname, "_generated", "properties");
+    if (!fs.existsSync(dirPath)) {
+      fs.mkdirSync(dirPath, { recursive: true });
+    }
+    fs.writeFileSync(posixPath.join(dirPath, `${propKey}.css`), formattedCss);
     files.push(`./${propKey}.css`);
   }
 
@@ -197,8 +198,12 @@ const generateClampSpaces = () => {
     );
   });
   // Write an index file exporting all generated files
+  const dirPath = posixPath.join(__dirname, "_generated", "clampSpaces");
+  if (!fs.existsSync(dirPath)) {
+    fs.mkdirSync(dirPath, { recursive: true });
+  }
   fs.writeFileSync(
-    posixPath.join(__dirname, "_generated", "clampSpaces", `index.css`),
+    posixPath.join(dirPath, `index.css`),
     [
       ...spaces.map((space) => `@import 'clamp-${space}.css';`),
       `
@@ -260,7 +265,10 @@ export const generateRichTextStyles = async () => {
         const propConfig =
           moxConfig.props[prop as keyof typeof moxConfig.props];
         const stateSuffix = "state" in propConfig ? `:${propConfig.state}` : "";
-        return `${richTextWrapperClass} ${tag}${stateSuffix} { ${getCssForPropOption(prop, value)?.trim()} }`;
+        const css = getCssForPropOption(prop, value);
+        return css
+          ? `${richTextWrapperClass} ${tag}${stateSuffix} { ${css.trim()} }`
+          : "";
       })
       .join("");
 
@@ -278,7 +286,9 @@ export const generateRichTextStyles = async () => {
 
         return Object.entries(value)
           .map(([responsiveKey, responsiveValue]) => {
-            const css = getCssForPropOption(prop, responsiveValue)?.trim();
+            const css = getCssForPropOption(prop, responsiveValue);
+            if (!css) return "";
+
             const breakpointType = responsiveKey.replace(/(Min|Max)$/, "");
             const breakpointDirection = responsiveKey.endsWith("Min")
               ? "min"

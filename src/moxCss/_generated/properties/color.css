@@ -4,6 +4,14 @@
 */
 
 @layer props {
+  .mox-color-plain {
+    --text-color: var(--mox-color-plain);
+    color: var(--text-color);
+  }
+  .mox-color-plain-contrast {
+    --text-color: var(--mox-color-plain-contrast);
+    color: var(--text-color);
+  }
   .mox-color-primary {
     --text-color: var(--mox-color-primary);
     color: var(--text-color);
@@ -172,40 +180,32 @@
     --text-color: var(--mox-color-warning-subtle-2-hover);
     color: var(--text-color);
   }
-  .mox-color-error {
-    --text-color: var(--mox-color-error);
+  .mox-color-danger {
+    --text-color: var(--mox-color-danger);
     color: var(--text-color);
   }
-  .mox-color-error-hover {
-    --text-color: var(--mox-color-error-hover);
+  .mox-color-danger-hover {
+    --text-color: var(--mox-color-danger-hover);
     color: var(--text-color);
   }
-  .mox-color-error-subtle {
-    --text-color: var(--mox-color-error-subtle);
+  .mox-color-danger-subtle {
+    --text-color: var(--mox-color-danger-subtle);
     color: var(--text-color);
   }
-  .mox-color-error-subtle-hover {
-    --text-color: var(--mox-color-error-subtle-hover);
+  .mox-color-danger-subtle-hover {
+    --text-color: var(--mox-color-danger-subtle-hover);
     color: var(--text-color);
   }
-  .mox-color-error-subtle-2 {
-    --text-color: var(--mox-color-error-subtle-2);
+  .mox-color-danger-subtle-2 {
+    --text-color: var(--mox-color-danger-subtle-2);
     color: var(--text-color);
   }
-  .mox-color-error-subtle-2-hover {
-    --text-color: var(--mox-color-error-subtle-2-hover);
+  .mox-color-danger-subtle-2-hover {
+    --text-color: var(--mox-color-danger-subtle-2-hover);
     color: var(--text-color);
   }
-  .mox-color-zwart {
-    --text-color: var(--mox-color-zwart);
-    color: var(--text-color);
-  }
-  .mox-color-wit {
-    --text-color: var(--mox-color-wit);
-    color: var(--text-color);
-  }
-  .mox-color-transparant {
-    --text-color: var(--mox-color-transparant);
+  .mox-color-transparent {
+    --text-color: var(--mox-color-transparent);
     color: var(--text-color);
   }
 }

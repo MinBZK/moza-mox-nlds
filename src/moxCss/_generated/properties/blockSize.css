@@ -7,6 +7,12 @@
   .mox-blockSize-0 {
     block-size: 0;
   }
+  .mox-blockSize-6xs {
+    block-size: var(--mox-space-6xs);
+  }
+  .mox-blockSize-5xs {
+    block-size: var(--mox-space-5xs);
+  }
   .mox-blockSize-4xs {
     block-size: var(--mox-space-4xs);
   }
@@ -40,6 +46,12 @@
   .mox-blockSize-4xl {
     block-size: var(--mox-space-4xl);
   }
+  .mox-blockSize-5xl {
+    block-size: var(--mox-space-5xl);
+  }
+  .mox-blockSize-6xl {
+    block-size: var(--mox-space-6xl);
+  }
   .mox-blockSize-auto {
     block-size: auto;
   }
@@ -59,6 +71,12 @@
   @media only screen and (min-device-width: 600px) {
     .mox-blockSize-0\@mobileMin {
       block-size: 0;
+    }
+    .mox-blockSize-6xs\@mobileMin {
+      block-size: var(--mox-space-6xs);
+    }
+    .mox-blockSize-5xs\@mobileMin {
+      block-size: var(--mox-space-5xs);
     }
     .mox-blockSize-4xs\@mobileMin {
       block-size: var(--mox-space-4xs);
@@ -93,6 +111,12 @@
     .mox-blockSize-4xl\@mobileMin {
       block-size: var(--mox-space-4xl);
     }
+    .mox-blockSize-5xl\@mobileMin {
+      block-size: var(--mox-space-5xl);
+    }
+    .mox-blockSize-6xl\@mobileMin {
+      block-size: var(--mox-space-6xl);
+    }
     .mox-blockSize-auto\@mobileMin {
       block-size: auto;
     }
@@ -112,6 +136,12 @@
   @media only screen and (max-device-width: 600px) {
     .mox-blockSize-0\@mobileMax {
       block-size: 0;
+    }
+    .mox-blockSize-6xs\@mobileMax {
+      block-size: var(--mox-space-6xs);
+    }
+    .mox-blockSize-5xs\@mobileMax {
+      block-size: var(--mox-space-5xs);
     }
     .mox-blockSize-4xs\@mobileMax {
       block-size: var(--mox-space-4xs);
@@ -146,6 +176,12 @@
     .mox-blockSize-4xl\@mobileMax {
       block-size: var(--mox-space-4xl);
     }
+    .mox-blockSize-5xl\@mobileMax {
+      block-size: var(--mox-space-5xl);
+    }
+    .mox-blockSize-6xl\@mobileMax {
+      block-size: var(--mox-space-6xl);
+    }
     .mox-blockSize-auto\@mobileMax {
       block-size: auto;
     }
@@ -166,6 +202,12 @@
   @media only screen and (min-device-width: 900px) {
     .mox-blockSize-0\@tabletMin {
       block-size: 0;
+    }
+    .mox-blockSize-6xs\@tabletMin {
+      block-size: var(--mox-space-6xs);
+    }
+    .mox-blockSize-5xs\@tabletMin {
+      block-size: var(--mox-space-5xs);
     }
     .mox-blockSize-4xs\@tabletMin {
       block-size: var(--mox-space-4xs);
@@ -200,6 +242,12 @@
     .mox-blockSize-4xl\@tabletMin {
       block-size: var(--mox-space-4xl);
     }
+    .mox-blockSize-5xl\@tabletMin {
+      block-size: var(--mox-space-5xl);
+    }
+    .mox-blockSize-6xl\@tabletMin {
+      block-size: var(--mox-space-6xl);
+    }
     .mox-blockSize-auto\@tabletMin {
       block-size: auto;
     }
@@ -219,6 +267,12 @@
   @media only screen and (max-device-width: 900px) {
     .mox-blockSize-0\@tabletMax {
       block-size: 0;
+    }
+    .mox-blockSize-6xs\@tabletMax {
+      block-size: var(--mox-space-6xs);
+    }
+    .mox-blockSize-5xs\@tabletMax {
+      block-size: var(--mox-space-5xs);
     }
     .mox-blockSize-4xs\@tabletMax {
       block-size: var(--mox-space-4xs);
@@ -253,6 +307,12 @@
     .mox-blockSize-4xl\@tabletMax {
       block-size: var(--mox-space-4xl);
     }
+    .mox-blockSize-5xl\@tabletMax {
+      block-size: var(--mox-space-5xl);
+    }
+    .mox-blockSize-6xl\@tabletMax {
+      block-size: var(--mox-space-6xl);
+    }
     .mox-blockSize-auto\@tabletMax {
       block-size: auto;
     }
@@ -273,6 +333,12 @@
   @media only screen and (min-device-width: 1200px) {
     .mox-blockSize-0\@desktopMin {
       block-size: 0;
+    }
+    .mox-blockSize-6xs\@desktopMin {
+      block-size: var(--mox-space-6xs);
+    }
+    .mox-blockSize-5xs\@desktopMin {
+      block-size: var(--mox-space-5xs);
     }
     .mox-blockSize-4xs\@desktopMin {
       block-size: var(--mox-space-4xs);
@@ -307,6 +373,12 @@
     .mox-blockSize-4xl\@desktopMin {
       block-size: var(--mox-space-4xl);
     }
+    .mox-blockSize-5xl\@desktopMin {
+      block-size: var(--mox-space-5xl);
+    }
+    .mox-blockSize-6xl\@desktopMin {
+      block-size: var(--mox-space-6xl);
+    }
     .mox-blockSize-auto\@desktopMin {
       block-size: auto;
     }
@@ -326,6 +398,12 @@
   @media only screen and (max-device-width: 1200px) {
     .mox-blockSize-0\@desktopMax {
       block-size: 0;
+    }
+    .mox-blockSize-6xs\@desktopMax {
+      block-size: var(--mox-space-6xs);
+    }
+    .mox-blockSize-5xs\@desktopMax {
+      block-size: var(--mox-space-5xs);
     }
     .mox-blockSize-4xs\@desktopMax {
       block-size: var(--mox-space-4xs);
@@ -360,6 +438,12 @@
     .mox-blockSize-4xl\@desktopMax {
       block-size: var(--mox-space-4xl);
     }
+    .mox-blockSize-5xl\@desktopMax {
+      block-size: var(--mox-space-5xl);
+    }
+    .mox-blockSize-6xl\@desktopMax {
+      block-size: var(--mox-space-6xl);
+    }
     .mox-blockSize-auto\@desktopMax {
       block-size: auto;
     }
@@ -380,6 +464,12 @@
   @media only screen and (min-device-width: 1440px) {
     .mox-blockSize-0\@mq1440Min {
       block-size: 0;
+    }
+    .mox-blockSize-6xs\@mq1440Min {
+      block-size: var(--mox-space-6xs);
+    }
+    .mox-blockSize-5xs\@mq1440Min {
+      block-size: var(--mox-space-5xs);
     }
     .mox-blockSize-4xs\@mq1440Min {
       block-size: var(--mox-space-4xs);
@@ -414,6 +504,12 @@
     .mox-blockSize-4xl\@mq1440Min {
       block-size: var(--mox-space-4xl);
     }
+    .mox-blockSize-5xl\@mq1440Min {
+      block-size: var(--mox-space-5xl);
+    }
+    .mox-blockSize-6xl\@mq1440Min {
+      block-size: var(--mox-space-6xl);
+    }
     .mox-blockSize-auto\@mq1440Min {
       block-size: auto;
     }
@@ -433,6 +529,12 @@
   @media only screen and (max-device-width: 1440px) {
     .mox-blockSize-0\@mq1440Max {
       block-size: 0;
+    }
+    .mox-blockSize-6xs\@mq1440Max {
+      block-size: var(--mox-space-6xs);
+    }
+    .mox-blockSize-5xs\@mq1440Max {
+      block-size: var(--mox-space-5xs);
     }
     .mox-blockSize-4xs\@mq1440Max {
       block-size: var(--mox-space-4xs);
@@ -467,6 +569,12 @@
     .mox-blockSize-4xl\@mq1440Max {
       block-size: var(--mox-space-4xl);
     }
+    .mox-blockSize-5xl\@mq1440Max {
+      block-size: var(--mox-space-5xl);
+    }
+    .mox-blockSize-6xl\@mq1440Max {
+      block-size: var(--mox-space-6xl);
+    }
     .mox-blockSize-auto\@mq1440Max {
       block-size: auto;
     }
@@ -487,6 +595,12 @@
   @container (min-width: 200px) {
     .mox-blockSize-0\@cq200Min {
       block-size: 0;
+    }
+    .mox-blockSize-6xs\@cq200Min {
+      block-size: var(--mox-space-6xs);
+    }
+    .mox-blockSize-5xs\@cq200Min {
+      block-size: var(--mox-space-5xs);
     }
     .mox-blockSize-4xs\@cq200Min {
       block-size: var(--mox-space-4xs);
@@ -521,6 +635,12 @@
     .mox-blockSize-4xl\@cq200Min {
       block-size: var(--mox-space-4xl);
     }
+    .mox-blockSize-5xl\@cq200Min {
+      block-size: var(--mox-space-5xl);
+    }
+    .mox-blockSize-6xl\@cq200Min {
+      block-size: var(--mox-space-6xl);
+    }
     .mox-blockSize-auto\@cq200Min {
       block-size: auto;
     }
@@ -540,6 +660,12 @@
   @container (max-width: 200px) {
     .mox-blockSize-0\@cq200Max {
       block-size: 0;
+    }
+    .mox-blockSize-6xs\@cq200Max {
+      block-size: var(--mox-space-6xs);
+    }
+    .mox-blockSize-5xs\@cq200Max {
+      block-size: var(--mox-space-5xs);
     }
     .mox-blockSize-4xs\@cq200Max {
       block-size: var(--mox-space-4xs);
@@ -574,6 +700,12 @@
     .mox-blockSize-4xl\@cq200Max {
       block-size: var(--mox-space-4xl);
     }
+    .mox-blockSize-5xl\@cq200Max {
+      block-size: var(--mox-space-5xl);
+    }
+    .mox-blockSize-6xl\@cq200Max {
+      block-size: var(--mox-space-6xl);
+    }
     .mox-blockSize-auto\@cq200Max {
       block-size: auto;
     }
@@ -594,6 +726,12 @@
   @container (min-width: 400px) {
     .mox-blockSize-0\@cq400Min {
       block-size: 0;
+    }
+    .mox-blockSize-6xs\@cq400Min {
+      block-size: var(--mox-space-6xs);
+    }
+    .mox-blockSize-5xs\@cq400Min {
+      block-size: var(--mox-space-5xs);
     }
     .mox-blockSize-4xs\@cq400Min {
       block-size: var(--mox-space-4xs);
@@ -628,6 +766,12 @@
     .mox-blockSize-4xl\@cq400Min {
       block-size: var(--mox-space-4xl);
     }
+    .mox-blockSize-5xl\@cq400Min {
+      block-size: var(--mox-space-5xl);
+    }
+    .mox-blockSize-6xl\@cq400Min {
+      block-size: var(--mox-space-6xl);
+    }
     .mox-blockSize-auto\@cq400Min {
       block-size: auto;
     }
@@ -647,6 +791,12 @@
   @container (max-width: 400px) {
     .mox-blockSize-0\@cq400Max {
       block-size: 0;
+    }
+    .mox-blockSize-6xs\@cq400Max {
+      block-size: var(--mox-space-6xs);
+    }
+    .mox-blockSize-5xs\@cq400Max {
+      block-size: var(--mox-space-5xs);
     }
     .mox-blockSize-4xs\@cq400Max {
       block-size: var(--mox-space-4xs);
@@ -681,6 +831,12 @@
     .mox-blockSize-4xl\@cq400Max {
       block-size: var(--mox-space-4xl);
     }
+    .mox-blockSize-5xl\@cq400Max {
+      block-size: var(--mox-space-5xl);
+    }
+    .mox-blockSize-6xl\@cq400Max {
+      block-size: var(--mox-space-6xl);
+    }
     .mox-blockSize-auto\@cq400Max {
       block-size: auto;
     }
@@ -701,6 +857,12 @@
   @container (min-width: 600px) {
     .mox-blockSize-0\@cq600Min {
       block-size: 0;
+    }
+    .mox-blockSize-6xs\@cq600Min {
+      block-size: var(--mox-space-6xs);
+    }
+    .mox-blockSize-5xs\@cq600Min {
+      block-size: var(--mox-space-5xs);
     }
     .mox-blockSize-4xs\@cq600Min {
       block-size: var(--mox-space-4xs);
@@ -735,6 +897,12 @@
     .mox-blockSize-4xl\@cq600Min {
       block-size: var(--mox-space-4xl);
     }
+    .mox-blockSize-5xl\@cq600Min {
+      block-size: var(--mox-space-5xl);
+    }
+    .mox-blockSize-6xl\@cq600Min {
+      block-size: var(--mox-space-6xl);
+    }
     .mox-blockSize-auto\@cq600Min {
       block-size: auto;
     }
@@ -754,6 +922,12 @@
   @container (max-width: 600px) {
     .mox-blockSize-0\@cq600Max {
       block-size: 0;
+    }
+    .mox-blockSize-6xs\@cq600Max {
+      block-size: var(--mox-space-6xs);
+    }
+    .mox-blockSize-5xs\@cq600Max {
+      block-size: var(--mox-space-5xs);
     }
     .mox-blockSize-4xs\@cq600Max {
       block-size: var(--mox-space-4xs);
@@ -788,6 +962,12 @@
     .mox-blockSize-4xl\@cq600Max {
       block-size: var(--mox-space-4xl);
     }
+    .mox-blockSize-5xl\@cq600Max {
+      block-size: var(--mox-space-5xl);
+    }
+    .mox-blockSize-6xl\@cq600Max {
+      block-size: var(--mox-space-6xl);
+    }
     .mox-blockSize-auto\@cq600Max {
       block-size: auto;
     }
@@ -808,6 +988,12 @@
   @container (min-width: 800px) {
     .mox-blockSize-0\@cq800Min {
       block-size: 0;
+    }
+    .mox-blockSize-6xs\@cq800Min {
+      block-size: var(--mox-space-6xs);
+    }
+    .mox-blockSize-5xs\@cq800Min {
+      block-size: var(--mox-space-5xs);
     }
     .mox-blockSize-4xs\@cq800Min {
       block-size: var(--mox-space-4xs);
@@ -842,6 +1028,12 @@
     .mox-blockSize-4xl\@cq800Min {
       block-size: var(--mox-space-4xl);
     }
+    .mox-blockSize-5xl\@cq800Min {
+      block-size: var(--mox-space-5xl);
+    }
+    .mox-blockSize-6xl\@cq800Min {
+      block-size: var(--mox-space-6xl);
+    }
     .mox-blockSize-auto\@cq800Min {
       block-size: auto;
     }
@@ -861,6 +1053,12 @@
   @container (max-width: 800px) {
     .mox-blockSize-0\@cq800Max {
       block-size: 0;
+    }
+    .mox-blockSize-6xs\@cq800Max {
+      block-size: var(--mox-space-6xs);
+    }
+    .mox-blockSize-5xs\@cq800Max {
+      block-size: var(--mox-space-5xs);
     }
     .mox-blockSize-4xs\@cq800Max {
       block-size: var(--mox-space-4xs);
@@ -894,6 +1092,12 @@
     }
     .mox-blockSize-4xl\@cq800Max {
       block-size: var(--mox-space-4xl);
+    }
+    .mox-blockSize-5xl\@cq800Max {
+      block-size: var(--mox-space-5xl);
+    }
+    .mox-blockSize-6xl\@cq800Max {
+      block-size: var(--mox-space-6xl);
     }
     .mox-blockSize-auto\@cq800Max {
       block-size: auto;

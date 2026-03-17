@@ -1,0 +1,13 @@
+/**
+  * This file is auto-generated. Do not edit directly.
+  * Generated from src/moxCss/mox.config.ts and script: `generateCss.ts`
+*/
+
+@layer props {
+  .mox-opacity-0 {
+    opacity: 0;
+  }
+  .mox-opacity-25- {
+    opacity: 0.25;
+  }
+}

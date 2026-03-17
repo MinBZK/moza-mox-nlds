@@ -78,4 +78,17 @@ export const textProps = {
       `,
     },
   },
+  textAlign: {
+    options: {
+      start: css`
+        text-align: start;
+      `,
+      center: css`
+        text-align: center;
+      `,
+      end: css`
+        text-align: end;
+      `,
+    },
+  },
 } as const satisfies MoxConfigProps;

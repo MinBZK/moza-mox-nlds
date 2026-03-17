@@ -1,3 +1,5 @@
+@import 'clamp-6xs.css';
+@import 'clamp-5xs.css';
 @import 'clamp-4xs.css';
 @import 'clamp-3xs.css';
 @import 'clamp-2xs.css';
@@ -9,6 +11,8 @@
 @import 'clamp-2xl.css';
 @import 'clamp-3xl.css';
 @import 'clamp-4xl.css';
+@import 'clamp-5xl.css';
+@import 'clamp-6xl.css';
 
 /** These imports calculate the correct clamp value for fluid scaling for each space-size (md, xs, etc): 
   *

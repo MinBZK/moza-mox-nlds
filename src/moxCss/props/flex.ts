@@ -121,6 +121,33 @@ export const flexProps = {
     },
     responsive: true,
   },
+  alignContent: {
+    options: {
+      stretch: css`
+        align-content: stretch;
+      `,
+      center: css`
+        align-content: center;
+      `,
+      start: css`
+        align-content: start;
+      `,
+      end: css`
+        align-content: end;
+      `,
+      baseline: css`
+        align-content: baseline;
+      `,
+      initial: css`
+        align-content: initial;
+      `,
+      inherit: css`
+        align-content: inherit;
+      `,
+    },
+    responsive: true,
+  },
+
   justifyContent: {
     options: {
       start: css`
@@ -146,6 +173,9 @@ export const flexProps = {
   },
   itemSize: {
     options: {
+      full: css`
+        grid-template-columns: minmax(0, 1fr);
+      `,
       half: css`
         grid-template-columns: repeat(
           calc(

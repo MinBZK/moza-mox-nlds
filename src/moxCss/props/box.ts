@@ -27,7 +27,7 @@ const borderRadiusOptions = {
     border-radius: 8px;
   `,
   circle: css`
-    border-radius: 50%;
+    border-radius: calc(1px * infinity);
   `,
 } as const;
 
@@ -249,6 +249,16 @@ export const boxProps = {
     ) as Record<(typeof colorOptions)[number], string>,
     state: "active",
   },
+  opacity: {
+    options: {
+      "0": css`
+        opacity: 0;
+      `,
+      "25%": css`
+        opacity: 0.25;
+      `,
+    },
+  },
   size: {
     options: {
       ...mapOptionsToCSSVars(spaces, ["inline-size", "block-size"], "space"),
@@ -267,6 +277,34 @@ export const boxProps = {
     options: {
       ...mapOptionsToCSSVars(spaces, ["block-size"], "space"),
       ...mapOptionsToValues(globalSizeOptions, ["block-size"]),
+    },
+    responsive: true,
+  },
+  minInlineSize: {
+    options: {
+      ...mapOptionsToCSSVars(spaces, ["min-inline-size"], "space"),
+      ...mapOptionsToValues(globalSizeOptions, ["min-inline-size"]),
+    },
+    responsive: true,
+  },
+  minBlockSize: {
+    options: {
+      ...mapOptionsToCSSVars(spaces, ["min-block-size"], "space"),
+      ...mapOptionsToValues(globalSizeOptions, ["min-block-size"]),
+    },
+    responsive: true,
+  },
+  maxInlineSize: {
+    options: {
+      ...mapOptionsToCSSVars(spaces, ["max-inline-size"], "space"),
+      ...mapOptionsToValues(globalSizeOptions, ["max-inline-size"]),
+    },
+    responsive: true,
+  },
+  maxBlockSize: {
+    options: {
+      ...mapOptionsToCSSVars(spaces, ["max-block-size"], "space"),
+      ...mapOptionsToValues(globalSizeOptions, ["max-block-size"]),
     },
     responsive: true,
   },

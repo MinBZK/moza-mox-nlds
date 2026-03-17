@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { getConstructionSummary } from "../../../storybook/helpers/getConstructionSummary";
 import { MoxMoleculeChevronLink } from "./ChevronLink";
-import { MoxTextBlock } from "../../uiAtoms";
+import { MoxBox, MoxTextBlock } from "../../uiAtoms";
 
 const meta = {
   title: "React/Molecules/Interactive/ChevronLink",
@@ -22,6 +22,19 @@ const meta = {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <MoxBox
+        borderColor="primary-subtle"
+        borderWidth="1px"
+        borderStyle="dashed"
+        padding="md"
+        style={{ inlineSize: "300px" }}
+      >
+        <Story />
+      </MoxBox>
+    ),
+  ],
   args: {
     href: "#",
     children: <MoxTextBlock>Click me!</MoxTextBlock>,

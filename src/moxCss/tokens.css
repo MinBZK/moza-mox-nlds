@@ -73,6 +73,12 @@ Example:
     --mox-space-4xs-min: calc(var(--mox-space-md-min) * pow(1.2, -5));
     --mox-space-4xs-max: calc(var(--mox-space-md-max) * pow(1.2, -5));
 
+    --mox-space-5xs-min: calc(var(--mox-space-md-min) * pow(1.2, -6));
+    --mox-space-5xs-max: calc(var(--mox-space-md-max) * pow(1.2, -6));
+
+    --mox-space-6xs-min: calc(var(--mox-space-md-min) * pow(1.2, -7));
+    --mox-space-6xs-max: calc(var(--mox-space-md-max) * pow(1.2, -7));
+
     /* larger sizes based on `md` */
     --mox-space-lg-min: calc(var(--mox-space-md-min) * pow(1.2, 1));
     --mox-space-lg-max: calc(var(--mox-space-md-max) * pow(1.2, 1));
@@ -88,6 +94,12 @@ Example:
 
     --mox-space-4xl-min: calc(var(--mox-space-md-min) * pow(1.2, 5));
     --mox-space-4xl-max: calc(var(--mox-space-md-max) * pow(1.2, 5));
+
+    --mox-space-5xl-min: calc(var(--mox-space-md-min) * pow(1.2, 6));
+    --mox-space-5xl-max: calc(var(--mox-space-md-max) * pow(1.2, 6));
+
+    --mox-space-6xl-min: calc(var(--mox-space-md-min) * pow(1.2, 7));
+    --mox-space-6xl-max: calc(var(--mox-space-md-max) * pow(1.2, 7));
 
     /* brand colors */
     --mox-color-cool-grey-50: #f8fafc;
@@ -210,11 +222,8 @@ Example:
     --mox-color-lintblauw-500: #154273;
 
     --mox-color-wit: #ffffff;
-    --mox-color-wit-contrast: #000000;
     --mox-color-zwart: #000000;
-    --mox-color-zwart-contrast: #ffffff;
     --mox-color-transparent: rgba(0, 0, 0, 0);
-    --mox-color-transparant: #000000;
 
     --mox-border-radius-round: 999px;
     --mox-border-radius-none: 0px;
@@ -238,6 +247,9 @@ Example:
     - danger;
 
     */
+    --mox-color-plain: var(--mox-color-zwart);
+    --mox-color-plain-contrast: var(--mox-color-wit);
+
     --mox-color-primary: var(--mox-color-hemelblauw-500);
     --mox-color-primary-contrast: var(--mox-color-wit);
     --mox-color-primary-subtle: var(--mox-color-hemelblauw-200);
@@ -265,7 +277,7 @@ Example:
     --mox-color-secondary-subtle-2-hover-contrast: var(--mox-color-black);
 
     --mox-color-neutral: var(--mox-color-cool-grey-300);
-    --mox-color-neutral-contrast: var(--mox-color-wit);
+    --mox-color-neutral-contrast: var(--mox-color-black);
     --mox-color-neutral-subtle: var(--mox-color-cool-grey-200);
     --mox-color-neutral-subtle-contrast: var(--mox-color-black);
     --mox-color-neutral-subtle-2: var(--mox-color-cool-grey-100);
@@ -350,12 +362,6 @@ Example:
     --mox-layout-page-grid-gap-tablet: var(--mox-space-xs);
     --mox-layout-page-grid-gap-desktop: var(--mox-space-md);
     --mox-layout-page-grid-max-width: 1200px;
-
-    /* Container grid */
-    --mox-layout-container-grid-gap: var(--mox-space-3xs);
-    --mox-layout-container-grid-gap-400px: var(--mox-space-xs);
-    --mox-layout-container-grid-gap-600px: var(--mox-space-md);
-    --mox-layout-container-grid-gap-800px: var(--mox-space-xl);
 
     /* === COMPONENT TOKENS (lv 3) === */
 

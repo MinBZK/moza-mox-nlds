@@ -4,6 +4,16 @@
 */
 
 @layer props {
+  .mox-backgroundColor-plain {
+    background-color: var(--mox-color-plain);
+    --mox-text-color: var(--mox-color-plain-contrast);
+    color: var(--mox-text-color);
+  }
+  .mox-backgroundColor-plain-contrast {
+    background-color: var(--mox-color-plain-contrast);
+    --mox-text-color: var(--mox-color-plain-contrast-contrast);
+    color: var(--mox-text-color);
+  }
   .mox-backgroundColor-primary {
     background-color: var(--mox-color-primary);
     --mox-text-color: var(--mox-color-primary-contrast);
@@ -214,49 +224,39 @@
     --mox-text-color: var(--mox-color-warning-subtle-2-hover-contrast);
     color: var(--mox-text-color);
   }
-  .mox-backgroundColor-error {
-    background-color: var(--mox-color-error);
-    --mox-text-color: var(--mox-color-error-contrast);
+  .mox-backgroundColor-danger {
+    background-color: var(--mox-color-danger);
+    --mox-text-color: var(--mox-color-danger-contrast);
     color: var(--mox-text-color);
   }
-  .mox-backgroundColor-error-hover {
-    background-color: var(--mox-color-error-hover);
-    --mox-text-color: var(--mox-color-error-hover-contrast);
+  .mox-backgroundColor-danger-hover {
+    background-color: var(--mox-color-danger-hover);
+    --mox-text-color: var(--mox-color-danger-hover-contrast);
     color: var(--mox-text-color);
   }
-  .mox-backgroundColor-error-subtle {
-    background-color: var(--mox-color-error-subtle);
-    --mox-text-color: var(--mox-color-error-subtle-contrast);
+  .mox-backgroundColor-danger-subtle {
+    background-color: var(--mox-color-danger-subtle);
+    --mox-text-color: var(--mox-color-danger-subtle-contrast);
     color: var(--mox-text-color);
   }
-  .mox-backgroundColor-error-subtle-hover {
-    background-color: var(--mox-color-error-subtle-hover);
-    --mox-text-color: var(--mox-color-error-subtle-hover-contrast);
+  .mox-backgroundColor-danger-subtle-hover {
+    background-color: var(--mox-color-danger-subtle-hover);
+    --mox-text-color: var(--mox-color-danger-subtle-hover-contrast);
     color: var(--mox-text-color);
   }
-  .mox-backgroundColor-error-subtle-2 {
-    background-color: var(--mox-color-error-subtle-2);
-    --mox-text-color: var(--mox-color-error-subtle-2-contrast);
+  .mox-backgroundColor-danger-subtle-2 {
+    background-color: var(--mox-color-danger-subtle-2);
+    --mox-text-color: var(--mox-color-danger-subtle-2-contrast);
     color: var(--mox-text-color);
   }
-  .mox-backgroundColor-error-subtle-2-hover {
-    background-color: var(--mox-color-error-subtle-2-hover);
-    --mox-text-color: var(--mox-color-error-subtle-2-hover-contrast);
+  .mox-backgroundColor-danger-subtle-2-hover {
+    background-color: var(--mox-color-danger-subtle-2-hover);
+    --mox-text-color: var(--mox-color-danger-subtle-2-hover-contrast);
     color: var(--mox-text-color);
   }
-  .mox-backgroundColor-zwart {
-    background-color: var(--mox-color-zwart);
-    --mox-text-color: var(--mox-color-zwart-contrast);
-    color: var(--mox-text-color);
-  }
-  .mox-backgroundColor-wit {
-    background-color: var(--mox-color-wit);
-    --mox-text-color: var(--mox-color-wit-contrast);
-    color: var(--mox-text-color);
-  }
-  .mox-backgroundColor-transparant {
-    background-color: var(--mox-color-transparant);
-    --mox-text-color: var(--mox-color-transparant-contrast);
+  .mox-backgroundColor-transparent {
+    background-color: var(--mox-color-transparent);
+    --mox-text-color: var(--mox-color-transparent-contrast);
     color: var(--mox-text-color);
   }
 }
