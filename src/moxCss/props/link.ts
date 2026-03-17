@@ -6,7 +6,9 @@ export const linkProps = {
   underline: {
     options: {
       underline: css`
-        text-decoration: underline;
+        text-decoration-line: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
       `,
       strikethrough: css`
         text-decoration: line-through;
@@ -19,7 +21,9 @@ export const linkProps = {
   underlineHover: {
     options: {
       underline: css`
-        text-decoration: underline;
+        text-decoration-line: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
       `,
       strikethrough: css`
         text-decoration: line-through;

@@ -7,6 +7,12 @@
   .mox-inlineSize-0 {
     inline-size: 0;
   }
+  .mox-inlineSize-6xs {
+    inline-size: var(--mox-space-6xs);
+  }
+  .mox-inlineSize-5xs {
+    inline-size: var(--mox-space-5xs);
+  }
   .mox-inlineSize-4xs {
     inline-size: var(--mox-space-4xs);
   }
@@ -40,6 +46,12 @@
   .mox-inlineSize-4xl {
     inline-size: var(--mox-space-4xl);
   }
+  .mox-inlineSize-5xl {
+    inline-size: var(--mox-space-5xl);
+  }
+  .mox-inlineSize-6xl {
+    inline-size: var(--mox-space-6xl);
+  }
   .mox-inlineSize-auto {
     inline-size: auto;
   }
@@ -59,6 +71,12 @@
   @media only screen and (min-device-width: 600px) {
     .mox-inlineSize-0\@mobileMin {
       inline-size: 0;
+    }
+    .mox-inlineSize-6xs\@mobileMin {
+      inline-size: var(--mox-space-6xs);
+    }
+    .mox-inlineSize-5xs\@mobileMin {
+      inline-size: var(--mox-space-5xs);
     }
     .mox-inlineSize-4xs\@mobileMin {
       inline-size: var(--mox-space-4xs);
@@ -93,6 +111,12 @@
     .mox-inlineSize-4xl\@mobileMin {
       inline-size: var(--mox-space-4xl);
     }
+    .mox-inlineSize-5xl\@mobileMin {
+      inline-size: var(--mox-space-5xl);
+    }
+    .mox-inlineSize-6xl\@mobileMin {
+      inline-size: var(--mox-space-6xl);
+    }
     .mox-inlineSize-auto\@mobileMin {
       inline-size: auto;
     }
@@ -112,6 +136,12 @@
   @media only screen and (max-device-width: 600px) {
     .mox-inlineSize-0\@mobileMax {
       inline-size: 0;
+    }
+    .mox-inlineSize-6xs\@mobileMax {
+      inline-size: var(--mox-space-6xs);
+    }
+    .mox-inlineSize-5xs\@mobileMax {
+      inline-size: var(--mox-space-5xs);
     }
     .mox-inlineSize-4xs\@mobileMax {
       inline-size: var(--mox-space-4xs);
@@ -146,6 +176,12 @@
     .mox-inlineSize-4xl\@mobileMax {
       inline-size: var(--mox-space-4xl);
     }
+    .mox-inlineSize-5xl\@mobileMax {
+      inline-size: var(--mox-space-5xl);
+    }
+    .mox-inlineSize-6xl\@mobileMax {
+      inline-size: var(--mox-space-6xl);
+    }
     .mox-inlineSize-auto\@mobileMax {
       inline-size: auto;
     }
@@ -166,6 +202,12 @@
   @media only screen and (min-device-width: 900px) {
     .mox-inlineSize-0\@tabletMin {
       inline-size: 0;
+    }
+    .mox-inlineSize-6xs\@tabletMin {
+      inline-size: var(--mox-space-6xs);
+    }
+    .mox-inlineSize-5xs\@tabletMin {
+      inline-size: var(--mox-space-5xs);
     }
     .mox-inlineSize-4xs\@tabletMin {
       inline-size: var(--mox-space-4xs);
@@ -200,6 +242,12 @@
     .mox-inlineSize-4xl\@tabletMin {
       inline-size: var(--mox-space-4xl);
     }
+    .mox-inlineSize-5xl\@tabletMin {
+      inline-size: var(--mox-space-5xl);
+    }
+    .mox-inlineSize-6xl\@tabletMin {
+      inline-size: var(--mox-space-6xl);
+    }
     .mox-inlineSize-auto\@tabletMin {
       inline-size: auto;
     }
@@ -219,6 +267,12 @@
   @media only screen and (max-device-width: 900px) {
     .mox-inlineSize-0\@tabletMax {
       inline-size: 0;
+    }
+    .mox-inlineSize-6xs\@tabletMax {
+      inline-size: var(--mox-space-6xs);
+    }
+    .mox-inlineSize-5xs\@tabletMax {
+      inline-size: var(--mox-space-5xs);
     }
     .mox-inlineSize-4xs\@tabletMax {
       inline-size: var(--mox-space-4xs);
@@ -253,6 +307,12 @@
     .mox-inlineSize-4xl\@tabletMax {
       inline-size: var(--mox-space-4xl);
     }
+    .mox-inlineSize-5xl\@tabletMax {
+      inline-size: var(--mox-space-5xl);
+    }
+    .mox-inlineSize-6xl\@tabletMax {
+      inline-size: var(--mox-space-6xl);
+    }
     .mox-inlineSize-auto\@tabletMax {
       inline-size: auto;
     }
@@ -273,6 +333,12 @@
   @media only screen and (min-device-width: 1200px) {
     .mox-inlineSize-0\@desktopMin {
       inline-size: 0;
+    }
+    .mox-inlineSize-6xs\@desktopMin {
+      inline-size: var(--mox-space-6xs);
+    }
+    .mox-inlineSize-5xs\@desktopMin {
+      inline-size: var(--mox-space-5xs);
     }
     .mox-inlineSize-4xs\@desktopMin {
       inline-size: var(--mox-space-4xs);
@@ -307,6 +373,12 @@
     .mox-inlineSize-4xl\@desktopMin {
       inline-size: var(--mox-space-4xl);
     }
+    .mox-inlineSize-5xl\@desktopMin {
+      inline-size: var(--mox-space-5xl);
+    }
+    .mox-inlineSize-6xl\@desktopMin {
+      inline-size: var(--mox-space-6xl);
+    }
     .mox-inlineSize-auto\@desktopMin {
       inline-size: auto;
     }
@@ -326,6 +398,12 @@
   @media only screen and (max-device-width: 1200px) {
     .mox-inlineSize-0\@desktopMax {
       inline-size: 0;
+    }
+    .mox-inlineSize-6xs\@desktopMax {
+      inline-size: var(--mox-space-6xs);
+    }
+    .mox-inlineSize-5xs\@desktopMax {
+      inline-size: var(--mox-space-5xs);
     }
     .mox-inlineSize-4xs\@desktopMax {
       inline-size: var(--mox-space-4xs);
@@ -360,6 +438,12 @@
     .mox-inlineSize-4xl\@desktopMax {
       inline-size: var(--mox-space-4xl);
     }
+    .mox-inlineSize-5xl\@desktopMax {
+      inline-size: var(--mox-space-5xl);
+    }
+    .mox-inlineSize-6xl\@desktopMax {
+      inline-size: var(--mox-space-6xl);
+    }
     .mox-inlineSize-auto\@desktopMax {
       inline-size: auto;
     }
@@ -380,6 +464,12 @@
   @media only screen and (min-device-width: 1440px) {
     .mox-inlineSize-0\@mq1440Min {
       inline-size: 0;
+    }
+    .mox-inlineSize-6xs\@mq1440Min {
+      inline-size: var(--mox-space-6xs);
+    }
+    .mox-inlineSize-5xs\@mq1440Min {
+      inline-size: var(--mox-space-5xs);
     }
     .mox-inlineSize-4xs\@mq1440Min {
       inline-size: var(--mox-space-4xs);
@@ -414,6 +504,12 @@
     .mox-inlineSize-4xl\@mq1440Min {
       inline-size: var(--mox-space-4xl);
     }
+    .mox-inlineSize-5xl\@mq1440Min {
+      inline-size: var(--mox-space-5xl);
+    }
+    .mox-inlineSize-6xl\@mq1440Min {
+      inline-size: var(--mox-space-6xl);
+    }
     .mox-inlineSize-auto\@mq1440Min {
       inline-size: auto;
     }
@@ -433,6 +529,12 @@
   @media only screen and (max-device-width: 1440px) {
     .mox-inlineSize-0\@mq1440Max {
       inline-size: 0;
+    }
+    .mox-inlineSize-6xs\@mq1440Max {
+      inline-size: var(--mox-space-6xs);
+    }
+    .mox-inlineSize-5xs\@mq1440Max {
+      inline-size: var(--mox-space-5xs);
     }
     .mox-inlineSize-4xs\@mq1440Max {
       inline-size: var(--mox-space-4xs);
@@ -467,6 +569,12 @@
     .mox-inlineSize-4xl\@mq1440Max {
       inline-size: var(--mox-space-4xl);
     }
+    .mox-inlineSize-5xl\@mq1440Max {
+      inline-size: var(--mox-space-5xl);
+    }
+    .mox-inlineSize-6xl\@mq1440Max {
+      inline-size: var(--mox-space-6xl);
+    }
     .mox-inlineSize-auto\@mq1440Max {
       inline-size: auto;
     }
@@ -487,6 +595,12 @@
   @container (min-width: 200px) {
     .mox-inlineSize-0\@cq200Min {
       inline-size: 0;
+    }
+    .mox-inlineSize-6xs\@cq200Min {
+      inline-size: var(--mox-space-6xs);
+    }
+    .mox-inlineSize-5xs\@cq200Min {
+      inline-size: var(--mox-space-5xs);
     }
     .mox-inlineSize-4xs\@cq200Min {
       inline-size: var(--mox-space-4xs);
@@ -521,6 +635,12 @@
     .mox-inlineSize-4xl\@cq200Min {
       inline-size: var(--mox-space-4xl);
     }
+    .mox-inlineSize-5xl\@cq200Min {
+      inline-size: var(--mox-space-5xl);
+    }
+    .mox-inlineSize-6xl\@cq200Min {
+      inline-size: var(--mox-space-6xl);
+    }
     .mox-inlineSize-auto\@cq200Min {
       inline-size: auto;
     }
@@ -540,6 +660,12 @@
   @container (max-width: 200px) {
     .mox-inlineSize-0\@cq200Max {
       inline-size: 0;
+    }
+    .mox-inlineSize-6xs\@cq200Max {
+      inline-size: var(--mox-space-6xs);
+    }
+    .mox-inlineSize-5xs\@cq200Max {
+      inline-size: var(--mox-space-5xs);
     }
     .mox-inlineSize-4xs\@cq200Max {
       inline-size: var(--mox-space-4xs);
@@ -574,6 +700,12 @@
     .mox-inlineSize-4xl\@cq200Max {
       inline-size: var(--mox-space-4xl);
     }
+    .mox-inlineSize-5xl\@cq200Max {
+      inline-size: var(--mox-space-5xl);
+    }
+    .mox-inlineSize-6xl\@cq200Max {
+      inline-size: var(--mox-space-6xl);
+    }
     .mox-inlineSize-auto\@cq200Max {
       inline-size: auto;
     }
@@ -594,6 +726,12 @@
   @container (min-width: 400px) {
     .mox-inlineSize-0\@cq400Min {
       inline-size: 0;
+    }
+    .mox-inlineSize-6xs\@cq400Min {
+      inline-size: var(--mox-space-6xs);
+    }
+    .mox-inlineSize-5xs\@cq400Min {
+      inline-size: var(--mox-space-5xs);
     }
     .mox-inlineSize-4xs\@cq400Min {
       inline-size: var(--mox-space-4xs);
@@ -628,6 +766,12 @@
     .mox-inlineSize-4xl\@cq400Min {
       inline-size: var(--mox-space-4xl);
     }
+    .mox-inlineSize-5xl\@cq400Min {
+      inline-size: var(--mox-space-5xl);
+    }
+    .mox-inlineSize-6xl\@cq400Min {
+      inline-size: var(--mox-space-6xl);
+    }
     .mox-inlineSize-auto\@cq400Min {
       inline-size: auto;
     }
@@ -647,6 +791,12 @@
   @container (max-width: 400px) {
     .mox-inlineSize-0\@cq400Max {
       inline-size: 0;
+    }
+    .mox-inlineSize-6xs\@cq400Max {
+      inline-size: var(--mox-space-6xs);
+    }
+    .mox-inlineSize-5xs\@cq400Max {
+      inline-size: var(--mox-space-5xs);
     }
     .mox-inlineSize-4xs\@cq400Max {
       inline-size: var(--mox-space-4xs);
@@ -681,6 +831,12 @@
     .mox-inlineSize-4xl\@cq400Max {
       inline-size: var(--mox-space-4xl);
     }
+    .mox-inlineSize-5xl\@cq400Max {
+      inline-size: var(--mox-space-5xl);
+    }
+    .mox-inlineSize-6xl\@cq400Max {
+      inline-size: var(--mox-space-6xl);
+    }
     .mox-inlineSize-auto\@cq400Max {
       inline-size: auto;
     }
@@ -701,6 +857,12 @@
   @container (min-width: 600px) {
     .mox-inlineSize-0\@cq600Min {
       inline-size: 0;
+    }
+    .mox-inlineSize-6xs\@cq600Min {
+      inline-size: var(--mox-space-6xs);
+    }
+    .mox-inlineSize-5xs\@cq600Min {
+      inline-size: var(--mox-space-5xs);
     }
     .mox-inlineSize-4xs\@cq600Min {
       inline-size: var(--mox-space-4xs);
@@ -735,6 +897,12 @@
     .mox-inlineSize-4xl\@cq600Min {
       inline-size: var(--mox-space-4xl);
     }
+    .mox-inlineSize-5xl\@cq600Min {
+      inline-size: var(--mox-space-5xl);
+    }
+    .mox-inlineSize-6xl\@cq600Min {
+      inline-size: var(--mox-space-6xl);
+    }
     .mox-inlineSize-auto\@cq600Min {
       inline-size: auto;
     }
@@ -754,6 +922,12 @@
   @container (max-width: 600px) {
     .mox-inlineSize-0\@cq600Max {
       inline-size: 0;
+    }
+    .mox-inlineSize-6xs\@cq600Max {
+      inline-size: var(--mox-space-6xs);
+    }
+    .mox-inlineSize-5xs\@cq600Max {
+      inline-size: var(--mox-space-5xs);
     }
     .mox-inlineSize-4xs\@cq600Max {
       inline-size: var(--mox-space-4xs);
@@ -788,6 +962,12 @@
     .mox-inlineSize-4xl\@cq600Max {
       inline-size: var(--mox-space-4xl);
     }
+    .mox-inlineSize-5xl\@cq600Max {
+      inline-size: var(--mox-space-5xl);
+    }
+    .mox-inlineSize-6xl\@cq600Max {
+      inline-size: var(--mox-space-6xl);
+    }
     .mox-inlineSize-auto\@cq600Max {
       inline-size: auto;
     }
@@ -808,6 +988,12 @@
   @container (min-width: 800px) {
     .mox-inlineSize-0\@cq800Min {
       inline-size: 0;
+    }
+    .mox-inlineSize-6xs\@cq800Min {
+      inline-size: var(--mox-space-6xs);
+    }
+    .mox-inlineSize-5xs\@cq800Min {
+      inline-size: var(--mox-space-5xs);
     }
     .mox-inlineSize-4xs\@cq800Min {
       inline-size: var(--mox-space-4xs);
@@ -842,6 +1028,12 @@
     .mox-inlineSize-4xl\@cq800Min {
       inline-size: var(--mox-space-4xl);
     }
+    .mox-inlineSize-5xl\@cq800Min {
+      inline-size: var(--mox-space-5xl);
+    }
+    .mox-inlineSize-6xl\@cq800Min {
+      inline-size: var(--mox-space-6xl);
+    }
     .mox-inlineSize-auto\@cq800Min {
       inline-size: auto;
     }
@@ -861,6 +1053,12 @@
   @container (max-width: 800px) {
     .mox-inlineSize-0\@cq800Max {
       inline-size: 0;
+    }
+    .mox-inlineSize-6xs\@cq800Max {
+      inline-size: var(--mox-space-6xs);
+    }
+    .mox-inlineSize-5xs\@cq800Max {
+      inline-size: var(--mox-space-5xs);
     }
     .mox-inlineSize-4xs\@cq800Max {
       inline-size: var(--mox-space-4xs);
@@ -894,6 +1092,12 @@
     }
     .mox-inlineSize-4xl\@cq800Max {
       inline-size: var(--mox-space-4xl);
+    }
+    .mox-inlineSize-5xl\@cq800Max {
+      inline-size: var(--mox-space-5xl);
+    }
+    .mox-inlineSize-6xl\@cq800Max {
+      inline-size: var(--mox-space-6xl);
     }
     .mox-inlineSize-auto\@cq800Max {
       inline-size: auto;

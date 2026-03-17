@@ -2,6 +2,8 @@ export const prefix = "mox";
 
 // We export the spaces so it can be used to generate clamp-spaces in `generateCss.ts`
 export const spaces = [
+  "6xs",
+  "5xs",
   "4xs",
   "3xs",
   "2xs",
@@ -13,6 +15,8 @@ export const spaces = [
   "2xl",
   "3xl",
   "4xl",
+  "5xl",
+  "6xl",
 ] as const;
 
 export const globalSizeOptions = [
@@ -27,6 +31,8 @@ export const globalSizeOptions = [
 export const globalGapOptions = ["0", "auto", "inherit"] as const;
 
 export const colorOptions = [
+  "plain",
+  "plain-contrast",
   "primary",
   "primary-hover",
   "primary-subtle",
@@ -69,13 +75,11 @@ export const colorOptions = [
   "warning-subtle-hover",
   "warning-subtle-2",
   "warning-subtle-2-hover",
-  "error",
-  "error-hover",
-  "error-subtle",
-  "error-subtle-hover",
-  "error-subtle-2",
-  "error-subtle-2-hover",
-  "zwart",
-  "wit",
-  "transparant",
+  "danger",
+  "danger-hover",
+  "danger-subtle",
+  "danger-subtle-hover",
+  "danger-subtle-2",
+  "danger-subtle-2-hover",
+  "transparent",
 ] as const;

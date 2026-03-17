@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { MoxOccupy } from "./Occupy";
+import { MoxBox } from "./Box";
 
 const meta = {
   title: "React/Atoms/Layout/Occupy*",
@@ -9,9 +10,11 @@ const meta = {
   parameters: {},
   args: {
     children: (
-      <>
-        <div>📦</div>
-      </>
+      <MoxBox
+        backgroundColor="primary-subtle"
+        size="4xl"
+        opacity="25%"
+      ></MoxBox>
     ),
   },
 } satisfies Meta<typeof MoxOccupy>;
@@ -19,8 +22,11 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const AsSection: Story = {
+export const Default: Story = {
   args: {
-    // as: "section",
+    justifyContent: "center",
+    alignContent: "center",
+    size: "md",
+    style: { border: "2px dotted orange" },
   },
 };

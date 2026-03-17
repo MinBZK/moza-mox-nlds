@@ -1,0 +1,26 @@
+
+/**
+  * This file is auto-generated. Do not edit directly.
+  * Generated from src/moxCss/mox.config.ts and script: `generateCss.ts`
+  *
+  * Responsive spacing for the space-size `6xl`
+*/
+
+@layer base {
+  body {
+    --clamp-slope-6xl: calc(
+      (var(--mox-space-6xl-max) - var(--mox-space-6xl-min)) /
+        (var(--viewport-max-inline-size) - var(--viewport-min-inline-size))
+    );
+    --clamp-intercept-6xl: calc(
+      var(--mox-space-6xl-min) - var(--viewport-min-inline-size) *
+        var(--clamp-slope-6xl)
+    );
+    --mox-space-6xl: clamp(
+      var(--mox-space-6xl-min),
+      calc(var(--clamp-intercept-6xl) + var(--clamp-slope-6xl) * 100vw),
+      var(--mox-space-6xl-max)
+    );
+  }
+}
+        

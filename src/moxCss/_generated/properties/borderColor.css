@@ -4,6 +4,12 @@
 */
 
 @layer props {
+  .mox-borderColor-plain {
+    border-color: var(--mox-color-plain);
+  }
+  .mox-borderColor-plain-contrast {
+    border-color: var(--mox-color-plain-contrast);
+  }
   .mox-borderColor-primary {
     border-color: var(--mox-color-primary);
   }
@@ -130,31 +136,25 @@
   .mox-borderColor-warning-subtle-2-hover {
     border-color: var(--mox-color-warning-subtle-2-hover);
   }
-  .mox-borderColor-error {
-    border-color: var(--mox-color-error);
+  .mox-borderColor-danger {
+    border-color: var(--mox-color-danger);
   }
-  .mox-borderColor-error-hover {
-    border-color: var(--mox-color-error-hover);
+  .mox-borderColor-danger-hover {
+    border-color: var(--mox-color-danger-hover);
   }
-  .mox-borderColor-error-subtle {
-    border-color: var(--mox-color-error-subtle);
+  .mox-borderColor-danger-subtle {
+    border-color: var(--mox-color-danger-subtle);
   }
-  .mox-borderColor-error-subtle-hover {
-    border-color: var(--mox-color-error-subtle-hover);
+  .mox-borderColor-danger-subtle-hover {
+    border-color: var(--mox-color-danger-subtle-hover);
   }
-  .mox-borderColor-error-subtle-2 {
-    border-color: var(--mox-color-error-subtle-2);
+  .mox-borderColor-danger-subtle-2 {
+    border-color: var(--mox-color-danger-subtle-2);
   }
-  .mox-borderColor-error-subtle-2-hover {
-    border-color: var(--mox-color-error-subtle-2-hover);
+  .mox-borderColor-danger-subtle-2-hover {
+    border-color: var(--mox-color-danger-subtle-2-hover);
   }
-  .mox-borderColor-zwart {
-    border-color: var(--mox-color-zwart);
-  }
-  .mox-borderColor-wit {
-    border-color: var(--mox-color-wit);
-  }
-  .mox-borderColor-transparant {
-    border-color: var(--mox-color-transparant);
+  .mox-borderColor-transparent {
+    border-color: var(--mox-color-transparent);
   }
 }

@@ -5,9 +5,14 @@ import { propsToClassNames } from "../../helpers/propsToClassNames";
 
 export const boxStyleProps = [
   "size",
+  "minInlineSize",
+  "minBlockSize",
+  "maxInlineSize",
+  "maxBlockSize",
   "inlineSize",
   "blockSize",
   "display",
+  "opacity",
   "padding",
   "paddingBlock",
   "paddingInline",
@@ -30,6 +35,8 @@ export const boxStyleProps = [
   "borderInlineStartStyle",
   "borderInlineEndStyle",
   "backgroundColor",
+  "backgroundColorHover",
+  "backgroundColorActive",
   "gridColumn",
   "gridColumnStart",
   "gridColumnEnd",

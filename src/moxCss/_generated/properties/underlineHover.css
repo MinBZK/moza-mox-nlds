@@ -5,7 +5,9 @@
 
 @layer props {
   .mox-underlineHover-underline-hover:hover {
-    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
   }
   .mox-underlineHover-strikethrough-hover:hover {
     text-decoration: line-through;

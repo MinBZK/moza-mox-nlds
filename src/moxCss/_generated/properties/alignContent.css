@@ -1,0 +1,404 @@
+/**
+  * This file is auto-generated. Do not edit directly.
+  * Generated from src/moxCss/mox.config.ts and script: `generateCss.ts`
+*/
+
+@layer props {
+  .mox-alignContent-stretch {
+    align-content: stretch;
+  }
+  .mox-alignContent-center {
+    align-content: center;
+  }
+  .mox-alignContent-start {
+    align-content: start;
+  }
+  .mox-alignContent-end {
+    align-content: end;
+  }
+  .mox-alignContent-baseline {
+    align-content: baseline;
+  }
+  .mox-alignContent-initial {
+    align-content: initial;
+  }
+  .mox-alignContent-inherit {
+    align-content: inherit;
+  }
+  /* Viewport breakpoint: mobile (600px) */
+  @media only screen and (min-device-width: 600px) {
+    .mox-alignContent-stretch\@mobileMin {
+      align-content: stretch;
+    }
+    .mox-alignContent-center\@mobileMin {
+      align-content: center;
+    }
+    .mox-alignContent-start\@mobileMin {
+      align-content: start;
+    }
+    .mox-alignContent-end\@mobileMin {
+      align-content: end;
+    }
+    .mox-alignContent-baseline\@mobileMin {
+      align-content: baseline;
+    }
+    .mox-alignContent-initial\@mobileMin {
+      align-content: initial;
+    }
+    .mox-alignContent-inherit\@mobileMin {
+      align-content: inherit;
+    }
+  }
+  @media only screen and (max-device-width: 600px) {
+    .mox-alignContent-stretch\@mobileMax {
+      align-content: stretch;
+    }
+    .mox-alignContent-center\@mobileMax {
+      align-content: center;
+    }
+    .mox-alignContent-start\@mobileMax {
+      align-content: start;
+    }
+    .mox-alignContent-end\@mobileMax {
+      align-content: end;
+    }
+    .mox-alignContent-baseline\@mobileMax {
+      align-content: baseline;
+    }
+    .mox-alignContent-initial\@mobileMax {
+      align-content: initial;
+    }
+    .mox-alignContent-inherit\@mobileMax {
+      align-content: inherit;
+    }
+  }
+  /* Viewport breakpoint: tablet (900px) */
+  @media only screen and (min-device-width: 900px) {
+    .mox-alignContent-stretch\@tabletMin {
+      align-content: stretch;
+    }
+    .mox-alignContent-center\@tabletMin {
+      align-content: center;
+    }
+    .mox-alignContent-start\@tabletMin {
+      align-content: start;
+    }
+    .mox-alignContent-end\@tabletMin {
+      align-content: end;
+    }
+    .mox-alignContent-baseline\@tabletMin {
+      align-content: baseline;
+    }
+    .mox-alignContent-initial\@tabletMin {
+      align-content: initial;
+    }
+    .mox-alignContent-inherit\@tabletMin {
+      align-content: inherit;
+    }
+  }
+  @media only screen and (max-device-width: 900px) {
+    .mox-alignContent-stretch\@tabletMax {
+      align-content: stretch;
+    }
+    .mox-alignContent-center\@tabletMax {
+      align-content: center;
+    }
+    .mox-alignContent-start\@tabletMax {
+      align-content: start;
+    }
+    .mox-alignContent-end\@tabletMax {
+      align-content: end;
+    }
+    .mox-alignContent-baseline\@tabletMax {
+      align-content: baseline;
+    }
+    .mox-alignContent-initial\@tabletMax {
+      align-content: initial;
+    }
+    .mox-alignContent-inherit\@tabletMax {
+      align-content: inherit;
+    }
+  }
+  /* Viewport breakpoint: desktop (1200px) */
+  @media only screen and (min-device-width: 1200px) {
+    .mox-alignContent-stretch\@desktopMin {
+      align-content: stretch;
+    }
+    .mox-alignContent-center\@desktopMin {
+      align-content: center;
+    }
+    .mox-alignContent-start\@desktopMin {
+      align-content: start;
+    }
+    .mox-alignContent-end\@desktopMin {
+      align-content: end;
+    }
+    .mox-alignContent-baseline\@desktopMin {
+      align-content: baseline;
+    }
+    .mox-alignContent-initial\@desktopMin {
+      align-content: initial;
+    }
+    .mox-alignContent-inherit\@desktopMin {
+      align-content: inherit;
+    }
+  }
+  @media only screen and (max-device-width: 1200px) {
+    .mox-alignContent-stretch\@desktopMax {
+      align-content: stretch;
+    }
+    .mox-alignContent-center\@desktopMax {
+      align-content: center;
+    }
+    .mox-alignContent-start\@desktopMax {
+      align-content: start;
+    }
+    .mox-alignContent-end\@desktopMax {
+      align-content: end;
+    }
+    .mox-alignContent-baseline\@desktopMax {
+      align-content: baseline;
+    }
+    .mox-alignContent-initial\@desktopMax {
+      align-content: initial;
+    }
+    .mox-alignContent-inherit\@desktopMax {
+      align-content: inherit;
+    }
+  }
+  /* Viewport breakpoint: mq1440 (1440px) */
+  @media only screen and (min-device-width: 1440px) {
+    .mox-alignContent-stretch\@mq1440Min {
+      align-content: stretch;
+    }
+    .mox-alignContent-center\@mq1440Min {
+      align-content: center;
+    }
+    .mox-alignContent-start\@mq1440Min {
+      align-content: start;
+    }
+    .mox-alignContent-end\@mq1440Min {
+      align-content: end;
+    }
+    .mox-alignContent-baseline\@mq1440Min {
+      align-content: baseline;
+    }
+    .mox-alignContent-initial\@mq1440Min {
+      align-content: initial;
+    }
+    .mox-alignContent-inherit\@mq1440Min {
+      align-content: inherit;
+    }
+  }
+  @media only screen and (max-device-width: 1440px) {
+    .mox-alignContent-stretch\@mq1440Max {
+      align-content: stretch;
+    }
+    .mox-alignContent-center\@mq1440Max {
+      align-content: center;
+    }
+    .mox-alignContent-start\@mq1440Max {
+      align-content: start;
+    }
+    .mox-alignContent-end\@mq1440Max {
+      align-content: end;
+    }
+    .mox-alignContent-baseline\@mq1440Max {
+      align-content: baseline;
+    }
+    .mox-alignContent-initial\@mq1440Max {
+      align-content: initial;
+    }
+    .mox-alignContent-inherit\@mq1440Max {
+      align-content: inherit;
+    }
+  }
+  /* Container breakpoint: cq200 (200px) */
+  @container (min-width: 200px) {
+    .mox-alignContent-stretch\@cq200Min {
+      align-content: stretch;
+    }
+    .mox-alignContent-center\@cq200Min {
+      align-content: center;
+    }
+    .mox-alignContent-start\@cq200Min {
+      align-content: start;
+    }
+    .mox-alignContent-end\@cq200Min {
+      align-content: end;
+    }
+    .mox-alignContent-baseline\@cq200Min {
+      align-content: baseline;
+    }
+    .mox-alignContent-initial\@cq200Min {
+      align-content: initial;
+    }
+    .mox-alignContent-inherit\@cq200Min {
+      align-content: inherit;
+    }
+  }
+  @container (max-width: 200px) {
+    .mox-alignContent-stretch\@cq200Max {
+      align-content: stretch;
+    }
+    .mox-alignContent-center\@cq200Max {
+      align-content: center;
+    }
+    .mox-alignContent-start\@cq200Max {
+      align-content: start;
+    }
+    .mox-alignContent-end\@cq200Max {
+      align-content: end;
+    }
+    .mox-alignContent-baseline\@cq200Max {
+      align-content: baseline;
+    }
+    .mox-alignContent-initial\@cq200Max {
+      align-content: initial;
+    }
+    .mox-alignContent-inherit\@cq200Max {
+      align-content: inherit;
+    }
+  }
+  /* Container breakpoint: cq400 (400px) */
+  @container (min-width: 400px) {
+    .mox-alignContent-stretch\@cq400Min {
+      align-content: stretch;
+    }
+    .mox-alignContent-center\@cq400Min {
+      align-content: center;
+    }
+    .mox-alignContent-start\@cq400Min {
+      align-content: start;
+    }
+    .mox-alignContent-end\@cq400Min {
+      align-content: end;
+    }
+    .mox-alignContent-baseline\@cq400Min {
+      align-content: baseline;
+    }
+    .mox-alignContent-initial\@cq400Min {
+      align-content: initial;
+    }
+    .mox-alignContent-inherit\@cq400Min {
+      align-content: inherit;
+    }
+  }
+  @container (max-width: 400px) {
+    .mox-alignContent-stretch\@cq400Max {
+      align-content: stretch;
+    }
+    .mox-alignContent-center\@cq400Max {
+      align-content: center;
+    }
+    .mox-alignContent-start\@cq400Max {
+      align-content: start;
+    }
+    .mox-alignContent-end\@cq400Max {
+      align-content: end;
+    }
+    .mox-alignContent-baseline\@cq400Max {
+      align-content: baseline;
+    }
+    .mox-alignContent-initial\@cq400Max {
+      align-content: initial;
+    }
+    .mox-alignContent-inherit\@cq400Max {
+      align-content: inherit;
+    }
+  }
+  /* Container breakpoint: cq600 (600px) */
+  @container (min-width: 600px) {
+    .mox-alignContent-stretch\@cq600Min {
+      align-content: stretch;
+    }
+    .mox-alignContent-center\@cq600Min {
+      align-content: center;
+    }
+    .mox-alignContent-start\@cq600Min {
+      align-content: start;
+    }
+    .mox-alignContent-end\@cq600Min {
+      align-content: end;
+    }
+    .mox-alignContent-baseline\@cq600Min {
+      align-content: baseline;
+    }
+    .mox-alignContent-initial\@cq600Min {
+      align-content: initial;
+    }
+    .mox-alignContent-inherit\@cq600Min {
+      align-content: inherit;
+    }
+  }
+  @container (max-width: 600px) {
+    .mox-alignContent-stretch\@cq600Max {
+      align-content: stretch;
+    }
+    .mox-alignContent-center\@cq600Max {
+      align-content: center;
+    }
+    .mox-alignContent-start\@cq600Max {
+      align-content: start;
+    }
+    .mox-alignContent-end\@cq600Max {
+      align-content: end;
+    }
+    .mox-alignContent-baseline\@cq600Max {
+      align-content: baseline;
+    }
+    .mox-alignContent-initial\@cq600Max {
+      align-content: initial;
+    }
+    .mox-alignContent-inherit\@cq600Max {
+      align-content: inherit;
+    }
+  }
+  /* Container breakpoint: cq800 (800px) */
+  @container (min-width: 800px) {
+    .mox-alignContent-stretch\@cq800Min {
+      align-content: stretch;
+    }
+    .mox-alignContent-center\@cq800Min {
+      align-content: center;
+    }
+    .mox-alignContent-start\@cq800Min {
+      align-content: start;
+    }
+    .mox-alignContent-end\@cq800Min {
+      align-content: end;
+    }
+    .mox-alignContent-baseline\@cq800Min {
+      align-content: baseline;
+    }
+    .mox-alignContent-initial\@cq800Min {
+      align-content: initial;
+    }
+    .mox-alignContent-inherit\@cq800Min {
+      align-content: inherit;
+    }
+  }
+  @container (max-width: 800px) {
+    .mox-alignContent-stretch\@cq800Max {
+      align-content: stretch;
+    }
+    .mox-alignContent-center\@cq800Max {
+      align-content: center;
+    }
+    .mox-alignContent-start\@cq800Max {
+      align-content: start;
+    }
+    .mox-alignContent-end\@cq800Max {
+      align-content: end;
+    }
+    .mox-alignContent-baseline\@cq800Max {
+      align-content: baseline;
+    }
+    .mox-alignContent-initial\@cq800Max {
+      align-content: initial;
+    }
+    .mox-alignContent-inherit\@cq800Max {
+      align-content: inherit;
+    }
+  }
+}

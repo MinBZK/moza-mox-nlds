@@ -4,6 +4,14 @@
 */
 
 @layer props {
+  .mox-fontSize-6xs {
+    --current-font-size: var(--mox-space-6xs);
+    font-size: var(--current-font-size);
+  }
+  .mox-fontSize-5xs {
+    --current-font-size: var(--mox-space-5xs);
+    font-size: var(--current-font-size);
+  }
   .mox-fontSize-4xs {
     --current-font-size: var(--mox-space-4xs);
     font-size: var(--current-font-size);
@@ -48,8 +56,24 @@
     --current-font-size: var(--mox-space-4xl);
     font-size: var(--current-font-size);
   }
+  .mox-fontSize-5xl {
+    --current-font-size: var(--mox-space-5xl);
+    font-size: var(--current-font-size);
+  }
+  .mox-fontSize-6xl {
+    --current-font-size: var(--mox-space-6xl);
+    font-size: var(--current-font-size);
+  }
   /* Viewport breakpoint: mobile (600px) */
   @media only screen and (min-device-width: 600px) {
+    .mox-fontSize-6xs\@mobileMin {
+      --current-font-size: var(--mox-space-6xs);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xs\@mobileMin {
+      --current-font-size: var(--mox-space-5xs);
+      font-size: var(--current-font-size);
+    }
     .mox-fontSize-4xs\@mobileMin {
       --current-font-size: var(--mox-space-4xs);
       font-size: var(--current-font-size);
@@ -94,8 +118,24 @@
       --current-font-size: var(--mox-space-4xl);
       font-size: var(--current-font-size);
     }
+    .mox-fontSize-5xl\@mobileMin {
+      --current-font-size: var(--mox-space-5xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-6xl\@mobileMin {
+      --current-font-size: var(--mox-space-6xl);
+      font-size: var(--current-font-size);
+    }
   }
   @media only screen and (max-device-width: 600px) {
+    .mox-fontSize-6xs\@mobileMax {
+      --current-font-size: var(--mox-space-6xs);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xs\@mobileMax {
+      --current-font-size: var(--mox-space-5xs);
+      font-size: var(--current-font-size);
+    }
     .mox-fontSize-4xs\@mobileMax {
       --current-font-size: var(--mox-space-4xs);
       font-size: var(--current-font-size);
@@ -140,9 +180,25 @@
       --current-font-size: var(--mox-space-4xl);
       font-size: var(--current-font-size);
     }
+    .mox-fontSize-5xl\@mobileMax {
+      --current-font-size: var(--mox-space-5xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-6xl\@mobileMax {
+      --current-font-size: var(--mox-space-6xl);
+      font-size: var(--current-font-size);
+    }
   }
   /* Viewport breakpoint: tablet (900px) */
   @media only screen and (min-device-width: 900px) {
+    .mox-fontSize-6xs\@tabletMin {
+      --current-font-size: var(--mox-space-6xs);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xs\@tabletMin {
+      --current-font-size: var(--mox-space-5xs);
+      font-size: var(--current-font-size);
+    }
     .mox-fontSize-4xs\@tabletMin {
       --current-font-size: var(--mox-space-4xs);
       font-size: var(--current-font-size);
@@ -187,8 +243,24 @@
       --current-font-size: var(--mox-space-4xl);
       font-size: var(--current-font-size);
     }
+    .mox-fontSize-5xl\@tabletMin {
+      --current-font-size: var(--mox-space-5xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-6xl\@tabletMin {
+      --current-font-size: var(--mox-space-6xl);
+      font-size: var(--current-font-size);
+    }
   }
   @media only screen and (max-device-width: 900px) {
+    .mox-fontSize-6xs\@tabletMax {
+      --current-font-size: var(--mox-space-6xs);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xs\@tabletMax {
+      --current-font-size: var(--mox-space-5xs);
+      font-size: var(--current-font-size);
+    }
     .mox-fontSize-4xs\@tabletMax {
       --current-font-size: var(--mox-space-4xs);
       font-size: var(--current-font-size);
@@ -233,9 +305,25 @@
       --current-font-size: var(--mox-space-4xl);
       font-size: var(--current-font-size);
     }
+    .mox-fontSize-5xl\@tabletMax {
+      --current-font-size: var(--mox-space-5xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-6xl\@tabletMax {
+      --current-font-size: var(--mox-space-6xl);
+      font-size: var(--current-font-size);
+    }
   }
   /* Viewport breakpoint: desktop (1200px) */
   @media only screen and (min-device-width: 1200px) {
+    .mox-fontSize-6xs\@desktopMin {
+      --current-font-size: var(--mox-space-6xs);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xs\@desktopMin {
+      --current-font-size: var(--mox-space-5xs);
+      font-size: var(--current-font-size);
+    }
     .mox-fontSize-4xs\@desktopMin {
       --current-font-size: var(--mox-space-4xs);
       font-size: var(--current-font-size);
@@ -280,8 +368,24 @@
       --current-font-size: var(--mox-space-4xl);
       font-size: var(--current-font-size);
     }
+    .mox-fontSize-5xl\@desktopMin {
+      --current-font-size: var(--mox-space-5xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-6xl\@desktopMin {
+      --current-font-size: var(--mox-space-6xl);
+      font-size: var(--current-font-size);
+    }
   }
   @media only screen and (max-device-width: 1200px) {
+    .mox-fontSize-6xs\@desktopMax {
+      --current-font-size: var(--mox-space-6xs);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xs\@desktopMax {
+      --current-font-size: var(--mox-space-5xs);
+      font-size: var(--current-font-size);
+    }
     .mox-fontSize-4xs\@desktopMax {
       --current-font-size: var(--mox-space-4xs);
       font-size: var(--current-font-size);
@@ -326,9 +430,25 @@
       --current-font-size: var(--mox-space-4xl);
       font-size: var(--current-font-size);
     }
+    .mox-fontSize-5xl\@desktopMax {
+      --current-font-size: var(--mox-space-5xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-6xl\@desktopMax {
+      --current-font-size: var(--mox-space-6xl);
+      font-size: var(--current-font-size);
+    }
   }
   /* Viewport breakpoint: mq1440 (1440px) */
   @media only screen and (min-device-width: 1440px) {
+    .mox-fontSize-6xs\@mq1440Min {
+      --current-font-size: var(--mox-space-6xs);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xs\@mq1440Min {
+      --current-font-size: var(--mox-space-5xs);
+      font-size: var(--current-font-size);
+    }
     .mox-fontSize-4xs\@mq1440Min {
       --current-font-size: var(--mox-space-4xs);
       font-size: var(--current-font-size);
@@ -373,8 +493,24 @@
       --current-font-size: var(--mox-space-4xl);
       font-size: var(--current-font-size);
     }
+    .mox-fontSize-5xl\@mq1440Min {
+      --current-font-size: var(--mox-space-5xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-6xl\@mq1440Min {
+      --current-font-size: var(--mox-space-6xl);
+      font-size: var(--current-font-size);
+    }
   }
   @media only screen and (max-device-width: 1440px) {
+    .mox-fontSize-6xs\@mq1440Max {
+      --current-font-size: var(--mox-space-6xs);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xs\@mq1440Max {
+      --current-font-size: var(--mox-space-5xs);
+      font-size: var(--current-font-size);
+    }
     .mox-fontSize-4xs\@mq1440Max {
       --current-font-size: var(--mox-space-4xs);
       font-size: var(--current-font-size);
@@ -419,9 +555,25 @@
       --current-font-size: var(--mox-space-4xl);
       font-size: var(--current-font-size);
     }
+    .mox-fontSize-5xl\@mq1440Max {
+      --current-font-size: var(--mox-space-5xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-6xl\@mq1440Max {
+      --current-font-size: var(--mox-space-6xl);
+      font-size: var(--current-font-size);
+    }
   }
   /* Container breakpoint: cq200 (200px) */
   @container (min-width: 200px) {
+    .mox-fontSize-6xs\@cq200Min {
+      --current-font-size: var(--mox-space-6xs);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xs\@cq200Min {
+      --current-font-size: var(--mox-space-5xs);
+      font-size: var(--current-font-size);
+    }
     .mox-fontSize-4xs\@cq200Min {
       --current-font-size: var(--mox-space-4xs);
       font-size: var(--current-font-size);
@@ -466,8 +618,24 @@
       --current-font-size: var(--mox-space-4xl);
       font-size: var(--current-font-size);
     }
+    .mox-fontSize-5xl\@cq200Min {
+      --current-font-size: var(--mox-space-5xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-6xl\@cq200Min {
+      --current-font-size: var(--mox-space-6xl);
+      font-size: var(--current-font-size);
+    }
   }
   @container (max-width: 200px) {
+    .mox-fontSize-6xs\@cq200Max {
+      --current-font-size: var(--mox-space-6xs);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xs\@cq200Max {
+      --current-font-size: var(--mox-space-5xs);
+      font-size: var(--current-font-size);
+    }
     .mox-fontSize-4xs\@cq200Max {
       --current-font-size: var(--mox-space-4xs);
       font-size: var(--current-font-size);
@@ -512,9 +680,25 @@
       --current-font-size: var(--mox-space-4xl);
       font-size: var(--current-font-size);
     }
+    .mox-fontSize-5xl\@cq200Max {
+      --current-font-size: var(--mox-space-5xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-6xl\@cq200Max {
+      --current-font-size: var(--mox-space-6xl);
+      font-size: var(--current-font-size);
+    }
   }
   /* Container breakpoint: cq400 (400px) */
   @container (min-width: 400px) {
+    .mox-fontSize-6xs\@cq400Min {
+      --current-font-size: var(--mox-space-6xs);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xs\@cq400Min {
+      --current-font-size: var(--mox-space-5xs);
+      font-size: var(--current-font-size);
+    }
     .mox-fontSize-4xs\@cq400Min {
       --current-font-size: var(--mox-space-4xs);
       font-size: var(--current-font-size);
@@ -559,8 +743,24 @@
       --current-font-size: var(--mox-space-4xl);
       font-size: var(--current-font-size);
     }
+    .mox-fontSize-5xl\@cq400Min {
+      --current-font-size: var(--mox-space-5xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-6xl\@cq400Min {
+      --current-font-size: var(--mox-space-6xl);
+      font-size: var(--current-font-size);
+    }
   }
   @container (max-width: 400px) {
+    .mox-fontSize-6xs\@cq400Max {
+      --current-font-size: var(--mox-space-6xs);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xs\@cq400Max {
+      --current-font-size: var(--mox-space-5xs);
+      font-size: var(--current-font-size);
+    }
     .mox-fontSize-4xs\@cq400Max {
       --current-font-size: var(--mox-space-4xs);
       font-size: var(--current-font-size);
@@ -605,9 +805,25 @@
       --current-font-size: var(--mox-space-4xl);
       font-size: var(--current-font-size);
     }
+    .mox-fontSize-5xl\@cq400Max {
+      --current-font-size: var(--mox-space-5xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-6xl\@cq400Max {
+      --current-font-size: var(--mox-space-6xl);
+      font-size: var(--current-font-size);
+    }
   }
   /* Container breakpoint: cq600 (600px) */
   @container (min-width: 600px) {
+    .mox-fontSize-6xs\@cq600Min {
+      --current-font-size: var(--mox-space-6xs);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xs\@cq600Min {
+      --current-font-size: var(--mox-space-5xs);
+      font-size: var(--current-font-size);
+    }
     .mox-fontSize-4xs\@cq600Min {
       --current-font-size: var(--mox-space-4xs);
       font-size: var(--current-font-size);
@@ -652,8 +868,24 @@
       --current-font-size: var(--mox-space-4xl);
       font-size: var(--current-font-size);
     }
+    .mox-fontSize-5xl\@cq600Min {
+      --current-font-size: var(--mox-space-5xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-6xl\@cq600Min {
+      --current-font-size: var(--mox-space-6xl);
+      font-size: var(--current-font-size);
+    }
   }
   @container (max-width: 600px) {
+    .mox-fontSize-6xs\@cq600Max {
+      --current-font-size: var(--mox-space-6xs);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xs\@cq600Max {
+      --current-font-size: var(--mox-space-5xs);
+      font-size: var(--current-font-size);
+    }
     .mox-fontSize-4xs\@cq600Max {
       --current-font-size: var(--mox-space-4xs);
       font-size: var(--current-font-size);
@@ -698,9 +930,25 @@
       --current-font-size: var(--mox-space-4xl);
       font-size: var(--current-font-size);
     }
+    .mox-fontSize-5xl\@cq600Max {
+      --current-font-size: var(--mox-space-5xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-6xl\@cq600Max {
+      --current-font-size: var(--mox-space-6xl);
+      font-size: var(--current-font-size);
+    }
   }
   /* Container breakpoint: cq800 (800px) */
   @container (min-width: 800px) {
+    .mox-fontSize-6xs\@cq800Min {
+      --current-font-size: var(--mox-space-6xs);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xs\@cq800Min {
+      --current-font-size: var(--mox-space-5xs);
+      font-size: var(--current-font-size);
+    }
     .mox-fontSize-4xs\@cq800Min {
       --current-font-size: var(--mox-space-4xs);
       font-size: var(--current-font-size);
@@ -745,8 +993,24 @@
       --current-font-size: var(--mox-space-4xl);
       font-size: var(--current-font-size);
     }
+    .mox-fontSize-5xl\@cq800Min {
+      --current-font-size: var(--mox-space-5xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-6xl\@cq800Min {
+      --current-font-size: var(--mox-space-6xl);
+      font-size: var(--current-font-size);
+    }
   }
   @container (max-width: 800px) {
+    .mox-fontSize-6xs\@cq800Max {
+      --current-font-size: var(--mox-space-6xs);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xs\@cq800Max {
+      --current-font-size: var(--mox-space-5xs);
+      font-size: var(--current-font-size);
+    }
     .mox-fontSize-4xs\@cq800Max {
       --current-font-size: var(--mox-space-4xs);
       font-size: var(--current-font-size);
@@ -789,6 +1053,14 @@
     }
     .mox-fontSize-4xl\@cq800Max {
       --current-font-size: var(--mox-space-4xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-5xl\@cq800Max {
+      --current-font-size: var(--mox-space-5xl);
+      font-size: var(--current-font-size);
+    }
+    .mox-fontSize-6xl\@cq800Max {
+      --current-font-size: var(--mox-space-6xl);
       font-size: var(--current-font-size);
     }
   }

@@ -1,0 +1,14 @@
+@layer atoms {
+  /* a class to visually hide content but keep it accessible for screen readers */
+  .mox-sr-only-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}

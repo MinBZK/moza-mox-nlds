@@ -4,6 +4,16 @@
 */
 
 @layer props {
+  .mox-backgroundColorHover-plain-hover:hover {
+    background-color: var(--mox-color-plain);
+    --mox-text-color: var(--mox-color-plain-contrast);
+    color: var(--mox-text-color);
+  }
+  .mox-backgroundColorHover-plain-contrast-hover:hover {
+    background-color: var(--mox-color-plain-contrast);
+    --mox-text-color: var(--mox-color-plain-contrast-contrast);
+    color: var(--mox-text-color);
+  }
   .mox-backgroundColorHover-primary-hover:hover {
     background-color: var(--mox-color-primary);
     --mox-text-color: var(--mox-color-primary-contrast);
@@ -214,49 +224,39 @@
     --mox-text-color: var(--mox-color-warning-subtle-2-hover-contrast);
     color: var(--mox-text-color);
   }
-  .mox-backgroundColorHover-error-hover:hover {
-    background-color: var(--mox-color-error);
-    --mox-text-color: var(--mox-color-error-contrast);
+  .mox-backgroundColorHover-danger-hover:hover {
+    background-color: var(--mox-color-danger);
+    --mox-text-color: var(--mox-color-danger-contrast);
     color: var(--mox-text-color);
   }
-  .mox-backgroundColorHover-error-hover-hover:hover {
-    background-color: var(--mox-color-error-hover);
-    --mox-text-color: var(--mox-color-error-hover-contrast);
+  .mox-backgroundColorHover-danger-hover-hover:hover {
+    background-color: var(--mox-color-danger-hover);
+    --mox-text-color: var(--mox-color-danger-hover-contrast);
     color: var(--mox-text-color);
   }
-  .mox-backgroundColorHover-error-subtle-hover:hover {
-    background-color: var(--mox-color-error-subtle);
-    --mox-text-color: var(--mox-color-error-subtle-contrast);
+  .mox-backgroundColorHover-danger-subtle-hover:hover {
+    background-color: var(--mox-color-danger-subtle);
+    --mox-text-color: var(--mox-color-danger-subtle-contrast);
     color: var(--mox-text-color);
   }
-  .mox-backgroundColorHover-error-subtle-hover-hover:hover {
-    background-color: var(--mox-color-error-subtle-hover);
-    --mox-text-color: var(--mox-color-error-subtle-hover-contrast);
+  .mox-backgroundColorHover-danger-subtle-hover-hover:hover {
+    background-color: var(--mox-color-danger-subtle-hover);
+    --mox-text-color: var(--mox-color-danger-subtle-hover-contrast);
     color: var(--mox-text-color);
   }
-  .mox-backgroundColorHover-error-subtle-2-hover:hover {
-    background-color: var(--mox-color-error-subtle-2);
-    --mox-text-color: var(--mox-color-error-subtle-2-contrast);
+  .mox-backgroundColorHover-danger-subtle-2-hover:hover {
+    background-color: var(--mox-color-danger-subtle-2);
+    --mox-text-color: var(--mox-color-danger-subtle-2-contrast);
     color: var(--mox-text-color);
   }
-  .mox-backgroundColorHover-error-subtle-2-hover-hover:hover {
-    background-color: var(--mox-color-error-subtle-2-hover);
-    --mox-text-color: var(--mox-color-error-subtle-2-hover-contrast);
+  .mox-backgroundColorHover-danger-subtle-2-hover-hover:hover {
+    background-color: var(--mox-color-danger-subtle-2-hover);
+    --mox-text-color: var(--mox-color-danger-subtle-2-hover-contrast);
     color: var(--mox-text-color);
   }
-  .mox-backgroundColorHover-zwart-hover:hover {
-    background-color: var(--mox-color-zwart);
-    --mox-text-color: var(--mox-color-zwart-contrast);
-    color: var(--mox-text-color);
-  }
-  .mox-backgroundColorHover-wit-hover:hover {
-    background-color: var(--mox-color-wit);
-    --mox-text-color: var(--mox-color-wit-contrast);
-    color: var(--mox-text-color);
-  }
-  .mox-backgroundColorHover-transparant-hover:hover {
-    background-color: var(--mox-color-transparant);
-    --mox-text-color: var(--mox-color-transparant-contrast);
+  .mox-backgroundColorHover-transparent-hover:hover {
+    background-color: var(--mox-color-transparent);
+    --mox-text-color: var(--mox-color-transparent-contrast);
     color: var(--mox-text-color);
   }
 }

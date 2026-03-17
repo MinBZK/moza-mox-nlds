@@ -1,0 +1,85 @@
+import type { Meta, StoryObj } from "@storybook/react-vite";
+
+import { getConstructionSummary } from "../../../storybook/helpers/getConstructionSummary";
+import { MoxOrganismSideNav } from "./SideNav";
+import { MoxBadge } from "../../uiMolecules/badge/Badge";
+import { MoxIcon } from "../../uiAtoms";
+
+const meta = {
+  title: "React/Organisms/SideNav/SideNav",
+  component: MoxOrganismSideNav,
+  tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        story: getConstructionSummary(`
+          
+        `),
+      },
+    },
+  },
+  decorators: [
+    (Story) => (
+      <div>
+        <style>
+          {`
+          section { 
+            border: 2px dotted orange;
+            inline-size: 300px;
+            padding: 8px;
+          }
+        `}
+        </style>
+        <section>
+          <Story />
+        </section>
+      </div>
+    ),
+  ],
+  argTypes: {},
+  args: {},
+} satisfies Meta<typeof MoxOrganismSideNav>;
+
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+const mock = [
+  [
+    {
+      label: "Home",
+      href: "#",
+      isCurrent: true,
+      icon: <MoxIcon icon="HouseFill" fontSize="md" />,
+      badge: <MoxBadge backgroundColor={"danger"}>3</MoxBadge>,
+    },
+    {
+      label: "Profile",
+      href: "#",
+      icon: <MoxIcon icon="PersonFill" fontSize="md" />,
+    },
+  ],
+  [
+    {
+      label: "Settings",
+      href: "#",
+      icon: <MoxIcon icon="GearFill" fontSize="md" />,
+    },
+    {
+      label: "Help",
+      href: "#",
+      icon: <MoxIcon icon="QuestionCircleFill" fontSize="md" />,
+      badge: <MoxBadge backgroundColor={"primary"}>New</MoxBadge>,
+    },
+  ],
+  [
+    {
+      label: "Logout",
+      href: "#",
+      icon: <MoxIcon icon="BoxArrowRight" fontSize="md" />,
+    },
+  ],
+];
+
+export const Default: Story = {
+  args: { items: mock },
+};

@@ -1,0 +1,26 @@
+
+/**
+  * This file is auto-generated. Do not edit directly.
+  * Generated from src/moxCss/mox.config.ts and script: `generateCss.ts`
+  *
+  * Responsive spacing for the space-size `5xs`
+*/
+
+@layer base {
+  body {
+    --clamp-slope-5xs: calc(
+      (var(--mox-space-5xs-max) - var(--mox-space-5xs-min)) /
+        (var(--viewport-max-inline-size) - var(--viewport-min-inline-size))
+    );
+    --clamp-intercept-5xs: calc(
+      var(--mox-space-5xs-min) - var(--viewport-min-inline-size) *
+        var(--clamp-slope-5xs)
+    );
+    --mox-space-5xs: clamp(
+      var(--mox-space-5xs-min),
+      calc(var(--clamp-intercept-5xs) + var(--clamp-slope-5xs) * 100vw),
+      var(--mox-space-5xs-max)
+    );
+  }
+}
+        

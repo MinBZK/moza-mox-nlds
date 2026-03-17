@@ -29,6 +29,19 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+export const Full: Story = {
+  args: {
+    itemSize: "full",
+    children: (
+      <>
+        <MoxBox backgroundColor="secondary-subtle" padding="md">
+          {"full"}
+        </MoxBox>
+      </>
+    ),
+  },
+};
+
 export const Half: Story = {
   args: {
     itemSize: "half",

@@ -7,14 +7,13 @@ import { getStylePropArgTypes } from "../../../storybook/helpers/getStylePropArg
 const meta = {
   title: "React/Atoms/Layout/Box",
   component: MoxAtomBox,
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ["autodocs"],
   parameters: {},
   args: {
     children: "📦",
     size: "4xl",
     padding: "md",
-    borderColor: "zwart",
+    borderColor: "plain",
     borderWidth: "2px",
     borderStyle: "dashed",
   },

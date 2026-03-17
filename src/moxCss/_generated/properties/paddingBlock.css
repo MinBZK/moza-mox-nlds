@@ -7,6 +7,12 @@
   .mox-paddingBlock-0 {
     padding-block: 0;
   }
+  .mox-paddingBlock-6xs {
+    padding-block: var(--mox-space-6xs);
+  }
+  .mox-paddingBlock-5xs {
+    padding-block: var(--mox-space-5xs);
+  }
   .mox-paddingBlock-4xs {
     padding-block: var(--mox-space-4xs);
   }
@@ -40,6 +46,12 @@
   .mox-paddingBlock-4xl {
     padding-block: var(--mox-space-4xl);
   }
+  .mox-paddingBlock-5xl {
+    padding-block: var(--mox-space-5xl);
+  }
+  .mox-paddingBlock-6xl {
+    padding-block: var(--mox-space-6xl);
+  }
   .mox-paddingBlock-auto {
     padding-block: auto;
   }
@@ -50,6 +62,12 @@
   @media only screen and (min-device-width: 600px) {
     .mox-paddingBlock-0\@mobileMin {
       padding-block: 0;
+    }
+    .mox-paddingBlock-6xs\@mobileMin {
+      padding-block: var(--mox-space-6xs);
+    }
+    .mox-paddingBlock-5xs\@mobileMin {
+      padding-block: var(--mox-space-5xs);
     }
     .mox-paddingBlock-4xs\@mobileMin {
       padding-block: var(--mox-space-4xs);
@@ -84,6 +102,12 @@
     .mox-paddingBlock-4xl\@mobileMin {
       padding-block: var(--mox-space-4xl);
     }
+    .mox-paddingBlock-5xl\@mobileMin {
+      padding-block: var(--mox-space-5xl);
+    }
+    .mox-paddingBlock-6xl\@mobileMin {
+      padding-block: var(--mox-space-6xl);
+    }
     .mox-paddingBlock-auto\@mobileMin {
       padding-block: auto;
     }
@@ -94,6 +118,12 @@
   @media only screen and (max-device-width: 600px) {
     .mox-paddingBlock-0\@mobileMax {
       padding-block: 0;
+    }
+    .mox-paddingBlock-6xs\@mobileMax {
+      padding-block: var(--mox-space-6xs);
+    }
+    .mox-paddingBlock-5xs\@mobileMax {
+      padding-block: var(--mox-space-5xs);
     }
     .mox-paddingBlock-4xs\@mobileMax {
       padding-block: var(--mox-space-4xs);
@@ -128,6 +158,12 @@
     .mox-paddingBlock-4xl\@mobileMax {
       padding-block: var(--mox-space-4xl);
     }
+    .mox-paddingBlock-5xl\@mobileMax {
+      padding-block: var(--mox-space-5xl);
+    }
+    .mox-paddingBlock-6xl\@mobileMax {
+      padding-block: var(--mox-space-6xl);
+    }
     .mox-paddingBlock-auto\@mobileMax {
       padding-block: auto;
     }
@@ -139,6 +175,12 @@
   @media only screen and (min-device-width: 900px) {
     .mox-paddingBlock-0\@tabletMin {
       padding-block: 0;
+    }
+    .mox-paddingBlock-6xs\@tabletMin {
+      padding-block: var(--mox-space-6xs);
+    }
+    .mox-paddingBlock-5xs\@tabletMin {
+      padding-block: var(--mox-space-5xs);
     }
     .mox-paddingBlock-4xs\@tabletMin {
       padding-block: var(--mox-space-4xs);
@@ -173,6 +215,12 @@
     .mox-paddingBlock-4xl\@tabletMin {
       padding-block: var(--mox-space-4xl);
     }
+    .mox-paddingBlock-5xl\@tabletMin {
+      padding-block: var(--mox-space-5xl);
+    }
+    .mox-paddingBlock-6xl\@tabletMin {
+      padding-block: var(--mox-space-6xl);
+    }
     .mox-paddingBlock-auto\@tabletMin {
       padding-block: auto;
     }
@@ -183,6 +231,12 @@
   @media only screen and (max-device-width: 900px) {
     .mox-paddingBlock-0\@tabletMax {
       padding-block: 0;
+    }
+    .mox-paddingBlock-6xs\@tabletMax {
+      padding-block: var(--mox-space-6xs);
+    }
+    .mox-paddingBlock-5xs\@tabletMax {
+      padding-block: var(--mox-space-5xs);
     }
     .mox-paddingBlock-4xs\@tabletMax {
       padding-block: var(--mox-space-4xs);
@@ -217,6 +271,12 @@
     .mox-paddingBlock-4xl\@tabletMax {
       padding-block: var(--mox-space-4xl);
     }
+    .mox-paddingBlock-5xl\@tabletMax {
+      padding-block: var(--mox-space-5xl);
+    }
+    .mox-paddingBlock-6xl\@tabletMax {
+      padding-block: var(--mox-space-6xl);
+    }
     .mox-paddingBlock-auto\@tabletMax {
       padding-block: auto;
     }
@@ -228,6 +288,12 @@
   @media only screen and (min-device-width: 1200px) {
     .mox-paddingBlock-0\@desktopMin {
       padding-block: 0;
+    }
+    .mox-paddingBlock-6xs\@desktopMin {
+      padding-block: var(--mox-space-6xs);
+    }
+    .mox-paddingBlock-5xs\@desktopMin {
+      padding-block: var(--mox-space-5xs);
     }
     .mox-paddingBlock-4xs\@desktopMin {
       padding-block: var(--mox-space-4xs);
@@ -262,6 +328,12 @@
     .mox-paddingBlock-4xl\@desktopMin {
       padding-block: var(--mox-space-4xl);
     }
+    .mox-paddingBlock-5xl\@desktopMin {
+      padding-block: var(--mox-space-5xl);
+    }
+    .mox-paddingBlock-6xl\@desktopMin {
+      padding-block: var(--mox-space-6xl);
+    }
     .mox-paddingBlock-auto\@desktopMin {
       padding-block: auto;
     }
@@ -272,6 +344,12 @@
   @media only screen and (max-device-width: 1200px) {
     .mox-paddingBlock-0\@desktopMax {
       padding-block: 0;
+    }
+    .mox-paddingBlock-6xs\@desktopMax {
+      padding-block: var(--mox-space-6xs);
+    }
+    .mox-paddingBlock-5xs\@desktopMax {
+      padding-block: var(--mox-space-5xs);
     }
     .mox-paddingBlock-4xs\@desktopMax {
       padding-block: var(--mox-space-4xs);
@@ -306,6 +384,12 @@
     .mox-paddingBlock-4xl\@desktopMax {
       padding-block: var(--mox-space-4xl);
     }
+    .mox-paddingBlock-5xl\@desktopMax {
+      padding-block: var(--mox-space-5xl);
+    }
+    .mox-paddingBlock-6xl\@desktopMax {
+      padding-block: var(--mox-space-6xl);
+    }
     .mox-paddingBlock-auto\@desktopMax {
       padding-block: auto;
     }
@@ -317,6 +401,12 @@
   @media only screen and (min-device-width: 1440px) {
     .mox-paddingBlock-0\@mq1440Min {
       padding-block: 0;
+    }
+    .mox-paddingBlock-6xs\@mq1440Min {
+      padding-block: var(--mox-space-6xs);
+    }
+    .mox-paddingBlock-5xs\@mq1440Min {
+      padding-block: var(--mox-space-5xs);
     }
     .mox-paddingBlock-4xs\@mq1440Min {
       padding-block: var(--mox-space-4xs);
@@ -351,6 +441,12 @@
     .mox-paddingBlock-4xl\@mq1440Min {
       padding-block: var(--mox-space-4xl);
     }
+    .mox-paddingBlock-5xl\@mq1440Min {
+      padding-block: var(--mox-space-5xl);
+    }
+    .mox-paddingBlock-6xl\@mq1440Min {
+      padding-block: var(--mox-space-6xl);
+    }
     .mox-paddingBlock-auto\@mq1440Min {
       padding-block: auto;
     }
@@ -361,6 +457,12 @@
   @media only screen and (max-device-width: 1440px) {
     .mox-paddingBlock-0\@mq1440Max {
       padding-block: 0;
+    }
+    .mox-paddingBlock-6xs\@mq1440Max {
+      padding-block: var(--mox-space-6xs);
+    }
+    .mox-paddingBlock-5xs\@mq1440Max {
+      padding-block: var(--mox-space-5xs);
     }
     .mox-paddingBlock-4xs\@mq1440Max {
       padding-block: var(--mox-space-4xs);
@@ -395,6 +497,12 @@
     .mox-paddingBlock-4xl\@mq1440Max {
       padding-block: var(--mox-space-4xl);
     }
+    .mox-paddingBlock-5xl\@mq1440Max {
+      padding-block: var(--mox-space-5xl);
+    }
+    .mox-paddingBlock-6xl\@mq1440Max {
+      padding-block: var(--mox-space-6xl);
+    }
     .mox-paddingBlock-auto\@mq1440Max {
       padding-block: auto;
     }
@@ -406,6 +514,12 @@
   @container (min-width: 200px) {
     .mox-paddingBlock-0\@cq200Min {
       padding-block: 0;
+    }
+    .mox-paddingBlock-6xs\@cq200Min {
+      padding-block: var(--mox-space-6xs);
+    }
+    .mox-paddingBlock-5xs\@cq200Min {
+      padding-block: var(--mox-space-5xs);
     }
     .mox-paddingBlock-4xs\@cq200Min {
       padding-block: var(--mox-space-4xs);
@@ -440,6 +554,12 @@
     .mox-paddingBlock-4xl\@cq200Min {
       padding-block: var(--mox-space-4xl);
     }
+    .mox-paddingBlock-5xl\@cq200Min {
+      padding-block: var(--mox-space-5xl);
+    }
+    .mox-paddingBlock-6xl\@cq200Min {
+      padding-block: var(--mox-space-6xl);
+    }
     .mox-paddingBlock-auto\@cq200Min {
       padding-block: auto;
     }
@@ -450,6 +570,12 @@
   @container (max-width: 200px) {
     .mox-paddingBlock-0\@cq200Max {
       padding-block: 0;
+    }
+    .mox-paddingBlock-6xs\@cq200Max {
+      padding-block: var(--mox-space-6xs);
+    }
+    .mox-paddingBlock-5xs\@cq200Max {
+      padding-block: var(--mox-space-5xs);
     }
     .mox-paddingBlock-4xs\@cq200Max {
       padding-block: var(--mox-space-4xs);
@@ -484,6 +610,12 @@
     .mox-paddingBlock-4xl\@cq200Max {
       padding-block: var(--mox-space-4xl);
     }
+    .mox-paddingBlock-5xl\@cq200Max {
+      padding-block: var(--mox-space-5xl);
+    }
+    .mox-paddingBlock-6xl\@cq200Max {
+      padding-block: var(--mox-space-6xl);
+    }
     .mox-paddingBlock-auto\@cq200Max {
       padding-block: auto;
     }
@@ -495,6 +627,12 @@
   @container (min-width: 400px) {
     .mox-paddingBlock-0\@cq400Min {
       padding-block: 0;
+    }
+    .mox-paddingBlock-6xs\@cq400Min {
+      padding-block: var(--mox-space-6xs);
+    }
+    .mox-paddingBlock-5xs\@cq400Min {
+      padding-block: var(--mox-space-5xs);
     }
     .mox-paddingBlock-4xs\@cq400Min {
       padding-block: var(--mox-space-4xs);
@@ -529,6 +667,12 @@
     .mox-paddingBlock-4xl\@cq400Min {
       padding-block: var(--mox-space-4xl);
     }
+    .mox-paddingBlock-5xl\@cq400Min {
+      padding-block: var(--mox-space-5xl);
+    }
+    .mox-paddingBlock-6xl\@cq400Min {
+      padding-block: var(--mox-space-6xl);
+    }
     .mox-paddingBlock-auto\@cq400Min {
       padding-block: auto;
     }
@@ -539,6 +683,12 @@
   @container (max-width: 400px) {
     .mox-paddingBlock-0\@cq400Max {
       padding-block: 0;
+    }
+    .mox-paddingBlock-6xs\@cq400Max {
+      padding-block: var(--mox-space-6xs);
+    }
+    .mox-paddingBlock-5xs\@cq400Max {
+      padding-block: var(--mox-space-5xs);
     }
     .mox-paddingBlock-4xs\@cq400Max {
       padding-block: var(--mox-space-4xs);
@@ -573,6 +723,12 @@
     .mox-paddingBlock-4xl\@cq400Max {
       padding-block: var(--mox-space-4xl);
     }
+    .mox-paddingBlock-5xl\@cq400Max {
+      padding-block: var(--mox-space-5xl);
+    }
+    .mox-paddingBlock-6xl\@cq400Max {
+      padding-block: var(--mox-space-6xl);
+    }
     .mox-paddingBlock-auto\@cq400Max {
       padding-block: auto;
     }
@@ -584,6 +740,12 @@
   @container (min-width: 600px) {
     .mox-paddingBlock-0\@cq600Min {
       padding-block: 0;
+    }
+    .mox-paddingBlock-6xs\@cq600Min {
+      padding-block: var(--mox-space-6xs);
+    }
+    .mox-paddingBlock-5xs\@cq600Min {
+      padding-block: var(--mox-space-5xs);
     }
     .mox-paddingBlock-4xs\@cq600Min {
       padding-block: var(--mox-space-4xs);
@@ -618,6 +780,12 @@
     .mox-paddingBlock-4xl\@cq600Min {
       padding-block: var(--mox-space-4xl);
     }
+    .mox-paddingBlock-5xl\@cq600Min {
+      padding-block: var(--mox-space-5xl);
+    }
+    .mox-paddingBlock-6xl\@cq600Min {
+      padding-block: var(--mox-space-6xl);
+    }
     .mox-paddingBlock-auto\@cq600Min {
       padding-block: auto;
     }
@@ -628,6 +796,12 @@
   @container (max-width: 600px) {
     .mox-paddingBlock-0\@cq600Max {
       padding-block: 0;
+    }
+    .mox-paddingBlock-6xs\@cq600Max {
+      padding-block: var(--mox-space-6xs);
+    }
+    .mox-paddingBlock-5xs\@cq600Max {
+      padding-block: var(--mox-space-5xs);
     }
     .mox-paddingBlock-4xs\@cq600Max {
       padding-block: var(--mox-space-4xs);
@@ -662,6 +836,12 @@
     .mox-paddingBlock-4xl\@cq600Max {
       padding-block: var(--mox-space-4xl);
     }
+    .mox-paddingBlock-5xl\@cq600Max {
+      padding-block: var(--mox-space-5xl);
+    }
+    .mox-paddingBlock-6xl\@cq600Max {
+      padding-block: var(--mox-space-6xl);
+    }
     .mox-paddingBlock-auto\@cq600Max {
       padding-block: auto;
     }
@@ -673,6 +853,12 @@
   @container (min-width: 800px) {
     .mox-paddingBlock-0\@cq800Min {
       padding-block: 0;
+    }
+    .mox-paddingBlock-6xs\@cq800Min {
+      padding-block: var(--mox-space-6xs);
+    }
+    .mox-paddingBlock-5xs\@cq800Min {
+      padding-block: var(--mox-space-5xs);
     }
     .mox-paddingBlock-4xs\@cq800Min {
       padding-block: var(--mox-space-4xs);
@@ -707,6 +893,12 @@
     .mox-paddingBlock-4xl\@cq800Min {
       padding-block: var(--mox-space-4xl);
     }
+    .mox-paddingBlock-5xl\@cq800Min {
+      padding-block: var(--mox-space-5xl);
+    }
+    .mox-paddingBlock-6xl\@cq800Min {
+      padding-block: var(--mox-space-6xl);
+    }
     .mox-paddingBlock-auto\@cq800Min {
       padding-block: auto;
     }
@@ -717,6 +909,12 @@
   @container (max-width: 800px) {
     .mox-paddingBlock-0\@cq800Max {
       padding-block: 0;
+    }
+    .mox-paddingBlock-6xs\@cq800Max {
+      padding-block: var(--mox-space-6xs);
+    }
+    .mox-paddingBlock-5xs\@cq800Max {
+      padding-block: var(--mox-space-5xs);
     }
     .mox-paddingBlock-4xs\@cq800Max {
       padding-block: var(--mox-space-4xs);
@@ -750,6 +948,12 @@
     }
     .mox-paddingBlock-4xl\@cq800Max {
       padding-block: var(--mox-space-4xl);
+    }
+    .mox-paddingBlock-5xl\@cq800Max {
+      padding-block: var(--mox-space-5xl);
+    }
+    .mox-paddingBlock-6xl\@cq800Max {
+      padding-block: var(--mox-space-6xl);
     }
     .mox-paddingBlock-auto\@cq800Max {
       padding-block: auto;

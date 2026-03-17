@@ -71,11 +71,11 @@
     font-size: var(--current-font-size, var(--mox-space-md));
     text-box-trim: trim-both;
     text-box-edge: cap alphabetic;
-    text-decoration: var(--text-decoration, "none");
+    text-decoration: var(--text-decoration, none);
   }
 
   .mox-text-block:hover {
-    text-decoration: var(--text-decoration-hover, "none");
+    text-decoration: var(--text-decoration-hover, none);
   }
 
   @supports not (text-box-trim: both) {

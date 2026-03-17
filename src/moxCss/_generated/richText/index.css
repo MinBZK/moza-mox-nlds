@@ -15,7 +15,9 @@
     color: var(--text-color);
   }
   :where(.mox-rich-text) a {
-    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
   }
   :where(.mox-rich-text) a:hover {
     text-decoration: none;
@@ -92,8 +94,8 @@
   }
   /* Styles for <a.btn-outline-primary> */
   :where(.mox-rich-text) a.btn-outline-primary {
-    background-color: var(--mox-color-wit);
-    --mox-text-color: var(--mox-color-wit-contrast);
+    background-color: var(--mox-color-plain-contrast);
+    --mox-text-color: var(--mox-color-plain-contrast-contrast);
     color: var(--mox-text-color);
   }
   :where(.mox-rich-text) a.btn-outline-primary {
@@ -132,8 +134,8 @@
   }
   /* Styles for <a.btn-outline-secondary> */
   :where(.mox-rich-text) a.btn-outline-secondary {
-    background-color: var(--mox-color-wit);
-    --mox-text-color: var(--mox-color-wit-contrast);
+    background-color: var(--mox-color-plain-contrast);
+    --mox-text-color: var(--mox-color-plain-contrast-contrast);
     color: var(--mox-text-color);
   }
   :where(.mox-rich-text) a.btn-outline-secondary {

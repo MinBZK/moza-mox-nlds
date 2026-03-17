@@ -5,7 +5,9 @@
 
 @layer props {
   .mox-underline-underline {
-    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
   }
   .mox-underline-strikethrough {
     text-decoration: line-through;
