@@ -159,127 +159,299 @@
   --mox-space-md-min: 1.05rem; /** Basis voor de schaal van overige groottes (icm clamp is dit de minimale waarde). */
   --mox-space-md-max: 1.25rem; /** Basis voor de schaal van overige groottes (icm clamp is dit de maximale waarde). */
   --mox-color-primary: var(--mox-color-hemelblauw-500); /** Primary color */
-  --mox-color-primary-contrast: var(--mox-color-wit); /** Primary contrast color */
-  --mox-color-primary-hover: var(--mox-color-hemelblauw-600); /** Primary hover color */
-  --mox-color-primary-hover-contrast: var(--mox-color-wit); /** Primary hover contrast color */
-  --mox-color-primary-subtle: var(--mox-color-hemelblauw-200); /** Primary subtle color */
-  --mox-color-primary-subtle-contrast: var(--mox-color-zwart); /** Primary subtle contrast color */
-  --mox-color-primary-subtle-hover: var(--mox-color-hemelblauw-300); /** Primary subtle hover color */
-  --mox-color-primary-subtle-hover-contrast: var(--mox-color-zwart); /** Primary subtle hover contrast color */
-  --mox-color-primary-subtle-2: var(--mox-color-hemelblauw-100); /** Primary subtle 2 color */
-  --mox-color-primary-subtle-2-contrast: var(--mox-color-zwart); /** Primary subtle 2 contrast color */
-  --mox-color-primary-subtle-2-hover: var(--mox-color-hemelblauw-200); /** Primary subtle 2 hover color */
-  --mox-color-primary-subtle-2-hover-contrast: var(--mox-color-zwart); /** Primary subtle 2 hover contrast color */
+  --mox-color-primary-contrast: var(
+    --mox-color-wit
+  ); /** Primary contrast color */
+  --mox-color-primary-hover: var(
+    --mox-color-hemelblauw-600
+  ); /** Primary hover color */
+  --mox-color-primary-hover-contrast: var(
+    --mox-color-wit
+  ); /** Primary hover contrast color */
+  --mox-color-primary-subtle: var(
+    --mox-color-hemelblauw-200
+  ); /** Primary subtle color */
+  --mox-color-primary-subtle-contrast: var(
+    --mox-color-zwart
+  ); /** Primary subtle contrast color */
+  --mox-color-primary-subtle-hover: var(
+    --mox-color-hemelblauw-300
+  ); /** Primary subtle hover color */
+  --mox-color-primary-subtle-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Primary subtle hover contrast color */
+  --mox-color-primary-subtle-2: var(
+    --mox-color-hemelblauw-100
+  ); /** Primary subtle 2 color */
+  --mox-color-primary-subtle-2-contrast: var(
+    --mox-color-zwart
+  ); /** Primary subtle 2 contrast color */
+  --mox-color-primary-subtle-2-hover: var(
+    --mox-color-hemelblauw-200
+  ); /** Primary subtle 2 hover color */
+  --mox-color-primary-subtle-2-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Primary subtle 2 hover contrast color */
   --mox-color-secondary: var(--mox-color-paars-500); /** Secondary color */
-  --mox-color-secondary-contrast: var(--mox-color-wit); /** Secondary contrast color */
-  --mox-color-secondary-hover: var(--mox-color-paars-600); /** Secondary hover color */
-  --mox-color-secondary-hover-contrast: var(--mox-color-wit); /** Secondary hover contrast color */
-  --mox-color-secondary-subtle: var(--mox-color-paars-200); /** Secondary subtle color */
-  --mox-color-secondary-subtle-contrast: var(--mox-color-zwart); /** Secondary subtle contrast color */
-  --mox-color-secondary-subtle-hover: var(--mox-color-paars-100); /** Secondary subtle hover color */
-  --mox-color-secondary-subtle-hover-contrast: var(--mox-color-zwart); /** Secondary subtle hover contrast color */
-  --mox-color-secondary-subtle-2: var(--mox-color-paars-100); /** Secondary subtle 2 color */
-  --mox-color-secondary-subtle-2-contrast: var(--mox-color-zwart); /** Secondary subtle 2 contrast color */
-  --mox-color-secondary-subtle-2-hover: var(--mox-color-paars-50); /** Secondary subtle 2 hover color */
-  --mox-color-secondary-subtle-2-hover-contrast: var(--mox-color-zwart); /** Secondary subtle 2 hover contrast color */
+  --mox-color-secondary-contrast: var(
+    --mox-color-wit
+  ); /** Secondary contrast color */
+  --mox-color-secondary-hover: var(
+    --mox-color-paars-600
+  ); /** Secondary hover color */
+  --mox-color-secondary-hover-contrast: var(
+    --mox-color-wit
+  ); /** Secondary hover contrast color */
+  --mox-color-secondary-subtle: var(
+    --mox-color-paars-200
+  ); /** Secondary subtle color */
+  --mox-color-secondary-subtle-contrast: var(
+    --mox-color-zwart
+  ); /** Secondary subtle contrast color */
+  --mox-color-secondary-subtle-hover: var(
+    --mox-color-paars-100
+  ); /** Secondary subtle hover color */
+  --mox-color-secondary-subtle-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Secondary subtle hover contrast color */
+  --mox-color-secondary-subtle-2: var(
+    --mox-color-paars-100
+  ); /** Secondary subtle 2 color */
+  --mox-color-secondary-subtle-2-contrast: var(
+    --mox-color-zwart
+  ); /** Secondary subtle 2 contrast color */
+  --mox-color-secondary-subtle-2-hover: var(
+    --mox-color-paars-50
+  ); /** Secondary subtle 2 hover color */
+  --mox-color-secondary-subtle-2-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Secondary subtle 2 hover contrast color */
   --mox-color-neutral: var(--mox-color-grijs-300); /** Neutral color */
-  --mox-color-neutral-contrast: var(--mox-color-zwart); /** Neutral contrast color */
-  --mox-color-neutral-hover: var(--mox-color-grijs-400); /** Neutral hover color */
-  --mox-color-neutral-hover-contrast: var(--mox-color-wit); /** Neutral hover contrast color */
-  --mox-color-neutral-subtle: var(--mox-color-grijs-200); /** Neutral subtle color */
-  --mox-color-neutral-subtle-contrast: var(--mox-color-zwart); /** Neutral subtle contrast color */
-  --mox-color-neutral-subtle-hover: var(--mox-color-grijs-300); /** Neutral subtle hover color */
-  --mox-color-neutral-subtle-hover-contrast: var(--mox-color-zwart); /** Neutral subtle hover contrast color */
-  --mox-color-neutral-subtle-2: var(--mox-color-grijs-100); /** Neutral subtle 2 color */
-  --mox-color-neutral-subtle-2-contrast: var(--mox-color-zwart); /** Neutral subtle 2 contrast color */
-  --mox-color-neutral-subtle-2-hover: var(--mox-color-grijs-200); /** Neutral subtle 2 hover color */
-  --mox-color-neutral-subtle-2-hover-contrast: var(--mox-color-zwart); /** Neutral subtle 2 hover contrast color */
+  --mox-color-neutral-contrast: var(
+    --mox-color-zwart
+  ); /** Neutral contrast color */
+  --mox-color-neutral-hover: var(
+    --mox-color-grijs-400
+  ); /** Neutral hover color */
+  --mox-color-neutral-hover-contrast: var(
+    --mox-color-wit
+  ); /** Neutral hover contrast color */
+  --mox-color-neutral-subtle: var(
+    --mox-color-grijs-200
+  ); /** Neutral subtle color */
+  --mox-color-neutral-subtle-contrast: var(
+    --mox-color-zwart
+  ); /** Neutral subtle contrast color */
+  --mox-color-neutral-subtle-hover: var(
+    --mox-color-grijs-300
+  ); /** Neutral subtle hover color */
+  --mox-color-neutral-subtle-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Neutral subtle hover contrast color */
+  --mox-color-neutral-subtle-2: var(
+    --mox-color-grijs-100
+  ); /** Neutral subtle 2 color */
+  --mox-color-neutral-subtle-2-contrast: var(
+    --mox-color-zwart
+  ); /** Neutral subtle 2 contrast color */
+  --mox-color-neutral-subtle-2-hover: var(
+    --mox-color-grijs-200
+  ); /** Neutral subtle 2 hover color */
+  --mox-color-neutral-subtle-2-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Neutral subtle 2 hover contrast color */
   --mox-color-accent: var(--mox-color-mintgroen-500); /** Accent color */
-  --mox-color-accent-contrast: var(--mox-color-wit); /** Accent contrast color */
-  --mox-color-accent-hover: var(--mox-color-mintgroen-600); /** Accent hover color */
-  --mox-color-accent-hover-contrast: var(--mox-color-wit); /** Accent hover contrast color */
-  --mox-color-accent-subtle: var(--mox-color-mintgroen-200); /** Accent subtle color */
-  --mox-color-accent-subtle-contrast: var(--mox-color-zwart); /** Accent subtle contrast color */
-  --mox-color-accent-subtle-hover: var(--mox-color-mintgroen-300); /** Accent subtle hover color */
-  --mox-color-accent-subtle-hover-contrast: var(--mox-color-zwart); /** Accent subtle hover contrast color */
-  --mox-color-accent-subtle-2: var(--mox-color-mintgroen-100); /** Accent subtle 2 color */
-  --mox-color-accent-subtle-2-contrast: var(--mox-color-zwart); /** Accent subtle 2 contrast color */
-  --mox-color-accent-subtle-2-hover: var(--mox-color-mintgroen-200); /** Accent subtle 2 hover color */
-  --mox-color-accent-subtle-2-hover-contrast: var(--mox-color-zwart); /** Accent subtle 2 hover contrast color */
+  --mox-color-accent-contrast: var(
+    --mox-color-wit
+  ); /** Accent contrast color */
+  --mox-color-accent-hover: var(
+    --mox-color-mintgroen-600
+  ); /** Accent hover color */
+  --mox-color-accent-hover-contrast: var(
+    --mox-color-wit
+  ); /** Accent hover contrast color */
+  --mox-color-accent-subtle: var(
+    --mox-color-mintgroen-200
+  ); /** Accent subtle color */
+  --mox-color-accent-subtle-contrast: var(
+    --mox-color-zwart
+  ); /** Accent subtle contrast color */
+  --mox-color-accent-subtle-hover: var(
+    --mox-color-mintgroen-300
+  ); /** Accent subtle hover color */
+  --mox-color-accent-subtle-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Accent subtle hover contrast color */
+  --mox-color-accent-subtle-2: var(
+    --mox-color-mintgroen-100
+  ); /** Accent subtle 2 color */
+  --mox-color-accent-subtle-2-contrast: var(
+    --mox-color-zwart
+  ); /** Accent subtle 2 contrast color */
+  --mox-color-accent-subtle-2-hover: var(
+    --mox-color-mintgroen-200
+  ); /** Accent subtle 2 hover color */
+  --mox-color-accent-subtle-2-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Accent subtle 2 hover contrast color */
   --mox-color-info: var(--mox-color-lichtblauw-500); /** Info color */
   --mox-color-info-contrast: var(--mox-color-zwart); /** Info contrast color */
-  --mox-color-info-hover: var(--mox-color-lichtblauw-600); /** Info hover color */
-  --mox-color-info-hover-contrast: var(--mox-color-zwart); /** Info hover contrast color */
-  --mox-color-info-subtle: var(--mox-color-lichtblauw-200); /** Info subtle color */
-  --mox-color-info-subtle-contrast: var(--mox-color-zwart); /** Info subtle contrast color */
-  --mox-color-info-subtle-hover: var(--mox-color-lichtblauw-300); /** Info subtle hover color */
-  --mox-color-info-subtle-hover-contrast: var(--mox-color-zwart); /** Info subtle hover contrast color */
-  --mox-color-info-subtle-2: var(--mox-color-lichtblauw-100); /** Info subtle 2 color */
-  --mox-color-info-subtle-2-contrast: var(--mox-color-zwart); /** Info subtle 2 contrast color */
-  --mox-color-info-subtle-2-hover: var(--mox-color-lichtblauw-200); /** Info subtle 2 hover color */
-  --mox-color-info-subtle-2-hover-contrast: var(--mox-color-zwart); /** Info subtle 2 hover contrast color */
+  --mox-color-info-hover: var(
+    --mox-color-lichtblauw-600
+  ); /** Info hover color */
+  --mox-color-info-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Info hover contrast color */
+  --mox-color-info-subtle: var(
+    --mox-color-lichtblauw-200
+  ); /** Info subtle color */
+  --mox-color-info-subtle-contrast: var(
+    --mox-color-zwart
+  ); /** Info subtle contrast color */
+  --mox-color-info-subtle-hover: var(
+    --mox-color-lichtblauw-300
+  ); /** Info subtle hover color */
+  --mox-color-info-subtle-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Info subtle hover contrast color */
+  --mox-color-info-subtle-2: var(
+    --mox-color-lichtblauw-100
+  ); /** Info subtle 2 color */
+  --mox-color-info-subtle-2-contrast: var(
+    --mox-color-zwart
+  ); /** Info subtle 2 contrast color */
+  --mox-color-info-subtle-2-hover: var(
+    --mox-color-lichtblauw-200
+  ); /** Info subtle 2 hover color */
+  --mox-color-info-subtle-2-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Info subtle 2 hover contrast color */
   --mox-color-success: var(--mox-color-groen-500); /** Success color */
-  --mox-color-success-contrast: var(--mox-color-wit); /** Success contrast color */
-  --mox-color-success-hover: var(--mox-color-groen-600); /** Success hover color */
-  --mox-color-success-hover-contrast: var(--mox-color-wit); /** Success hover contrast color */
-  --mox-color-success-subtle: var(--mox-color-groen-200); /** Success subtle color */
-  --mox-color-success-subtle-contrast: var(--mox-color-zwart); /** Success subtle contrast color */
-  --mox-color-success-subtle-hover: var(--mox-color-groen-300); /** Success subtle hover color */
-  --mox-color-success-subtle-hover-contrast: var(--mox-color-zwart); /** Success subtle hover contrast color */
-  --mox-color-success-subtle-2: var(--mox-color-groen-100); /** Success subtle 2 color */
-  --mox-color-success-subtle-2-contrast: var(--mox-color-zwart); /** Success subtle 2 contrast color */
-  --mox-color-success-subtle-2-hover: var(--mox-color-groen-200); /** Success subtle 2 hover color */
-  --mox-color-success-subtle-2-hover-contrast: var(--mox-color-zwart); /** Success subtle 2 hover contrast color */
+  --mox-color-success-contrast: var(
+    --mox-color-wit
+  ); /** Success contrast color */
+  --mox-color-success-hover: var(
+    --mox-color-groen-600
+  ); /** Success hover color */
+  --mox-color-success-hover-contrast: var(
+    --mox-color-wit
+  ); /** Success hover contrast color */
+  --mox-color-success-subtle: var(
+    --mox-color-groen-200
+  ); /** Success subtle color */
+  --mox-color-success-subtle-contrast: var(
+    --mox-color-zwart
+  ); /** Success subtle contrast color */
+  --mox-color-success-subtle-hover: var(
+    --mox-color-groen-300
+  ); /** Success subtle hover color */
+  --mox-color-success-subtle-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Success subtle hover contrast color */
+  --mox-color-success-subtle-2: var(
+    --mox-color-groen-100
+  ); /** Success subtle 2 color */
+  --mox-color-success-subtle-2-contrast: var(
+    --mox-color-zwart
+  ); /** Success subtle 2 contrast color */
+  --mox-color-success-subtle-2-hover: var(
+    --mox-color-groen-200
+  ); /** Success subtle 2 hover color */
+  --mox-color-success-subtle-2-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Success subtle 2 hover contrast color */
   --mox-color-warning: var(--mox-color-geel-500); /** Warning color */
-  --mox-color-warning-contrast: var(--mox-color-zwart); /** Warning contrast color */
-  --mox-color-warning-hover: var(--mox-color-geel-600); /** Warning hover color */
-  --mox-color-warning-hover-contrast: var(--mox-color-zwart); /** Warning hover contrast color */
-  --mox-color-warning-subtle: var(--mox-color-geel-200); /** Warning subtle color */
-  --mox-color-warning-subtle-contrast: var(--mox-color-zwart); /** Warning subtle contrast color */
-  --mox-color-warning-subtle-hover: var(--mox-color-geel-300); /** Warning subtle hover color */
-  --mox-color-warning-subtle-hover-contrast: var(--mox-color-zwart); /** Warning subtle hover contrast color */
-  --mox-color-warning-subtle-2: var(--mox-color-geel-100); /** Warning subtle 2 color */
-  --mox-color-warning-subtle-2-contrast: var(--mox-color-zwart); /** Warning subtle 2 contrast color */
-  --mox-color-warning-subtle-2-hover: var(--mox-color-geel-200); /** Warning subtle 2 hover color */
-  --mox-color-warning-subtle-2-hover-contrast: var(--mox-color-zwart); /** Warning subtle 2 hover contrast color */
+  --mox-color-warning-contrast: var(
+    --mox-color-zwart
+  ); /** Warning contrast color */
+  --mox-color-warning-hover: var(
+    --mox-color-geel-600
+  ); /** Warning hover color */
+  --mox-color-warning-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Warning hover contrast color */
+  --mox-color-warning-subtle: var(
+    --mox-color-geel-200
+  ); /** Warning subtle color */
+  --mox-color-warning-subtle-contrast: var(
+    --mox-color-zwart
+  ); /** Warning subtle contrast color */
+  --mox-color-warning-subtle-hover: var(
+    --mox-color-geel-300
+  ); /** Warning subtle hover color */
+  --mox-color-warning-subtle-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Warning subtle hover contrast color */
+  --mox-color-warning-subtle-2: var(
+    --mox-color-geel-100
+  ); /** Warning subtle 2 color */
+  --mox-color-warning-subtle-2-contrast: var(
+    --mox-color-zwart
+  ); /** Warning subtle 2 contrast color */
+  --mox-color-warning-subtle-2-hover: var(
+    --mox-color-geel-200
+  ); /** Warning subtle 2 hover color */
+  --mox-color-warning-subtle-2-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Warning subtle 2 hover contrast color */
   --mox-color-danger: var(--mox-color-rood-500); /** Danger color */
-  --mox-color-danger-contrast: var(--mox-color-wit); /** Danger contrast color */
+  --mox-color-danger-contrast: var(
+    --mox-color-wit
+  ); /** Danger contrast color */
   --mox-color-danger-hover: var(--mox-color-rood-600); /** Danger hover color */
-  --mox-color-danger-hover-contrast: var(--mox-color-wit); /** Danger hover contrast color */
-  --mox-color-danger-subtle: var(--mox-color-rood-200); /** Danger subtle color */
-  --mox-color-danger-subtle-contrast: var(--mox-color-zwart); /** Danger subtle contrast color */
-  --mox-color-danger-subtle-hover: var(--mox-color-rood-300); /** Danger subtle hover color */
-  --mox-color-danger-subtle-hover-contrast: var(--mox-color-zwart); /** Danger subtle hover contrast color */
-  --mox-color-danger-subtle-2: var(--mox-color-rood-100); /** Danger subtle 2 color */
-  --mox-color-danger-subtle-2-contrast: var(--mox-color-zwart); /** Danger subtle 2 contrast color */
-  --mox-color-danger-subtle-2-hover: var(--mox-color-rood-200); /** Danger subtle 2 hover color */
-  --mox-color-danger-subtle-2-hover-contrast: var(--mox-color-zwart); /** Danger subtle 2 hover contrast color */
-  --mox-space-sm-min: calc(var(--mox-space-md-min)*pow(1.2, -1));
-  --mox-space-sm-max: calc(var(--mox-space-md-max)*pow(1.2, -1));
-  --mox-space-xs-min: calc(var(--mox-space-md-min)*pow(1.2, -2));
-  --mox-space-xs-max: calc(var(--mox-space-md-max)*pow(1.2, -2));
-  --mox-space-2xs-min: calc(var(--mox-space-md-min)*pow(1.2, -3));
-  --mox-space-2xs-max: calc(var(--mox-space-md-max)*pow(1.2, -3));
-  --mox-space-3xs-min: calc(var(--mox-space-md-min)*pow(1.2, -4));
-  --mox-space-3xs-max: calc(var(--mox-space-md-max)*pow(1.2, -4));
-  --mox-space-4xs-min: calc(var(--mox-space-md-min)*pow(1.2, -5));
-  --mox-space-4xs-max: calc(var(--mox-space-md-max)*pow(1.2, -5));
-  --mox-space-5xs-min: calc(var(--mox-space-md-min)*pow(1.2, -6));
-  --mox-space-5xs-max: calc(var(--mox-space-md-max)*pow(1.2, -6));
-  --mox-space-6xs-min: calc(var(--mox-space-md-min)*pow(1.2, -7));
-  --mox-space-6xs-max: calc(var(--mox-space-md-max)*pow(1.2, -7));
-  --mox-space-lg-min: calc(var(--mox-space-md-min)*pow(1.2, 1));
-  --mox-space-lg-max: calc(var(--mox-space-md-max)*pow(1.2, 1));
-  --mox-space-xl-min: calc(var(--mox-space-md-min)*pow(1.2, 2));
-  --mox-space-xl-max: calc(var(--mox-space-md-max)*pow(1.2, 2));
-  --mox-space-2xl-min: calc(var(--mox-space-md-min)*pow(1.2, 3));
-  --mox-space-2xl-max: calc(var(--mox-space-md-max)*pow(1.2, 3));
-  --mox-space-3xl-min: calc(var(--mox-space-md-min)*pow(1.2, 4));
-  --mox-space-3xl-max: calc(var(--mox-space-md-max)*pow(1.2, 4));
-  --mox-space-4xl-min: calc(var(--mox-space-md-min)*pow(1.2, 5));
-  --mox-space-4xl-max: calc(var(--mox-space-md-max)*pow(1.2, 5));
-  --mox-space-5xl-min: calc(var(--mox-space-md-min)*pow(1.2, 6));
-  --mox-space-5xl-max: calc(var(--mox-space-md-max)*pow(1.2, 6));
-  --mox-space-6xl-min: calc(var(--mox-space-md-min)*pow(1.2, 7));
-  --mox-space-6xl-max: calc(var(--mox-space-md-max)*pow(1.2, 7));
+  --mox-color-danger-hover-contrast: var(
+    --mox-color-wit
+  ); /** Danger hover contrast color */
+  --mox-color-danger-subtle: var(
+    --mox-color-rood-200
+  ); /** Danger subtle color */
+  --mox-color-danger-subtle-contrast: var(
+    --mox-color-zwart
+  ); /** Danger subtle contrast color */
+  --mox-color-danger-subtle-hover: var(
+    --mox-color-rood-300
+  ); /** Danger subtle hover color */
+  --mox-color-danger-subtle-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Danger subtle hover contrast color */
+  --mox-color-danger-subtle-2: var(
+    --mox-color-rood-100
+  ); /** Danger subtle 2 color */
+  --mox-color-danger-subtle-2-contrast: var(
+    --mox-color-zwart
+  ); /** Danger subtle 2 contrast color */
+  --mox-color-danger-subtle-2-hover: var(
+    --mox-color-rood-200
+  ); /** Danger subtle 2 hover color */
+  --mox-color-danger-subtle-2-hover-contrast: var(
+    --mox-color-zwart
+  ); /** Danger subtle 2 hover contrast color */
+  --mox-space-sm-min: calc(var(--mox-space-md-min) * pow(1.2, -1));
+  --mox-space-sm-max: calc(var(--mox-space-md-max) * pow(1.2, -1));
+  --mox-space-xs-min: calc(var(--mox-space-md-min) * pow(1.2, -2));
+  --mox-space-xs-max: calc(var(--mox-space-md-max) * pow(1.2, -2));
+  --mox-space-2xs-min: calc(var(--mox-space-md-min) * pow(1.2, -3));
+  --mox-space-2xs-max: calc(var(--mox-space-md-max) * pow(1.2, -3));
+  --mox-space-3xs-min: calc(var(--mox-space-md-min) * pow(1.2, -4));
+  --mox-space-3xs-max: calc(var(--mox-space-md-max) * pow(1.2, -4));
+  --mox-space-4xs-min: calc(var(--mox-space-md-min) * pow(1.2, -5));
+  --mox-space-4xs-max: calc(var(--mox-space-md-max) * pow(1.2, -5));
+  --mox-space-5xs-min: calc(var(--mox-space-md-min) * pow(1.2, -6));
+  --mox-space-5xs-max: calc(var(--mox-space-md-max) * pow(1.2, -6));
+  --mox-space-6xs-min: calc(var(--mox-space-md-min) * pow(1.2, -7));
+  --mox-space-6xs-max: calc(var(--mox-space-md-max) * pow(1.2, -7));
+  --mox-space-lg-min: calc(var(--mox-space-md-min) * pow(1.2, 1));
+  --mox-space-lg-max: calc(var(--mox-space-md-max) * pow(1.2, 1));
+  --mox-space-xl-min: calc(var(--mox-space-md-min) * pow(1.2, 2));
+  --mox-space-xl-max: calc(var(--mox-space-md-max) * pow(1.2, 2));
+  --mox-space-2xl-min: calc(var(--mox-space-md-min) * pow(1.2, 3));
+  --mox-space-2xl-max: calc(var(--mox-space-md-max) * pow(1.2, 3));
+  --mox-space-3xl-min: calc(var(--mox-space-md-min) * pow(1.2, 4));
+  --mox-space-3xl-max: calc(var(--mox-space-md-max) * pow(1.2, 4));
+  --mox-space-4xl-min: calc(var(--mox-space-md-min) * pow(1.2, 5));
+  --mox-space-4xl-max: calc(var(--mox-space-md-max) * pow(1.2, 5));
+  --mox-space-5xl-min: calc(var(--mox-space-md-min) * pow(1.2, 6));
+  --mox-space-5xl-max: calc(var(--mox-space-md-max) * pow(1.2, 6));
+  --mox-space-6xl-min: calc(var(--mox-space-md-min) * pow(1.2, 7));
+  --mox-space-6xl-max: calc(var(--mox-space-md-max) * pow(1.2, 7));
 }
