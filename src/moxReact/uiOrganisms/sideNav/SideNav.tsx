@@ -18,7 +18,7 @@ export const MoxOrganismSideNav = ({
   return (
     <MoxStack as="nav" rowGap="xs" aria-labelledby="main-menu-title" {...props}>
       {items.map((group, index) => (
-        <MoxStack as="ul" rowGap="0" key={index}>
+        <MoxStack as="ul" rowGap="4xs" key={index}>
           {group.map((item) => (
             <li key={item.href}>
               <MoxSideNavLink

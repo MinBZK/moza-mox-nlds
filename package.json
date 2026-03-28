@@ -16,8 +16,8 @@
     "dist"
   ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev:test-site": "vite",
+    "build:test-site": "tsc -b && vite build",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest",
@@ -28,9 +28,11 @@
     "dev:storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build",
     "deploy": "npm run generate:css && npm run build:storybook && gh-pages -d storybook-static",
-    "build:react": "rm -rf ./dist && npm run generate:css && tsc --project tsconfig.components.json && cp -R src/moxCss dist/",
-    "prepare": "npm run build:react",
-    "build:tokens": "node tokens/build.mjs"
+    "build:tokens": "node tokens/build.mjs",
+    "build:css": "npm run generate:css && cp -R src/moxCss dist/",
+    "build:react": "tsc --project tsconfig.components.json",
+    "build": "rm -rf ./dist && npm run build:tokens && npm run build:react && npm run build:css",
+    "prepare": "npm run build"
   },
   "homepage": "https://minbzk.github.io/moza-mox-nlds/",
   "dependencies": {

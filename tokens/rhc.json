@@ -1,0 +1,303 @@
+
+"size": {
+      "0": {
+        "$type": "sizing",
+        "$value": "0"
+      },
+      "1": {
+        "$type": "sizing",
+        "$value": "1"
+      },
+      "2": {
+        "$type": "sizing",
+        "$value": "2"
+      },
+      "4": {
+        "$type": "sizing",
+        "$value": "{size.base} / 2"
+      },
+      "8": {
+        "$type": "sizing",
+        "$value": "{size.base}"
+      },
+      "12": {
+        "$type": "sizing",
+        "$value": "{size.base} * 1.5"
+      },
+      "16": {
+        "$type": "sizing",
+        "$value": "{size.base} * 2"
+      },
+      "24": {
+        "$type": "sizing",
+        "$value": "{size.base} * 3"
+      },
+      "32": {
+        "$type": "sizing",
+        "$value": "{size.base} * 4"
+      },
+      "40": {
+        "$type": "sizing",
+        "$value": "{size.base} * 5"
+      },
+      "48": {
+        "$type": "sizing",
+        "$value": "{size.base} * 6"
+      },
+      "56": {
+        "$type": "sizing",
+        "$value": "{size.base} * 7"
+      },
+      "64": {
+        "$type": "sizing",
+        "$value": "{size.base} * 8"
+      },
+      "72": {
+        "$type": "sizing",
+        "$value": "{size.base} * 9"
+      },
+      "80": {
+        "$type": "sizing",
+        "$value": "{size.base} * 10"
+      },
+      "88": {
+        "$type": "sizing",
+        "$value": "{size.base} * 11"
+      },
+      "96": {
+        "$type": "sizing",
+        "$value": "{size.base} * 12"
+      },
+      "160": {
+        "$type": "sizing",
+        "$value": "{size.base} * 20"
+      },
+      "base": {
+        "$type": "sizing",
+        "$value": "8",
+        "$description": "Base size for calculation. Defaults to 8 to follow 8px grid."
+      }
+    },
+
+    "text": {
+      "font-family": {
+        "default": {
+          "$type": "fontFamilies",
+          "$value": "RijksSansVF",
+          "$description": "Rijksoverheid Sans variable font"
+        }
+      },
+      "weight": {
+        "default": {
+          "$type": "fontWeights",
+          "$value": "Regular"
+        },
+        "semibold": {
+          "$type": "fontWeights",
+          "$value": "SemiBold"
+        },
+        "bold": {
+          "$type": "fontWeights",
+          "$value": "Bold"
+        }
+      },
+      "font-size": {
+        "base": {
+          "$type": "fontSizes",
+          "$value": "16",
+          "$description": "Modifier voor de schaal van overige groottes."
+        },
+        "2xs": {
+          "$type": "fontSizes",
+          "$value": "{text.font-size.base} / 1.5"
+        },
+        "xs": {
+          "$type": "fontSizes",
+          "$value": "{text.font-size.base} / 1.25"
+        },
+        "sm": {
+          "$type": "fontSizes",
+          "$value": "{text.font-size.base} / 1.125"
+        },
+        "md": {
+          "$type": "fontSizes",
+          "$value": "{text.font-size.base}"
+        },
+        "lg": {
+          "$type": "fontSizes",
+          "$value": "{text.font-size.base} * 1.125"
+        },
+        "xl": {
+          "$type": "fontSizes",
+          "$value": "{text.font-size.base} * 1.25"
+        },
+        "2xl": {
+          "$type": "fontSizes",
+          "$value": "{text.font-size.base} * 1.5"
+        },
+        "3xl": {
+          "$type": "fontSizes",
+          "$value": "{text.font-size.base} * 2"
+        },
+        "4xl": {
+          "$type": "fontSizes",
+          "$value": "{text.font-size.base} * 2.5"
+        }
+      },
+      "line-height": {
+        "sm": {
+          "$type": "lineHeights",
+          "$value": "150%"
+        },
+        "md": {
+          "$type": "lineHeights",
+          "$value": "150%"
+        },
+        "lg": {
+          "$type": "lineHeights",
+          "$value": "125%"
+        },
+        "xl": {
+          "$type": "lineHeights",
+          "$value": "125%"
+        },
+        "2xl": {
+          "$type": "lineHeights",
+          "$value": "125%"
+        },
+        "4xl": {
+          "$type": "lineHeights",
+          "$value": "125%"
+        }
+      }
+    },
+    "border-width": {
+      "1": {
+        "$type": "borderWidth",
+        "$value": "1"
+      },
+      "2": {
+        "$type": "borderWidth",
+        "$value": "2"
+      },
+      "3": {
+        "$type": "borderWidth",
+        "$value": "3"
+      }
+    },
+    "space": {
+      "1": {
+        "$type": "spacing",
+        "$value": "1"
+      },
+      "2": {
+        "$type": "spacing",
+        "$value": "2"
+      },
+      "4": {
+        "$type": "spacing",
+        "$value": "{size.base} / 2"
+      },
+      "8": {
+        "$type": "spacing",
+        "$value": "{size.base}"
+      },
+      "12": {
+        "$type": "spacing",
+        "$value": "{size.base} * 1.5"
+      },
+      "16": {
+        "$type": "spacing",
+        "$value": "{size.base} * 2"
+      },
+      "24": {
+        "$type": "spacing",
+        "$value": "{size.base} * 3"
+      },
+      "32": {
+        "$type": "spacing",
+        "$value": "{size.base} * 4"
+      },
+      "40": {
+        "$type": "spacing",
+        "$value": "{size.base} * 5"
+      },
+      "48": {
+        "$type": "spacing",
+        "$value": "{size.base} * 6"
+      },
+      "56": {
+        "$type": "spacing",
+        "$value": "{size.base} * 7"
+      },
+      "64": {
+        "$type": "spacing",
+        "$value": "{size.base} * 8"
+      },
+      "72": {
+        "$type": "spacing",
+        "$value": "{size.base} * 9"
+      },
+      "80": {
+        "$type": "spacing",
+        "$value": "{size.base} * 10"
+      },
+      "base": {
+        "$type": "spacing",
+        "$value": "8",
+        "$description": "Base spacing-size for calculation. Defaults to 8 to follow 8px grid."
+      }
+    },
+    "typography": {
+      "spacing": {
+        "paragraph": {
+          "default": {
+            "$type": "paragraphSpacing",
+            "$value": "{size.base}"
+          }
+        }
+      }
+    },
+    "border-radius": {
+      "1": {
+        "$type": "borderRadius",
+        "$value": "1"
+      },
+      "2": {
+        "$type": "borderRadius",
+        "$value": "2"
+      },
+      "4": {
+        "$type": "borderRadius",
+        "$value": "4"
+      },
+      "round": {
+        "$type": "borderRadius",
+        "$value": "999"
+      }
+    },
+    "box-shadow": {
+      "sm": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "2",
+          "blur": "6",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        }
+      },
+      "md": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "8",
+          "blur": "16",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        }
+      }
+    }
+  },

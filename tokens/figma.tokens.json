@@ -38,7 +38,7 @@
             "parent": "core/default",
             "$type": "color",
             "$value": "#11355c",
-            "$description": "Deze kleur is geen onderdeel van rijkshuisstijl. Een donkere kleur is nodig om foutieve interactie en feedback staten weer te geven, de huidige opties bieden onvoldoende contrast hiervoor."
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "paars": {
@@ -75,6 +75,11 @@
             "$type": "color",
             "$value": "#42145f",
             "$description": "Paars 100%"
+          },
+          "600": {
+            "$type": "color",
+            "$value": "#370f52",
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "violet": {
@@ -110,6 +115,11 @@
             "$type": "color",
             "$value": "#a90061",
             "$description": "Violet 100%"
+          },
+          "600": {
+            "$type": "color",
+            "$value": "#8a004e",
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "robijnrood": {
@@ -145,6 +155,11 @@
             "$type": "color",
             "$value": "#ca005d",
             "$description": "Robijnrood 100%"
+          },
+          "600": {
+            "$type": "color",
+            "$value": "#a8004a",
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "roze": {
@@ -180,6 +195,11 @@
             "$type": "color",
             "$value": "#f092cd",
             "$description": "Roze 100%"
+          },
+          "600": {
+            "$type": "color",
+            "$value": "#d07ab6",
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "rood": {
@@ -217,10 +237,9 @@
             "$description": "Rood 100%"
           },
           "600": {
-            "parent": "core/default",
             "$type": "color",
             "$value": "#aa2218",
-            "$description": "Deze kleur is geen onderdeel van rijkshuisstijl. Een donkere kleur is nodig om foutieve interactie en feedback staten weer te geven, de huidige opties bieden onvoldoende contrast hiervoor."
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "oranje": {
@@ -258,10 +277,9 @@
             "$description": "Oranje 100%"
           },
           "600": {
-            "parent": "core/default",
             "$type": "color",
             "$value": "#b45a00",
-            "$description": "Deze kleur is geen onderdeel van rijkshuisstijl. Een donkere kleur is nodig om foutieve interactie en feedback staten weer te geven, de huidige opties bieden onvoldoende contrast hiervoor."
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "donkergeel": {
@@ -297,6 +315,11 @@
             "$type": "color",
             "$value": "#ffb612",
             "$description": "Donkergeel 100%"
+          },
+          "600": {
+            "$type": "color",
+            "$value": "#cc9400",
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "geel": {
@@ -332,6 +355,11 @@
             "$type": "color",
             "$value": "#f9e11e",
             "$description": "Geel 100%"
+          },
+          "600": {
+            "$type": "color",
+            "$value": "#c9b000",
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "donkerbruin": {
@@ -367,6 +395,11 @@
             "$type": "color",
             "$value": "#673327",
             "$description": "Donkerbruin 100%"
+          },
+          "600": {
+            "$type": "color",
+            "$value": "#5a2a1f",
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "bruin": {
@@ -402,6 +435,11 @@
             "$type": "color",
             "$value": "#94710a",
             "$description": "Bruin 100%"
+          },
+          "600": {
+            "$type": "color",
+            "$value": "#7a5a0a",
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "donkergroen": {
@@ -437,6 +475,11 @@
             "$type": "color",
             "$value": "#275937",
             "$description": "Donkergroen 100%"
+          },
+          "600": {
+            "$type": "color",
+            "$value": "#1e4a2a",
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "groen": {
@@ -474,10 +517,9 @@
             "$description": "Groen 100%"
           },
           "600": {
-            "parent": "core/default",
             "$type": "color",
-            "$value": "#2e6c0a",
-            "$description": "Deze kleur is geen onderdeel van rijkshuisstijl. Een donkere kleur is nodig om foutieve interactie en feedback staten weer te geven, de huidige opties bieden onvoldoende contrast hiervoor."
+            "$value": "#2c6e0a",
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "mosgroen": {
@@ -513,6 +555,11 @@
             "$type": "color",
             "$value": "#777b00",
             "$description": "Mosgroen 100%"
+          },
+          "600": {
+            "$type": "color",
+            "$value": "#5a5a00",
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "mintgroen": {
@@ -548,6 +595,11 @@
             "$type": "color",
             "$value": "#76d2b6",
             "$description": "Mintgroen 100%"
+          },
+          "600": {
+            "$type": "color",
+            "$value": "#5aa5a5",
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "donkerblauw": {
@@ -583,6 +635,11 @@
             "$type": "color",
             "$value": "#01689b",
             "$description": "Donkerblauw 100%"
+          },
+          "600": {
+            "$type": "color",
+            "$value": "#014f7a",
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "hemelblauw": {
@@ -623,7 +680,7 @@
             "parent": "core/default",
             "$type": "color",
             "$value": "#00629f",
-            "$description": "Deze kleur is geen onderdeel van rijkshuisstijl. Een donkere kleur is nodig om foutieve interactie en feedback staten weer te geven, de huidige opties bieden onvoldoende contrast hiervoor."
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "lichtblauw": {
@@ -659,6 +716,12 @@
             "$type": "color",
             "$value": "#8fcae7",
             "$description": "Lichtblauw 100%"
+          },
+          "600": {
+            "parent": "core/default",
+            "$type": "color",
+            "$value": "#6baae0",
+            "$description": "De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state."
           }
         },
         "cool-gray": {
@@ -745,6 +808,11 @@
           }
         },
         "grijs": {
+          "50": {
+            "$type": "color",
+            "$value": "#f9f9f9",
+            "$description": "Grijs 50"
+          },
           "100": {
             "$type": "color",
             "$value": "#f3f3f3",
@@ -780,6 +848,18 @@
             "$value": "#535353",
             "$description": "Grijs 700"
           }
+        },
+        "wit": {
+          "$type": "color",
+          "$value": "#fff"
+        },
+        "zwart": {
+          "$type": "color",
+          "$value": "#000"
+        },
+        "transparent": {
+          "$type": "color",
+          "$value": "transparent"
         }
       }
     }
@@ -913,6 +993,540 @@
         "6xl.max": {
           "$type": "dimension",
           "$value": "{mox.space.md.max}*1.2^7"
+        }
+      }
+    }
+  },
+  "common/color": {
+    "mox": {
+      "color": {
+        "primary": {
+          "default": {
+            "$type": "color",
+            "$value": "{mox.color.hemelblauw.500}",
+            "$description": "Primary color"
+          },
+          "contrast": {
+            "$type": "color",
+            "$value": "{mox.color.wit}",
+            "$description": "Primary contrast color"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{mox.color.hemelblauw.600}",
+            "$description": "Primary hover color"
+          },
+          "hover-contrast": {
+            "$type": "color",
+            "$value": "{mox.color.wit}",
+            "$description": "Primary hover contrast color"
+          },
+          "subtle": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.hemelblauw.200}",
+              "$description": "Primary subtle color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Primary subtle contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.hemelblauw.300}",
+              "$description": "Primary subtle hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Primary subtle hover contrast color"
+            }
+          },
+          "subtle-2": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.hemelblauw.100}",
+              "$description": "Primary subtle 2 color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Primary subtle 2 contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.hemelblauw.200}",
+              "$description": "Primary subtle 2 hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Primary subtle 2 hover contrast color"
+            }
+          }
+        },
+        "secondary": {
+          "default": {
+            "$type": "color",
+            "$value": "{mox.color.paars.500}",
+            "$description": "Secondary color"
+          },
+          "contrast": {
+            "$type": "color",
+            "$value": "{mox.color.wit}",
+            "$description": "Secondary contrast color"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{mox.color.paars.600}",
+            "$description": "Secondary hover color"
+          },
+          "hover-contrast": {
+            "$type": "color",
+            "$value": "{mox.color.wit}",
+            "$description": "Secondary hover contrast color"
+          },
+          "subtle": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.paars.200}",
+              "$description": "Secondary subtle color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Secondary subtle contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.paars.100}",
+              "$description": "Secondary subtle hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Secondary subtle hover contrast color"
+            }
+          },
+          "subtle-2": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.paars.100}",
+              "$description": "Secondary subtle 2 color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Secondary subtle 2 contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.paars.50}",
+              "$description": "Secondary subtle 2 hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Secondary subtle 2 hover contrast color"
+            }
+          }
+        },
+        "neutral": {
+          "default": {
+            "$type": "color",
+            "$value": "{mox.color.grijs.300}",
+            "$description": "Neutral color"
+          },
+          "contrast": {
+            "$type": "color",
+            "$value": "{mox.color.zwart}",
+            "$description": "Neutral contrast color"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{mox.color.grijs.400}",
+            "$description": "Neutral hover color"
+          },
+          "hover-contrast": {
+            "$type": "color",
+            "$value": "{mox.color.wit}",
+            "$description": "Neutral hover contrast color"
+          },
+          "subtle": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.grijs.200}",
+              "$description": "Neutral subtle color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Neutral subtle contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.grijs.300}",
+              "$description": "Neutral subtle hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Neutral subtle hover contrast color"
+            }
+          },
+          "subtle-2": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.grijs.100}",
+              "$description": "Neutral subtle 2 color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Neutral subtle 2 contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.grijs.200}",
+              "$description": "Neutral subtle 2 hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Neutral subtle 2 hover contrast color"
+            }
+          }
+        },
+        "accent": {
+          "default": {
+            "$type": "color",
+            "$value": "{mox.color.mintgroen.500}",
+            "$description": "Accent color"
+          },
+          "contrast": {
+            "$type": "color",
+            "$value": "{mox.color.wit}",
+            "$description": "Accent contrast color"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{mox.color.mintgroen.600}",
+            "$description": "Accent hover color"
+          },
+          "hover-contrast": {
+            "$type": "color",
+            "$value": "{mox.color.wit}",
+            "$description": "Accent hover contrast color"
+          },
+          "subtle": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.mintgroen.200}",
+              "$description": "Accent subtle color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Accent subtle contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.mintgroen.300}",
+              "$description": "Accent subtle hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Accent subtle hover contrast color"
+            }
+          },
+          "subtle-2": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.mintgroen.100}",
+              "$description": "Accent subtle 2 color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Accent subtle 2 contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.mintgroen.200}",
+              "$description": "Accent subtle 2 hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Accent subtle 2 hover contrast color"
+            }
+          }
+        },
+        "info": {
+          "default": {
+            "$type": "color",
+            "$value": "{mox.color.lichtblauw.500}",
+            "$description": "Info color"
+          },
+          "contrast": {
+            "$type": "color",
+            "$value": "{mox.color.zwart}",
+            "$description": "Info contrast color"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{mox.color.lichtblauw.600}",
+            "$description": "Info hover color"
+          },
+          "hover-contrast": {
+            "$type": "color",
+            "$value": "{mox.color.zwart}",
+            "$description": "Info hover contrast color"
+          },
+          "subtle": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.lichtblauw.200}",
+              "$description": "Info subtle color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Info subtle contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.lichtblauw.300}",
+              "$description": "Info subtle hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Info subtle hover contrast color"
+            }
+          },
+          "subtle-2": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.lichtblauw.100}",
+              "$description": "Info subtle 2 color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Info subtle 2 contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.lichtblauw.200}",
+              "$description": "Info subtle 2 hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Info subtle 2 hover contrast color"
+            }
+          }
+        },
+        "success": {
+          "default": {
+            "$type": "color",
+            "$value": "{mox.color.groen.500}",
+            "$description": "Success color"
+          },
+          "contrast": {
+            "$type": "color",
+            "$value": "{mox.color.wit}",
+            "$description": "Success contrast color"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{mox.color.groen.600}",
+            "$description": "Success hover color"
+          },
+          "hover-contrast": {
+            "$type": "color",
+            "$value": "{mox.color.wit}",
+            "$description": "Success hover contrast color"
+          },
+          "subtle": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.groen.200}",
+              "$description": "Success subtle color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Success subtle contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.groen.300}",
+              "$description": "Success subtle hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Success subtle hover contrast color"
+            }
+          },
+          "subtle-2": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.groen.100}",
+              "$description": "Success subtle 2 color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Success subtle 2 contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.groen.200}",
+              "$description": "Success subtle 2 hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Success subtle 2 hover contrast color"
+            }
+          }
+        },
+        "warning": {
+          "default": {
+            "$type": "color",
+            "$value": "{mox.color.geel.500}",
+            "$description": "Warning color"
+          },
+          "contrast": {
+            "$type": "color",
+            "$value": "{mox.color.zwart}",
+            "$description": "Warning contrast color"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{mox.color.geel.600}",
+            "$description": "Warning hover color"
+          },
+          "hover-contrast": {
+            "$type": "color",
+            "$value": "{mox.color.zwart}",
+            "$description": "Warning hover contrast color"
+          },
+          "subtle": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.geel.200}",
+              "$description": "Warning subtle color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Warning subtle contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.geel.300}",
+              "$description": "Warning subtle hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Warning subtle hover contrast color"
+            }
+          },
+          "subtle-2": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.geel.100}",
+              "$description": "Warning subtle 2 color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Warning subtle 2 contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.geel.200}",
+              "$description": "Warning subtle 2 hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Warning subtle 2 hover contrast color"
+            }
+          }
+        },
+        "danger": {
+          "default": {
+            "$type": "color",
+            "$value": "{mox.color.rood.500}",
+            "$description": "Danger color"
+          },
+          "contrast": {
+            "$type": "color",
+            "$value": "{mox.color.wit}",
+            "$description": "Danger contrast color"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{mox.color.rood.600}",
+            "$description": "Danger hover color"
+          },
+          "hover-contrast": {
+            "$type": "color",
+            "$value": "{mox.color.wit}",
+            "$description": "Danger hover contrast color"
+          },
+          "subtle": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.rood.200}",
+              "$description": "Danger subtle color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Danger subtle contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.rood.300}",
+              "$description": "Danger subtle hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Danger subtle hover contrast color"
+            }
+          },
+          "subtle-2": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.rood.100}",
+              "$description": "Danger subtle 2 color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Danger subtle 2 contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.rood.200}",
+              "$description": "Danger subtle 2 hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Danger subtle 2 hover contrast color"
+            }
+          }
         }
       }
     }

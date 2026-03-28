@@ -40,7 +40,7 @@ export const MoxOrganismSideNavLink = ({
             {iconSlot}
           </MoxOccupy>
           <MoxShelf
-            columnGap="xs"
+            columnGap="sm"
             alignItems={"start"}
             justifyContent={"spaceBetween"}
             flex="1 0 auto"
