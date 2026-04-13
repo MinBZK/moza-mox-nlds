@@ -2,11 +2,11 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { getConstructionSummary } from "../../../storybook/helpers/getConstructionSummary";
 import { MoxOrganismSideNav } from "./SideNav";
-import { MoxBadge } from "../../uiMolecules/badge/Badge";
+import { MoxBadge } from "../badge/Badge";
 import { MoxIcon } from "../../uiAtoms";
 
 const meta = {
-  title: "React/Organisms/SideNav/SideNav",
+  title: "React/Components/SideNav/SideNav",
   component: MoxOrganismSideNav,
   tags: ["autodocs"],
   parameters: {

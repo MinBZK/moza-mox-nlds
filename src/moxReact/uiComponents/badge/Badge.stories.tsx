@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { MoxMoleculeBadge } from "./Badge";
 
 const meta = {
-  title: "React/Molecules/Badge",
+  title: "React/Components/Badge",
   component: MoxMoleculeBadge,
   tags: ["autodocs"],
   parameters: {},

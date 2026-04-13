@@ -17,14 +17,16 @@ const preview: Preview = {
       storySort: {
         order: [
           "Intro",
+          "Waarom?",
           "Atomic system",
+          "Design tokens",
           "Scaling system",
           "Icons",
           "*",
           "MoxCSS",
-          ["CSS Layers", "Hugo gebruik", "Text-box trim", ["Atoms", "*"]],
+          ["CSS Layers", "Text-box trim", "Hugo gebruik", ["Atoms", "*"]],
           "React",
-          ["Gebruik", ["Atoms", "Molecules", "Organisms", "*"]],
+          ["Gebruik", "Properties", ["Atoms", "Components", "*"]],
         ],
         method: "alphabetical",
       },

@@ -3,7 +3,7 @@ import { MoxMoleculeRadioButtonField } from "./RadioButtonField";
 import { getConstructionSummary } from "../../../storybook/helpers/getConstructionSummary";
 
 const meta = {
-  title: "React/Molecules/Form/RadioButtonField",
+  title: "React/Components/Form/RadioButtonField",
   component: MoxMoleculeRadioButtonField,
   tags: ["autodocs"],
   parameters: {

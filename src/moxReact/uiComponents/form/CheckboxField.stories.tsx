@@ -4,7 +4,7 @@ import { MoxMoleculeCheckboxField } from "./CheckboxField";
 import { getConstructionSummary } from "../../../storybook/helpers/getConstructionSummary";
 
 const meta = {
-  title: "React/Molecules/Form/CheckboxField",
+  title: "React/Components/Form/CheckboxField",
   component: MoxMoleculeCheckboxField,
   tags: ["autodocs"],
   parameters: {

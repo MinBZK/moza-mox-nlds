@@ -5,7 +5,7 @@ import { MoxStack, MoxTextBlock } from "../../uiAtoms";
 import { MoxOrganismSiteHeader } from "./SiteHeader";
 
 const meta = {
-  title: "React/Organisms/SiteHeader",
+  title: "React/Components/SiteHeader",
   component: MoxOrganismSiteHeader,
   tags: ["autodocs"],
   parameters: {

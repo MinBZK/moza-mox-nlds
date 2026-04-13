@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
-  title: "MoxCSS/Organisms/SiteHeader",
+  title: "MoxCSS/Components/SiteHeader",
   tags: ["autodocs"],
   parameters: {
     layout: "fullscreen",
