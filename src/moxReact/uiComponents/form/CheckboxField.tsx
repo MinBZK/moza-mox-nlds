@@ -11,7 +11,7 @@ import { MoxTextBlock } from "../../uiAtoms/typography/TextBlock";
  * Responsibilities:
  * 1. Render a checkbox with a label.
  */
-export const MoxMoleculeCheckboxField = ({
+export const MoxCheckboxField = ({
   className,
   children,
 }: {

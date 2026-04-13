@@ -8,22 +8,26 @@ import Tokens from "./assets/tokens-atoms-etc.png";
   <div className='sb-section-title'>
 # Atomic system
 
-Alles is opgebouwd uit meerdere
-
-- Atoms
-- Molecules
-- Organisms
-- Templates
-- Pages
-
-Dit zijn de complexiteits levels van meest simpel naar meest complex.
+In een atomisch systeem zijn alle onderdelen onder de verdelen in een hierarchische structuur, in mate van complexiteit:
 
 <img src={AtomicDesignSystem} alt="Opbouw van een atomic design system" />
 
-De reden hiervoor is dat dit de beste aanpak is om een design systeem op te zetten voor een brede doelgroep:
+Kort gezegd betekent dit:
 
-- Sommige mensen willen snel pagina's kunnen opzetten en leunen op bestaande Templates
-- Anderen willen juist controle hebben en componenten kunnen aanpassen op detail-niveau
+- Atoms: dit zijn de kleinste bouwblokjes mogelijk
+- Molecules: deze zijn opgebouwd uit atoms
+- Organisms: opgebouwd uit molecules (en evt. atoms)
+
+Molecules en Organisms zijn een onderscheid waar we voor MOX-nlds niet direct toegevoegde waarde zien. We voegen deze samen tot 1 groep, waardoor we onze onderverdeling krijgen:
+
+- **Atoms**: kleinste bouwblokjes, leunen op design-tokens
+- **Components**: complexer, opgebouwd uit atoms, gebruiken geen design-tokens
+  ()
+
+Voor een Design System dat potentieel door een brede gebruikersgroep gebruikt moet worden is dit handig.
+
+- Sommige mensen willen snel een standaard pagina op kunnen zetten, en kunnen simpelweg een template gebruiken, of het via standaard componenten opzetten.
+- Anderen willen juist controle hebben en componenten kunnen aanpassen op detail-niveau; zij hebben controle nodig en kunnen via atoms snel hun eigen custom component opzetten als de default niet volstaat.
 - ... en iedereen die daar tussen valt
 
 Met een atomic design system kan je de uitgebreide `organisms` of zelfs `templates` gebruiken om snel een pagina op te zetten.
@@ -43,11 +47,11 @@ React **Atom** componenten gebruiken de CSS **Atom** classNames. De volgorde is 
 
 Boven dit
 
-### lv. 0 - Tokens
+### lv. 0 - Tokens (CSS)
 
 In de basis kan je via tokens je brandp-colors/spacing opties instellen voor een unieke huisstijl (of je gebruikt een standaard set tokens)
 
-### lv. 1 - Atoms
+### lv. 1 - Atoms (CSS / React components)
 
 **Atoms** zijn de kleinste bouwblokjes van het design-systeem.
 
@@ -63,34 +67,17 @@ Er zijn zowel Atoms voor CSS als voor React. De React componenten gebruiken de C
 - Nooit omringende spacing zoals `padding` of `margin` (gebruik altijd layout-componenten zoals `stack` of `box` om de spaces tussen elementen te bepalen)
 - Atoms zullen bijna nooit breaking changes hebben bij updates
 
-### lv. 2 - Molecules
+### lv. 2 - Components (React components)
 
-**Molecules** zijn opgebouwd uit **atoms** en zijn daardoor complexer.
-
-In principe praten vanaf dit niveau alleen over React componenten (maar enkele elementen met classNames samen kan je op zich beschouwen als **molecule**).
-
-Een molecule is (meestal) herbruikbaar over in meerdere, verschillende contexts (bv een `badge`, `icon-link`, een form field met label en error message). Ze hebben altijd één enkele focus.
+**Components** zijn opgebouwd uit **atoms** en zijn daardoor complexer. Ook kan er interactiviteit in voorkomen (bv bij tabs).
 
 #### Beloftes
 
-- In principe **geen** `design tokens`
-- Aanpasbaarheid door de API van het component
-- Docs over hoe het opgebouwd is, zodat je zelf makkelijk het kan nabouwen met **atoms** voor volledige aanpasbaarheid
+- _Geen_ `design tokens`
+- Aanpasbaarheid door de API van het component zelf
+- Docs over hoe het opgebouwd is (welke **atoms**), zodat je zelf makkelijk het kan nabouwen met **atoms** voor volledige aanpasbaarheid
 - Anders dan **atoms** kunnen hier sneller breaking changes in voorkomen
-- Nooit omringende spacing zoals `padding` of `margin`
-
-### lv. 3 - Organisms
-
-**Organisms** zijn weer opgebouwd uit **molecules** en/of **atoms**. Deze componenten zijn complexer dan **molecules** en kunnen custom interactiviteit hebben. Meestal worden deze gebruikt voor specifieke page-specifieke blokken van de interface, zoals een `site-header`, `footer`, `card-as-link`.
-
-#### Beloftes
-
-- Net als **molecules**: geen `design tokens`, minder sterke belofte omtrent breaking changes
-- Nooit omringende spacing zoals `padding` of `margin`
-
-### lv. 4, 5 - Templates, Pages
-
-Sommige pagina's of onderdelen ervan zullen een gebruikelijke opbouw hebben. Denk bijvoorbeeld aan een basis-homepage of een contact-formulier. Heel complex, heel opinionated, maar fijn om te gebruiken als je de 'standaard' gewoon wilt gebruiken.
+- Nooit omringende spacing zoals `padding`, `margin` of (text-box ruimte)[?path=/docs/moxcss-text-box-trim--docs].
 
 </div>
 

@@ -4,7 +4,7 @@ import { MoxBox, MoxTextBlock } from "../../uiAtoms";
 /**
  * Een badge component, bedoeld om een status of categorie aan te geven. Standaard heeft de badge een rode achtergrondkleur (`error`), maar dit kan worden aangepast via de `backgroundColor` prop. De badge heeft een cirkelvormige achtergrond en bevat tekst die standaard in een kleine lettergrootte (`xs`) wordt weergegeven. De tekst heeft geen onderstreping bij hover. De component accepteert ook alle props van `MoxBox`, waardoor je extra styling en functionaliteit kunt toevoegen indien nodig.
  */
-export const MoxMoleculeBadge = ({
+export const MoxBadge = ({
   children,
   backgroundColor = "neutral",
   ...props
@@ -26,5 +26,3 @@ export const MoxMoleculeBadge = ({
     </MoxBox>
   );
 };
-
-export const MoxBadge = MoxMoleculeBadge;

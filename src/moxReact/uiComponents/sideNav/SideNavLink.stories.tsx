@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { getConstructionSummary } from "../../../storybook/helpers/getConstructionSummary";
-import { MoxOrganismSideNavLink } from "./SideNavLink";
+import { MoxSideNavLink } from "./SideNavLink";
 import { MoxIcon } from "../../uiAtoms";
-import { MoxBadge } from "../../uiMolecules/badge/Badge";
+import { MoxBadge } from "../badge/Badge";
 
 const meta = {
-  title: "React/Organisms/SideNav/SideNavLink",
-  component: MoxOrganismSideNavLink,
+  title: "React/Components/SideNav/SideNavLink",
+  component: MoxSideNavLink,
   tags: ["autodocs"],
   parameters: {
     docs: {
@@ -62,7 +62,7 @@ const meta = {
     iconSlot: <MoxIcon icon="HouseFill" fontSize="md" />,
     badgeSlot: <MoxBadge backgroundColor={"danger"}>3</MoxBadge>,
   },
-} satisfies Meta<typeof MoxOrganismSideNavLink>;
+} satisfies Meta<typeof MoxSideNavLink>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

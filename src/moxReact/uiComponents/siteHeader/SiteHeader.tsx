@@ -22,7 +22,7 @@ const LogoRijksoverheid = () => (
 /**
  * Organism voor de site-header: een grid met in het midden het rijkslint.
  */
-export const MoxOrganismSiteHeader = ({
+export const MoxSiteHeader = ({
   pageStartSlot,
   lintEndSlot,
   LogoImageWrapper,
@@ -82,5 +82,3 @@ export const MoxOrganismSiteHeader = ({
     </MoxPageGrid>
   );
 };
-
-export const MoxSiteHeader = MoxOrganismSiteHeader;

@@ -1,4 +1,3 @@
 @import "./base/index.css";
 @import "./uiAtoms/index.css";
-@import "./uiMolecules/index.css";
-@import "./uiOrganisms/index.css";
+@import "./uiComponents/index.css";

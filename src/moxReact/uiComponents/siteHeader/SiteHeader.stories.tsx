@@ -2,11 +2,11 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { getConstructionSummary } from "../../../storybook/helpers/getConstructionSummary";
 import { MoxStack, MoxTextBlock } from "../../uiAtoms";
-import { MoxOrganismSiteHeader } from "./SiteHeader";
+import { MoxSiteHeader } from "./SiteHeader";
 
 const meta = {
-  title: "React/Organisms/SiteHeader",
-  component: MoxOrganismSiteHeader,
+  title: "React/Components/SiteHeader",
+  component: MoxSiteHeader,
   tags: ["autodocs"],
   parameters: {
     layout: "fullscreen",
@@ -26,7 +26,7 @@ Bekijk de full-screen versie door op de rechterbovenknop te klikken: ↗️`,
     },
   },
   argTypes: {},
-} satisfies Meta<typeof MoxOrganismSiteHeader>;
+} satisfies Meta<typeof MoxSiteHeader>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

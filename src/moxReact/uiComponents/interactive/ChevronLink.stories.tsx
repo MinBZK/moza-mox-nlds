@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { getConstructionSummary } from "../../../storybook/helpers/getConstructionSummary";
-import { MoxBox, MoxIcon, MoxTextBlock } from "../../uiAtoms";
-import { MoxMoleculeIconLink } from "./IconLink";
+import { MoxChevronLink } from "./ChevronLink";
+import { MoxBox, MoxTextBlock } from "../../uiAtoms";
 
 const meta = {
-  title: "React/Molecules/Interactive/IconLink",
-  component: MoxMoleculeIconLink,
+  title: "React/Components/Interactive/ChevronLink",
+  component: MoxChevronLink,
   tags: ["autodocs"],
   parameters: {
     docs: {
@@ -36,20 +36,14 @@ const meta = {
     ),
   ],
   args: {
+    href: "#",
     children: <MoxTextBlock>Click me!</MoxTextBlock>,
-    startIconSlot: <MoxIcon icon="Search" fontSize="xs" />,
   },
-} satisfies Meta<typeof MoxMoleculeIconLink>;
+} satisfies Meta<typeof MoxChevronLink>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const IconLinkDefault: Story = {
+export const ChevronLinkDefault: Story = {
   args: {},
-};
-
-export const IconLinkRandomIcon: Story = {
-  args: {
-    startIconSlot: <MoxTextBlock>👻</MoxTextBlock>,
-  },
 };

@@ -5,7 +5,7 @@ import { MoxAtomLink, MoxOccupy, MoxShelf } from "../../uiAtoms";
  *
  * @returns an icon link: a link/button with an icon in a given direction and position (before/after the text)
  */
-export const MoxMoleculeIconLink = ({
+export const MoxIconLink = ({
   children,
   startIconSlot,
   endIconSlot,
@@ -24,5 +24,3 @@ export const MoxMoleculeIconLink = ({
     </MoxAtomLink>
   );
 };
-
-export const MoxIconLink = MoxMoleculeIconLink;

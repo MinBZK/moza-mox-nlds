@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { MoxMoleculeRadioButtonField } from "./RadioButtonField";
+import { MoxRadioButtonField } from "./RadioButtonField";
 import { getConstructionSummary } from "../../../storybook/helpers/getConstructionSummary";
 
 const meta = {
-  title: "React/Molecules/Form/RadioButtonField",
-  component: MoxMoleculeRadioButtonField,
+  title: "React/Components/Form/RadioButtonField",
+  component: MoxRadioButtonField,
   tags: ["autodocs"],
   parameters: {
     docs: {
@@ -21,7 +21,7 @@ const meta = {
   args: {
     children: "Click me!",
   },
-} satisfies Meta<typeof MoxMoleculeRadioButtonField>;
+} satisfies Meta<typeof MoxRadioButtonField>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

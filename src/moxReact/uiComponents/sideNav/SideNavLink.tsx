@@ -10,7 +10,7 @@ import {
 /**
  * Side-navigation button, designed after MOBu. A link that has a hover-background and an 'isCurrent' state. It could also be disabled to prevent any interaction.
  */
-export const MoxOrganismSideNavLink = ({
+export const MoxSideNavLink = ({
   iconSlot,
   children,
   badgeSlot,
@@ -65,5 +65,3 @@ export const MoxOrganismSideNavLink = ({
     </MoxAtomLink>
   );
 };
-
-export const MoxSideNavLink = MoxOrganismSideNavLink;

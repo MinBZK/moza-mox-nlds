@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
-import { MoxMoleculeCheckboxField } from "./CheckboxField";
+import { MoxCheckboxField } from "./CheckboxField";
 import { getConstructionSummary } from "../../../storybook/helpers/getConstructionSummary";
 
 const meta = {
-  title: "React/Molecules/Form/CheckboxField",
-  component: MoxMoleculeCheckboxField,
+  title: "React/Components/Form/CheckboxField",
+  component: MoxCheckboxField,
   tags: ["autodocs"],
   parameters: {
     docs: {
@@ -22,7 +22,7 @@ const meta = {
   args: {
     children: "Click me!",
   },
-} satisfies Meta<typeof MoxMoleculeCheckboxField>;
+} satisfies Meta<typeof MoxCheckboxField>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

@@ -11,7 +11,7 @@ import { MoxAtomRadioButton } from "../../uiAtoms/form/RadioButton";
  * Responsibilities:
  * 1. Render a radio-button with a label.
  */
-export const MoxMoleculeRadioButtonField = ({
+export const MoxRadioButtonField = ({
   className,
   children,
 }: {

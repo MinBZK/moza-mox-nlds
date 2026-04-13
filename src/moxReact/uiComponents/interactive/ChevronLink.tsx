@@ -5,7 +5,7 @@ import { MoxAtomLink, MoxIcon, MoxOccupy, MoxShelf } from "../../uiAtoms";
  *
  * @returns a chevron link: a link/button with a chevron in a given direction and position (before/after the text)
  */
-export const MoxMoleculeChevronLink = ({
+export const MoxChevronLink = ({
   children,
   position = "start",
   direction = "forward",
@@ -32,5 +32,3 @@ export const MoxMoleculeChevronLink = ({
     </MoxAtomLink>
   );
 };
-
-export const MoxChevronLink = MoxMoleculeChevronLink;

@@ -9,7 +9,7 @@ export type SideNavItem = {
   isCurrent?: boolean;
 };
 
-export const MoxOrganismSideNav = ({
+export const MoxSideNav = ({
   items,
   ...props
 }: {
@@ -36,5 +36,3 @@ export const MoxOrganismSideNav = ({
     </MoxStack>
   );
 };
-
-export const MoxSideNav = MoxOrganismSideNav;
