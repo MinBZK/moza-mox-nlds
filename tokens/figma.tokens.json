@@ -1,4 +1,519 @@
 {
+  "brand/calcs": {
+    "mox": {
+      "viewport": {
+        "width": {
+          "$type": "sizing",
+          "$value": "{mox.viewport.min}"
+        },
+        "min": {
+          "$type": "sizing",
+          "$value": "360"
+        },
+        "max": {
+          "$type": "sizing",
+          "$value": "1440"
+        }
+      },
+      "font-scale": {
+        "const": {
+          "f": {
+            "$type": "fontSizes",
+            "$value": "1.2",
+            "$description": "Scaling factor for each step"
+          },
+          "min": {
+            "$type": "fontSizes",
+            "$value": "16",
+            "$description": "Minimal font-size. Currently it is not possible to use a rem value for these calculations"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "20",
+            "$description": "Maximal font-size. Currently it is not possible to use a rem value for these calculations"
+          }
+        },
+        "f-4": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.f}^-4),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.f}^-4),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.f-4.max}-{mox.font-scale.f-4.min}) / ({mox.viewport.max}-{mox.viewport.min})",
+            "$description": "Viewport scaling factor"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.f-4.max} - {mox.viewport.max} * {mox.font-scale.f-4.min}) / ({mox.viewport.min}-{mox.viewport.max})",
+            "$description": "Viewport scaling base offset"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.f-4.v} + {mox.font-scale.f-4.r})"
+          }
+        },
+        "f-3": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.f}^-3),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.f}^-3),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.f-3.max}-{mox.font-scale.f-3.min}) / ({mox.viewport.max}-{mox.viewport.min})",
+            "$description": "Viewport scaling factor"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.f-3.max} - {mox.viewport.max} * {mox.font-scale.f-3.min}) / ({mox.viewport.min}-{mox.viewport.max})",
+            "$description": "Viewport scaling base offset"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.f-3.v} + {mox.font-scale.f-3.r})"
+          }
+        },
+        "f-2": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.f}^-2),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.f}^-2),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.f-2.max}-{mox.font-scale.f-2.min}) / ({mox.viewport.max}-{mox.viewport.min})",
+            "$description": "Viewport scaling factor"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.f-2.max} - {mox.viewport.max} * {mox.font-scale.f-2.min}) / ({mox.viewport.min}-{mox.viewport.max})",
+            "$description": "Viewport scaling base offset"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.f-2.v} + {mox.font-scale.f-2.r})"
+          }
+        },
+        "f-1": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.f}^-1),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.f}^-1),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.f-1.max}-{mox.font-scale.f-1.min}) / ({mox.viewport.max}-{mox.viewport.min})",
+            "$description": "Viewport scaling factor"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.f-1.max} - {mox.viewport.max} * {mox.font-scale.f-1.min}) / ({mox.viewport.min}-{mox.viewport.max})",
+            "$description": "Viewport scaling base offset"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.f-1.v} + {mox.font-scale.f-1.r})"
+          }
+        },
+        "f0": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.f}^0),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.f}^0),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.f0.max}-{mox.font-scale.f0.min}) / ({mox.viewport.max}-{mox.viewport.min})",
+            "$description": "Viewport scaling factor"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.f0.max} - {mox.viewport.max} * {mox.font-scale.f0.min}) / ({mox.viewport.min}-{mox.viewport.max})",
+            "$description": "Viewport scaling base offset"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.f0.v} + {mox.font-scale.f0.r})"
+          }
+        },
+        "f1": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.f}^1),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.f}^1),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.f1.max}-{mox.font-scale.f1.min}) / ({mox.viewport.max}-{mox.viewport.min})"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.f1.max} - {mox.viewport.max} * {mox.font-scale.f1.min}) / ({mox.viewport.min}-{mox.viewport.max})"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.f1.v} + {mox.font-scale.f1.r})"
+          }
+        },
+        "f2": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.f}^2),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.f}^2),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.f2.max}-{mox.font-scale.f2.min}) / ({mox.viewport.max}-{mox.viewport.min})"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.f2.max} - {mox.viewport.max} * {mox.font-scale.f2.min}) / ({mox.viewport.min}-{mox.viewport.max})"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.f2.v} + {mox.font-scale.f2.r})"
+          }
+        },
+        "f3": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.f}^3),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.f}^3),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.f3.max}-{mox.font-scale.f3.min}) / ({mox.viewport.max}-{mox.viewport.min})"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.f3.max} - {mox.viewport.max} * {mox.font-scale.f3.min}) / ({mox.viewport.min}-{mox.viewport.max})"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.f3.v} + {mox.font-scale.f3.r})"
+          }
+        },
+        "f4": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.f}^4),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.f}^4),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.f4.max}-{mox.font-scale.f4.min}) / ({mox.viewport.max}-{mox.viewport.min})"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.f4.max} - {mox.viewport.max} * {mox.font-scale.f4.min}) / ({mox.viewport.min}-{mox.viewport.max})"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.f4.v} + {mox.font-scale.f4.r})"
+          }
+        },
+        "f5": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.f}^5),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.f}^5),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.f5.max}-{mox.font-scale.f5.min}) / ({mox.viewport.max}-{mox.viewport.min})"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.f5.max} - {mox.viewport.max} * {mox.font-scale.f5.min}) / ({mox.viewport.min}-{mox.viewport.max})"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.f5.v} + {mox.font-scale.f5.r})"
+          }
+        },
+        "f6": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.f}^6),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.f}^6),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.f6.max}-{mox.font-scale.f6.min}) / ({mox.viewport.max}-{mox.viewport.min})"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.f6.max} - {mox.viewport.max} * {mox.font-scale.f6.min}) / ({mox.viewport.min}-{mox.viewport.max})"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.f6.v} + {mox.font-scale.f6.r})"
+          }
+        },
+        "f7": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.f}^7),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.f}^7),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.f7.max}-{mox.font-scale.f7.min}) / ({mox.viewport.max}-{mox.viewport.min})"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.f7.max} - {mox.viewport.max} * {mox.font-scale.f7.min}) / ({mox.viewport.min}-{mox.viewport.max})"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.f7.v} + {mox.font-scale.f7.r})"
+          }
+        },
+        "f8": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.f}^8),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.f}^8),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.f8.max}-{mox.font-scale.f8.min}) / ({mox.viewport.max}-{mox.viewport.min})"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.f8.max} - {mox.viewport.max} * {mox.font-scale.f8.min}) / ({mox.viewport.min}-{mox.viewport.max})"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.f8.v} + {mox.font-scale.f8.r})"
+          }
+        },
+        "f9": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.f}^9),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.f}^9),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.f9.max}-{mox.font-scale.f9.min}) / ({mox.viewport.max}-{mox.viewport.min})"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.f9.max} - {mox.viewport.max} * {mox.font-scale.f9.min}) / ({mox.viewport.min}-{mox.viewport.max})"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.f9.v} + {mox.font-scale.f9.r})"
+          }
+        },
+        "f10": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.f}^10),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.f}^10),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.f10.max}-{mox.font-scale.f10.min}) / ({mox.viewport.max}-{mox.viewport.min})"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.f10.max} - {mox.viewport.max} * {mox.font-scale.f10.min}) / ({mox.viewport.min}-{mox.viewport.max})"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.f10.v} + {mox.font-scale.f10.r})"
+          }
+        }
+      }
+    }
+  },
+  "brand/text": {
+    "mox": {
+      "font-size": {
+        "f-4": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.f-4.min},  {mox.font-scale.f-4.fluid}) ,{mox.font-scale.f-4.max})"
+        },
+        "f-3": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.f-3.min},  {mox.font-scale.f-3.fluid}) ,{mox.font-scale.f-3.max})"
+        },
+        "f-2": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.f-2.min},  {mox.font-scale.f-2.fluid}) ,{mox.font-scale.f-2.max})"
+        },
+        "f-1": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.f-1.min},  {mox.font-scale.f-1.fluid}) ,{mox.font-scale.f-1.max})"
+        },
+        "f0": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.f0.min},  {mox.font-scale.f0.fluid}) ,{mox.font-scale.f0.max})"
+        },
+        "f1": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.f1.min},  {mox.font-scale.f1.fluid}) ,{mox.font-scale.f1.max})"
+        },
+        "f2": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.f2.min},  {mox.font-scale.f2.fluid}) ,{mox.font-scale.f2.max})"
+        },
+        "f3": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.f3.min},  {mox.font-scale.f3.fluid}) ,{mox.font-scale.f3.max})"
+        },
+        "f4": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.f4.min},  {mox.font-scale.f4.fluid}) ,{mox.font-scale.f4.max})"
+        },
+        "f5": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.f5.min},  {mox.font-scale.f5.fluid}) ,{mox.font-scale.f5.max})"
+        },
+        "f6": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.f6.min},  {mox.font-scale.f6.fluid}) ,{mox.font-scale.f6.max})"
+        },
+        "f7": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.f7.min},  {mox.font-scale.f7.fluid}) ,{mox.font-scale.f7.max})"
+        },
+        "f8": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.f8.min},  {mox.font-scale.f8.fluid}) ,{mox.font-scale.f8.max})"
+        },
+        "f9": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.f9.min},  {mox.font-scale.f9.fluid}) ,{mox.font-scale.f9.max})"
+        },
+        "f10": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.f10.min},  {mox.font-scale.f10.fluid}) ,{mox.font-scale.f10.max})"
+        }
+      }
+    }
+  },
+  "brand/space": {
+    "mox": {
+      "space": {
+        "lint-inline-size": {
+          "$type": "dimension",
+          "$value": "48px",
+          "$description": "Breedte van het Rijksoverheid lint"
+        },
+        "f-4": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.f-4}"
+        },
+        "f-3": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.f-3}"
+        },
+        "f-2": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.f-2}"
+        },
+        "f-1": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.f-1}"
+        },
+        "f0": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.f0}"
+        },
+        "f1": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.f1}"
+        },
+        "f2": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.f2}"
+        },
+        "f3": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.f3}"
+        },
+        "f4": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.f4}"
+        },
+        "f5": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.f5}"
+        },
+        "f6": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.f6}"
+        },
+        "f7": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.f7}"
+        },
+        "f8": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.f8}"
+        },
+        "f9": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.f9}"
+        },
+        "f10": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.f10}"
+        }
+      }
+    }
+  },
+
   "brand/color": {
     "mox": {
       "color": {
@@ -860,139 +1375,6 @@
         "transparent": {
           "$type": "color",
           "$value": "transparent"
-        }
-      }
-    }
-  },
-  "brand/size": {
-    "mox": {
-      "space": {
-        "lint-inline-size": {
-          "$type": "dimension",
-          "$value": "48px",
-          "$description": "Breedte van het Rijksoverheid lint"
-        },
-        "md.min": {
-          "$type": "dimension",
-          "$value": "1.05rem",
-          "$description": "Basis voor de schaal van overige groottes (icm clamp is dit de minimale waarde)."
-        },
-        "md.max": {
-          "$type": "dimension",
-          "$value": "1.25rem",
-          "$description": "Basis voor de schaal van overige groottes (icm clamp is dit de maximale waarde)."
-        },
-        "sm.min": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.min}*1.2^-1"
-        },
-        "sm.max": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.max}*1.2^-1"
-        },
-        "xs.min": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.min}*1.2^-2"
-        },
-        "xs.max": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.max}*1.2^-2"
-        },
-        "2xs.min": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.min}*1.2^-3"
-        },
-        "2xs.max": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.max}*1.2^-3"
-        },
-        "3xs.min": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.min}*1.2^-4"
-        },
-        "3xs.max": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.max}*1.2^-4"
-        },
-        "4xs.min": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.min}*1.2^-5"
-        },
-        "4xs.max": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.max}*1.2^-5"
-        },
-        "5xs.min": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.min}*1.2^-6"
-        },
-        "5xs.max": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.max}*1.2^-6"
-        },
-        "6xs.min": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.min}*1.2^-7"
-        },
-        "6xs.max": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.max}*1.2^-7"
-        },
-        "lg.min": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.min}*1.2^1"
-        },
-        "lg.max": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.max}*1.2^1"
-        },
-        "xl.min": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.min}*1.2^2"
-        },
-        "xl.max": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.max}*1.2^2"
-        },
-        "2xl.min": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.min}*1.2^3"
-        },
-        "2xl.max": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.max}*1.2^3"
-        },
-        "3xl.min": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.min}*1.2^4"
-        },
-        "3xl.max": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.max}*1.2^4"
-        },
-        "4xl.min": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.min}*1.2^5"
-        },
-        "4xl.max": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.max}*1.2^5"
-        },
-        "5xl.min": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.min}*1.2^6"
-        },
-        "5xl.max": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.max}*1.2^6"
-        },
-        "6xl.min": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.min}*1.2^7"
-        },
-        "6xl.max": {
-          "$type": "dimension",
-          "$value": "{mox.space.md.max}*1.2^7"
         }
       }
     }
