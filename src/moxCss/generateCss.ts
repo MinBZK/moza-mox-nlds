@@ -237,6 +237,7 @@ const generateClampSpaces = () => {
  */
 export function getCssForPropOption(
   prop: string,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   option: any, // StylePropTypes<typeof moxConfig.props>[string],
 ): string | undefined {
   const propConfig = moxConfig.props[prop as keyof typeof moxConfig.props];

@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "type": "module",
   "exports": {
     "./react": {
       "types": "./dist/index.d.ts",
@@ -16,21 +17,18 @@
     "dist"
   ],
   "scripts": {
-    "dev:test-site": "vite",
-    "build:test-site": "tsc -b && vite build",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:unit": "vitest run --project=unit",
     "generate:css": "tsx src/moxCss/generateCss.ts",
     "generate:tokens": "style-dictionary build",
-    "preview": "vite preview",
     "dev:storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build",
     "deploy": "npm run generate:css && npm run build:storybook && gh-pages -d storybook-static",
     "build:tokens": "node tokens/build.mjs",
     "build:css": "npm run generate:css && cp -R src/moxCss dist/",
-    "build:react": "tsc --project tsconfig.components.json",
+    "build:react": "tsc --project tsconfig.json",
     "build": "rm -rf ./dist && npm run build:tokens && npm run build:react && npm run build:css",
     "prepare": "npm run build"
   },

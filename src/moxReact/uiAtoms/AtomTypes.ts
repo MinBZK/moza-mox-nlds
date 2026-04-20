@@ -3,6 +3,7 @@ import type { moxConfig } from "../../moxCss/mox.config";
 
 // T = 'a' => HTMLAnchorElement, T = 'div' => HTMLDivElement, T = <SomeReactComponent> => any, etc.
 type ElementFromElementType<T extends ElementType> =
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   T extends keyof HTMLElementTagNameMap ? HTMLElementTagNameMap[T] : any;
 
 // e.g. ['inlineSize', 'backgroundColor']
@@ -30,7 +31,7 @@ export type StylePropTypes<M extends StyleProps> = Partial<{
 // todo: nog extra generic om styling props toe te voegen later
 export type AtomProps<
   T extends ElementType = "div",
-  S extends StyleProps = []
+  S extends StyleProps = [],
 > = {
   children?: ReactNode;
   className?: string;

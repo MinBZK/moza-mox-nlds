@@ -1,7 +1,7 @@
 export const getConstructionSummary = (code: string) => {
   // Parse and indent JSX/TSX code properly
   // First, ensure each tag is on its own line
-  let normalized = code
+  const normalized = code
     .trim()
     // Add newline before opening tags (except first character)
     .replace(/(.)<(?!\/)/g, "$1\n<")

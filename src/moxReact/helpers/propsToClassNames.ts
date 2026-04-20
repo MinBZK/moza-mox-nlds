@@ -14,7 +14,7 @@ const validateValue = (prop: string, value: string) => {
   }
   if (validValues != null && !validValues.includes(value)) {
     console.warn(
-      `Warning: value '${value}' for prop '${prop}' is not a valid value.`
+      `Warning: value '${value}' for prop '${prop}' is not a valid value.`,
     );
     return false;
   }
@@ -27,9 +27,10 @@ const validateValue = (prop: string, value: string) => {
  * @param props - The props object containing values for the style props.
  * @returns An array of class names.
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const propsToClassNames = <P extends Record<string, any>>(
   styleProps: StyleProps,
-  props: StylePropTypes<typeof styleProps> & P
+  props: StylePropTypes<typeof styleProps> & P,
 ): { stylePropClassNames: Array<string>; restProps: P } => {
   const stylePropClassNames: Array<string> = [];
   const restProps = {} as P;
@@ -59,22 +60,22 @@ export const propsToClassNames = <P extends Record<string, any>>(
       stylePropClassNames.push(
         `${moxConfig.prefix}-${propKey}-${value.replace(
           /[^a-zA-Z0-9-]/g,
-          "-"
-        )}${state}`
+          "-",
+        )}${state}`,
       );
     } else if (typeof value === "object" && value !== null) {
       // Or an object with breakpoints is given
       // e.g. inlineSize={{ min640: "xl", max640: "md" }}
       for (const [breakpoint, responsiveValue] of Object.entries(value) as [
         string,
-        string
+        string,
       ][]) {
         if (!validateValue(propKey, responsiveValue)) continue;
         stylePropClassNames.push(
           `${moxConfig.prefix}-${propKey}-${responsiveValue.replace(
             /[^a-zA-Z0-9-]/g,
-            "-"
-          )}@${breakpoint}${state}`
+            "-",
+          )}@${breakpoint}${state}`,
         );
       }
     }

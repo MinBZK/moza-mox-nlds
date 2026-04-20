@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { propsToClassNames } from "./propsToClassNames";
-import type { StyleProps } from "../uiAtoms/AtomTypes";
+import type { StyleProps, StylePropTypes } from "../uiAtoms/AtomTypes";
 
 describe("propsToClassNames helper", () => {
   let consoleWarnSpy: ReturnType<typeof vi.spyOn>;
@@ -24,7 +24,7 @@ describe("propsToClassNames helper", () => {
 
       const { stylePropClassNames, restProps } = propsToClassNames(
         styleProps,
-        props
+        props,
       );
 
       expect(stylePropClassNames).toEqual(["mox-inlineSize-xl"]);
@@ -42,7 +42,7 @@ describe("propsToClassNames helper", () => {
 
       const { stylePropClassNames, restProps } = propsToClassNames(
         styleProps,
-        props
+        props,
       );
 
       expect(stylePropClassNames).toContain("mox-inlineSize-xl");
@@ -60,7 +60,7 @@ describe("propsToClassNames helper", () => {
 
       const { stylePropClassNames, restProps } = propsToClassNames(
         styleProps,
-        props
+        props,
       );
 
       // Special characters should be replaced with dashes
@@ -76,10 +76,12 @@ describe("propsToClassNames helper", () => {
 
       const { stylePropClassNames, restProps } = propsToClassNames(
         styleProps,
-        props
+        props,
       );
 
-      expect(stylePropClassNames).toEqual(["mox-underlineHover-underline-hover"]);
+      expect(stylePropClassNames).toEqual([
+        "mox-underlineHover-underline-hover",
+      ]);
       expect(restProps).toEqual({});
     });
 
@@ -89,18 +91,19 @@ describe("propsToClassNames helper", () => {
         inlineSize: "invalid-value",
       };
 
-      const { stylePropClassNames, restProps } = propsToClassNames(
+      const { stylePropClassNames, restProps: _restProps } = propsToClassNames(
         styleProps,
-        props
+        props,
       );
 
       expect(stylePropClassNames).toEqual([]);
       expect(consoleWarnSpy).toHaveBeenCalledWith(
-        expect.stringContaining("is not a valid value")
+        expect.stringContaining("is not a valid value"),
       );
     });
 
     it("should skip undefined props in moxConfig and add to restProps", () => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const styleProps: StyleProps = ["nonExistentProp" as any];
       const props = {
         nonExistentProp: "value",
@@ -108,7 +111,7 @@ describe("propsToClassNames helper", () => {
 
       const { stylePropClassNames, restProps } = propsToClassNames(
         styleProps,
-        props
+        props,
       );
 
       // Props not in moxConfig are added to restProps, not warned about
@@ -120,13 +123,13 @@ describe("propsToClassNames helper", () => {
   describe("Test Case 5: Responsive style props conversion", () => {
     it("should correctly convert responsive style props to CSS class names", () => {
       const styleProps: StyleProps = ["inlineSize"];
-      const props = {
+      const props: StylePropTypes<typeof styleProps> = {
         inlineSize: { mobileMin: "xl", tabletMin: "lg" },
       };
 
       const { stylePropClassNames, restProps } = propsToClassNames(
         styleProps,
-        props
+        props,
       );
 
       expect(stylePropClassNames).toContain("mox-inlineSize-xl@mobileMin");
@@ -137,7 +140,7 @@ describe("propsToClassNames helper", () => {
 
     it("should handle multiple responsive breakpoints for a single property", () => {
       const styleProps: StyleProps = ["padding"];
-      const props = {
+      const props: StylePropTypes<typeof styleProps> = {
         padding: {
           mobileMin: "sm",
           mobileMax: "md",
@@ -148,7 +151,7 @@ describe("propsToClassNames helper", () => {
 
       const { stylePropClassNames, restProps } = propsToClassNames(
         styleProps,
-        props
+        props,
       );
 
       expect(stylePropClassNames).toContain("mox-padding-sm@mobileMin");
@@ -161,13 +164,13 @@ describe("propsToClassNames helper", () => {
 
     it("should handle container query breakpoints", () => {
       const styleProps: StyleProps = ["inlineSize"];
-      const props = {
+      const props: StylePropTypes<typeof styleProps> = {
         inlineSize: { cq200Min: "xs", cq400Min: "md", cq600Max: "lg" },
       };
 
-      const { stylePropClassNames, restProps } = propsToClassNames(
+      const { stylePropClassNames, restProps: _restProps } = propsToClassNames(
         styleProps,
-        props
+        props,
       );
 
       expect(stylePropClassNames).toContain("mox-inlineSize-xs@cq200Min");
@@ -178,17 +181,18 @@ describe("propsToClassNames helper", () => {
 
     it("should correctly separate non-style props from responsive style props", () => {
       const styleProps: StyleProps = ["inlineSize", "padding"];
-      const props = {
-        inlineSize: { mobileMin: "xl" },
-        padding: { tabletMin: "md" },
-        onClick: () => {},
-        className: "custom",
-        "data-testid": "test",
-      };
+      const props: StylePropTypes<typeof styleProps> & Record<string, unknown> =
+        {
+          inlineSize: { mobileMin: "xl" },
+          padding: { tabletMin: "md" },
+          onClick: () => {},
+          className: "custom",
+          "data-testid": "test",
+        };
 
       const { stylePropClassNames, restProps } = propsToClassNames(
         styleProps,
-        props
+        props,
       );
 
       expect(stylePropClassNames).toContain("mox-inlineSize-xl@mobileMin");
@@ -203,16 +207,17 @@ describe("propsToClassNames helper", () => {
 
     it("should handle mix of single and responsive props", () => {
       const styleProps: StyleProps = ["inlineSize", "padding", "gap"];
-      const props = {
-        inlineSize: "xl", // single value
-        padding: { mobileMin: "md", tabletMin: "lg" }, // responsive
-        gap: "sm", // single value
-        id: "test-id",
-      };
+      const props: StylePropTypes<typeof styleProps> & Record<string, unknown> =
+        {
+          inlineSize: "xl", // single value
+          padding: { mobileMin: "md", tabletMin: "lg" }, // responsive
+          gap: "sm", // single value
+          id: "test-id",
+        };
 
       const { stylePropClassNames, restProps } = propsToClassNames(
         styleProps,
-        props
+        props,
       );
 
       expect(stylePropClassNames).toContain("mox-inlineSize-xl");
@@ -225,20 +230,17 @@ describe("propsToClassNames helper", () => {
 
     it("should handle responsive props with state modifiers", () => {
       const styleProps: StyleProps = ["underlineHover"];
-      const props = {
+      const props: StylePropTypes<typeof styleProps> = {
         underlineHover: { mobileMin: "underline", tabletMin: "none" },
       };
 
-      const { stylePropClassNames, restProps } = propsToClassNames(
-        styleProps,
-        props
-      );
+      const { stylePropClassNames } = propsToClassNames(styleProps, props);
 
       expect(stylePropClassNames).toContain(
-        "mox-underlineHover-underline@mobileMin-hover"
+        "mox-underlineHover-underline@mobileMin-hover",
       );
       expect(stylePropClassNames).toContain(
-        "mox-underlineHover-none@tabletMin-hover"
+        "mox-underlineHover-none@tabletMin-hover",
       );
       expect(stylePropClassNames).toHaveLength(2);
     });
@@ -247,31 +249,25 @@ describe("propsToClassNames helper", () => {
       const styleProps: StyleProps = ["inlineSize"];
       const props = {
         inlineSize: { mobileMin: "invalid-value", tabletMin: "xl" },
-      };
+      } as unknown as StylePropTypes<typeof styleProps>; // fake type to allow invalid value
 
-      const { stylePropClassNames, restProps } = propsToClassNames(
-        styleProps,
-        props
-      );
+      const { stylePropClassNames } = propsToClassNames(styleProps, props);
 
       // Only the valid value should be included
       expect(stylePropClassNames).toContain("mox-inlineSize-xl@tabletMin");
       expect(stylePropClassNames).toHaveLength(1);
       expect(consoleWarnSpy).toHaveBeenCalledWith(
-        expect.stringContaining("is not a valid value")
+        expect.stringContaining("is not a valid value"),
       );
     });
 
     it("should handle special characters in responsive option values", () => {
       const styleProps: StyleProps = ["borderRadius"];
-      const props = {
+      const props: StylePropTypes<typeof styleProps> = {
         borderRadius: { mobileMin: "1px", tabletMin: "2px" },
       };
 
-      const { stylePropClassNames, restProps } = propsToClassNames(
-        styleProps,
-        props
-      );
+      const { stylePropClassNames } = propsToClassNames(styleProps, props);
 
       expect(stylePropClassNames).toContain("mox-borderRadius-1px@mobileMin");
       expect(stylePropClassNames).toContain("mox-borderRadius-2px@tabletMin");
@@ -289,7 +285,7 @@ describe("propsToClassNames helper", () => {
 
       const { stylePropClassNames, restProps } = propsToClassNames(
         styleProps,
-        props
+        props,
       );
 
       expect(stylePropClassNames).toEqual([]);
@@ -305,7 +301,7 @@ describe("propsToClassNames helper", () => {
 
       const { stylePropClassNames, restProps } = propsToClassNames(
         styleProps,
-        props
+        props,
       );
 
       expect(stylePropClassNames).toEqual([]);
@@ -318,11 +314,11 @@ describe("propsToClassNames helper", () => {
         inlineSize: null,
         padding: undefined,
         gap: "sm",
-      };
+      } as unknown as StylePropTypes<typeof styleProps>;
 
       const { stylePropClassNames, restProps } = propsToClassNames(
         styleProps,
-        props
+        props,
       );
 
       // inlineSize is null (not a string), so it's skipped and not converted
@@ -349,7 +345,7 @@ describe("propsToClassNames helper", () => {
 
       const { stylePropClassNames, restProps } = propsToClassNames(
         styleProps,
-        props
+        props,
       );
 
       expect(stylePropClassNames).toEqual(["mox-inlineSize-xl"]);

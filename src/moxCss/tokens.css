@@ -1,17 +1,14 @@
 /**
  * Do not edit directly, this file was auto-generated.
- * Generated on Tue, 14 Apr 2026 16:56:16 GMT
+ * Generated on Mon, 20 Apr 2026 12:08:12 GMT
  */
 
 :root {
   --mox-viewport-min: 360px;
   --mox-viewport-max: 1440px;
-  --mox-font-scale-const-min-f0: 16px; /** Currently it is not possible to use a rem value for these calculations */
-  --mox-font-scale-const-min-r: 2px; /** Ratio. Scaling factor at the start of the scale (min) */
-  --mox-font-scale-const-min-n: 5px; /** Number of steps from the base-size in the scale */
-  --mox-font-scale-const-max-f0: 20px; /** Currently it is not possible to use a rem value for these calculations */
-  --mox-font-scale-const-max-r: 2.8px; /** Ratio. Scaling factor at the start of the scale (max) */
-  --mox-font-scale-const-max-n: 5px; /** Number of steps from the base-size in the scale */
+  --mox-font-scale-const-f: 1.2px; /** Scaling factor for each step */
+  --mox-font-scale-const-min: 16px; /** Minimal font-size. Currently it is not possible to use a rem value for these calculations */
+  --mox-font-scale-const-max: 20px; /** Maximal font-size. Currently it is not possible to use a rem value for these calculations */
   --mox-space-lint-inline-size: 48px; /** Breedte van het Rijksoverheid lint */
   --mox-color-lintblauw-50: #dce3ea; /** Lintblauw 15% */
   --mox-color-lintblauw-100: #b8c6d5; /** Lintblauw 30% */
@@ -165,50 +162,50 @@
   --mox-color-zwart: #000000;
   --mox-color-transparent: rgba(0, 0, 0, 0);
   --mox-viewport-width: var(--mox-viewport-min);
-  --mox-font-scale-f-4-min: calc(5*(var(--mox-font-scale-const-min-f0)*var(--mox-font-scale-const-min-r)^(-4/var(--mox-font-scale-const-min-n))/5),1);
-  --mox-font-scale-f-4-max: calc(5*(var(--mox-font-scale-const-max-f0)*var(--mox-font-scale-const-max-r)^(-4/var(--mox-font-scale-const-max-n))/5),1);
-  --mox-font-scale-f-4-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f-4-max) - var(--mox-viewport-max) * var(--mox-font-scale-f-4-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max)));
-  --mox-font-scale-f-3-min: calc(5*(var(--mox-font-scale-const-min-f0)*var(--mox-font-scale-const-min-r)^(-3/var(--mox-font-scale-const-min-n))/5),1);
-  --mox-font-scale-f-3-max: calc(5*(var(--mox-font-scale-const-max-f0)*var(--mox-font-scale-const-max-r)^(-3/var(--mox-font-scale-const-max-n))/5),1);
-  --mox-font-scale-f-3-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f-3-max) - var(--mox-viewport-max) * var(--mox-font-scale-f-3-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max)));
-  --mox-font-scale-f-2-min: calc(5*(var(--mox-font-scale-const-min-f0)*var(--mox-font-scale-const-min-r)^(-2/var(--mox-font-scale-const-min-n))/5),1);
-  --mox-font-scale-f-2-max: calc(5*(var(--mox-font-scale-const-max-f0)*var(--mox-font-scale-const-max-r)^(-2/var(--mox-font-scale-const-max-n))/5),1);
-  --mox-font-scale-f-2-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f-2-max) - var(--mox-viewport-max) * var(--mox-font-scale-f-2-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max)));
-  --mox-font-scale-f-1-min: calc(5*(var(--mox-font-scale-const-min-f0)*var(--mox-font-scale-const-min-r)^(-1/var(--mox-font-scale-const-min-n))/5),1);
-  --mox-font-scale-f-1-max: calc(5*(var(--mox-font-scale-const-max-f0)*var(--mox-font-scale-const-max-r)^(-1/var(--mox-font-scale-const-max-n))/5),1);
-  --mox-font-scale-f-1-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f-1-max) - var(--mox-viewport-max) * var(--mox-font-scale-f-1-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max)));
-  --mox-font-scale-f0-min: calc(5*(var(--mox-font-scale-const-min-f0)*var(--mox-font-scale-const-min-r)^(0/var(--mox-font-scale-const-min-n))/5),1);
-  --mox-font-scale-f0-max: calc(5*(var(--mox-font-scale-const-max-f0)*var(--mox-font-scale-const-max-r)^(0/var(--mox-font-scale-const-max-n))/5),1);
-  --mox-font-scale-f0-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f0-max) - var(--mox-viewport-max) * var(--mox-font-scale-f0-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max)));
-  --mox-font-scale-f1-min: calc(5*(var(--mox-font-scale-const-min-f0)*var(--mox-font-scale-const-min-r)^(1/var(--mox-font-scale-const-min-n))/5),1);
-  --mox-font-scale-f1-max: calc(5*(var(--mox-font-scale-const-max-f0)*var(--mox-font-scale-const-max-r)^(1/var(--mox-font-scale-const-max-n))/5),1);
+  --mox-font-scale-f-4-min: calc((var(--mox-font-scale-const-min)*pow(var(--mox-font-scale-const-f), -4)),1);
+  --mox-font-scale-f-4-max: calc((var(--mox-font-scale-const-max)*pow(var(--mox-font-scale-const-f), -4)),1);
+  --mox-font-scale-f-4-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f-4-max) - var(--mox-viewport-max) * var(--mox-font-scale-f-4-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max))); /** Viewport scaling base offset */
+  --mox-font-scale-f-3-min: calc((var(--mox-font-scale-const-min)*pow(var(--mox-font-scale-const-f), -3)),1);
+  --mox-font-scale-f-3-max: calc((var(--mox-font-scale-const-max)*pow(var(--mox-font-scale-const-f), -3)),1);
+  --mox-font-scale-f-3-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f-3-max) - var(--mox-viewport-max) * var(--mox-font-scale-f-3-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max))); /** Viewport scaling base offset */
+  --mox-font-scale-f-2-min: calc((var(--mox-font-scale-const-min)*pow(var(--mox-font-scale-const-f), -2)),1);
+  --mox-font-scale-f-2-max: calc((var(--mox-font-scale-const-max)*pow(var(--mox-font-scale-const-f), -2)),1);
+  --mox-font-scale-f-2-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f-2-max) - var(--mox-viewport-max) * var(--mox-font-scale-f-2-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max))); /** Viewport scaling base offset */
+  --mox-font-scale-f-1-min: calc((var(--mox-font-scale-const-min)*pow(var(--mox-font-scale-const-f), -1)),1);
+  --mox-font-scale-f-1-max: calc((var(--mox-font-scale-const-max)*pow(var(--mox-font-scale-const-f), -1)),1);
+  --mox-font-scale-f-1-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f-1-max) - var(--mox-viewport-max) * var(--mox-font-scale-f-1-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max))); /** Viewport scaling base offset */
+  --mox-font-scale-f0-min: calc((var(--mox-font-scale-const-min)*pow(var(--mox-font-scale-const-f), 0)),1);
+  --mox-font-scale-f0-max: calc((var(--mox-font-scale-const-max)*pow(var(--mox-font-scale-const-f), 0)),1);
+  --mox-font-scale-f0-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f0-max) - var(--mox-viewport-max) * var(--mox-font-scale-f0-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max))); /** Viewport scaling base offset */
+  --mox-font-scale-f1-min: calc((var(--mox-font-scale-const-min)*pow(var(--mox-font-scale-const-f), 1)),1);
+  --mox-font-scale-f1-max: calc((var(--mox-font-scale-const-max)*pow(var(--mox-font-scale-const-f), 1)),1);
   --mox-font-scale-f1-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f1-max) - var(--mox-viewport-max) * var(--mox-font-scale-f1-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max)));
-  --mox-font-scale-f2-min: calc(5*(var(--mox-font-scale-const-min-f0)*var(--mox-font-scale-const-min-r)^(2/var(--mox-font-scale-const-min-n))/5),1);
-  --mox-font-scale-f2-max: calc(5*(var(--mox-font-scale-const-max-f0)*var(--mox-font-scale-const-max-r)^(2/var(--mox-font-scale-const-max-n))/5),1);
+  --mox-font-scale-f2-min: calc((var(--mox-font-scale-const-min)*pow(var(--mox-font-scale-const-f), 2)),1);
+  --mox-font-scale-f2-max: calc((var(--mox-font-scale-const-max)*pow(var(--mox-font-scale-const-f), 2)),1);
   --mox-font-scale-f2-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f2-max) - var(--mox-viewport-max) * var(--mox-font-scale-f2-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max)));
-  --mox-font-scale-f3-min: calc(5*(var(--mox-font-scale-const-min-f0)*var(--mox-font-scale-const-min-r)^(3/var(--mox-font-scale-const-min-n))/5),1);
-  --mox-font-scale-f3-max: calc(5*(var(--mox-font-scale-const-max-f0)*var(--mox-font-scale-const-max-r)^(3/var(--mox-font-scale-const-max-n))/5),1);
+  --mox-font-scale-f3-min: calc((var(--mox-font-scale-const-min)*pow(var(--mox-font-scale-const-f), 3)),1);
+  --mox-font-scale-f3-max: calc((var(--mox-font-scale-const-max)*pow(var(--mox-font-scale-const-f), 3)),1);
   --mox-font-scale-f3-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f3-max) - var(--mox-viewport-max) * var(--mox-font-scale-f3-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max)));
-  --mox-font-scale-f4-min: calc(5*(var(--mox-font-scale-const-min-f0)*var(--mox-font-scale-const-min-r)^(4/var(--mox-font-scale-const-min-n))/5),1);
-  --mox-font-scale-f4-max: calc(5*(var(--mox-font-scale-const-max-f0)*var(--mox-font-scale-const-max-r)^(4/var(--mox-font-scale-const-max-n))/5),1);
+  --mox-font-scale-f4-min: calc((var(--mox-font-scale-const-min)*pow(var(--mox-font-scale-const-f), 4)),1);
+  --mox-font-scale-f4-max: calc((var(--mox-font-scale-const-max)*pow(var(--mox-font-scale-const-f), 4)),1);
   --mox-font-scale-f4-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f4-max) - var(--mox-viewport-max) * var(--mox-font-scale-f4-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max)));
-  --mox-font-scale-f5-min: calc(5*(var(--mox-font-scale-const-min-f0)*var(--mox-font-scale-const-min-r)^(5/var(--mox-font-scale-const-min-n))/5),1);
-  --mox-font-scale-f5-max: calc(5*(var(--mox-font-scale-const-max-f0)*var(--mox-font-scale-const-max-r)^(5/var(--mox-font-scale-const-max-n))/5),1);
+  --mox-font-scale-f5-min: calc((var(--mox-font-scale-const-min)*pow(var(--mox-font-scale-const-f), 5)),1);
+  --mox-font-scale-f5-max: calc((var(--mox-font-scale-const-max)*pow(var(--mox-font-scale-const-f), 5)),1);
   --mox-font-scale-f5-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f5-max) - var(--mox-viewport-max) * var(--mox-font-scale-f5-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max)));
-  --mox-font-scale-f6-min: calc(5*(var(--mox-font-scale-const-min-f0)*var(--mox-font-scale-const-min-r)^(6/var(--mox-font-scale-const-min-n))/5),1);
-  --mox-font-scale-f6-max: calc(5*(var(--mox-font-scale-const-max-f0)*var(--mox-font-scale-const-max-r)^(6/var(--mox-font-scale-const-max-n))/5),1);
+  --mox-font-scale-f6-min: calc((var(--mox-font-scale-const-min)*pow(var(--mox-font-scale-const-f), 6)),1);
+  --mox-font-scale-f6-max: calc((var(--mox-font-scale-const-max)*pow(var(--mox-font-scale-const-f), 6)),1);
   --mox-font-scale-f6-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f6-max) - var(--mox-viewport-max) * var(--mox-font-scale-f6-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max)));
-  --mox-font-scale-f7-min: calc(5*(var(--mox-font-scale-const-min-f0)*var(--mox-font-scale-const-min-r)^(7/var(--mox-font-scale-const-min-n))/5),1);
-  --mox-font-scale-f7-max: calc(5*(var(--mox-font-scale-const-max-f0)*var(--mox-font-scale-const-max-r)^(7/var(--mox-font-scale-const-max-n))/5),1);
+  --mox-font-scale-f7-min: calc((var(--mox-font-scale-const-min)*pow(var(--mox-font-scale-const-f), 7)),1);
+  --mox-font-scale-f7-max: calc((var(--mox-font-scale-const-max)*pow(var(--mox-font-scale-const-f), 7)),1);
   --mox-font-scale-f7-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f7-max) - var(--mox-viewport-max) * var(--mox-font-scale-f7-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max)));
-  --mox-font-scale-f8-min: calc(5*(var(--mox-font-scale-const-min-f0)*var(--mox-font-scale-const-min-r)^(8/var(--mox-font-scale-const-min-n))/5),1);
-  --mox-font-scale-f8-max: calc(5*(var(--mox-font-scale-const-max-f0)*var(--mox-font-scale-const-max-r)^(8/var(--mox-font-scale-const-max-n))/5),1);
+  --mox-font-scale-f8-min: calc((var(--mox-font-scale-const-min)*pow(var(--mox-font-scale-const-f), 8)),1);
+  --mox-font-scale-f8-max: calc((var(--mox-font-scale-const-max)*pow(var(--mox-font-scale-const-f), 8)),1);
   --mox-font-scale-f8-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f8-max) - var(--mox-viewport-max) * var(--mox-font-scale-f8-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max)));
-  --mox-font-scale-f9-min: calc(5*(var(--mox-font-scale-const-min-f0)*var(--mox-font-scale-const-min-r)^(9/var(--mox-font-scale-const-min-n))/5),1);
-  --mox-font-scale-f9-max: calc(5*(var(--mox-font-scale-const-max-f0)*var(--mox-font-scale-const-max-r)^(9/var(--mox-font-scale-const-max-n))/5),1);
+  --mox-font-scale-f9-min: calc((var(--mox-font-scale-const-min)*pow(var(--mox-font-scale-const-f), 9)),1);
+  --mox-font-scale-f9-max: calc((var(--mox-font-scale-const-max)*pow(var(--mox-font-scale-const-f), 9)),1);
   --mox-font-scale-f9-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f9-max) - var(--mox-viewport-max) * var(--mox-font-scale-f9-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max)));
-  --mox-font-scale-f10-min: calc(5*(var(--mox-font-scale-const-min-f0)*var(--mox-font-scale-const-min-r)^(10/var(--mox-font-scale-const-min-n))/5),1);
-  --mox-font-scale-f10-max: calc(5*(var(--mox-font-scale-const-max-f0)*var(--mox-font-scale-const-max-r)^(10/var(--mox-font-scale-const-max-n))/5),1);
+  --mox-font-scale-f10-min: calc((var(--mox-font-scale-const-min)*pow(var(--mox-font-scale-const-f), 10)),1);
+  --mox-font-scale-f10-max: calc((var(--mox-font-scale-const-max)*pow(var(--mox-font-scale-const-f), 10)),1);
   --mox-font-scale-f10-r: calc(( var(--mox-viewport-min) * var(--mox-font-scale-f10-max) - var(--mox-viewport-max) * var(--mox-font-scale-f10-min)) / (var(--mox-viewport-min)-var(--mox-viewport-max)));
   --mox-color-primary: var(--mox-color-hemelblauw-500); /** Primary color */
   --mox-color-primary-contrast: var(--mox-color-wit); /** Primary contrast color */
@@ -306,15 +303,15 @@
   --mox-color-danger-subtle-2-contrast: var(--mox-color-zwart); /** Danger subtle 2 contrast color */
   --mox-color-danger-subtle-2-hover: var(--mox-color-rood-200); /** Danger subtle 2 hover color */
   --mox-color-danger-subtle-2-hover-contrast: var(--mox-color-zwart); /** Danger subtle 2 hover contrast color */
-  --mox-font-scale-f-4-v: calc(100 * (var(--mox-font-scale-f-4-max)-var(--mox-font-scale-f-4-min)) / (var(--mox-viewport-max)-var(--mox-viewport-min)));
+  --mox-font-scale-f-4-v: calc(100 * (var(--mox-font-scale-f-4-max)-var(--mox-font-scale-f-4-min)) / (var(--mox-viewport-max)-var(--mox-viewport-min))); /** Viewport scaling factor */
   --mox-font-scale-f-4-fluid: calc(round((var(--mox-viewport-width)/100) * var(--mox-font-scale-f-4-v) + var(--mox-font-scale-f-4-r)));
-  --mox-font-scale-f-3-v: calc(100 * (var(--mox-font-scale-f-3-max)-var(--mox-font-scale-f-3-min)) / (var(--mox-viewport-max)-var(--mox-viewport-min)));
+  --mox-font-scale-f-3-v: calc(100 * (var(--mox-font-scale-f-3-max)-var(--mox-font-scale-f-3-min)) / (var(--mox-viewport-max)-var(--mox-viewport-min))); /** Viewport scaling factor */
   --mox-font-scale-f-3-fluid: calc(round((var(--mox-viewport-width)/100) * var(--mox-font-scale-f-3-v) + var(--mox-font-scale-f-3-r)));
-  --mox-font-scale-f-2-v: calc(100 * (var(--mox-font-scale-f-2-max)-var(--mox-font-scale-f-2-min)) / (var(--mox-viewport-max)-var(--mox-viewport-min)));
+  --mox-font-scale-f-2-v: calc(100 * (var(--mox-font-scale-f-2-max)-var(--mox-font-scale-f-2-min)) / (var(--mox-viewport-max)-var(--mox-viewport-min))); /** Viewport scaling factor */
   --mox-font-scale-f-2-fluid: calc(round((var(--mox-viewport-width)/100) * var(--mox-font-scale-f-2-v) + var(--mox-font-scale-f-2-r)));
-  --mox-font-scale-f-1-v: calc(100 * (var(--mox-font-scale-f-1-max)-var(--mox-font-scale-f-1-min)) / (var(--mox-viewport-max)-var(--mox-viewport-min)));
+  --mox-font-scale-f-1-v: calc(100 * (var(--mox-font-scale-f-1-max)-var(--mox-font-scale-f-1-min)) / (var(--mox-viewport-max)-var(--mox-viewport-min))); /** Viewport scaling factor */
   --mox-font-scale-f-1-fluid: calc(round((var(--mox-viewport-width)/100) * var(--mox-font-scale-f-1-v) + var(--mox-font-scale-f-1-r)));
-  --mox-font-scale-f0-v: calc(100 * (var(--mox-font-scale-f0-max)-var(--mox-font-scale-f0-min)) / (var(--mox-viewport-max)-var(--mox-viewport-min)));
+  --mox-font-scale-f0-v: calc(100 * (var(--mox-font-scale-f0-max)-var(--mox-font-scale-f0-min)) / (var(--mox-viewport-max)-var(--mox-viewport-min))); /** Viewport scaling factor */
   --mox-font-scale-f0-fluid: calc(round((var(--mox-viewport-width)/100) * var(--mox-font-scale-f0-v) + var(--mox-font-scale-f0-r)));
   --mox-font-scale-f1-v: calc(100 * (var(--mox-font-scale-f1-max)-var(--mox-font-scale-f1-min)) / (var(--mox-viewport-max)-var(--mox-viewport-min)));
   --mox-font-scale-f1-fluid: calc(round((var(--mox-viewport-width)/100) * var(--mox-font-scale-f1-v) + var(--mox-font-scale-f1-r)));

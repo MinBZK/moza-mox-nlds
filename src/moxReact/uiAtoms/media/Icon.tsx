@@ -19,7 +19,7 @@ export const iconStyleProps = [
  */
 export const MoxAtomIcon = <T extends ElementType = "div">({
   children,
-  as,
+  // as, // Not possible right now with BS-icons
   className,
   ref,
   icon,

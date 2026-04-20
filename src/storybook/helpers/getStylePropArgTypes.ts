@@ -36,7 +36,7 @@ export const getStylePropArgTypes = (
               `${" ".repeat(
                 i + Object.keys(moxConfig.viewportBreakpoints).length,
               )}`,
-              ,
+              null,
               `==== ${key} (${value}px) ====`,
               ...Object.keys(moxConfig.props[prop].options).map(
                 (option) => `${option}@${key}Min`,

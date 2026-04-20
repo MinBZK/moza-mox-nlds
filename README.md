@@ -1,11 +1,6 @@
 # Todo's:
 
-- Storybook: show composites of Molecules with Atoms in code-view.
-- Example to use responsive values for e.g. `padding: { mq640px: 'md' }` etc
 - Atoms: layout (shelf), checkbox, text label, etc
-- Molecules: checkboxField
-- Organism: checkboxFormField with validation?
-- Template: form with checkboxFormField with multiple?
 - Research: textInline / textBlock / textStyle needed? just one? Inheritance of styles (inc. Underline for links)
 - polyfill `text-box` in css for cap-baseline sizes
   - Link Atom, LinkText Atom (for text-box?)
@@ -32,20 +27,6 @@
 - Show (almost) typesafe way of using React-components with CSS-classnames
 - Setup **Definition of Done** type set of rules for creating any components for consistency, and (re)usability with predictable rules for `ref`s, `className`, `props`. Also for `as` prop to render component in different tag to allow for easier usage in Next / use links as a button / etc.
 - Setup `use client` to allow for usage of components in react-server-components in NextJS.
-
-## Current issues
-
-- Inconsistent APIs with components from different sources
-  - Sometimes a `component` prop is available, sometimes not. Sometimes component has white-space around it, sometimes not
-
-## Solution
-
-- One space-system to rule them all: typography, paddings, gaps, etc all use the same clamped space-values (`3xl`, `md`, etc). `md` is the base-size, used for a regular capital letter.
-- Start with CSS:
-  - React, Vue, etc components can be build on the shared css-classes
-- Decrease the token-list:
-  - `tokens` will only be used for Atoms (see below), only for lower levels as exception
-- Atomic design system
 
 ### Atomic building blocks
 
@@ -76,16 +57,17 @@
 />
 ```
 
-#### Level 2: Molecules - `React only`
+#### Level 2: Components - `React only`
 
 - Consists of single/more **Atoms**
 - Globally adjustable to build your own variation based on **Atoms**
+- Does not use `tokens`
 - Locally adjustable by component API:
   - Usually `ref` for any focusable Atoms inside the Molecule, like a `link`
   - Always `classNames`, additional props (like `styles`) for top component
   - Usually `as` prop for any interactive component
 - Could change in API: not as robust as Atoms
-- CSS: Always styled in a @layer `molecules`, to allow for easy specificity overrides
+- CSS: Always styled in a @layer `components`, to allow for easy specificity overrides
 - Examples: `checkboxField` which is built with atoms:
 
 ```tsx
@@ -94,18 +76,6 @@
     <Text as="label">{children}</Text>
   </Shelf>
 ```
-
-#### Level 3: Organisms - `React only`
-
-- Consists of single/more **Atoms** and/or **Molecules**
-- Globally adjustable to build your own variation on **Atoms** and/or **Molecules**
-- Locally adjustable by component API:
-  - Always `classNames`, additional props (like `styles`) for top component
-  - Sometimes `as` prop for any interactive component
-  - Sometimes `asFactory` prop for multiple interactive components (e.g. breadcrumb, navList)
-- Could change in API: less robust than Molecules & Atoms
-- CSS: Always styled in a @layer `organisms`, to allow for easy specificity overrides
-- Examples: `checkboxFieldBlock` which is built with atoms / molecules:
 
 ```tsx
 <Stack gap="xs">
