@@ -32,20 +32,27 @@ StyleDictionary.registerAction({
 // Register the tokens-studio sd-transforms package
 register(StyleDictionary, { excludeParentKeys: true });
 
-StyleDictionary.registerAction({
-  name: "fixCSSTokens",
-  do: async function (_dictionary, config) {
-    const buildPath = config.buildPath || "dist/";
-    const files = config.files || [];
-    // TS allows roundTo(), exponentiation (^) and basic calculations (without `calc()`) in their values, but these are not valid CSS.
-    for (const file of files) {
-      const filePath = posix.join(buildPath, file.destination);
-      console.log("🔧 fixing css:", filePath);
-      await fixCSSFile(filePath);
-    }
+// Register a custom format for CSS variables with @layer
+StyleDictionary.registerFormat({
+  name: "css/variables-with-layer",
+  format: function ({ dictionary, options = {} }) {
+    const { selector = ":root", layer = "tokens" } = options;
+
+    // Generate the CSS variables (similar to the built-in format)
+    const variables = dictionary.allTokens
+      .map((token) => {
+        const comment = token.$description
+          ? `  /* ${token.$description} */`
+          : "";
+        const value = token.$value;
+        const name = token.name;
+        return `--${name}: ${value};${comment}`;
+      })
+      .join("\n");
+
+    // Wrap in @layer
+    return `@layer ${layer} {\n${selector} {\n${variables}\n}\n}`;
   },
-  // No undo action available - files are deleted during cleanup.
-  undo: function () {},
 });
 
 // Define the configuration for Style Dictionary
@@ -58,15 +65,16 @@ const config = {
       transformGroup: "tokens-studio",
       transforms: ["name/kebab", "name/cti/omit-default"],
       buildPath: "./src/moxCss/",
-      actions: ["fixCSSTokens"],
+      // actions: ["fixCSSTokens"],
       files: [
         {
           destination: "tokens.css",
-          format: "css/variables",
+          format: "css/variables-with-layer", // Use the custom format
           options: {
             fileHeader: "nlds-mox-header", // Explicitly apply the custom header
             selector: ":root",
-            outputReferences: true,
+            layer: "tokens",
+            // outputReferences: true,
           },
         },
       ],

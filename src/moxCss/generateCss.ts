@@ -160,6 +160,7 @@ ${css}
 
 const generateClampSpaces = () => {
   // loop through all spaces and generate separate files for each space with the clamp values
+  // We calculate the fluid size, based on calculated CSS-vars. Since the `v` value is converted to px, it is divided by `1px` to get a unitless value which we can multiply with the viewport-width.
   spaces.forEach((space) => {
     const clampValues = `
 /**
@@ -169,21 +170,15 @@ const generateClampSpaces = () => {
   * Responsive spacing for the space-size \`${space}\`
 */
 
-@layer base {
-  body {
-    --clamp-slope-${space}: calc(
-      (var(--mox-space-${space}-max) - var(--mox-space-${space}-min)) /
-        (var(--viewport-max-inline-size) - var(--viewport-min-inline-size))
+@layer tokens.overrides {
+  :root {
+    --mox-font-scale-${space}-fluid: calc(1vw * calc(var(--mox-font-scale-${space}-v) / 1px) + var(--mox-font-scale-${space}-r));
+    --mox-font-scale-${space}: clamp(
+      var(--mox-font-scale-${space}-min),
+      var(--mox-font-scale-${space}-fluid),
+      var(--mox-font-scale-${space}-max)
     );
-    --clamp-intercept-${space}: calc(
-      var(--mox-space-${space}-min) - var(--viewport-min-inline-size) *
-        var(--clamp-slope-${space})
-    );
-    --mox-space-${space}: clamp(
-      var(--mox-space-${space}-min),
-      calc(var(--clamp-intercept-${space}) + var(--clamp-slope-${space}) * 100vw),
-      var(--mox-space-${space}-max)
-    );
+    --mox-space-${space}: var(--mox-font-scale-${space});
   }
 }
         `;
@@ -208,16 +203,11 @@ const generateClampSpaces = () => {
       ...spaces.map((space) => `@import 'clamp-${space}.css';`),
       `
 /** These imports calculate the correct clamp value for fluid scaling for each space-size (md, xs, etc): 
-  *
-  * slope = (space-max - space-min) / (viewport-max - viewport-min)
-  * intercept = min - (viewport-min * slope)
-  * clamped-size = clamp(space-min, calc(intercept + slope * 100vw), space-max)
-  *
   * See: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
 */
 
-@layer base {
-  body {
+@layer tokens {
+  :root {
     --viewport-min-inline-size: ${moxConfig.clampViewportInlineSize.min}px;
     --viewport-max-inline-size: ${moxConfig.clampViewportInlineSize.max}px;
   }

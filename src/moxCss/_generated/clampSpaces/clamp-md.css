@@ -6,21 +6,15 @@
   * Responsive spacing for the space-size `md`
 */
 
-@layer base {
-  body {
-    --clamp-slope-md: calc(
-      (var(--mox-space-md-max) - var(--mox-space-md-min)) /
-        (var(--viewport-max-inline-size) - var(--viewport-min-inline-size))
+@layer tokens {
+  :root {
+    --mox-font-scale-md-fluid: calc(1vw * calc(var(--mox-font-scale-md-v) / 1px) + var(--mox-font-scale-md-r));
+    --mox-font-scale-md: clamp(
+      var(--mox-font-scale-md-min),
+      var(--mox-font-scale-md-fluid),
+      var(--mox-font-scale-md-max)
     );
-    --clamp-intercept-md: calc(
-      var(--mox-space-md-min) - var(--viewport-min-inline-size) *
-        var(--clamp-slope-md)
-    );
-    --mox-space-md: clamp(
-      var(--mox-space-md-min),
-      calc(var(--clamp-intercept-md) + var(--clamp-slope-md) * 100vw),
-      var(--mox-space-md-max)
-    );
+    --mox-space-md: var(--mox-font-scale-md);
   }
 }
         

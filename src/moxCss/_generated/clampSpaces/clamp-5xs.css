@@ -6,21 +6,15 @@
   * Responsive spacing for the space-size `5xs`
 */
 
-@layer base {
-  body {
-    --clamp-slope-5xs: calc(
-      (var(--mox-space-5xs-max) - var(--mox-space-5xs-min)) /
-        (var(--viewport-max-inline-size) - var(--viewport-min-inline-size))
+@layer tokens {
+  :root {
+    --mox-font-scale-5xs-fluid: calc(1vw * calc(var(--mox-font-scale-5xs-v) / 1px) + var(--mox-font-scale-5xs-r));
+    --mox-font-scale-5xs: clamp(
+      var(--mox-font-scale-5xs-min),
+      var(--mox-font-scale-5xs-fluid),
+      var(--mox-font-scale-5xs-max)
     );
-    --clamp-intercept-5xs: calc(
-      var(--mox-space-5xs-min) - var(--viewport-min-inline-size) *
-        var(--clamp-slope-5xs)
-    );
-    --mox-space-5xs: clamp(
-      var(--mox-space-5xs-min),
-      calc(var(--clamp-intercept-5xs) + var(--clamp-slope-5xs) * 100vw),
-      var(--mox-space-5xs-max)
-    );
+    --mox-space-5xs: var(--mox-font-scale-5xs);
   }
 }
         

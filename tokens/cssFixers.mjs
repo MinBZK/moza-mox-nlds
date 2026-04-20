@@ -11,9 +11,11 @@ const varRegex = /(?<prefix>^\s*--[^:]+:\s*)(?<value>[^;]+?)(?<suffix>\s*;)/gm;
 export async function fixCSSFile(filePath) {
   let content = await readFile(filePath, "utf-8");
 
+  content = await fixRound(content);
   content = await fixRoundTo(content);
   content = await fixExponentiation(content);
   content = await fixCalc(content);
+  content = await fixLayer(content);
 
   await writeFile(filePath, content);
 }
@@ -55,9 +57,9 @@ export function fixExponentiation(content) {
 // This will strip out any roundTo() calls, as CSS doesn't support it.
 // It does allow round(), but that needs a rounding interval, which is unknown at this point.
 // See https://developer.mozilla.org/en-US/docs/Web/CSS/round
-export function fixRoundTo(content) {
+export function fixRound(content) {
   return content.replace(varRegex, (match, prefix, value, suffix) => {
-    if (!value.includes("roundTo(")) {
+    if (!value.includes("round(")) {
       return match;
     }
 
@@ -67,9 +69,9 @@ export function fixRoundTo(content) {
     let i = 0;
 
     while (i < fixedValue.length) {
-      if (fixedValue.slice(i, i + 8) === "roundTo(") {
-        // Found roundTo(, now find the matching closing parenthesis
-        i += 8; // Skip "roundTo("
+      if (fixedValue.slice(i, i + 6) === "round(") {
+        // Found round(, now find the matching closing parenthesis
+        i += 6; // Skip "round("
         let parenCount = 1;
         let start = i;
 
@@ -89,4 +91,33 @@ export function fixRoundTo(content) {
 
     return `${prefix}${result}${suffix}`;
   });
+}
+
+// This will convert roundTo(expr, precision) to round(expr, precision + 'px')
+export function fixRoundTo(content) {
+  return content.replace(varRegex, (match, prefix, value, suffix) => {
+    if (!value.includes("roundTo(")) {
+      return match;
+    }
+
+    // Replace roundTo with round and modify the second argument
+    const fixedValue = value.replace(
+      /roundTo\(([^,]+),\s*([^)]+)\)/g,
+      (_match, expr, precision) => {
+        // Append 'px' to the precision if it's a number
+        const modifiedPrecision = precision.trim().replace(/(\d+)$/, "$1px");
+        return `round(${expr}, ${modifiedPrecision})`;
+      },
+    );
+
+    return `${prefix}${fixedValue}${suffix}`;
+  });
+}
+
+// This will wrap the CSS in @layer tokens
+export function fixLayer(content) {
+  if (content.includes("@layer")) return content;
+  return content
+    .replace(/^(:root \{)/m, "@layer tokens {\n$1")
+    .replace(/(\})$/, "$1\n}");
 }

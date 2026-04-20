@@ -6,21 +6,15 @@
   * Responsive spacing for the space-size `xl`
 */
 
-@layer base {
-  body {
-    --clamp-slope-xl: calc(
-      (var(--mox-space-xl-max) - var(--mox-space-xl-min)) /
-        (var(--viewport-max-inline-size) - var(--viewport-min-inline-size))
+@layer tokens {
+  :root {
+    --mox-font-scale-xl-fluid: calc(1vw * calc(var(--mox-font-scale-xl-v) / 1px) + var(--mox-font-scale-xl-r));
+    --mox-font-scale-xl: clamp(
+      var(--mox-font-scale-xl-min),
+      var(--mox-font-scale-xl-fluid),
+      var(--mox-font-scale-xl-max)
     );
-    --clamp-intercept-xl: calc(
-      var(--mox-space-xl-min) - var(--viewport-min-inline-size) *
-        var(--clamp-slope-xl)
-    );
-    --mox-space-xl: clamp(
-      var(--mox-space-xl-min),
-      calc(var(--clamp-intercept-xl) + var(--clamp-slope-xl) * 100vw),
-      var(--mox-space-xl-max)
-    );
+    --mox-space-xl: var(--mox-font-scale-xl);
   }
 }
         

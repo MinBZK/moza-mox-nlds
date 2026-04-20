@@ -6,21 +6,15 @@
   * Responsive spacing for the space-size `3xs`
 */
 
-@layer base {
-  body {
-    --clamp-slope-3xs: calc(
-      (var(--mox-space-3xs-max) - var(--mox-space-3xs-min)) /
-        (var(--viewport-max-inline-size) - var(--viewport-min-inline-size))
+@layer tokens {
+  :root {
+    --mox-font-scale-3xs-fluid: calc(1vw * calc(var(--mox-font-scale-3xs-v) / 1px) + var(--mox-font-scale-3xs-r));
+    --mox-font-scale-3xs: clamp(
+      var(--mox-font-scale-3xs-min),
+      var(--mox-font-scale-3xs-fluid),
+      var(--mox-font-scale-3xs-max)
     );
-    --clamp-intercept-3xs: calc(
-      var(--mox-space-3xs-min) - var(--viewport-min-inline-size) *
-        var(--clamp-slope-3xs)
-    );
-    --mox-space-3xs: clamp(
-      var(--mox-space-3xs-min),
-      calc(var(--clamp-intercept-3xs) + var(--clamp-slope-3xs) * 100vw),
-      var(--mox-space-3xs-max)
-    );
+    --mox-space-3xs: var(--mox-font-scale-3xs);
   }
 }
         

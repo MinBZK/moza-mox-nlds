@@ -6,21 +6,15 @@
   * Responsive spacing for the space-size `4xl`
 */
 
-@layer base {
-  body {
-    --clamp-slope-4xl: calc(
-      (var(--mox-space-4xl-max) - var(--mox-space-4xl-min)) /
-        (var(--viewport-max-inline-size) - var(--viewport-min-inline-size))
+@layer tokens {
+  :root {
+    --mox-font-scale-4xl-fluid: calc(1vw * calc(var(--mox-font-scale-4xl-v) / 1px) + var(--mox-font-scale-4xl-r));
+    --mox-font-scale-4xl: clamp(
+      var(--mox-font-scale-4xl-min),
+      var(--mox-font-scale-4xl-fluid),
+      var(--mox-font-scale-4xl-max)
     );
-    --clamp-intercept-4xl: calc(
-      var(--mox-space-4xl-min) - var(--viewport-min-inline-size) *
-        var(--clamp-slope-4xl)
-    );
-    --mox-space-4xl: clamp(
-      var(--mox-space-4xl-min),
-      calc(var(--clamp-intercept-4xl) + var(--clamp-slope-4xl) * 100vw),
-      var(--mox-space-4xl-max)
-    );
+    --mox-space-4xl: var(--mox-font-scale-4xl);
   }
 }
         
