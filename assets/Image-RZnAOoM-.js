@@ -1,0 +1,4 @@
+import{j as m}from"./iframe-BcPoELSs.js";import{c as p}from"./clsx-B-dksMZM.js";import{p as l}from"./propsToClassNames-CYgz3h9B.js";const c=["size","blockSize","inlineSize","flex"],d=({children:e,as:s,className:o,ref:t,...n})=>{const a=s||"img",{stylePropClassNames:i,restProps:r}=l(c,n);return m.jsx(a,{ref:t,className:p("mox-image",...i,o),...r,children:e})};d.__docgenInfo={description:`Image component;
+
+Responsibilities
+1. Wrapper for image content, to apply consistent styling (e.g. color, size) across all image elements in the app.`,methods:[],displayName:"MoxAtomImage",props:{children:{required:!1,tsType:{name:"ReactNode"},description:""},className:{required:!1,tsType:{name:"string"},description:""},as:{required:!1,tsType:{name:"T"},description:""},ref:{required:!1,tsType:{name:"ReactRef",raw:"React.Ref<ElementFromElementType<T>>",elements:[{name:"unknown"}]},description:""}}};export{d as M,c as i};
