@@ -1,7 +1,6 @@
 import StyleDictionary from "style-dictionary";
 import { register } from "@tokens-studio/sd-transforms";
-import { posix } from "path";
-import { fixCSSFile } from "./cssFixers.mjs";
+import fs from "fs";
 
 StyleDictionary.registerTransform({
   name: "name/cti/omit-default",
@@ -11,22 +10,6 @@ StyleDictionary.registerTransform({
       .filter((part) => part !== "default") // Remove 'default' from the path
       .join("-");
   },
-});
-
-StyleDictionary.registerAction({
-  name: "fixCSSTokens",
-  do: async function (_dictionary, config) {
-    const buildPath = config.buildPath || "dist/";
-    const files = config.files || [];
-    // TS allows roundTo(), exponentiation (^) and basic calculations (without `calc()`) in their values, but these are not valid CSS.
-    for (const file of files) {
-      const filePath = posix.join(buildPath, file.destination);
-      console.log("🔧 fixing css:", filePath);
-      await fixCSSFile(filePath);
-    }
-  },
-  // No undo action available - files are deleted during cleanup.
-  undo: function () {},
 });
 
 // Register the tokens-studio sd-transforms package
@@ -55,33 +38,6 @@ StyleDictionary.registerFormat({
   },
 });
 
-// Define the configuration for Style Dictionary
-const config = {
-  source: ["./tokens/figma.tokens.json"],
-  preprocessors: ["tokens-studio"],
-  log: { verbosity: "verbose" },
-  platforms: {
-    css: {
-      transformGroup: "tokens-studio",
-      transforms: ["name/kebab", "name/cti/omit-default"],
-      buildPath: "./src/moxCss/",
-      // actions: ["fixCSSTokens"],
-      files: [
-        {
-          destination: "tokens.css",
-          format: "css/variables-with-layer", // Use the custom format
-          options: {
-            fileHeader: "nlds-mox-header", // Explicitly apply the custom header
-            selector: ":root",
-            layer: "tokens.base",
-            // outputReferences: true,
-          },
-        },
-      ],
-    },
-  },
-};
-
 // Apply the custom file header to the Style Dictionary instance
 StyleDictionary.registerFileHeader({
   name: "nlds-mox-header",
@@ -92,11 +48,74 @@ StyleDictionary.registerFileHeader({
 
 const build = async () => {
   try {
-    const SD = new StyleDictionary(config);
-    await SD.hasInitialized;
-    await SD.cleanAllPlatforms();
-    await SD.buildAllPlatforms();
-    console.log("✅ CSS variables have been generated successfully!");
+    // Read and parse the tokens file
+    const tokensData = JSON.parse(
+      fs.readFileSync("./tokens/figma.tokens.json", "utf8"),
+    );
+    const themes = tokensData.$themes;
+
+    // Group themes by group
+    const groups = {};
+    themes.forEach((theme) => {
+      if (!groups[theme.group]) {
+        groups[theme.group] = [];
+      }
+      groups[theme.group].push(theme);
+    });
+
+    // For each group, take the first theme and generate CSS (other themes inside a group are only for Figma responsiveness)
+    for (const groupName in groups) {
+      const groupThemes = groups[groupName];
+      const firstTheme = groupThemes[0];
+      const selectedTokenSets = firstTheme.selectedTokenSets;
+
+      // Filter tokens based on selectedTokenSets
+      const filteredTokens = {};
+      for (const setKey in tokensData) {
+        if (setKey === "$themes") continue;
+        if (selectedTokenSets[setKey] === "enabled") {
+          filteredTokens[setKey] = tokensData[setKey];
+        }
+      }
+
+      // Determine filename: id without @ and after
+      const themeIdBase = firstTheme.id.split("@")[0];
+      const destination = `tokens-${themeIdBase}.css`;
+
+      // Create config for this theme
+      const config = {
+        tokens: filteredTokens,
+        preprocessors: ["tokens-studio"],
+        log: { verbosity: "verbose" },
+        platforms: {
+          css: {
+            transformGroup: "tokens-studio",
+            transforms: ["name/kebab", "name/cti/omit-default"],
+            buildPath: "./src/moxCss/tokens/",
+            files: [
+              {
+                destination,
+                format: "css/variables-with-layer",
+                options: {
+                  fileHeader: "nlds-mox-header",
+                  selector: ":root",
+                  layer: "tokens.base",
+                  outputReferences: false,
+                },
+              },
+            ],
+          },
+        },
+      };
+
+      const SD = new StyleDictionary(config);
+      await SD.hasInitialized;
+      await SD.cleanAllPlatforms();
+      await SD.buildAllPlatforms();
+      console.log(
+        `✅ CSS variables for ${themeIdBase} have been generated successfully!`,
+      );
+    }
   } catch (error) {
     console.error(error);
   }

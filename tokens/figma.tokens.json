@@ -1418,6 +1418,28 @@
   "common/color": {
     "mox": {
       "color": {
+        "plain": {
+          "default": {
+            "$type": "color",
+            "$value": "{mox.color.wit}",
+            "$description": "Plain color"
+          },
+          "contrast": {
+            "$type": "color",
+            "$value": "{mox.color.zwart}",
+            "$description": "Plain contrast color"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{mox.color.grijs.100}",
+            "$description": "Plain hover color"
+          },
+          "hover-contrast": {
+            "$type": "color",
+            "$value": "{mox.color.zwart}",
+            "$description": "Plain hover contrast color"
+          }
+        },
         "primary": {
           "default": {
             "$type": "color",
@@ -1969,9 +1991,103 @@
       }
     }
   },
+  "overrides/common/color/dark": {
+    "mox": {
+      "color": {
+        "plain": {
+          "default": {
+            "$type": "color",
+            "$value": "{mox.color.cool-gray.800}",
+            "$description": "Plain color (dark)"
+          },
+          "contrast": {
+            "$type": "color",
+            "$value": "{mox.color.wit}",
+            "$description": "Plain contrast color (dark)"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{mox.color.cool-gray.700}",
+            "$description": "Plain hover color (dark)"
+          },
+          "hover-contrast": {
+            "$type": "color",
+            "$value": "{mox.color.wit}",
+            "$description": "Plain hover contrast color (dark)"
+          }
+        },
+        "primary": {
+          "default": {
+            "$type": "color",
+            "$value": "{mox.color.hemelblauw.200}",
+            "$description": "Primary color (dark)"
+          },
+          "contrast": {
+            "$type": "color",
+            "$value": "{mox.color.zwart}",
+            "$description": "Primary contrast color (dark)"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{mox.color.hemelblauw.100}",
+            "$description": "Primary hover color (dark)"
+          },
+          "hover-contrast": {
+            "$type": "color",
+            "$value": "{mox.color.zwart}",
+            "$description": "Primary hover contrast color (dark)"
+          },
+          "subtle": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.hemelblauw.200}",
+              "$description": "Primary subtle color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Primary subtle contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.hemelblauw.300}",
+              "$description": "Primary subtle hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Primary subtle hover contrast color"
+            }
+          },
+          "subtle-2": {
+            "default": {
+              "$type": "color",
+              "$value": "{mox.color.hemelblauw.100}",
+              "$description": "Primary subtle 2 color"
+            },
+            "contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Primary subtle 2 contrast color"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{mox.color.hemelblauw.200}",
+              "$description": "Primary subtle 2 hover color"
+            },
+            "hover-contrast": {
+              "$type": "color",
+              "$value": "{mox.color.zwart}",
+              "$description": "Primary subtle 2 hover contrast color"
+            }
+          }
+        }
+      }
+    }
+  },
   "$themes": [
     {
-      "id": "mox-light-mobile",
+      "id": "mox-light@mobile",
       "name": "light@mobile (360px)",
       "$figmaStyleReferences": {},
       "selectedTokenSets": {
@@ -1986,7 +2102,7 @@
       "group": "MOX default (Rijkshuisstijl)"
     },
     {
-      "id": "mox-light-tablet",
+      "id": "mox-light@tablet",
       "name": "light@tablet (768px)",
       "$figmaStyleReferences": {},
       "selectedTokenSets": {
@@ -2002,7 +2118,7 @@
       "group": "MOX default (Rijkshuisstijl)"
     },
     {
-      "id": "mox-light-desktop",
+      "id": "mox-light@desktop",
       "name": "light@desktop (1440px)",
       "$figmaStyleReferences": {},
       "selectedTokenSets": {
@@ -2016,6 +2132,56 @@
       },
       "$figmaVariableReferences": {},
       "group": "MOX default (Rijkshuisstijl)"
+    },
+    {
+      "id": "mox-dark@mobile",
+      "name": "dark@mobile (360px)",
+      "$figmaStyleReferences": {},
+      "selectedTokenSets": {
+        "brand/globals": "enabled",
+        "brand/calcs": "enabled",
+        "brand/text": "enabled",
+        "brand/space": "enabled",
+        "brand/color": "enabled",
+        "common/color": "enabled",
+        "overrides/common/color/dark": "enabled"
+      },
+      "$figmaVariableReferences": {},
+      "group": "MOX dark"
+    },
+    {
+      "id": "mox-dark@tablet",
+      "name": "dark@tablet (768px)",
+      "$figmaStyleReferences": {},
+      "selectedTokenSets": {
+        "brand/globals": "enabled",
+        "brand/calcs": "enabled",
+        "brand/text": "enabled",
+        "brand/space": "enabled",
+        "brand/color": "enabled",
+        "common/color": "enabled",
+        "overrides/common/color/dark": "enabled",
+        "overrides/brand/globals/tablet": "enabled"
+      },
+      "$figmaVariableReferences": {},
+      "group": "MOX dark"
+    },
+    {
+      "id": "mox-dark@desktop",
+      "name": "dark@desktop (1440px)",
+      "$figmaStyleReferences": {},
+      "selectedTokenSets": {
+        "brand/globals": "enabled",
+        "brand/calcs": "enabled",
+        "brand/text": "enabled",
+        "brand/space": "enabled",
+        "brand/color": "enabled",
+        "common/color": "enabled",
+        "overrides/common/color/dark": "enabled",
+        "overrides/brand/globals/desktop": "enabled"
+      },
+      "$figmaVariableReferences": {},
+      "group": "MOX dark"
     }
   ]
 }

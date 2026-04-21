@@ -11,7 +11,7 @@
       "import": "./dist/index.js"
     },
     "./css": "./dist/moxCss/index.css",
-    "./tokens": "./dist/moxCss/tokens.css"
+    "./tokens": "./dist/moxCss/tokens/"
   },
   "files": [
     "dist"
@@ -22,7 +22,6 @@
     "test:watch": "vitest",
     "test:unit": "vitest run --project=unit",
     "generate:css": "tsx src/moxCss/generateCss.ts",
-    "generate:tokens": "style-dictionary build",
     "dev:storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build",
     "deploy": "npm run generate:css && npm run build:storybook && gh-pages -d storybook-static",
