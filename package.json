@@ -11,7 +11,9 @@
       "import": "./dist/index.js"
     },
     "./css": "./dist/moxCss/index.css",
-    "./tokens": "./dist/moxCss/tokens/"
+    "./tokens": "./dist/moxCss/tokens/tokens-mox-light.css",
+    "./tokens-light": "./dist/moxCss/tokens/tokens-mox-light.css",
+    "./tokens-dark": "./dist/moxCss/tokens/tokens-mox-dark.css"
   },
   "files": [
     "dist"
@@ -24,10 +26,10 @@
     "generate:css": "tsx src/moxCss/generateCss.ts",
     "dev:storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build",
-    "deploy": "npm run generate:css && npm run build:storybook && gh-pages -d storybook-static",
+    "deploy": "npm run generate:css && npm run build:storybook && mkdir -p storybook-static/src/moxCss && cp -R src/moxCss/tokens storybook-static/src/moxCss/ && gh-pages -d storybook-static",
     "build:tokens": "node tokens/build.mjs",
     "build:css": "npm run generate:css && cp -R src/moxCss dist/",
-    "build:react": "tsc --project tsconfig.json",
+    "build:react": "vite build && tsc src/index.ts --declaration --emitDeclarationOnly --outDir dist --jsx react-jsx --moduleResolution node --target ES2023 --lib ES2023,DOM --skipLibCheck --allowSyntheticDefaultImports",
     "build": "rm -rf ./dist && npm run build:tokens && npm run build:react && npm run build:css",
     "prepare": "npm run build"
   },
