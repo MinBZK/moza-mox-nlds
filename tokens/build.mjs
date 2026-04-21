@@ -73,7 +73,7 @@ const config = {
           options: {
             fileHeader: "nlds-mox-header", // Explicitly apply the custom header
             selector: ":root",
-            layer: "tokens",
+            layer: "tokens.base",
             // outputReferences: true,
           },
         },

@@ -183,8 +183,6 @@ describe("generateCss.ts", () => {
       expect(indexCss).toContain("@import 'clamp-xl.css';");
       expect(indexCss).toContain("@import 'clamp-md.css';");
       expect(indexCss).toContain("@import 'clamp-xs.css';");
-      expect(indexCss).toContain("--viewport-min-inline-size: 360px;");
-      expect(indexCss).toContain("--viewport-max-inline-size: 1440px;");
     });
   });
 });

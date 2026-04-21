@@ -200,19 +200,12 @@ const generateClampSpaces = () => {
   fs.writeFileSync(
     posixPath.join(dirPath, `index.css`),
     [
-      ...spaces.map((space) => `@import 'clamp-${space}.css';`),
       `
 /** These imports calculate the correct clamp value for fluid scaling for each space-size (md, xs, etc): 
   * See: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
 */
-
-@layer tokens {
-  :root {
-    --viewport-min-inline-size: ${moxConfig.clampViewportInlineSize.min}px;
-    --viewport-max-inline-size: ${moxConfig.clampViewportInlineSize.max}px;
-  }
-}
 `,
+      ...spaces.map((space) => `@import 'clamp-${space}.css';`),
     ].join("\n"),
   );
 

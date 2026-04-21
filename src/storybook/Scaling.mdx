@@ -1,22 +1,130 @@
 import { Meta } from "@storybook/addon-docs/blocks";
+import Scaling from "./assets/figma-responsive-scale.gif";
 
 <Meta title="Scaling system" />
 
 <div className="sb-container">
   <div className='sb-section-title'>
-    # Scaling (afstanden)
+# Scaling (afstanden, groottes)
 
-De schaal is de set van punten waarop we afstanden definieren.
-Er is een set van mogelijkheden.
-Md is de basis.
+Alles in MOX-nlds is gebaseerd op één maatvoering, namelijk de _fluid, incremental type-scale_ (responsive en in logische, voorspelbare stappen).
+We hebben een vaste waarde voor 'normale tekst-grootte' gedefineerd in de volgende variabelen:
 
-Belangrijk: 1 schaal voor Typografy en Spaces (gaps, widths, heights, etc)
+<table>
+  <tr>
+    <th>Eigenschap</th>
+    <th>Min</th>
+    <th>Max</th>
+    <th>Design-token-locatie</th>
+  </tr>
+  <tr>
+    <td>Font-grootte</td>
+    <td>16px</td>
+    <td>20px</td>
+    <td>
+      <code>brand.globals.mox.font-scale.const</code>
+    </td>
+  </tr>
+  <tr>
+    <td>Viewport-width</td>
+    <td>360px</td>
+    <td>1440px</td>
+    <td>
+      <code>brand.globals.mox.viewport</code>
+    </td>
+  </tr>
+</table>
 
-Utopia scaling: voorspelbaarheid, uniformiteit
+Verder is er de factor (`brand.globals.mox.font-scale.const.scale`) waaruit elke volgende stap vanuit deze basis berekend wordt. Deze is als default ingesteld op `1.2` (d.w.z: elke stap groter in font-size is de vorige size \* 1.2)
 
-...
+De basis-grootte noemen we `md` (medium) en heeft een factor `0`. Kleinere formaten worden berekend met de scale met factor `-1`, `-2`, etc. Grotere met `1`, `2`, etc. Één maat kleiner dan de minimale `md` (dus `sm` voor small) wordt berekend als volgt:
 
-TODO
+```
+font-size-sm-min: font-size-md-min * scale ^ factor
+```
+
+De berekening voor de grotere font-sizes (en dus elke andere space, aangezien we alles baseren op deze font-sizes) komt hier op neer:
+
+<table>
+  <tr>
+    <th>Scale</th>
+    <th>Space-naam</th>
+    <th>Tekst-formaat</th>
+    <th>Berekening</th>
+  </tr>
+  <tr>
+    <td>-3</td>
+    <td>2xs</td>
+    <td>-</td>
+    <td>md * 1.2 ^ -3</td>
+  </tr>
+  <tr>
+    <td>-2</td>
+    <td>xs</td>
+    <td>-</td>
+    <td>md * 1.2 ^ -2</td>
+  </tr>
+  <tr>
+    <td>-1</td>
+    <td>sm</td>
+    <td>h6</td>
+    <td>md * 1.2 ^ -1</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>md</td>
+    <td>p, h5</td>
+    <td>md * 1.2 ^ 0</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>lg</td>
+    <td>h4</td>
+    <td>md * 1.2 ^ 1</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>xl</td>
+    <td>h3</td>
+    <td>md * 1.2 ^ 2</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>2xl</td>
+    <td>h2</td>
+    <td>md * 1.2 ^ 3</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>3xl</td>
+    <td>h1</td>
+    <td>md * 1.2 ^ 4</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>4xl</td>
+    <td>-</td>
+    <td>md * 1.2 ^ 5</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>5xl</td>
+    <td>-</td>
+    <td>md * 1.2 ^ 6</td>
+  </tr>
+</table>
+
+In principe zijn dit vaste waardes, maar ze kunnen custom aangepast worden als token, waarna de nieuwe CSS-variables gegenereerd moeten worden via het `build:tokens` script.
+
+## Clamping
+
+De font-groottes (en alle andere spacing) lopen dus via deze scale omhoog of omlaag. Via een `min` en `max` versie zorgen we via het CSS-statement `clamp` dat alle spacing meeschaalt met je schermgrootte.
+
+## Gebruik in Figma
+
+Design in Figma met deze tokens is zo ingericht zodat je makkelijk het verschil kan zien tussen de verschillende schermgroottes. Door gebruik te maken van `themes` kan je schakelen tussen verschillende scherm-groottes, waardoor je direct de spacing in je design ziet veranderen.
+
+<img src={Scaling} alt="Figma responsive text-size scaling" />
 
     </div>
 

@@ -6,7 +6,7 @@
   * Responsive spacing for the space-size `3xl`
 */
 
-@layer tokens {
+@layer tokens.overrides {
   :root {
     --mox-font-scale-3xl-fluid: calc(1vw * calc(var(--mox-font-scale-3xl-v) / 1px) + var(--mox-font-scale-3xl-r));
     --mox-font-scale-3xl: clamp(

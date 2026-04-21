@@ -6,7 +6,7 @@
   * Responsive spacing for the space-size `4xs`
 */
 
-@layer tokens {
+@layer tokens.overrides {
   :root {
     --mox-font-scale-4xs-fluid: calc(1vw * calc(var(--mox-font-scale-4xs-v) / 1px) + var(--mox-font-scale-4xs-r));
     --mox-font-scale-4xs: clamp(

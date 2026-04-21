@@ -1,9 +1,9 @@
-@layer tokens {
+@layer tokens.base {
 :root {
---mox-viewport-width: 360px;
+--mox-viewport-width: 768px;
 --mox-viewport-min: 360px;
 --mox-viewport-max: 1440px;
---mox-font-scale-const-f: 1.2px;  /* Scaling factor for each step */
+--mox-font-scale-const-scale: 1.2px;  /* Scaling factor for each step */
 --mox-font-scale-const-min: 16px;  /* Minimal font-size. Currently it is not possible to use a rem value for these calculations */
 --mox-font-scale-const-max: 20px;  /* Maximal font-size. Currently it is not possible to use a rem value for these calculations */
 --mox-font-scale-3xs-min: 7.7px;
@@ -15,103 +15,103 @@
 --mox-font-scale-2xs-max: 11.6px;
 --mox-font-scale-2xs-v: 0.213px;  /* Viewport scaling factor */
 --mox-font-scale-2xs-r: 8.5333px;  /* Viewport scaling base offset */
---mox-font-scale-2xs-fluid: 9px;
+--mox-font-scale-2xs-fluid: 10px;
 --mox-font-scale-xs-min: 11.1px;
 --mox-font-scale-xs-max: 13.9px;
 --mox-font-scale-xs-v: 0.2593px;  /* Viewport scaling factor */
 --mox-font-scale-xs-r: 10.1667px;  /* Viewport scaling base offset */
---mox-font-scale-xs-fluid: 11px;
+--mox-font-scale-xs-fluid: 12px;
 --mox-font-scale-sm-min: 13.3px;
 --mox-font-scale-sm-max: 16.7px;
 --mox-font-scale-sm-v: 0.3148px;  /* Viewport scaling factor */
 --mox-font-scale-sm-r: 12.1667px;  /* Viewport scaling base offset */
---mox-font-scale-sm-fluid: 13px;
+--mox-font-scale-sm-fluid: 15px;
 --mox-font-scale-md-min: 16px;
 --mox-font-scale-md-max: 20px;
 --mox-font-scale-md-v: 0.3704px;  /* Viewport scaling factor */
 --mox-font-scale-md-r: 14.6667px;  /* Viewport scaling base offset */
---mox-font-scale-md-fluid: 16px;
+--mox-font-scale-md-fluid: 18px;
 --mox-font-scale-lg-min: 19.2px;
 --mox-font-scale-lg-max: 24px;
 --mox-font-scale-lg-v: 0.4444px;
 --mox-font-scale-lg-r: 17.6px;
---mox-font-scale-lg-fluid: 19px;
+--mox-font-scale-lg-fluid: 21px;
 --mox-font-scale-xl-min: 23px;
 --mox-font-scale-xl-max: 28.8px;
 --mox-font-scale-xl-v: 0.537px;
 --mox-font-scale-xl-r: 21.0667px;
---mox-font-scale-xl-fluid: 23px;
+--mox-font-scale-xl-fluid: 25px;
 --mox-font-scale-2xl-min: 27.6px;
 --mox-font-scale-2xl-max: 34.6px;
 --mox-font-scale-2xl-v: 0.6481px;
 --mox-font-scale-2xl-r: 25.2667px;
---mox-font-scale-2xl-fluid: 28px;
+--mox-font-scale-2xl-fluid: 30px;
 --mox-font-scale-3xl-min: 33.2px;
 --mox-font-scale-3xl-max: 41.5px;
 --mox-font-scale-3xl-v: 0.7685px;
 --mox-font-scale-3xl-r: 30.4333px;
---mox-font-scale-3xl-fluid: 33px;
+--mox-font-scale-3xl-fluid: 36px;
 --mox-font-scale-4xl-min: 39.8px;
 --mox-font-scale-4xl-max: 49.8px;
 --mox-font-scale-4xl-v: 0.9259px;
 --mox-font-scale-4xl-r: 36.4667px;
---mox-font-scale-4xl-fluid: 40px;
+--mox-font-scale-4xl-fluid: 44px;
 --mox-font-scale-5xl-min: 47.8px;
 --mox-font-scale-5xl-max: 59.7px;
 --mox-font-scale-5xl-v: 1.1019px;
 --mox-font-scale-5xl-r: 43.8333px;
---mox-font-scale-5xl-fluid: 48px;
+--mox-font-scale-5xl-fluid: 52px;
 --mox-font-scale-6xl-min: 57.3px;
 --mox-font-scale-6xl-max: 71.7px;
 --mox-font-scale-6xl-v: 1.3333px;
 --mox-font-scale-6xl-r: 52.5px;
---mox-font-scale-6xl-fluid: 57px;
+--mox-font-scale-6xl-fluid: 63px;
 --mox-font-scale-7xl-min: 68.8px;
 --mox-font-scale-7xl-max: 86px;
 --mox-font-scale-7xl-v: 1.5926px;
 --mox-font-scale-7xl-r: 63.0667px;
---mox-font-scale-7xl-fluid: 69px;
+--mox-font-scale-7xl-fluid: 75px;
 --mox-font-scale-8xl-min: 82.6px;
 --mox-font-scale-8xl-max: 103.2px;
 --mox-font-scale-8xl-v: 1.9074px;
 --mox-font-scale-8xl-r: 75.7333px;
---mox-font-scale-8xl-fluid: 83px;
+--mox-font-scale-8xl-fluid: 90px;
 --mox-font-scale-9xl-min: 99.1px;
 --mox-font-scale-9xl-max: 123.8px;
 --mox-font-scale-9xl-v: 2.287px;
 --mox-font-scale-9xl-r: 90.8667px;
---mox-font-scale-9xl-fluid: 99px;
+--mox-font-scale-9xl-fluid: 108px;
 --mox-font-size-3xs: 8px;  /* [Figma only] */
---mox-font-size-2xs: 9.3px;  /* [Figma only] */
---mox-font-size-xs: 11.1px;  /* [Figma only] */
---mox-font-size-sm: 13.3px;  /* [Figma only] */
---mox-font-size-md: 16px;  /* [Figma only] */
---mox-font-size-lg: 19.2px;  /* [Figma only] */
---mox-font-size-xl: 23px;  /* [Figma only] */
---mox-font-size-2xl: 28px;  /* [Figma only] */
---mox-font-size-3xl: 33.2px;  /* [Figma only] */
---mox-font-size-4xl: 40px;  /* [Figma only] */
---mox-font-size-5xl: 48px;  /* [Figma only] */
---mox-font-size-6xl: 57.3px;  /* [Figma only] */
---mox-font-size-7xl: 69px;  /* [Figma only] */
---mox-font-size-8xl: 83px;  /* [Figma only] */
---mox-font-size-9xl: 99.1px;  /* [Figma only] */
+--mox-font-size-2xs: 10px;  /* [Figma only] */
+--mox-font-size-xs: 12px;  /* [Figma only] */
+--mox-font-size-sm: 15px;  /* [Figma only] */
+--mox-font-size-md: 18px;  /* [Figma only] */
+--mox-font-size-lg: 21px;  /* [Figma only] */
+--mox-font-size-xl: 25px;  /* [Figma only] */
+--mox-font-size-2xl: 30px;  /* [Figma only] */
+--mox-font-size-3xl: 36px;  /* [Figma only] */
+--mox-font-size-4xl: 44px;  /* [Figma only] */
+--mox-font-size-5xl: 52px;  /* [Figma only] */
+--mox-font-size-6xl: 63px;  /* [Figma only] */
+--mox-font-size-7xl: 75px;  /* [Figma only] */
+--mox-font-size-8xl: 90px;  /* [Figma only] */
+--mox-font-size-9xl: 108px;  /* [Figma only] */
 --mox-space-lint-inline-size: 48px;  /* Breedte van het Rijksoverheid lint */
 --mox-space-3xs: 8px;  /* [Figma only] */
---mox-space-2xs: 9.3px;  /* [Figma only] */
---mox-space-xs: 11.1px;  /* [Figma only] */
---mox-space-sm: 13.3px;  /* [Figma only] */
---mox-space-md: 16px;  /* [Figma only] */
---mox-space-lg: 19.2px;  /* [Figma only] */
---mox-space-xl: 23px;  /* [Figma only] */
---mox-space-2xl: 28px;  /* [Figma only] */
---mox-space-3xl: 33.2px;  /* [Figma only] */
---mox-space-4xl: 40px;  /* [Figma only] */
---mox-space-5xl: 48px;  /* [Figma only] */
---mox-space-6xl: 57.3px;  /* [Figma only] */
---mox-space-7xl: 69px;  /* [Figma only] */
---mox-space-8xl: 83px;  /* [Figma only] */
---mox-space-9xl: 99.1px;  /* [Figma only] */
+--mox-space-2xs: 10px;  /* [Figma only] */
+--mox-space-xs: 12px;  /* [Figma only] */
+--mox-space-sm: 15px;  /* [Figma only] */
+--mox-space-md: 18px;  /* [Figma only] */
+--mox-space-lg: 21px;  /* [Figma only] */
+--mox-space-xl: 25px;  /* [Figma only] */
+--mox-space-2xl: 30px;  /* [Figma only] */
+--mox-space-3xl: 36px;  /* [Figma only] */
+--mox-space-4xl: 44px;  /* [Figma only] */
+--mox-space-5xl: 52px;  /* [Figma only] */
+--mox-space-6xl: 63px;  /* [Figma only] */
+--mox-space-7xl: 75px;  /* [Figma only] */
+--mox-space-8xl: 90px;  /* [Figma only] */
+--mox-space-9xl: 108px;  /* [Figma only] */
 --mox-color-lintblauw-50: #dce3ea;  /* Lintblauw 15% */
 --mox-color-lintblauw-100: #b8c6d5;  /* Lintblauw 30% */
 --mox-color-lintblauw-200: #95a9c0;  /* Lintblauw 45% */

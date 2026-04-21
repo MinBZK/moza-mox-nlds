@@ -6,7 +6,7 @@
   * Responsive spacing for the space-size `5xl`
 */
 
-@layer tokens {
+@layer tokens.overrides {
   :root {
     --mox-font-scale-5xl-fluid: calc(1vw * calc(var(--mox-font-scale-5xl-v) / 1px) + var(--mox-font-scale-5xl-r));
     --mox-font-scale-5xl: clamp(

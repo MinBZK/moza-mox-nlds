@@ -6,7 +6,7 @@
   * Responsive spacing for the space-size `md`
 */
 
-@layer tokens {
+@layer tokens.overrides {
   :root {
     --mox-font-scale-md-fluid: calc(1vw * calc(var(--mox-font-scale-md-v) / 1px) + var(--mox-font-scale-md-r));
     --mox-font-scale-md: clamp(

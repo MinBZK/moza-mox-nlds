@@ -1,3 +1,8 @@
+
+/** These imports calculate the correct clamp value for fluid scaling for each space-size (md, xs, etc): 
+  * See: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+*/
+
 @import 'clamp-6xs.css';
 @import 'clamp-5xs.css';
 @import 'clamp-4xs.css';
@@ -13,14 +18,3 @@
 @import 'clamp-4xl.css';
 @import 'clamp-5xl.css';
 @import 'clamp-6xl.css';
-
-/** These imports calculate the correct clamp value for fluid scaling for each space-size (md, xs, etc): 
-  * See: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
-*/
-
-@layer tokens {
-  :root {
-    --viewport-min-inline-size: 360px;
-    --viewport-max-inline-size: 1440px;
-  }
-}
