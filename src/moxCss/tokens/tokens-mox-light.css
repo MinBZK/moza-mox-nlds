@@ -1,0 +1,367 @@
+@layer tokens.base {
+:root {
+--mox-viewport-width: 360px;
+--mox-viewport-min: 360px;
+--mox-viewport-max: 1440px;
+--mox-font-scale-const-scale: 1.2px;  /* Scaling factor for each step */
+--mox-font-scale-const-min: 16px;  /* Minimal font-size. Currently it is not possible to use a rem value for these calculations */
+--mox-font-scale-const-max: 20px;  /* Maximal font-size. Currently it is not possible to use a rem value for these calculations */
+--mox-font-scale-3xs-min: 7.7px;
+--mox-font-scale-3xs-max: 9.6px;
+--mox-font-scale-3xs-v: 0.1759px;  /* Viewport scaling factor */
+--mox-font-scale-3xs-r: 7.0667px;  /* Viewport scaling base offset */
+--mox-font-scale-3xs-fluid: 8px;
+--mox-font-scale-2xs-min: 9.3px;
+--mox-font-scale-2xs-max: 11.6px;
+--mox-font-scale-2xs-v: 0.213px;  /* Viewport scaling factor */
+--mox-font-scale-2xs-r: 8.5333px;  /* Viewport scaling base offset */
+--mox-font-scale-2xs-fluid: 9px;
+--mox-font-scale-xs-min: 11.1px;
+--mox-font-scale-xs-max: 13.9px;
+--mox-font-scale-xs-v: 0.2593px;  /* Viewport scaling factor */
+--mox-font-scale-xs-r: 10.1667px;  /* Viewport scaling base offset */
+--mox-font-scale-xs-fluid: 11px;
+--mox-font-scale-sm-min: 13.3px;
+--mox-font-scale-sm-max: 16.7px;
+--mox-font-scale-sm-v: 0.3148px;  /* Viewport scaling factor */
+--mox-font-scale-sm-r: 12.1667px;  /* Viewport scaling base offset */
+--mox-font-scale-sm-fluid: 13px;
+--mox-font-scale-md-min: 16px;
+--mox-font-scale-md-max: 20px;
+--mox-font-scale-md-v: 0.3704px;  /* Viewport scaling factor */
+--mox-font-scale-md-r: 14.6667px;  /* Viewport scaling base offset */
+--mox-font-scale-md-fluid: 16px;
+--mox-font-scale-lg-min: 19.2px;
+--mox-font-scale-lg-max: 24px;
+--mox-font-scale-lg-v: 0.4444px;
+--mox-font-scale-lg-r: 17.6px;
+--mox-font-scale-lg-fluid: 19px;
+--mox-font-scale-xl-min: 23px;
+--mox-font-scale-xl-max: 28.8px;
+--mox-font-scale-xl-v: 0.537px;
+--mox-font-scale-xl-r: 21.0667px;
+--mox-font-scale-xl-fluid: 23px;
+--mox-font-scale-2xl-min: 27.6px;
+--mox-font-scale-2xl-max: 34.6px;
+--mox-font-scale-2xl-v: 0.6481px;
+--mox-font-scale-2xl-r: 25.2667px;
+--mox-font-scale-2xl-fluid: 28px;
+--mox-font-scale-3xl-min: 33.2px;
+--mox-font-scale-3xl-max: 41.5px;
+--mox-font-scale-3xl-v: 0.7685px;
+--mox-font-scale-3xl-r: 30.4333px;
+--mox-font-scale-3xl-fluid: 33px;
+--mox-font-scale-4xl-min: 39.8px;
+--mox-font-scale-4xl-max: 49.8px;
+--mox-font-scale-4xl-v: 0.9259px;
+--mox-font-scale-4xl-r: 36.4667px;
+--mox-font-scale-4xl-fluid: 40px;
+--mox-font-scale-5xl-min: 47.8px;
+--mox-font-scale-5xl-max: 59.7px;
+--mox-font-scale-5xl-v: 1.1019px;
+--mox-font-scale-5xl-r: 43.8333px;
+--mox-font-scale-5xl-fluid: 48px;
+--mox-font-scale-6xl-min: 57.3px;
+--mox-font-scale-6xl-max: 71.7px;
+--mox-font-scale-6xl-v: 1.3333px;
+--mox-font-scale-6xl-r: 52.5px;
+--mox-font-scale-6xl-fluid: 57px;
+--mox-font-scale-7xl-min: 68.8px;
+--mox-font-scale-7xl-max: 86px;
+--mox-font-scale-7xl-v: 1.5926px;
+--mox-font-scale-7xl-r: 63.0667px;
+--mox-font-scale-7xl-fluid: 69px;
+--mox-font-scale-8xl-min: 82.6px;
+--mox-font-scale-8xl-max: 103.2px;
+--mox-font-scale-8xl-v: 1.9074px;
+--mox-font-scale-8xl-r: 75.7333px;
+--mox-font-scale-8xl-fluid: 83px;
+--mox-font-scale-9xl-min: 99.1px;
+--mox-font-scale-9xl-max: 123.8px;
+--mox-font-scale-9xl-v: 2.287px;
+--mox-font-scale-9xl-r: 90.8667px;
+--mox-font-scale-9xl-fluid: 99px;
+--mox-font-size-3xs: 8px;  /* [Figma only] */
+--mox-font-size-2xs: 9.3px;  /* [Figma only] */
+--mox-font-size-xs: 11.1px;  /* [Figma only] */
+--mox-font-size-sm: 13.3px;  /* [Figma only] */
+--mox-font-size-md: 16px;  /* [Figma only] */
+--mox-font-size-lg: 19.2px;  /* [Figma only] */
+--mox-font-size-xl: 23px;  /* [Figma only] */
+--mox-font-size-2xl: 28px;  /* [Figma only] */
+--mox-font-size-3xl: 33.2px;  /* [Figma only] */
+--mox-font-size-4xl: 40px;  /* [Figma only] */
+--mox-font-size-5xl: 48px;  /* [Figma only] */
+--mox-font-size-6xl: 57.3px;  /* [Figma only] */
+--mox-font-size-7xl: 69px;  /* [Figma only] */
+--mox-font-size-8xl: 83px;  /* [Figma only] */
+--mox-font-size-9xl: 99.1px;  /* [Figma only] */
+--mox-space-lint-inline-size: 48px;  /* Breedte van het Rijksoverheid lint */
+--mox-space-3xs: 8px;  /* [Figma only] */
+--mox-space-2xs: 9.3px;  /* [Figma only] */
+--mox-space-xs: 11.1px;  /* [Figma only] */
+--mox-space-sm: 13.3px;  /* [Figma only] */
+--mox-space-md: 16px;  /* [Figma only] */
+--mox-space-lg: 19.2px;  /* [Figma only] */
+--mox-space-xl: 23px;  /* [Figma only] */
+--mox-space-2xl: 28px;  /* [Figma only] */
+--mox-space-3xl: 33.2px;  /* [Figma only] */
+--mox-space-4xl: 40px;  /* [Figma only] */
+--mox-space-5xl: 48px;  /* [Figma only] */
+--mox-space-6xl: 57.3px;  /* [Figma only] */
+--mox-space-7xl: 69px;  /* [Figma only] */
+--mox-space-8xl: 83px;  /* [Figma only] */
+--mox-space-9xl: 99.1px;  /* [Figma only] */
+--mox-color-lintblauw-50: #dce3ea;  /* Lintblauw 15% */
+--mox-color-lintblauw-100: #b8c6d5;  /* Lintblauw 30% */
+--mox-color-lintblauw-200: #95a9c0;  /* Lintblauw 45% */
+--mox-color-lintblauw-300: #738eab;  /* Lintblauw 60% */
+--mox-color-lintblauw-400: #4f7196;  /* Lintblauw 75% */
+--mox-color-lintblauw-500: #154273;  /* Lintblauw 100% */
+--mox-color-lintblauw-600: #11355c;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-paars-50: #e3dce7;  /* Paars 15% */
+--mox-color-paars-100: #c6b9cf;  /* Paars 30% */
+--mox-color-paars-200: #a995b7;  /* Paars 45% */
+--mox-color-paars-300: #8d729f;  /* Paars 60% */
+--mox-color-paars-400: #714f87;  /* Paars 75% */
+--mox-color-paars-500: #42145f;  /* Paars 100% */
+--mox-color-paars-600: #370f52;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-violet-50: #f2d9e7;  /* Violet 15% */
+--mox-color-violet-100: #e5b3d0;  /* Violet 30% */
+--mox-color-violet-200: #d88cb7;  /* Violet 45% */
+--mox-color-violet-300: #cb66a0;  /* Violet 60% */
+--mox-color-violet-400: #be4088;  /* Violet 75% */
+--mox-color-violet-500: #a90061;  /* Violet 100% */
+--mox-color-violet-600: #8a004e;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-robijnrood-50: #f7d9e7;  /* Robijnrood 15% */
+--mox-color-robijnrood-100: #efb3ce;  /* Robijnrood 30% */
+--mox-color-robijnrood-200: #e78cb6;  /* Robijnrood 45% */
+--mox-color-robijnrood-300: #df669d;  /* Robijnrood 60% */
+--mox-color-robijnrood-400: #d74085;  /* Robijnrood 75% */
+--mox-color-robijnrood-500: #ca005d;  /* Robijnrood 100% */
+--mox-color-robijnrood-600: #a8004a;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-roze-50: #fdeff8;  /* Roze 15% */
+--mox-color-roze-100: #fbdef0;  /* Roze 30% */
+--mox-color-roze-200: #f8cee8;  /* Roze 45% */
+--mox-color-roze-300: #f6bde1;  /* Roze 60% */
+--mox-color-roze-400: #f4add9;  /* Roze 75% */
+--mox-color-roze-500: #f092cd;  /* Roze 100% */
+--mox-color-roze-600: #d07ab6;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-rood-50: #f9dfdd;  /* Rood 15% */
+--mox-color-rood-100: #f2bfbc;  /* Rood 30% */
+--mox-color-rood-200: #ec9f99;  /* Rood 45% */
+--mox-color-rood-300: #e67f78;  /* Rood 60% */
+--mox-color-rood-400: #df6056;  /* Rood 75% */
+--mox-color-rood-500: #d52b1e;  /* Rood 100% */
+--mox-color-rood-600: #aa2218;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-oranje-50: #fbead9;  /* Oranje 15% */
+--mox-color-oranje-100: #f6d4b3;  /* Oranje 30% */
+--mox-color-oranje-200: #f1be8c;  /* Oranje 45% */
+--mox-color-oranje-300: #eda966;  /* Oranje 60% */
+--mox-color-oranje-400: #e89440;  /* Oranje 75% */
+--mox-color-oranje-500: #e17000;  /* Oranje 100% */
+--mox-color-oranje-600: #b45a00;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-donkergeel-50: #fff4db;  /* Donkergeel 15% */
+--mox-color-donkergeel-100: #ffe9b8;  /* Donkergeel 30% */
+--mox-color-donkergeel-200: #fdde94;  /* Donkergeel 45% */
+--mox-color-donkergeel-300: #fdd370;  /* Donkergeel 60% */
+--mox-color-donkergeel-400: #fdc84d;  /* Donkergeel 75% */
+--mox-color-donkergeel-500: #ffb612;  /* Donkergeel 100% */
+--mox-color-donkergeel-600: #cc9400;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-geel-50: #fefbdd;  /* Geel 15% */
+--mox-color-geel-100: #fdf6bb;  /* Geel 30% */
+--mox-color-geel-200: #fcf199;  /* Geel 45% */
+--mox-color-geel-300: #fbed78;  /* Geel 60% */
+--mox-color-geel-400: #fae856;  /* Geel 75% */
+--mox-color-geel-500: #f9e11e;  /* Geel 100% */
+--mox-color-geel-600: #c9b000;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-donkerbruin-50: #e8e0df;  /* Donkerbruin 15% */
+--mox-color-donkerbruin-100: #d1c2be;  /* Donkerbruin 30% */
+--mox-color-donkerbruin-200: #baa39d;  /* Donkerbruin 45% */
+--mox-color-donkerbruin-300: #a3847d;  /* Donkerbruin 60% */
+--mox-color-donkerbruin-400: #8d665d;  /* Donkerbruin 75% */
+--mox-color-donkerbruin-500: #673327;  /* Donkerbruin 100% */
+--mox-color-donkerbruin-600: #5a2a1f;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-bruin-50: #efeada;  /* Bruin 15% */
+--mox-color-bruin-100: #dfd4b6;  /* Bruin 30% */
+--mox-color-bruin-200: #cfbf90;  /* Bruin 45% */
+--mox-color-bruin-300: #bfa96c;  /* Bruin 60% */
+--mox-color-bruin-400: #af9447;  /* Bruin 75% */
+--mox-color-bruin-500: #94710a;  /* Bruin 100% */
+--mox-color-bruin-600: #7a5a0a;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-donkergroen-50: #dfe6e1;  /* Donkergroen 15% */
+--mox-color-donkergroen-100: #becdc3;  /* Donkergroen 30% */
+--mox-color-donkergroen-200: #9db4a4;  /* Donkergroen 45% */
+--mox-color-donkergroen-300: #7d9b87;  /* Donkergroen 60% */
+--mox-color-donkergroen-400: #5d8269;  /* Donkergroen 75% */
+--mox-color-donkergroen-500: #275937;  /* Donkergroen 100% */
+--mox-color-donkergroen-600: #1e4a2a;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-groen-50: #e1eddb;  /* Groen 15% */
+--mox-color-groen-100: #c4dbb6;  /* Groen 30% */
+--mox-color-groen-200: #a5c991;  /* Groen 45% */
+--mox-color-groen-300: #88b76d;  /* Groen 60% */
+--mox-color-groen-400: #6aa549;  /* Groen 75% */
+--mox-color-groen-500: #39870c;  /* Groen 100% */
+--mox-color-groen-600: #2c6e0a;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-mosgroen-50: #ebebd9;  /* Mosgroen 15% */
+--mox-color-mosgroen-100: #d6d7b3;  /* Mosgroen 30% */
+--mox-color-mosgroen-200: #c1c38c;  /* Mosgroen 45% */
+--mox-color-mosgroen-300: #adaf66;  /* Mosgroen 60% */
+--mox-color-mosgroen-400: #999c40;  /* Mosgroen 75% */
+--mox-color-mosgroen-500: #777b00;  /* Mosgroen 100% */
+--mox-color-mosgroen-600: #5a5a00;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-mintgroen-50: #eaf8f4;  /* Mintgroen 15% */
+--mox-color-mintgroen-100: #d6f2e9;  /* Mintgroen 30% */
+--mox-color-mintgroen-200: #c1ebde;  /* Mintgroen 45% */
+--mox-color-mintgroen-300: #ace4d3;  /* Mintgroen 60% */
+--mox-color-mintgroen-400: #98ddc8;  /* Mintgroen 75% */
+--mox-color-mintgroen-500: #76d2b6;  /* Mintgroen 100% */
+--mox-color-mintgroen-600: #5aa5a5;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-donkerblauw-50: #d9e8f0;  /* Donkerblauw 15% */
+--mox-color-donkerblauw-100: #b3d2e1;  /* Donkerblauw 30% */
+--mox-color-donkerblauw-200: #8cbbd2;  /* Donkerblauw 45% */
+--mox-color-donkerblauw-300: #66a4c3;  /* Donkerblauw 60% */
+--mox-color-donkerblauw-400: #408eb4;  /* Donkerblauw 75% */
+--mox-color-donkerblauw-500: #01689b;  /* Donkerblauw 100% */
+--mox-color-donkerblauw-600: #014f7a;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-hemelblauw-50: #d9ebf7;  /* Hemelblauw 15% */
+--mox-color-hemelblauw-100: #b3d7ee;  /* Hemelblauw 30% */
+--mox-color-hemelblauw-200: #8cc3e6;  /* Hemelblauw 45% */
+--mox-color-hemelblauw-300: #66afdd;  /* Hemelblauw 60% */
+--mox-color-hemelblauw-400: #409cd5;  /* Hemelblauw 75% */
+--mox-color-hemelblauw-500: #007bc7;  /* Hemelblauw 100% */
+--mox-color-hemelblauw-600: #00629f;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-lichtblauw-50: #eef7fb;  /* Lichtblauw 15% */
+--mox-color-lichtblauw-100: #ddeff8;  /* Lichtblauw 30% */
+--mox-color-lichtblauw-200: #cce7f4;  /* Lichtblauw 45% */
+--mox-color-lichtblauw-300: #bcdff0;  /* Lichtblauw 60% */
+--mox-color-lichtblauw-400: #abd7ed;  /* Lichtblauw 75% */
+--mox-color-lichtblauw-500: #8fcae7;  /* Lichtblauw 100% */
+--mox-color-lichtblauw-600: #6baae0;  /* De Rijkshuisstijl voorziet niet in kleuren met deze diepte, maar deze is nodig voor een 'hover' state. */
+--mox-color-cool-gray-50: #f8fafc;  /* Cool gray 50 */
+--mox-color-cool-gray-100: #f1f5f9;  /* Cool gray 100 */
+--mox-color-cool-gray-200: #e2e8f0;  /* Cool gray 200 */
+--mox-color-cool-gray-300: #cbd5e1;  /* Cool gray 300 */
+--mox-color-cool-gray-400: #94a3b8;  /* Cool gray 400 */
+--mox-color-cool-gray-500: #64748b;  /* Cool gray 500 */
+--mox-color-cool-gray-600: #475569;  /* Cool gray 600 */
+--mox-color-cool-gray-700: #334155;  /* Cool gray 700 */
+--mox-color-cool-gray-800: #1e293b;  /* Cool gray 800 */
+--mox-color-cool-gray-900: #0f172a;  /* Cool gray 900 */
+--mox-color-neutraal-wit: #ffffff;  /* Wit */
+--mox-color-neutraal-zwart: #000000;  /* Zwart */
+--mox-color-neutraal-transparent: rgba(0, 0, 0, 0);  /* Transparant */
+--mox-color-neutraal-gebroken-zwart: #3b3b3b;  /* Gebroken zwart */
+--mox-color-grijs-50: #f9f9f9;  /* Grijs 50 */
+--mox-color-grijs-100: #f3f3f3;  /* Grijs 100 */
+--mox-color-grijs-200: #e6e6e6;  /* Grijs 200 */
+--mox-color-grijs-300: #cccccc;  /* Grijs 300 */
+--mox-color-grijs-400: #b4b4b4;  /* Grijs 400 */
+--mox-color-grijs-500: #999999;  /* Grijs 500 */
+--mox-color-grijs-600: #696969;  /* Grijs 600 */
+--mox-color-grijs-700: #535353;  /* Grijs 700 */
+--mox-color-wit: #ffffff;
+--mox-color-zwart: #000000;
+--mox-color-transparent: rgba(0, 0, 0, 0);
+--mox-color-plain: #ffffff;  /* Plain color */
+--mox-color-plain-contrast: #000000;  /* Plain contrast color */
+--mox-color-plain-hover: #f3f3f3;  /* Plain hover color */
+--mox-color-plain-hover-contrast: #000000;  /* Plain hover contrast color */
+--mox-color-primary: #007bc7;  /* Primary color */
+--mox-color-primary-contrast: #ffffff;  /* Primary contrast color */
+--mox-color-primary-hover: #00629f;  /* Primary hover color */
+--mox-color-primary-hover-contrast: #ffffff;  /* Primary hover contrast color */
+--mox-color-primary-subtle: #8cc3e6;  /* Primary subtle color */
+--mox-color-primary-subtle-contrast: #000000;  /* Primary subtle contrast color */
+--mox-color-primary-subtle-hover: #66afdd;  /* Primary subtle hover color */
+--mox-color-primary-subtle-hover-contrast: #000000;  /* Primary subtle hover contrast color */
+--mox-color-primary-subtle-2: #b3d7ee;  /* Primary subtle 2 color */
+--mox-color-primary-subtle-2-contrast: #000000;  /* Primary subtle 2 contrast color */
+--mox-color-primary-subtle-2-hover: #8cc3e6;  /* Primary subtle 2 hover color */
+--mox-color-primary-subtle-2-hover-contrast: #000000;  /* Primary subtle 2 hover contrast color */
+--mox-color-secondary: #42145f;  /* Secondary color */
+--mox-color-secondary-contrast: #ffffff;  /* Secondary contrast color */
+--mox-color-secondary-hover: #370f52;  /* Secondary hover color */
+--mox-color-secondary-hover-contrast: #ffffff;  /* Secondary hover contrast color */
+--mox-color-secondary-subtle: #a995b7;  /* Secondary subtle color */
+--mox-color-secondary-subtle-contrast: #000000;  /* Secondary subtle contrast color */
+--mox-color-secondary-subtle-hover: #c6b9cf;  /* Secondary subtle hover color */
+--mox-color-secondary-subtle-hover-contrast: #000000;  /* Secondary subtle hover contrast color */
+--mox-color-secondary-subtle-2: #c6b9cf;  /* Secondary subtle 2 color */
+--mox-color-secondary-subtle-2-contrast: #000000;  /* Secondary subtle 2 contrast color */
+--mox-color-secondary-subtle-2-hover: #e3dce7;  /* Secondary subtle 2 hover color */
+--mox-color-secondary-subtle-2-hover-contrast: #000000;  /* Secondary subtle 2 hover contrast color */
+--mox-color-neutral: #cccccc;  /* Neutral color */
+--mox-color-neutral-contrast: #000000;  /* Neutral contrast color */
+--mox-color-neutral-hover: #b4b4b4;  /* Neutral hover color */
+--mox-color-neutral-hover-contrast: #ffffff;  /* Neutral hover contrast color */
+--mox-color-neutral-subtle: #e6e6e6;  /* Neutral subtle color */
+--mox-color-neutral-subtle-contrast: #000000;  /* Neutral subtle contrast color */
+--mox-color-neutral-subtle-hover: #cccccc;  /* Neutral subtle hover color */
+--mox-color-neutral-subtle-hover-contrast: #000000;  /* Neutral subtle hover contrast color */
+--mox-color-neutral-subtle-2: #f3f3f3;  /* Neutral subtle 2 color */
+--mox-color-neutral-subtle-2-contrast: #000000;  /* Neutral subtle 2 contrast color */
+--mox-color-neutral-subtle-2-hover: #e6e6e6;  /* Neutral subtle 2 hover color */
+--mox-color-neutral-subtle-2-hover-contrast: #000000;  /* Neutral subtle 2 hover contrast color */
+--mox-color-accent: #76d2b6;  /* Accent color */
+--mox-color-accent-contrast: #ffffff;  /* Accent contrast color */
+--mox-color-accent-hover: #5aa5a5;  /* Accent hover color */
+--mox-color-accent-hover-contrast: #ffffff;  /* Accent hover contrast color */
+--mox-color-accent-subtle: #c1ebde;  /* Accent subtle color */
+--mox-color-accent-subtle-contrast: #000000;  /* Accent subtle contrast color */
+--mox-color-accent-subtle-hover: #ace4d3;  /* Accent subtle hover color */
+--mox-color-accent-subtle-hover-contrast: #000000;  /* Accent subtle hover contrast color */
+--mox-color-accent-subtle-2: #d6f2e9;  /* Accent subtle 2 color */
+--mox-color-accent-subtle-2-contrast: #000000;  /* Accent subtle 2 contrast color */
+--mox-color-accent-subtle-2-hover: #c1ebde;  /* Accent subtle 2 hover color */
+--mox-color-accent-subtle-2-hover-contrast: #000000;  /* Accent subtle 2 hover contrast color */
+--mox-color-info: #8fcae7;  /* Info color */
+--mox-color-info-contrast: #000000;  /* Info contrast color */
+--mox-color-info-hover: #6baae0;  /* Info hover color */
+--mox-color-info-hover-contrast: #000000;  /* Info hover contrast color */
+--mox-color-info-subtle: #cce7f4;  /* Info subtle color */
+--mox-color-info-subtle-contrast: #000000;  /* Info subtle contrast color */
+--mox-color-info-subtle-hover: #bcdff0;  /* Info subtle hover color */
+--mox-color-info-subtle-hover-contrast: #000000;  /* Info subtle hover contrast color */
+--mox-color-info-subtle-2: #ddeff8;  /* Info subtle 2 color */
+--mox-color-info-subtle-2-contrast: #000000;  /* Info subtle 2 contrast color */
+--mox-color-info-subtle-2-hover: #cce7f4;  /* Info subtle 2 hover color */
+--mox-color-info-subtle-2-hover-contrast: #000000;  /* Info subtle 2 hover contrast color */
+--mox-color-success: #39870c;  /* Success color */
+--mox-color-success-contrast: #ffffff;  /* Success contrast color */
+--mox-color-success-hover: #2c6e0a;  /* Success hover color */
+--mox-color-success-hover-contrast: #ffffff;  /* Success hover contrast color */
+--mox-color-success-subtle: #a5c991;  /* Success subtle color */
+--mox-color-success-subtle-contrast: #000000;  /* Success subtle contrast color */
+--mox-color-success-subtle-hover: #88b76d;  /* Success subtle hover color */
+--mox-color-success-subtle-hover-contrast: #000000;  /* Success subtle hover contrast color */
+--mox-color-success-subtle-2: #c4dbb6;  /* Success subtle 2 color */
+--mox-color-success-subtle-2-contrast: #000000;  /* Success subtle 2 contrast color */
+--mox-color-success-subtle-2-hover: #a5c991;  /* Success subtle 2 hover color */
+--mox-color-success-subtle-2-hover-contrast: #000000;  /* Success subtle 2 hover contrast color */
+--mox-color-warning: #f9e11e;  /* Warning color */
+--mox-color-warning-contrast: #000000;  /* Warning contrast color */
+--mox-color-warning-hover: #c9b000;  /* Warning hover color */
+--mox-color-warning-hover-contrast: #000000;  /* Warning hover contrast color */
+--mox-color-warning-subtle: #fcf199;  /* Warning subtle color */
+--mox-color-warning-subtle-contrast: #000000;  /* Warning subtle contrast color */
+--mox-color-warning-subtle-hover: #fbed78;  /* Warning subtle hover color */
+--mox-color-warning-subtle-hover-contrast: #000000;  /* Warning subtle hover contrast color */
+--mox-color-warning-subtle-2: #fdf6bb;  /* Warning subtle 2 color */
+--mox-color-warning-subtle-2-contrast: #000000;  /* Warning subtle 2 contrast color */
+--mox-color-warning-subtle-2-hover: #fcf199;  /* Warning subtle 2 hover color */
+--mox-color-warning-subtle-2-hover-contrast: #000000;  /* Warning subtle 2 hover contrast color */
+--mox-color-danger: #d52b1e;  /* Danger color */
+--mox-color-danger-contrast: #ffffff;  /* Danger contrast color */
+--mox-color-danger-hover: #aa2218;  /* Danger hover color */
+--mox-color-danger-hover-contrast: #ffffff;  /* Danger hover contrast color */
+--mox-color-danger-subtle: #ec9f99;  /* Danger subtle color */
+--mox-color-danger-subtle-contrast: #000000;  /* Danger subtle contrast color */
+--mox-color-danger-subtle-hover: #e67f78;  /* Danger subtle hover color */
+--mox-color-danger-subtle-hover-contrast: #000000;  /* Danger subtle hover contrast color */
+--mox-color-danger-subtle-2: #f2bfbc;  /* Danger subtle 2 color */
+--mox-color-danger-subtle-2-contrast: #000000;  /* Danger subtle 2 contrast color */
+--mox-color-danger-subtle-2-hover: #ec9f99;  /* Danger subtle 2 hover color */
+--mox-color-danger-subtle-2-hover-contrast: #000000;  /* Danger subtle 2 hover contrast color */
+}
+}
