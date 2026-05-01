@@ -11,8 +11,8 @@
   }
   /* Styles for <a> */
   :where(.mox-rich-text) a {
-    --text-color: var(--mox-color-primary);
-    color: var(--text-color);
+    --mox-text-color: var(--mox-color-primary);
+    color: var(--mox-text-color);
   }
   :where(.mox-rich-text) a {
     text-decoration-line: underline;
@@ -120,8 +120,8 @@
     border-color: var(--mox-color-primary-hover);
   }
   :where(.mox-rich-text) a.btn-outline-primary {
-    --text-color: var(--mox-color-primary);
-    color: var(--text-color);
+    --mox-text-color: var(--mox-color-primary);
+    color: var(--mox-text-color);
   }
   :where(.mox-rich-text) a.btn-outline-primary {
     border-width: 2px;
@@ -160,8 +160,8 @@
     border-color: var(--mox-color-secondary-hover);
   }
   :where(.mox-rich-text) a.btn-outline-secondary {
-    --text-color: var(--mox-color-secondary);
-    color: var(--text-color);
+    --mox-text-color: var(--mox-color-secondary);
+    color: var(--mox-text-color);
   }
   :where(.mox-rich-text) a.btn-outline-secondary {
     border-width: 2px;

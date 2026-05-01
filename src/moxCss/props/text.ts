@@ -32,8 +32,8 @@ export const textProps = {
       (acc, propName) => ({
         ...acc,
         [propName as keyof typeof colorOptions]: css`
-          --text-color: var(--mox-color-${propName});
-          color: var(--text-color);
+          --mox-text-color: var(--mox-color-${propName});
+          color: var(--mox-text-color);
         `,
       }),
       {},
@@ -44,8 +44,8 @@ export const textProps = {
       (acc, propName) => ({
         ...acc,
         [propName as keyof typeof colorOptions]: css`
-          --text-color-hover: var(--mox-color-${propName});
-          color: var(--text-color-hover);
+          --mox-text-color-hover: var(--mox-color-${propName});
+          color: var(--mox-text-color-hover);
         `,
       }),
       {},

@@ -1,11 +1,26 @@
 @layer tokens.base {
-:root {
+.theme-mox-dark {
 --mox-viewport-width: 360px;
 --mox-viewport-min: 360px;
 --mox-viewport-max: 1440px;
 --mox-font-scale-const-scale: 1.2px;  /* Scaling factor for each step */
 --mox-font-scale-const-min: 16px;  /* Minimal font-size. Currently it is not possible to use a rem value for these calculations */
 --mox-font-scale-const-max: 20px;  /* Maximal font-size. Currently it is not possible to use a rem value for these calculations */
+--mox-font-scale-6xs-min: 4.5px;
+--mox-font-scale-6xs-max: 5.6px;
+--mox-font-scale-6xs-v: 0.1019px;  /* Viewport scaling factor */
+--mox-font-scale-6xs-r: 4.1333px;  /* Viewport scaling base offset */
+--mox-font-scale-6xs-fluid: 5px;
+--mox-font-scale-5xs-min: 5.4px;
+--mox-font-scale-5xs-max: 6.7px;
+--mox-font-scale-5xs-v: 0.1204px;  /* Viewport scaling factor */
+--mox-font-scale-5xs-r: 4.9667px;  /* Viewport scaling base offset */
+--mox-font-scale-5xs-fluid: 5px;
+--mox-font-scale-4xs-min: 6.4px;
+--mox-font-scale-4xs-max: 8px;
+--mox-font-scale-4xs-v: 0.1481px;  /* Viewport scaling factor */
+--mox-font-scale-4xs-r: 5.8667px;  /* Viewport scaling base offset */
+--mox-font-scale-4xs-fluid: 6px;
 --mox-font-scale-3xs-min: 7.7px;
 --mox-font-scale-3xs-max: 9.6px;
 --mox-font-scale-3xs-v: 0.1759px;  /* Viewport scaling factor */
@@ -81,6 +96,9 @@
 --mox-font-scale-9xl-v: 2.287px;
 --mox-font-scale-9xl-r: 90.8667px;
 --mox-font-scale-9xl-fluid: 99px;
+--mox-font-size-6xs: 5px;  /* [Figma only] */
+--mox-font-size-5xs: 5.4px;  /* [Figma only] */
+--mox-font-size-4xs: 6.4px;  /* [Figma only] */
 --mox-font-size-3xs: 8px;  /* [Figma only] */
 --mox-font-size-2xs: 9.3px;  /* [Figma only] */
 --mox-font-size-xs: 11.1px;  /* [Figma only] */
@@ -97,6 +115,9 @@
 --mox-font-size-8xl: 83px;  /* [Figma only] */
 --mox-font-size-9xl: 99.1px;  /* [Figma only] */
 --mox-space-lint-inline-size: 48px;  /* Breedte van het Rijksoverheid lint */
+--mox-space-6xs: 5px;  /* [Figma only] */
+--mox-space-5xs: 5.4px;  /* [Figma only] */
+--mox-space-4xs: 6.4px;  /* [Figma only] */
 --mox-space-3xs: 8px;  /* [Figma only] */
 --mox-space-2xs: 9.3px;  /* [Figma only] */
 --mox-space-xs: 11.1px;  /* [Figma only] */
@@ -260,13 +281,14 @@
 --mox-color-grijs-500: #999999;  /* Grijs 500 */
 --mox-color-grijs-600: #696969;  /* Grijs 600 */
 --mox-color-grijs-700: #535353;  /* Grijs 700 */
---mox-color-wit: #ffffff;
---mox-color-zwart: #000000;
---mox-color-transparent: rgba(0, 0, 0, 0);
 --mox-color-plain: #1e293b;  /* Plain color (dark) */
 --mox-color-plain-contrast: #ffffff;  /* Plain contrast color (dark) */
 --mox-color-plain-hover: #334155;  /* Plain hover color (dark) */
 --mox-color-plain-hover-contrast: #ffffff;  /* Plain hover contrast color (dark) */
+--mox-color-transparent: rgba(0, 0, 0, 0);  /* Transparent color */
+--mox-color-transparent-contrast: #000000;  /* Transparent contrast color */
+--mox-color-transparent-hover: rgba(0, 0, 0, 0);  /* Transparent hover color */
+--mox-color-transparent-hover-contrast: #000000;  /* Transparent hover contrast color */
 --mox-color-primary: #8cc3e6;  /* Primary color (dark) */
 --mox-color-primary-contrast: #000000;  /* Primary contrast color (dark) */
 --mox-color-primary-hover: #b3d7ee;  /* Primary hover color (dark) */

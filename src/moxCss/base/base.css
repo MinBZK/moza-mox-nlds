@@ -7,8 +7,11 @@
 
 @layer base {
   body {
-    --current-font-size: var(--mox-spacing-md);
-    font-size: var(--current-font-size);
+    --mox-font-size: var(--mox-spacing-md);
+    font-size: var(--mox-font-size);
+    background-color: var(--mox-color-plain);
+    --mox-text-color: var(--mox-color-plain-contrast);
+    color: var(--mox-text-color);
     font-family: "RijkssansVF", "Rijkssans", "Fira Sans", serif;
   }
 
@@ -16,4 +19,3 @@
     cursor: pointer;
   }
 }
-

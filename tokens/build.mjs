@@ -98,7 +98,7 @@ const build = async () => {
                 format: "css/variables-with-layer",
                 options: {
                   fileHeader: "nlds-mox-header",
-                  selector: ":root",
+                  selector: `.theme-${themeIdBase}`,
                   layer: "tokens.base",
                   outputReferences: false,
                 },

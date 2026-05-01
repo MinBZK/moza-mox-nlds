@@ -1,4 +1,7 @@
 import "../src/moxCss/index.css";
+import "../src/moxCss/tokens/tokens-mox-light.css";
+import "../src/moxCss/tokens/tokens-mox-dark.css";
+
 import "./docs.css";
 
 import type { Preview } from "@storybook/react-vite";
@@ -9,22 +12,7 @@ const css = String.raw;
 
 const ThemeDecorator = ({ children, theme }) => {
   useEffect(() => {
-    const prefix =
-      typeof window !== "undefined" &&
-      window.location.pathname.startsWith("/moza-mox-nlds")
-        ? "/moza-mox-nlds"
-        : "";
-    fetch(`${prefix}/src/moxCss/tokens/tokens-${theme}.css`)
-      .then((response) => response.text())
-      .then((css) => {
-        let style = document.getElementById("theme-style") as HTMLStyleElement;
-        if (!style) {
-          style = document.createElement("style");
-          style.id = "theme-style";
-          document.head.appendChild(style);
-        }
-        style.innerHTML = css;
-      });
+    document.body.className = `theme-${theme}`;
   }, [theme]);
 
   return children;

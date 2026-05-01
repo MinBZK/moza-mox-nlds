@@ -39,6 +39,78 @@
   "brand/calcs": {
     "mox": {
       "font-scale": {
+        "6xs": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.scale}^-7),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.scale}^-7),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.6xs.max}-{mox.font-scale.6xs.min}) / ({mox.viewport.max}-{mox.viewport.min})",
+            "$description": "Viewport scaling factor"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.6xs.max} - {mox.viewport.max} * {mox.font-scale.6xs.min}) / ({mox.viewport.min}-{mox.viewport.max})",
+            "$description": "Viewport scaling base offset"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.6xs.v} + {mox.font-scale.6xs.r})"
+          }
+        },
+        "5xs": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.scale}^-6),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.scale}^-6),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.5xs.max}-{mox.font-scale.5xs.min}) / ({mox.viewport.max}-{mox.viewport.min})",
+            "$description": "Viewport scaling factor"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.5xs.max} - {mox.viewport.max} * {mox.font-scale.5xs.min}) / ({mox.viewport.min}-{mox.viewport.max})",
+            "$description": "Viewport scaling base offset"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.5xs.v} + {mox.font-scale.5xs.r})"
+          }
+        },
+        "4xs": {
+          "min": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.min}*{mox.font-scale.const.scale}^-5),1)"
+          },
+          "max": {
+            "$type": "fontSizes",
+            "$value": "roundTo(({mox.font-scale.const.max}*{mox.font-scale.const.scale}^-5),1)"
+          },
+          "v": {
+            "$type": "fontSizes",
+            "$value": "100 * ({mox.font-scale.4xs.max}-{mox.font-scale.4xs.min}) / ({mox.viewport.max}-{mox.viewport.min})",
+            "$description": "Viewport scaling factor"
+          },
+          "r": {
+            "$type": "fontSizes",
+            "$value": "( {mox.viewport.min} * {mox.font-scale.4xs.max} - {mox.viewport.max} * {mox.font-scale.4xs.min}) / ({mox.viewport.min}-{mox.viewport.max})",
+            "$description": "Viewport scaling base offset"
+          },
+          "fluid": {
+            "$type": "fontSizes",
+            "$value": "round(({mox.viewport.width}/100) * {mox.font-scale.4xs.v} + {mox.font-scale.4xs.r})"
+          }
+        },
         "3xs": {
           "min": {
             "$type": "fontSizes",
@@ -385,6 +457,21 @@
   "brand/text": {
     "mox": {
       "font-size": {
+        "6xs": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.6xs.min},  {mox.font-scale.6xs.fluid}) ,{mox.font-scale.6xs.max})",
+          "$description": "[Figma only]"
+        },
+        "5xs": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.5xs.min},  {mox.font-scale.5xs.fluid}) ,{mox.font-scale.5xs.max})",
+          "$description": "[Figma only]"
+        },
+        "4xs": {
+          "$type": "fontSizes",
+          "$value": "min( max( {mox.font-scale.4xs.min},  {mox.font-scale.4xs.fluid}) ,{mox.font-scale.4xs.max})",
+          "$description": "[Figma only]"
+        },
         "3xs": {
           "$type": "fontSizes",
           "$value": "min( max( {mox.font-scale.3xs.min},  {mox.font-scale.3xs.fluid}) ,{mox.font-scale.3xs.max})",
@@ -470,6 +557,21 @@
           "$type": "dimension",
           "$value": "48px",
           "$description": "Breedte van het Rijksoverheid lint"
+        },
+        "6xs": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.6xs}",
+          "$description": "[Figma only]"
+        },
+        "5xs": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.5xs}",
+          "$description": "[Figma only]"
+        },
+        "4xs": {
+          "$type": "dimension",
+          "$value": "{mox.font-size.4xs}",
+          "$description": "[Figma only]"
         },
         "3xs": {
           "$type": "dimension",
@@ -1399,18 +1501,6 @@
             "$value": "#535353",
             "$description": "Grijs 700"
           }
-        },
-        "wit": {
-          "$type": "color",
-          "$value": "#fff"
-        },
-        "zwart": {
-          "$type": "color",
-          "$value": "#000"
-        },
-        "transparent": {
-          "$type": "color",
-          "$value": "transparent"
         }
       }
     }
@@ -1421,12 +1511,12 @@
         "plain": {
           "default": {
             "$type": "color",
-            "$value": "{mox.color.wit}",
+            "$value": "{mox.color.neutraal.wit}",
             "$description": "Plain color"
           },
           "contrast": {
             "$type": "color",
-            "$value": "{mox.color.zwart}",
+            "$value": "{mox.color.neutraal.zwart}",
             "$description": "Plain contrast color"
           },
           "hover": {
@@ -1436,8 +1526,30 @@
           },
           "hover-contrast": {
             "$type": "color",
-            "$value": "{mox.color.zwart}",
+            "$value": "{mox.color.neutraal.zwart}",
             "$description": "Plain hover contrast color"
+          }
+        },
+        "transparent": {
+          "default": {
+            "$type": "color",
+            "$value": "{mox.color.neutraal.transparent}",
+            "$description": "Transparent color"
+          },
+          "contrast": {
+            "$type": "color",
+            "$value": "{mox.color.neutraal.zwart}",
+            "$description": "Transparent contrast color"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{mox.color.neutraal.transparent}",
+            "$description": "Transparent hover color"
+          },
+          "hover-contrast": {
+            "$type": "color",
+            "$value": "{mox.color.neutraal.zwart}",
+            "$description": "Transparent hover contrast color"
           }
         },
         "primary": {
@@ -1448,7 +1560,7 @@
           },
           "contrast": {
             "$type": "color",
-            "$value": "{mox.color.wit}",
+            "$value": "{mox.color.neutraal.wit}",
             "$description": "Primary contrast color"
           },
           "hover": {
@@ -1458,7 +1570,7 @@
           },
           "hover-contrast": {
             "$type": "color",
-            "$value": "{mox.color.wit}",
+            "$value": "{mox.color.neutraal.wit}",
             "$description": "Primary hover contrast color"
           },
           "subtle": {
@@ -1469,7 +1581,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Primary subtle contrast color"
             },
             "hover": {
@@ -1479,7 +1591,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Primary subtle hover contrast color"
             }
           },
@@ -1491,7 +1603,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Primary subtle 2 contrast color"
             },
             "hover": {
@@ -1501,7 +1613,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Primary subtle 2 hover contrast color"
             }
           }
@@ -1514,7 +1626,7 @@
           },
           "contrast": {
             "$type": "color",
-            "$value": "{mox.color.wit}",
+            "$value": "{mox.color.neutraal.wit}",
             "$description": "Secondary contrast color"
           },
           "hover": {
@@ -1524,7 +1636,7 @@
           },
           "hover-contrast": {
             "$type": "color",
-            "$value": "{mox.color.wit}",
+            "$value": "{mox.color.neutraal.wit}",
             "$description": "Secondary hover contrast color"
           },
           "subtle": {
@@ -1535,7 +1647,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Secondary subtle contrast color"
             },
             "hover": {
@@ -1545,7 +1657,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Secondary subtle hover contrast color"
             }
           },
@@ -1557,7 +1669,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Secondary subtle 2 contrast color"
             },
             "hover": {
@@ -1567,7 +1679,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Secondary subtle 2 hover contrast color"
             }
           }
@@ -1580,7 +1692,7 @@
           },
           "contrast": {
             "$type": "color",
-            "$value": "{mox.color.zwart}",
+            "$value": "{mox.color.neutraal.zwart}",
             "$description": "Neutral contrast color"
           },
           "hover": {
@@ -1590,7 +1702,7 @@
           },
           "hover-contrast": {
             "$type": "color",
-            "$value": "{mox.color.wit}",
+            "$value": "{mox.color.neutraal.wit}",
             "$description": "Neutral hover contrast color"
           },
           "subtle": {
@@ -1601,7 +1713,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Neutral subtle contrast color"
             },
             "hover": {
@@ -1611,7 +1723,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Neutral subtle hover contrast color"
             }
           },
@@ -1623,7 +1735,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Neutral subtle 2 contrast color"
             },
             "hover": {
@@ -1633,7 +1745,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Neutral subtle 2 hover contrast color"
             }
           }
@@ -1646,7 +1758,7 @@
           },
           "contrast": {
             "$type": "color",
-            "$value": "{mox.color.wit}",
+            "$value": "{mox.color.neutraal.wit}",
             "$description": "Accent contrast color"
           },
           "hover": {
@@ -1656,7 +1768,7 @@
           },
           "hover-contrast": {
             "$type": "color",
-            "$value": "{mox.color.wit}",
+            "$value": "{mox.color.neutraal.wit}",
             "$description": "Accent hover contrast color"
           },
           "subtle": {
@@ -1667,7 +1779,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Accent subtle contrast color"
             },
             "hover": {
@@ -1677,7 +1789,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Accent subtle hover contrast color"
             }
           },
@@ -1689,7 +1801,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Accent subtle 2 contrast color"
             },
             "hover": {
@@ -1699,7 +1811,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Accent subtle 2 hover contrast color"
             }
           }
@@ -1712,7 +1824,7 @@
           },
           "contrast": {
             "$type": "color",
-            "$value": "{mox.color.zwart}",
+            "$value": "{mox.color.neutraal.zwart}",
             "$description": "Info contrast color"
           },
           "hover": {
@@ -1722,7 +1834,7 @@
           },
           "hover-contrast": {
             "$type": "color",
-            "$value": "{mox.color.zwart}",
+            "$value": "{mox.color.neutraal.zwart}",
             "$description": "Info hover contrast color"
           },
           "subtle": {
@@ -1733,7 +1845,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Info subtle contrast color"
             },
             "hover": {
@@ -1743,7 +1855,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Info subtle hover contrast color"
             }
           },
@@ -1755,7 +1867,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Info subtle 2 contrast color"
             },
             "hover": {
@@ -1765,7 +1877,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Info subtle 2 hover contrast color"
             }
           }
@@ -1778,7 +1890,7 @@
           },
           "contrast": {
             "$type": "color",
-            "$value": "{mox.color.wit}",
+            "$value": "{mox.color.neutraal.wit}",
             "$description": "Success contrast color"
           },
           "hover": {
@@ -1788,7 +1900,7 @@
           },
           "hover-contrast": {
             "$type": "color",
-            "$value": "{mox.color.wit}",
+            "$value": "{mox.color.neutraal.wit}",
             "$description": "Success hover contrast color"
           },
           "subtle": {
@@ -1799,7 +1911,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Success subtle contrast color"
             },
             "hover": {
@@ -1809,7 +1921,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Success subtle hover contrast color"
             }
           },
@@ -1821,7 +1933,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Success subtle 2 contrast color"
             },
             "hover": {
@@ -1831,7 +1943,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Success subtle 2 hover contrast color"
             }
           }
@@ -1844,7 +1956,7 @@
           },
           "contrast": {
             "$type": "color",
-            "$value": "{mox.color.zwart}",
+            "$value": "{mox.color.neutraal.zwart}",
             "$description": "Warning contrast color"
           },
           "hover": {
@@ -1854,7 +1966,7 @@
           },
           "hover-contrast": {
             "$type": "color",
-            "$value": "{mox.color.zwart}",
+            "$value": "{mox.color.neutraal.zwart}",
             "$description": "Warning hover contrast color"
           },
           "subtle": {
@@ -1865,7 +1977,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Warning subtle contrast color"
             },
             "hover": {
@@ -1875,7 +1987,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Warning subtle hover contrast color"
             }
           },
@@ -1887,7 +1999,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Warning subtle 2 contrast color"
             },
             "hover": {
@@ -1897,7 +2009,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Warning subtle 2 hover contrast color"
             }
           }
@@ -1910,7 +2022,7 @@
           },
           "contrast": {
             "$type": "color",
-            "$value": "{mox.color.wit}",
+            "$value": "{mox.color.neutraal.wit}",
             "$description": "Danger contrast color"
           },
           "hover": {
@@ -1920,7 +2032,7 @@
           },
           "hover-contrast": {
             "$type": "color",
-            "$value": "{mox.color.wit}",
+            "$value": "{mox.color.neutraal.wit}",
             "$description": "Danger hover contrast color"
           },
           "subtle": {
@@ -1931,7 +2043,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Danger subtle contrast color"
             },
             "hover": {
@@ -1941,7 +2053,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Danger subtle hover contrast color"
             }
           },
@@ -1953,7 +2065,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Danger subtle 2 contrast color"
             },
             "hover": {
@@ -1963,7 +2075,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Danger subtle 2 hover contrast color"
             }
           }
@@ -2002,7 +2114,7 @@
           },
           "contrast": {
             "$type": "color",
-            "$value": "{mox.color.wit}",
+            "$value": "{mox.color.neutraal.wit}",
             "$description": "Plain contrast color (dark)"
           },
           "hover": {
@@ -2012,7 +2124,7 @@
           },
           "hover-contrast": {
             "$type": "color",
-            "$value": "{mox.color.wit}",
+            "$value": "{mox.color.neutraal.wit}",
             "$description": "Plain hover contrast color (dark)"
           }
         },
@@ -2024,7 +2136,7 @@
           },
           "contrast": {
             "$type": "color",
-            "$value": "{mox.color.zwart}",
+            "$value": "{mox.color.neutraal.zwart}",
             "$description": "Primary contrast color (dark)"
           },
           "hover": {
@@ -2034,7 +2146,7 @@
           },
           "hover-contrast": {
             "$type": "color",
-            "$value": "{mox.color.zwart}",
+            "$value": "{mox.color.neutraal.zwart}",
             "$description": "Primary hover contrast color (dark)"
           },
           "subtle": {
@@ -2045,7 +2157,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Primary subtle contrast color"
             },
             "hover": {
@@ -2055,7 +2167,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Primary subtle hover contrast color"
             }
           },
@@ -2067,7 +2179,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Primary subtle 2 contrast color"
             },
             "hover": {
@@ -2077,7 +2189,7 @@
             },
             "hover-contrast": {
               "$type": "color",
-              "$value": "{mox.color.zwart}",
+              "$value": "{mox.color.neutraal.zwart}",
               "$description": "Primary subtle 2 hover contrast color"
             }
           }
