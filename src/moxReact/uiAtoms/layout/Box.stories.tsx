@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { MoxAtomBox, boxStyleProps } from "./Box";
-import { MoxTextBlock } from "../typography/TextBlock";
+import { MoxText } from "../typography/Text";
 import { getStylePropArgTypes } from "../../../storybook/helpers/getStylePropArgTypes";
 
 const meta = {
@@ -40,7 +40,7 @@ export const BackgroundColor: Story = {
     backgroundColor: "primary",
     size: "auto",
     padding: "2xs",
-    children: <MoxTextBlock>{"I am a box!"}</MoxTextBlock>,
+    children: <MoxText>{"I am a box!"}</MoxText>,
   },
 };
 

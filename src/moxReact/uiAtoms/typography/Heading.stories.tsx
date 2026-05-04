@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { MoxAtomHeading } from "./Heading";
 
 const meta = {
-  title: "React/Atoms/Typography/Heading (TextBlock)",
+  title: "React/Atoms/Typography/Heading (Text block)",
   component: MoxAtomHeading,
   tags: ["autodocs"],
   parameters: {},

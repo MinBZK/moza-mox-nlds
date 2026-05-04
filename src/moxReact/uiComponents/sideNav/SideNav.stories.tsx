@@ -13,7 +13,25 @@ const meta = {
     docs: {
       description: {
         story: getConstructionSummary(`
-          
+          <MoxStack as="nav" rowGap="md" aria-labelledby="main-menu-title" {...props}>
+                {items.map((group, index) => (
+                  <MoxStack as="ul" rowGap="6xs" key={index}>
+                    {group.map((item) => (
+                      <li key={item.href}>
+                        <MoxSideNavLink
+                          iconSlot={item.icon}
+                          badgeSlot={item.badge}
+                          disabled={item.disabled}
+                          href={item.href}
+                          isCurrent={item.isCurrent}
+                        >
+                          {item.label}
+                        </MoxSideNavLink>
+                      </li>
+                    ))}
+                  </MoxStack>
+                ))}
+              </MoxStack>
         `),
       },
     },
@@ -55,6 +73,7 @@ const mock = [
     {
       label: "Profile",
       href: "#",
+      disabled: true,
       icon: <MoxIcon icon="PersonFill" fontSize="md" />,
     },
   ],

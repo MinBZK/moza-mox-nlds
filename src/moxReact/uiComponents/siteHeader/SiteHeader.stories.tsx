@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { getConstructionSummary } from "../../../storybook/helpers/getConstructionSummary";
-import { MoxStack, MoxTextBlock } from "../../uiAtoms";
+import { MoxStack, MoxText } from "../../uiAtoms";
 import { MoxSiteHeader } from "./SiteHeader";
 
 const meta = {
@@ -103,10 +103,10 @@ export const PageStartTitleWithLogoLink: Story = {
     pageStartSlot: (
       <a href="#">
         <MoxStack gap="xs">
-          <MoxTextBlock>{"Site title"}</MoxTextBlock>
-          <MoxTextBlock fontSize="sm" fontStyle="italic">
+          <MoxText>{"Site title"}</MoxText>
+          <MoxText fontSize="sm" fontStyle="italic">
             {"Tagline"}
-          </MoxTextBlock>
+          </MoxText>
         </MoxStack>
       </a>
     ),
@@ -128,10 +128,10 @@ export const LintEndTitle: Story = {
     lintEndSlot: (
       <a href="#">
         <MoxStack gap="xs">
-          <MoxTextBlock>{"Site title"}</MoxTextBlock>
-          <MoxTextBlock fontSize="sm" fontStyle="italic">
+          <MoxText>{"Site title"}</MoxText>
+          <MoxText fontSize="sm" fontStyle="italic">
             {"Tagline"}
-          </MoxTextBlock>
+          </MoxText>
         </MoxStack>
       </a>
     ),
@@ -150,20 +150,20 @@ export const twoTitles: Story = {
     pageStartSlot: (
       <a href="#">
         <MoxStack gap="xs">
-          <MoxTextBlock>{"Site title"}</MoxTextBlock>
-          <MoxTextBlock fontSize="sm" fontStyle="italic">
+          <MoxText>{"Site title"}</MoxText>
+          <MoxText fontSize="sm" fontStyle="italic">
             {"Tagline"}
-          </MoxTextBlock>
+          </MoxText>
         </MoxStack>
       </a>
     ),
     lintEndSlot: (
       <a href="#">
         <MoxStack gap="xs">
-          <MoxTextBlock>{"Another Site title"}</MoxTextBlock>
-          <MoxTextBlock fontSize="sm" fontStyle="italic">
+          <MoxText>{"Another Site title"}</MoxText>
+          <MoxText fontSize="sm" fontStyle="italic">
             {"Another Tagline"}
-          </MoxTextBlock>
+          </MoxText>
         </MoxStack>
       </a>
     ),

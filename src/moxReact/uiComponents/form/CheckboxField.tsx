@@ -1,7 +1,7 @@
 import { useId } from "react";
 import { MoxAtomCheckbox } from "../../uiAtoms/form/Checkbox";
 import { MoxShelf } from "../../uiAtoms/layout/Shelf";
-import { MoxTextBlock } from "../../uiAtoms/typography/TextBlock";
+import { MoxText } from "../../uiAtoms/typography/Text";
 
 /**
  * Checkbox component with a label.
@@ -23,9 +23,9 @@ export const MoxCheckboxField = ({
   return (
     <MoxShelf gap="md" alignItems={"start"} className={className}>
       <MoxAtomCheckbox id={id} />
-      <MoxTextBlock as="label" htmlFor={id}>
+      <MoxText as="label" htmlFor={id}>
         {children}
-      </MoxTextBlock>
+      </MoxText>
     </MoxShelf>
   );
 };

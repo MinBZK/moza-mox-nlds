@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { getConstructionSummary } from "../../../storybook/helpers/getConstructionSummary";
 import { MoxChevronLink } from "./ChevronLink";
-import { MoxBox, MoxTextBlock } from "../../uiAtoms";
+import { MoxBox, MoxText } from "../../uiAtoms";
 
 const meta = {
   title: "React/Components/Interactive/ChevronLink",
@@ -15,7 +15,7 @@ const meta = {
          <MoxLink href="#" underlineHover="underline">
                <MoxShelf columnGap="sm" alignItems={"start"}>
                  <MoxIcon icon={'ChevronRight'} />
-                 {'Link text - usually wrapped in a MoxTextBlock '}
+                 {'Link text - usually wrapped in a MoxText '}
                </MoxShelf>
              </MoxLink>
         `),
@@ -37,7 +37,7 @@ const meta = {
   ],
   args: {
     href: "#",
-    children: <MoxTextBlock>Click me!</MoxTextBlock>,
+    children: <MoxText>Click me!</MoxText>,
   },
 } satisfies Meta<typeof MoxChevronLink>;
 

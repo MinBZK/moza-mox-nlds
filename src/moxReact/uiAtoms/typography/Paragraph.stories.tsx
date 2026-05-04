@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { MoxAtomParagraph } from "./Paragraph";
 
 const meta = {
-  title: "React/Atoms/Typography/Paragraph (TextBlock)",
+  title: "React/Atoms/Typography/Paragraph (Text block)",
   component: MoxAtomParagraph,
   tags: ["autodocs"],
   parameters: {},

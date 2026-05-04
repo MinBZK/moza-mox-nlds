@@ -1,6 +1,6 @@
 import { useId } from "react";
 import { MoxShelf } from "../../uiAtoms/layout/Shelf";
-import { MoxTextBlock } from "../../uiAtoms/typography/TextBlock";
+import { MoxText } from "../../uiAtoms/typography/Text";
 import { MoxAtomRadioButton } from "../../uiAtoms/form/RadioButton";
 
 /**
@@ -23,9 +23,9 @@ export const MoxRadioButtonField = ({
   return (
     <MoxShelf gap="lg" alignItems={"start"} className={className}>
       <MoxAtomRadioButton id={id} />
-      <MoxTextBlock as="label" htmlFor={id}>
+      <MoxText as="label" htmlFor={id}>
         {children}
-      </MoxTextBlock>
+      </MoxText>
     </MoxShelf>
   );
 };

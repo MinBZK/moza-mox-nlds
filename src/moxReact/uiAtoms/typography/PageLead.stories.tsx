@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { MoxAtomPageLead } from "./PageLead";
 
 const meta = {
-  title: "React/Atoms/Typography/Page Lead (TextBlock)",
+  title: "React/Atoms/Typography/Page Lead (Text block)",
   component: MoxAtomPageLead,
   tags: ["autodocs"],
   parameters: {},

@@ -1,15 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
-import {
-  MoxAtomTextBlock,
-  MoxTextBlock,
-  textBlockStyleProps,
-} from "./TextBlock";
+import { MoxText, textStyleProps } from "./Text";
 import { getStylePropArgTypes } from "../../../storybook/helpers/getStylePropArgTypes";
 
 const meta = {
-  title: "React/Atoms/Typography/TextBlock",
-  component: MoxAtomTextBlock,
+  title: "React/Atoms/Typography/Text",
+  component: MoxText,
   tags: ["autodocs"],
   parameters: {},
   args: {
@@ -17,9 +13,9 @@ const meta = {
   },
   argTypes: {
     children: { table: { disable: true } },
-    ...getStylePropArgTypes(textBlockStyleProps),
+    ...getStylePropArgTypes(textStyleProps),
   },
-} satisfies Meta<typeof MoxAtomTextBlock>;
+} satisfies Meta<typeof MoxText>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -69,7 +65,7 @@ export const NestedTextBlocks: Story = {
     docs: {
       description: {
         story:
-          "This example shows how multiple TextBlock components can be nested, each with their own border for visual debugging. Do note that the text-trimming only happens once on the dotted lines. The line-height should not be messed up. The proper way to use text-blocks is *not* to nest them, but it works.",
+          "This example shows how multiple `<MoxText>` components can be nested, each with their own border for visual debugging. Do note that the text-trimming only happens once on the dotted lines. The line-height should not be messed up. The proper way to use text-blocks is *not* to nest them, but it works.",
       },
     },
   },
@@ -77,16 +73,17 @@ export const NestedTextBlocks: Story = {
     fontSize: "3xl",
     style: { borderBlock: "2px dashed orange" },
     children: (
-      <MoxTextBlock fontSize="3xl">
+      <MoxText block fontSize="3xl">
         {"Some earlier text"}
-        <MoxTextBlock fontSize="3xl">
-          <MoxTextBlock
+        <MoxText block fontSize="3xl">
+          <MoxText
+            block
             as="span"
             fontSize="3xl"
             style={{ borderBlock: "2px solid blue" }}
-          >{`Nested text content`}</MoxTextBlock>
-        </MoxTextBlock>
-      </MoxTextBlock>
+          >{`Nested text content`}</MoxText>
+        </MoxText>
+      </MoxText>
     ),
   },
 };

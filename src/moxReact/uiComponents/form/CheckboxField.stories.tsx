@@ -13,7 +13,7 @@ const meta = {
         story: getConstructionSummary(`
           <MoxAtomShelf>
             <MoxAtomCheckbox id={id} />
-            <MoxTextBlock as="label" htmlFor={id}>{children}</MoxTextBlock>
+            <MoxText as="label" htmlFor={id}>{children}</MoxText>
           </MoxAtomShelf>
         `),
       },

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { MoxAtomLink } from "./Link";
-import { MoxTextBlock } from "../typography/TextBlock";
+import { MoxText } from "../typography/Text";
 import { MoxBox } from "../layout/Box";
 
 const meta = {
@@ -10,7 +10,7 @@ const meta = {
   tags: ["autodocs"],
   parameters: {},
   args: {
-    children: <MoxTextBlock>Click me!</MoxTextBlock>,
+    children: <MoxText>Click me!</MoxText>,
   },
   argTypes: {
     children: { table: { disable: true } },
@@ -45,7 +45,7 @@ export const LinkBox: Story = {
         borderStyle={"dashed"}
         borderWidth={"2px"}
       >
-        <MoxTextBlock>I am a link box</MoxTextBlock>
+        <MoxText>I am a link box</MoxText>
       </MoxBox>
     ),
   },

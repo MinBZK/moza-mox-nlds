@@ -1,13 +1,13 @@
 import type { AtomProps } from "../AtomTypes";
-import { MoxTextBlock, textBlockStyleProps } from "./TextBlock";
+import { MoxText, textStyleProps } from "./Text";
 
 /**
- * A `MoxAtomTextBlock`, rendered as a `<p>` and with the larger (`lg`) font-size, used for an introduction/lead of a page
+ * A `MoxAtomText`, rendered as a `<p>` and with the larger (`lg`) font-size, used for an introduction/lead of a page
  */
 export const MoxAtomPageLead = (
-  props: AtomProps<"p", typeof textBlockStyleProps>
+  props: AtomProps<"p", typeof textStyleProps>,
 ) => {
-  return <MoxTextBlock as="p" fontSize="lg" {...props} />;
+  return <MoxText block as="p" fontSize="lg" {...props} />;
 };
 
 export const MoxPageLead = MoxAtomPageLead;

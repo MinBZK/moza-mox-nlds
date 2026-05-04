@@ -38,9 +38,9 @@ const meta = {
                       alignItems={"start"}
                       justifyContent={"spaceBetween"}
                     >
-                      <MoxTextBlock fontWeight={isCurrent ? "bold" : "normal"}>
+                      <MoxText fontWeight={isCurrent ? "bold" : "normal"}>
                         {children}
-                      </MoxTextBlock>
+                      </MoxText>
                       <MoxOccupy
                         blockSize="xs"
                         alignContent={"center"}
@@ -73,4 +73,8 @@ export const Default: Story = {
 
 export const IsCurrent: Story = {
   args: { isCurrent: true },
+};
+
+export const IsDisabled: Story = {
+  args: { disabled: true, badgeSlot: undefined },
 };

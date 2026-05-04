@@ -19,9 +19,9 @@ const meta = {
                     minInlineSize="md"
                     {...props}
                   >
-                    <MoxTextBlock fontSize="xs" underline="none" textAlign="center">
+                    <MoxText fontSize="xs" underline="none" textAlign="center">
                       {children}
-                    </MoxTextBlock>
+                    </MoxText>
                   </MoxBox>
             `),
       },

@@ -1,13 +1,13 @@
-import { MoxTextBlock, textBlockStyleProps } from "./TextBlock";
+import { MoxText, textStyleProps } from "./Text";
 import type { AtomProps } from "../AtomTypes";
 
 /**
- * A `MoxAtomTextBlock`, rendered as a `<p>` and with the regular (`md`) font-size.
+ * A `MoxAtomText`, rendered as a `<p>` and with the regular (`md`) font-size.
  */
 export const MoxAtomParagraph = (
-  props: AtomProps<"p", typeof textBlockStyleProps>
+  props: AtomProps<"p", typeof textStyleProps>,
 ) => {
-  return <MoxTextBlock as="p" fontSize="md" {...props} />;
+  return <MoxText block as="p" fontSize="md" {...props} />;
 };
 
 export const MoxParagraph = MoxAtomParagraph;

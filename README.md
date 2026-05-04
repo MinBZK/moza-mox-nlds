@@ -1,7 +1,6 @@
 # Todo's:
 
 - Atoms: layout (shelf), checkbox, text label, etc
-- Research: textInline / textBlock / textStyle needed? just one? Inheritance of styles (inc. Underline for links)
 - polyfill `text-box` in css for cap-baseline sizes
   - Link Atom, LinkText Atom (for text-box?)
 - docs

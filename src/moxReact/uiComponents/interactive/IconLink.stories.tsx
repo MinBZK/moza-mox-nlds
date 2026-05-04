@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { getConstructionSummary } from "../../../storybook/helpers/getConstructionSummary";
-import { MoxBox, MoxIcon, MoxTextBlock } from "../../uiAtoms";
+import { MoxBox, MoxIcon, MoxText } from "../../uiAtoms";
 import { MoxIconLink } from "./IconLink";
 
 const meta = {
@@ -15,7 +15,7 @@ const meta = {
          <MoxLink href="#" underlineHover="underline">
                <MoxShelf columnGap="sm" alignItems={"start"}>
                  <MoxIcon icon={'ChevronRight'} />
-                 {'Link text - usually wrapped in a MoxTextBlock '}
+                 {'Link text - usually wrapped in a MoxText '}
                </MoxShelf>
              </MoxLink>
         `),
@@ -36,7 +36,7 @@ const meta = {
     ),
   ],
   args: {
-    children: <MoxTextBlock>Click me!</MoxTextBlock>,
+    children: <MoxText>Click me!</MoxText>,
     startIconSlot: <MoxIcon icon="Search" fontSize="xs" />,
   },
 } satisfies Meta<typeof MoxIconLink>;
@@ -50,6 +50,6 @@ export const IconLinkDefault: Story = {
 
 export const IconLinkRandomIcon: Story = {
   args: {
-    startIconSlot: <MoxTextBlock>👻</MoxTextBlock>,
+    startIconSlot: <MoxText>👻</MoxText>,
   },
 };

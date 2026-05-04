@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
-  title: "MoxCSS/Atoms/Typography/TextBlock",
+  title: "MoxCSS/Atoms/Typography/Text block",
   tags: ["autodocs"],
   args: {},
   parameters: {

@@ -4,8 +4,49 @@ import {
   MoxBox,
   MoxOccupy,
   MoxShelf,
-  MoxTextBlock,
+  MoxText,
 } from "../../uiAtoms";
+
+const SideNavLinkContent = ({
+  iconSlot,
+  children,
+  badgeSlot,
+}: {
+  children: React.ReactNode;
+  iconSlot: React.ReactNode;
+  badgeSlot?: React.ReactNode;
+}) => {
+  return (
+    <MoxShelf columnGap="xl" alignItems={"start"}>
+      <MoxOccupy
+        blockSize="xs"
+        inlineSize="md"
+        alignContent={"center"}
+        justifyContent={"center"}
+      >
+        {iconSlot}
+      </MoxOccupy>
+      <MoxShelf
+        columnGap="sm"
+        alignItems={"start"}
+        justifyContent={"spaceBetween"}
+        flex="1 0 auto"
+      >
+        <MoxText block fontSize="lg">
+          {children}
+        </MoxText>
+        <MoxOccupy
+          blockSize="xs"
+          inlineSize="auto"
+          alignContent={"center"}
+          justifyContent={"center"}
+        >
+          {badgeSlot}
+        </MoxOccupy>
+      </MoxShelf>
+    </MoxShelf>
+  );
+};
 
 /**
  * Side-navigation button, designed after MOBu. A link that has a hover-background and an 'isCurrent' state. It could also be disabled to prevent any interaction.
@@ -14,13 +55,25 @@ export const MoxSideNavLink = ({
   iconSlot,
   children,
   badgeSlot,
-  isCurrent,
+  isCurrent = false,
+  disabled = false,
   ...props
 }: {
   iconSlot: React.ReactNode;
   badgeSlot?: React.ReactNode;
   isCurrent?: boolean;
+  disabled?: boolean;
 } & ComponentPropsWithoutRef<typeof MoxAtomLink>) => {
+  if (disabled === true)
+    return (
+      <MoxBox padding="xs" borderRadius="8px">
+        <MoxText color="neutral">
+          <SideNavLinkContent iconSlot={iconSlot} badgeSlot={badgeSlot}>
+            {children}
+          </SideNavLinkContent>
+        </MoxText>
+      </MoxBox>
+    );
   return (
     <MoxAtomLink {...props} color={isCurrent ? "primary" : "plain"}>
       <MoxBox
@@ -30,37 +83,9 @@ export const MoxSideNavLink = ({
         padding="xs"
         borderRadius="8px"
       >
-        <MoxShelf columnGap="xl" alignItems={"start"}>
-          <MoxOccupy
-            blockSize="xs"
-            inlineSize="md"
-            alignContent={"center"}
-            justifyContent={"center"}
-          >
-            {iconSlot}
-          </MoxOccupy>
-          <MoxShelf
-            columnGap="sm"
-            alignItems={"start"}
-            justifyContent={"spaceBetween"}
-            flex="1 0 auto"
-          >
-            <MoxTextBlock
-              fontSize="lg"
-              fontWeight={isCurrent ? "bold" : "normal"}
-            >
-              {children}
-            </MoxTextBlock>
-            <MoxOccupy
-              blockSize="xs"
-              inlineSize="auto"
-              alignContent={"center"}
-              justifyContent={"center"}
-            >
-              {badgeSlot}
-            </MoxOccupy>
-          </MoxShelf>
-        </MoxShelf>
+        <SideNavLinkContent iconSlot={iconSlot} badgeSlot={badgeSlot}>
+          {children}
+        </SideNavLinkContent>
       </MoxBox>
     </MoxAtomLink>
   );

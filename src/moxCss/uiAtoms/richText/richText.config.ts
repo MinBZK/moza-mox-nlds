@@ -19,7 +19,7 @@ export const richText = {
     backgroundColor: "primary",
     backgroundColorHover: "primary-hover",
     paddingBlock:
-      "sm" /* small adjustment to compensate for missing textblock inside button */,
+      "sm" /* small adjustment to compensate for missing text block inside button */,
     paddingInline: "md",
     underline: "none",
     underlineHover: "none",
@@ -30,7 +30,7 @@ export const richText = {
     backgroundColor: "secondary",
     backgroundColorHover: "secondary-hover",
     paddingBlock:
-      "sm" /* small adjustment to compensate for missing textblock inside button */,
+      "sm" /* small adjustment to compensate for missing text block inside button */,
     paddingInline: "md",
     underline: "none",
     underlineHover: "none",
@@ -40,7 +40,7 @@ export const richText = {
   "a.btn-outline-primary": {
     backgroundColor: "plain-contrast",
     paddingBlock:
-      "sm" /* small adjustment to compensate for missing textblock inside button */,
+      "sm" /* small adjustment to compensate for missing text block inside button */,
     paddingInline: "md",
     underline: "none",
     underlineHover: "none",
@@ -55,7 +55,7 @@ export const richText = {
   "a.btn-outline-secondary": {
     backgroundColor: "plain-contrast",
     paddingBlock:
-      "sm" /* small adjustment to compensate for missing textblock inside button */,
+      "sm" /* small adjustment to compensate for missing text block inside button */,
     paddingInline: "md",
     underline: "none",
     underlineHover: "none",
@@ -71,7 +71,7 @@ export const richText = {
     backgroundColor: "primary",
     backgroundColorHover: "primary-hover",
     paddingBlock:
-      "sm" /* small adjustment to compensate for missing textblock inside button */,
+      "sm" /* small adjustment to compensate for missing text block inside button */,
     paddingInline: "md",
     display: "inline-block",
     fontWeight: "bold",
